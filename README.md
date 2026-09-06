@@ -34,6 +34,12 @@ It runs on Apple silicon and nothing else. The develop pipeline is built on Meta
 Image, the AI runs on the Neural Engine, and the interface is native AppKit and SwiftUI
 rather than an imitation of one.
 
+If you have used Lightroom or Photomator, everything here will be familiar: a culling
+workflow, a non-destructive RAW developer with masks and local adjustments, a searchable
+catalog, geotagging, metadata editing and export. **All of that is free** — no account, no
+watermark, no time limit, and nothing withheld from it. A Pro licence adds the film
+darkroom, the paint canvas, the on-device AI tools and depth-based bokeh.
+
 > **Chili RAW is free to use, but it is not open source.** This repository is where the app
 > is distributed and supported — releases, the manual, and issues. The source is not in here.
 
