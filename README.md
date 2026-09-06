@@ -73,6 +73,7 @@ and depth-based bokeh.
 - Tone, curves, colour mixing, texture, clarity and a physical dehaze.
 - RAW highlight recovery drawn from the file's own headroom.
 - **Eleven kinds of mask** that add, subtract and intersect.
+- **Feather and Edge** on a detected mask — one softens the boundary, the other moves it in or out by an exact distance, which is what a slightly-too-wide cutout actually needs.
 - Sky, Object and Depth masks, and portrait editing by face part. *
 - Heal, Clone, and cross-frame dust detection.
 - **Generative Remove** — paint over an object and the background is rebuilt. *
