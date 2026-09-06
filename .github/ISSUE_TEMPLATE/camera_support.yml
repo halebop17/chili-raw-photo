@@ -1,0 +1,105 @@
+name: Camera or file format not supported
+description: A RAW file won't open, opens with the wrong colour, or opens the wrong way up.
+labels: ["camera support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Chili RAW reads RAW files through three decoders — macOS's own
+        CIRAWFilter, the Adobe DNG SDK and LibRaw — and a camera can be
+        supported by one and not the others. Knowing which one you were on
+        turns "it looks wrong" into something fixable.
+
+  - type: input
+    id: camera
+    attributes:
+      label: Camera
+      placeholder: "Fujifilm X-T5"
+    validations:
+      required: true
+
+  - type: input
+    id: format
+    attributes:
+      label: File extension
+      placeholder: ".RAF"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What goes wrong
+      options:
+        - The file doesn't open at all
+        - It opens, but the colour is wrong
+        - It opens rotated or mirrored
+        - The highlights are wrong — clipped, pink, or cyan
+        - It's very slow to decode
+        - Something else
+    validations:
+      required: true
+
+  - type: dropdown
+    id: decoder
+    attributes:
+      label: RAW decoder
+      description: "**Settings ▸ RAW decoding.**"
+      options:
+        - DNG decoder — Adobe DNG SDK
+        - DNG decoder — Apple
+        - Proprietary raw decoder — LibRaw
+        - Proprietary raw decoder — Apple
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tried-others
+    attributes:
+      label: Did you try the other decoder?
+      description: >
+        Switching in **Settings ▸ RAW decoding** and reopening the photo takes
+        a few seconds and narrows this down enormously.
+      options:
+        - label: Yes, and the other decoder has the same problem.
+        - label: Yes, and the other decoder handles it correctly.
+        - label: No, I haven't tried switching.
+
+  - type: input
+    id: version
+    attributes:
+      label: Chili RAW version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos
+    attributes:
+      label: macOS version
+      options:
+        - macOS 26 (Tahoe)
+        - macOS 15 (Sequoia)
+        - Something older
+    validations:
+      required: true
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      placeholder: "Mac mini (M2, 2023)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sample
+    attributes:
+      label: A sample file
+      description: >
+        This is the one that matters. A single unedited file straight from the
+        card, attached here or linked from your own storage, is usually enough
+        to fix it. Please say if the photo shouldn't be kept after the bug is
+        closed.
+    validations:
+      required: false
