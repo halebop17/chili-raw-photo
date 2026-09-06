@@ -1,5 +1,5 @@
 <!--
-README for github.com/halebop17/chili-raw-photo-developer
+README for github.com/halebop17/chili-raw-photo
 Source of truth: github/distribution-README.md in the app repo.
 Copy to github/web/README.md and push. Assets live in assets/.
 -->
@@ -15,13 +15,13 @@ Copy to github/web/README.md and push. Assets live in assets/.
 
 <img src="assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
 
-**[⬇︎ Download Chili RAW 1.0.0](https://github.com/halebop17/chili-raw-photo-developer/releases/latest)**
+**[⬇︎ Download Chili RAW 1.0.0](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 
 <sub>
 <b>macOS 15 Sequoia or later · Apple silicon (M1 or newer)</b><br>
-<a href="https://github.com/halebop17/chili-raw-photo-developer/releases">Browse all releases</a> ·
-<a href="https://github.com/halebop17/chili-raw-photo-developer/wiki">Read the manual</a> ·
-<a href="https://github.com/halebop17/chili-raw-photo-developer/issues">Report a problem</a>
+<a href="https://github.com/halebop17/chili-raw-photo/releases">Browse all releases</a> ·
+<a href="https://github.com/halebop17/chili-raw-photo/wiki">Read the manual</a> ·
+<a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
 `macOS 15+`  `Apple silicon`  `v1.0.0`  `Free to use`  `No account`
@@ -115,7 +115,7 @@ and depth-based bokeh.
 
 ## Installing
 
-1. Download the `.dmg` from [Releases](https://github.com/halebop17/chili-raw-photo-developer/releases/latest).
+1. Download the `.dmg` from [Releases](https://github.com/halebop17/chili-raw-photo/releases/latest).
 2. Drag **Chili RAW** to your Applications folder.
 3. Open it.
 
@@ -150,7 +150,7 @@ trial is available if you want to evaluate the Pro features before deciding.
 
 ## Bugs, requests, questions
 
-Open an [issue](https://github.com/halebop17/chili-raw-photo-developer/issues/new/choose).
+Open an [issue](https://github.com/halebop17/chili-raw-photo/issues/new/choose).
 There are three forms — a bug, an unsupported camera, and a feature request — and they ask
 for your Mac, your camera and which RAW decoder you had selected. That last one matters more
 than it sounds: Chili RAW reads RAW files through three different decoders, and a camera can
@@ -166,7 +166,7 @@ fixed in one pass instead of three.
 
 © 2026 <!-- TODO: your name or company -->  ·  Not affiliated with Adobe, Apple, Fujifilm,
 Kodak or any other manufacturer named in the app.<br>
-Built on <a href="https://github.com/halebop17/chili-raw-photo-developer/wiki/Licences">the work of others</a> — ExifTool, LibRaw, the Adobe DNG SDK, libjxl, GeoNames, Lensfun and more.<br>
+Built on <a href="https://github.com/halebop17/chili-raw-photo/wiki/Licences">the work of others</a> — ExifTool, LibRaw, the Adobe DNG SDK, libjxl, GeoNames, Lensfun and more.<br>
 Film and paper names identify the stock being emulated; the emulations are built from
 published datasheets and are not replicas.
 
