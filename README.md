@@ -13,7 +13,7 @@ Copy to github/web/README.md and push. Assets live in assets/.
 
 ### A photo culler, RAW developer, and asset manager, built just for the modern Mac.
 
-<img src="assets/hero-macbook.png" alt="Chili RAW on a MacBook Pro" width="880">
+<img src="assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
 
 **[⬇︎ Download Chili RAW 1.0.0](https://github.com/halebop17/chili-raw-photo-developer/releases/latest)**
 
