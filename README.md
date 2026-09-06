@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
-  <img src="assets/wordmark-light.png" alt="Chili RAW" width="230">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark-v2.png">
+  <img src="assets/wordmark-light-v2.png" alt="Chili RAW" width="230">
 </picture>
 
 ### A photo culler, RAW developer, and asset manager, built just for the modern Mac.
