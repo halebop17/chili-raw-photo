@@ -26,19 +26,25 @@
 
 ## About Chili RAW
 
-Chili RAW takes a card full of frames and gets you to finished pictures — cull the shoot,
-develop the keepers, and keep your whole library searchable, all in one window and all on
-your own disk. It never imports, copies, or uploads a single file.
+Chili RAW is a complete RAW photo workflow for the Mac.
+
+The grid is a full asset manager: burst stacking, filters for rating, flag, media type,
+place and people, Smart Folders, Collections, and search that finds a photo by filename,
+keyword, place — or by what is in the picture. The develop side is a non-destructive RAW
+pipeline with tone, curves, colour, local adjustments and masking, plus LUTs, film-stock
+looks and a full film darkroom. Add culling, geotagging, metadata editing and export, and
+it is the toolset you would expect from Lightroom, in one window.
+
+It reads the folders you already have. Nothing is imported, copied or uploaded, and your
+original files are never modified.
 
 It runs on Apple silicon and nothing else. The develop pipeline is built on Metal and Core
 Image, the AI runs on the Neural Engine, and the interface is native AppKit and SwiftUI
 rather than an imitation of one.
 
-If you have used Lightroom or Photomator, everything here will be familiar: a culling
-workflow, a non-destructive RAW developer with masks and local adjustments, a searchable
-catalog, geotagging, metadata editing and export. **All of that is free** — no account, no
-watermark, no time limit, and nothing withheld from it. A Pro licence adds the film
-darkroom, the paint canvas, the on-device AI tools and depth-based bokeh.
+**All of that is free** — no account, no watermark, no time limit, and nothing withheld
+from it. A Pro licence adds the film darkroom, the paint canvas, the on-device AI tools
+and depth-based bokeh.
 
 > **Chili RAW is free to use, but it is not open source.** This repository is where the app
 > is distributed and supported — releases, the manual, and issues. The source is not in here.
