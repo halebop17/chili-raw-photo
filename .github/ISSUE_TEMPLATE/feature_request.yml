@@ -1,0 +1,40 @@
+name: Feature request
+description: Something you'd like Chili RAW to do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Requests that describe the photographic problem tend to get built
+        sooner than requests that describe a solution — the problem often has a
+        better answer than the one either of us thought of first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: The task, and where it currently gets awkward.
+      placeholder: >
+        I shoot events and come back with 2,000 frames. Rejecting the
+        out-of-focus ones takes an evening.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you have in mind
+      description: Optional — if you already have a shape for it.
+    validations:
+      required: false
+
+  - type: input
+    id: elsewhere
+    attributes:
+      label: Does another app do this well?
+      description: >
+        Naming one is genuinely useful. It's the fastest way to see what you
+        mean.
+      placeholder: "Photo Mechanic's colour-class filtering"
+    validations:
+      required: false

@@ -149,13 +149,15 @@ trial is available if you want to evaluate the Pro features before deciding.
 
 ## Bugs, requests, questions
 
-Open an [issue](https://github.com/halebop17/chili-raw-photo-developer/issues). For anything
-that looks like a bug, four things make it fixable in one pass:
+Open an [issue](https://github.com/halebop17/chili-raw-photo-developer/issues/new/choose).
+There are three forms — a bug, an unsupported camera, and a feature request — and they ask
+for your Mac, your camera and which RAW decoder you had selected. That last one matters more
+than it sounds: Chili RAW reads RAW files through three different decoders, and a camera can
+be handled correctly by one and badly by another, so knowing which you were on is often the
+whole diagnosis.
 
-- your macOS version and Mac model,
-- the camera and file type (`.ARW`, `.CR3`, `.NEF`, `.DNG`, …),
-- which RAW decoder you have selected in **Settings ▸ General ▸ RAW decoding**,
-- what you expected to see, and what you saw instead.
+If you can attach a single unedited file from the card, a colour or decoding bug usually gets
+fixed in one pass instead of three.
 
 ---
 
@@ -163,6 +165,7 @@ that looks like a bug, four things make it fixable in one pass:
 
 © 2026 <!-- TODO: your name or company -->  ·  Not affiliated with Adobe, Apple, Fujifilm,
 Kodak or any other manufacturer named in the app.<br>
+Built on <a href="https://github.com/halebop17/chili-raw-photo-developer/wiki/Licences">the work of others</a> — ExifTool, LibRaw, the Adobe DNG SDK, libjxl, GeoNames, Lensfun and more.<br>
 Film and paper names identify the stock being emulated; the emulations are built from
 published datasheets and are not replicas.
 

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User manual
+    url: https://github.com/halebop17/chili-raw-photo-developer/wiki
+    about: Every feature in the app, chapter by chapter — worth a look first.
+  - name: Keyboard shortcuts
+    url: https://github.com/halebop17/chili-raw-photo-developer/wiki/Keyboard-Shortcuts
+    about: Every key in the app, on one page.
+  - name: Licences & credits
+    url: https://github.com/halebop17/chili-raw-photo-developer/wiki/Licences
+    about: The third-party components Chili RAW is built on.

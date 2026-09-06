@@ -1,0 +1,151 @@
+name: Bug report
+description: Something in Chili RAW doesn't work, or doesn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        The fields below are the ones that decide whether a bug can be
+        reproduced. A RAW rendering problem in particular is usually specific
+        to one decoder and one camera, so please fill those in even if they
+        seem beside the point.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched the existing issues and this isn't already reported.
+          required: true
+        - label: I'm on the latest version of Chili RAW.
+          required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+      placeholder: |
+        The photo turns magenta in the highlights as soon as I raise Exposure.
+        I expected the sky to stay neutral.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The shortest path from opening the app to seeing the problem.
+      placeholder: |
+        1. Open a folder of ARW files
+        2. Press D to open Develop
+        3. Drag Exposure to +1.5
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Chili RAW version
+      description: From the app menu — **Chili RAW ▸ About Chili RAW**.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos
+    attributes:
+      label: macOS version
+      options:
+        - macOS 26 (Tahoe)
+        - macOS 15 (Sequoia)
+        - Something older
+    validations:
+      required: true
+
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model
+      description: The chip matters more than the year. **Apple menu ▸ About This Mac**.
+      placeholder: "MacBook Pro (M3 Pro, 2023), 36 GB"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in the app
+      options:
+        - Grid — browsing, culling, stacks
+        - Loupe — the full-screen viewer
+        - Develop — sliders, tone, colour
+        - Develop — Masking
+        - Develop — Repair
+        - Film Labor
+        - Pixels
+        - Geo Tag / the map
+        - EXIF & IPTC
+        - People / faces
+        - Catalog, search & Smart Folders
+        - Export
+        - Settings
+        - Import, opening folders, backups
+        - Somewhere else / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: camera
+    attributes:
+      label: Camera and file type
+      description: >
+        Leave blank if the bug has nothing to do with a photo. Otherwise the
+        camera and the extension, since decoding is per-format.
+      placeholder: "Sony A7 IV — .ARW"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: decoder
+    attributes:
+      label: RAW decoder
+      description: >
+        **Settings ▸ RAW decoding.** Only relevant for a RAW file. If the photo
+        is a JPEG, HEIC or TIFF, choose the last option.
+      options:
+        - DNG decoder — Adobe DNG SDK
+        - DNG decoder — Apple
+        - Proprietary raw decoder — LibRaw
+        - Proprietary raw decoder — Apple
+        - Not a RAW file / doesn't apply
+    validations:
+      required: false
+
+  - type: dropdown
+    id: tonemapper
+    attributes:
+      label: Default look
+      description: >
+        **Settings ▸ RAW decoding ▸ Default look**, or the tone mapper showing
+        on the Edit tab if you switched it for this photo.
+      options:
+        - Chili RAW (AgX)
+        - Standard
+        - Neutral
+        - Doesn't apply
+    validations:
+      required: false
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: Screenshots, or a file that shows it
+      description: >
+        Drag images straight into this box. A sample RAW is the single most
+        useful thing you can attach for a decoding or colour problem — a link
+        to one on your own storage is fine.
+    validations:
+      required: false
