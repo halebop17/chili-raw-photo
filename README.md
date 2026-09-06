@@ -1,8 +1,14 @@
+<!--
+README for github.com/halebop17/chili-raw-photo-developer
+Source of truth: github/distribution-README.md in the app repo.
+Copy to github/web/README.md and push. Assets live in assets/.
+-->
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark-v2.png">
-  <img src="assets/wordmark-light-v2.png" alt="Chili RAW" width="230">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark-v3.png">
+  <img src="assets/wordmark-light-v3.png" alt="Chili RAW" width="230">
 </picture>
 
 ### A photo culler, RAW developer, and asset manager, built just for the modern Mac.
