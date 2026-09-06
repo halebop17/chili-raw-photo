@@ -7,7 +7,7 @@
 
 ### A photo culler, RAW developer, and asset manager, built just for the modern Mac.
 
-`macOS 15+`  `Apple silicon`  `v1.0.0`  `Free forever`  `Pro $29.99 once`  `No subscription`
+`macOS 15+`  `Apple silicon`  `v1.0.0`  `Free to use`  `No account`  `No subscription`
 
 <img src="assets/hero-macbook.png" alt="Chili RAW on a MacBook Pro" width="880">
 
@@ -16,6 +16,9 @@
 Chili RAW takes a card full of frames and gets you to finished pictures — cull the shoot,
 develop the keepers, and keep your whole library searchable, all in one window and all on
 your own disk. It never imports, copies, or uploads a single file.
+
+> **Chili RAW is free to use, but it is not open source.** This repository is where the app
+> is distributed and supported — releases, the manual, and issues. The source is not in here.
 
 It runs on Apple silicon and nothing else. The develop pipeline is built on Metal and
 Core Image, the AI runs on the Neural Engine, and the interface is native AppKit and
@@ -31,16 +34,16 @@ SwiftUI rather than an imitation of one.
 
 ---
 
-## Free, and free forever
+## Free to use
 
-**Chili RAW Free is a real photo application, not a trial.** It is its own build — not the
-paid one with features switched off — and it stays free.
+**The free tier is a real photo application, not a demo.** Culling, developing, cataloguing,
+geotagging and export are yours permanently, with no account and no time limit.
 
 - No time limit, no watermark, no export cap.
-- **Nothing interrupts you to sell you something.** No nag screens, no upgrade prompts, no countdown timers.
-- **Nothing is padlocked.** Pro features aren't greyed-out teasers; they simply aren't in this build.
+- **Nothing interrupts you to sell you something.** No nag screens, no upgrade prompts, and no countdown in your way — trial state lives in Settings and nowhere else.
+- **Pro features are marked, not hidden.** Try them for seven days; when the trial ends they stop, and nothing about the free workflow changes.
 - No account. Nothing to sign in to.
-- Every future release of Free stays free.
+- The free features stay free. Nothing is ever taken away from them.
 
 ---
 
@@ -79,10 +82,10 @@ frame by frame on export — HEVC or H.264, in a MOV or MP4.
 
 ## What Pro adds
 
-Pro is for what you *make* with the app, and costs **$29.99 once** — no subscription, updates included.
+Pro is for what you *make* with the app. **Seven-day trial, then $29.99 once** — no subscription, updates included. It unlocks in place: paste the key into **Settings ▸ Pro** and the features appear. Same app, same library, no second download.
 
 <!-- TODO: point this at the Payhip page once the URL exists. -->
-**[Get Chili RAW Pro → ](#)** *(link coming — Pro is sold through Payhip, which also handles the licence key)*
+**[Unlock Chili RAW Pro → ](#)** *(link coming — Pro is sold through Payhip, which issues the licence key)*
 
 | | |
 |---|---|
@@ -118,7 +121,7 @@ Pro is for what you *make* with the app, and costs **$29.99 once** — no subscr
 
 - **Your photos stay where they are.** Chili RAW reads folders on your disk. It never imports, copies or moves your originals, and never overwrites your pixels.
 - **No account, no telemetry, no analytics, no crash reporting.**
-- **The app makes exactly one kind of network request:** downloading an AI model, when you press Download. Nothing else in it talks to the internet — place names come from a table inside the app, and no image ever leaves your Mac.
+- **The app makes exactly two kinds of network request:** downloading an AI model when you press Download, and a one-time licence activation if you unlock Pro. Nothing else in it talks to the internet — place names come from a table inside the app, and no image ever leaves your Mac.
 
 ---
 
