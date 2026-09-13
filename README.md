@@ -1,19 +1,19 @@
 <!--
 README for github.com/halebop17/chili-raw-photo
 Source of truth: github/distribution-README.md in the app repo.
-Copy to github/web/README.md and push. Assets live in assets/.
+Copy to github/web/README.md and push. Assets live in public/assets/ — public/ is the site's static folder.
 -->
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark-v3.png">
-  <img src="assets/wordmark-light-v3.png" alt="Chili RAW" width="230">
+  <source media="(prefers-color-scheme: dark)" srcset="public/assets/wordmark-dark-v3.png">
+  <img src="public/assets/wordmark-light-v3.png" alt="Chili RAW" width="230">
 </picture>
 
 ### A photo culler, RAW developer, and asset manager, built just for the modern Mac.
 
-<img src="assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
+<img src="public/assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
 
 **[⬇︎ Download Chili RAW 1.0.0](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 

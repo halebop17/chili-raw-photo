@@ -1,0 +1,16 @@
+{
+  "name": "chiliraw-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.3.2",
+    "@astrojs/starlight": "0.42.0",
+    "@astrojs/sitemap": "3.7.4",
+    "sharp": "0.35.4"
+  }
+}
