@@ -177,6 +177,9 @@ p { margin: 0; }
   .feat h2 { font-size: clamp(22px, 6.5vw, 30px) !important; }
 }
 
-/* Two buttons side by side in a pair of cards read as a pair only if they
-   share a footprint. */
-.btn-wide { height: 46px; min-width: 208px; }
+/* Two buttons in a pair of cards read as a pair only if they are the same
+   object twice. min-width is not enough — the longer label pushes past it —
+   and the primary's drop shadow makes it look taller than it measures, so
+   the paired variant drops the glow and keeps only the inner highlight. */
+.btn-wide { height: 46px; width: 232px; padding-inline: 18px; }
+.btn-primary.btn-wide { box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.22); }
