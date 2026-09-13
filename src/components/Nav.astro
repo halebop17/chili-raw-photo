@@ -1,0 +1,27 @@
+---
+import Chili from "./Chili.astro";
+const path = Astro.url.pathname;
+const here = (p) => (path === p || (p !== "/" && path.startsWith(p)) ? "page" : undefined);
+---
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brand" href="/">
+      <Chili id="nav-wm" />
+      <span class="brand-word"><span>chili</span><span class="brand-dot"></span><span>raw</span></span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="/features/" aria-current={here("/features/")}>Features</a>
+      <a class="nav-link" href="/manual/" aria-current={here("/manual/")}>Manual</a>
+      <a class="nav-link" href="/changelog/" aria-current={here("/changelog/")}>Changelog</a>
+      <a class="nav-link" href="/pro/" aria-current={here("/pro/")}>Pro</a>
+      <a class="btn btn-primary" style="margin-left: 22px; height: 44px;"
+         href="https://github.com/halebop17/chili-raw-photo/releases/latest">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="display: block;">
+          <path d="M8 2.5 V10.5 M4.4 7 L8 10.6 L11.6 7 M3 13.2 H13" stroke="#FFFFFF"
+                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Download
+      </a>
+    </div>
+  </div>
+</nav>

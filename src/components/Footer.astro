@@ -1,0 +1,36 @@
+---
+import Chili from "./Chili.astro";
+const year = new Date().getFullYear();
+---
+<div class="wrap foot">
+  <div class="foot-grid">
+    <div class="foot-col">
+      <a class="brand" href="/">
+        <Chili id="foot-wm" width={9} />
+        <span class="brand-word" style="font-size: 15px;"><span>chili</span><span class="brand-dot"></span><span>raw</span></span>
+      </a>
+      <p class="foot-fine">
+        © {year} <!-- TODO: the name that owns the copyright -->.
+        Not affiliated with Adobe, Apple, Fujifilm, Kodak or any other manufacturer named in the app.
+      </p>
+    </div>
+    <div class="foot-col">
+      <div class="eyebrow">Product</div>
+      <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download</a>
+      <a href="/pro/">What Pro adds</a>
+      <a href="/changelog/">Changelog</a>
+    </div>
+    <div class="foot-col">
+      <div class="eyebrow">Learn</div>
+      <a href="/manual/">Manual</a>
+      <a href="/manual/keyboard-shortcuts/">Keyboard shortcuts</a>
+      <a href="/features/">Features</a>
+    </div>
+    <div class="foot-col">
+      <div class="eyebrow">Support</div>
+      <a href="https://github.com/halebop17/chili-raw-photo/issues/new/choose">Report a problem</a>
+      <a href="https://github.com/halebop17/chili-raw-photo/issues">All issues</a>
+      <a href="/manual/licences/">Licences</a>
+    </div>
+  </div>
+</div>

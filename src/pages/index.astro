@@ -1,0 +1,182 @@
+---
+import Site from "../layouts/Site.astro";
+import { Image } from "astro:assets";
+import hero from "../../public/assets/hero-macbook-neon.png";
+
+const decoders = [
+  { n: "decoder 01", t: "Apple CIRAWFilter", accent: true,
+    p: "macOS's own Core Image raw engine. The fastest of the three, the broadest camera coverage, and the only path where Apple's raw noise reduction does anything.",
+    tag: "FAST · BROAD · FALLBACK" },
+  { n: "decoder 02 · default for dng", t: "Adobe DNG SDK",
+    p: "Adobe's own reference implementation, version 1.7.1, built with JPEG XL. Every .dng goes through it — including the compressed ones Apple renders soft and orange.",
+    tag: "CORRECT COLOUR · CORRECT ORIENTATION" },
+  { n: "decoder 03", t: "LibRaw",
+    p: "Camera colour rendered through your own Adobe DCP profiles — Adobe Standard, or the Camera looks that follow your maker's JPEG rendering.",
+    tag: "YOUR PROFILES · YOUR COLOUR" },
+];
+
+const freeStrip = [
+  ["01 · fully featured", "A complete RAW developer and asset manager. If you know Lightroom or Photomator, you already know your way around it."],
+  ["02 · no interruptions", "No nag screens, no upgrade prompts, and no countdown in your way — trial state lives in Settings, nowhere else."],
+  ["03 · nothing taken away", "Pro features are marked rather than hidden, and the free ones never expire. Try Pro if you want it; if you don't, nothing about your workflow changes."],
+  ["04 · no expiry", "No account, and no time limit on anything in the free tier."],
+];
+
+const features = [
+  ["01", "develop", "Develop", "White balance, tone, curves and colour mixing, AgX filmic tone mapping, and highlight recovery drawn from the raw file's own headroom.", "/features/develop/"],
+  ["02", "film labor · pro", "Film Labor", "Film stocks modelled from published datasheets, halation inside the emulsion, grain sized per stock, and a paper and print stage.", "/features/film-labor/"],
+  ["03", "lens corrections", "Lens corrections", "Distortion, vignetting and fringing, from your camera's own tables where the file carries them and a bundled profile database otherwise.", "/features/lens-corrections/"],
+  ["04", "cull", "Culling", "Burst stacks, Compare and Survey with synced zoom, a hover loupe with focus peaking, and a Vision score that orders the grid without touching a rating.", "/features/culling/"],
+  ["05", "masking", "Masking", "Radial, linear and brush; colour, luminance and magic wand. Any of them add, subtract and intersect into one mask.", "/features/masking/"],
+  ["06", "ai masking · pro", "AI masking", "Sky, Subject, Background, People and Object. Feather and Edge fix the two halves of a bad boundary; no image ever leaves the Mac.", "/features/ai-masking/"],
+  ["07", "repair", "Repair", "Heal and Clone with a source you can drag, cross-frame dust detection, and Generative Remove for whole objects.", "/features/repair/"],
+  ["08", "bokeh & depth · pro", "Bokeh & depth", "A depth map of your photograph drives a scene-linear blur that keeps specular highlights as discs — with a five, six or seven-blade iris.", "/features/bokeh/"],
+  ["09", "detail", "Detail", "Capture sharpening with radius, detail and masking; Apple's raw NR; AI denoise that works on every decode path; motion-blur rescue and AI Detail.", "/features/detail/"],
+  ["10", "pixels · pro", "Pixels", "Deluxe-Paint-style overlays: text, glowing date stamps, shapes, borders, dithered gradient washes — and Enlarge, for the moon that deserved a longer lens.", "/features/pixels/"],
+  ["11", "catalog", "Catalog & backups", "Smart Folders, Collections, search across filenames, IPTC and Vision keywords, offline place names, and Vault backups to another drive.", "/features/catalog/"],
+  ["12", "video", "Video", "Clips sit in the grid with the photos, play full screen, and take a colour grade applied frame by frame on export — HEVC or H.264.", "/features/video/"],
+  ["13", "geo tag", "Geo Tag", "Click, search or paste a coordinate onto a whole selection, and get city and country names from a table inside the app — no geocoding service.", "/features/geo-tag/"],
+  ["14", "export", "Export", "jpegli JPEG, JPEG XL, HEIC, 16-bit TIFF, layered PSD. Output sharpening on the resized pixels, AI upscaling, and a Proof mode that renders the exact file.", "/features/export/"],
+  ["15", "versions", "Versions", "A version is another set of numbers in the sidecar, not a copy of the file. Switch instantly, or put two side by side with the zoom locked together.", "/features/versions/"],
+  ["16", "luts", "LUTs", "Link the folder of .cube files you already have — scanned recursively, subfolders intact — or import the ones you use constantly as swatches.", "/features/luts/"],
+];
+
+const title = "Chili RAW";
+const description = "Chili RAW is a photo developer, culler and asset manager for the Mac. Three RAW decoders, AI masking, film looks and a darkroom — no cloud, no account.";
+---
+<Site title={title} description={description}>
+  <!-- HERO -->
+  <div class="wrap" style="padding-top: clamp(40px, 6vw, 72px);">
+    <div class="eyebrow" style="letter-spacing: 0.08em;">macOS 15 · Apple silicon · free to use · Pro unlock $29 · founding price</div>
+    <h1 class="h-hero" style="margin-top: 18px; max-width: 18ch;">A photo culler, RAW developer, and asset manager, built just for the modern Mac.</h1>
+    <p class="lead" style="margin-top: 22px; max-width: 62ch;">
+      Cull a shoot, develop the keepers, and keep your whole library searchable — all in one
+      window, all on your own disk. Chili RAW never imports, copies, or uploads a single file.
+    </p>
+    <div class="btn-row" style="margin-top: 30px;">
+      <a class="btn btn-primary" href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW Free</a>
+      <a class="btn" href="/pro/">See what Pro adds</a>
+    </div>
+    <div style="font-family: var(--mono); font-size: 11px; color: var(--faint); letter-spacing: 0.04em; margin-top: 18px;">
+      Version 1.0.0 · no account · no watermark · no time limit
+    </div>
+  </div>
+
+  <!-- APP WINDOW -->
+  <div class="wrap" style="margin-top: clamp(40px, 5vw, 66px);">
+    <Image src={hero} alt="Chili RAW open on a MacBook Pro, a neon sign in the editor" widths={[720, 1200, 1600]} sizes="(max-width: 1200px) 100vw, 1200px" loading="eager" />
+  </div>
+
+  <!-- FREE FOREVER STRIP -->
+  <div class="wrap section">
+    <div class="eyebrow">the free version</div>
+    <div class="grid grid-2" style="margin-top: 22px;">
+      {freeStrip.map(([h, p]) => (
+        <div class="card"><div class="eyebrow">{h}</div><p>{p}</p></div>
+      ))}
+    </div>
+  </div>
+
+  <!-- THREE DECODERS -->
+  <div class="wrap section-lg">
+    <div class="eyebrow">the part nobody else does</div>
+    <h2 class="h-sec" style="margin-top: 14px; max-width: 24ch;">Choose the engine that decodes your RAW files, then compare them on the same photo.</h2>
+    <p class="lead" style="margin-top: 18px; max-width: 68ch;">
+      Most RAW developers make this choice for you and never mention it again. In Chili RAW it's
+      a setting you control, and switching it re-renders your thumbnails too, so you're always
+      comparing like with like.
+    </p>
+    <div class="grid grid-3" style="margin-top: 30px;">
+      {decoders.map((d) => (
+        <div class="card">
+          <div class="eyebrow" style={d.accent ? "color: var(--accent);" : undefined}>{d.n}</div>
+          <h3>{d.t}</h3>
+          <p>{d.p}</p>
+          <div style="font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--faint); margin-top: auto; padding-top: 10px;">{d.tag}</div>
+        </div>
+      ))}
+    </div>
+    <p class="lead" style="margin-top: 22px; max-width: 72ch;">
+      On top of the decoder there is a second choice — <span class="strong-text">AgX</span>,
+      <span class="strong-text">Standard</span> or <span class="strong-text">Neutral</span> tone
+      mapping — so the same raw file has nine starting points before you touch a slider.
+    </p>
+  </div>
+
+  <!-- FEATURE GRID -->
+  <div class="wrap section-lg">
+    <h2 class="h-sec">Everything else you get</h2>
+    <div class="grid grid-3" style="margin-top: 36px;">
+      {features.map(([n, eyebrow, name, p, href]) => (
+        <div class="card">
+          <div class="eyebrow" style={eyebrow.includes("pro") ? "color: var(--violet);" : undefined}>{n}{eyebrow.includes("pro") ? " · pro" : ""}</div>
+          <div style="display: flex; flex-direction: column; gap: 5px;">
+            <h3 style="font-size: 25px; letter-spacing: -0.018em;">{name}</h3>
+          </div>
+          <p>{p}</p>
+          <a class="more" href={href}>More info →</a>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- WHY MAC ONLY -->
+  <div class="wrap section-lg">
+    <div class="eyebrow">why mac only</div>
+    <h2 class="h-sec" style="margin-top: 14px;">Built exclusively for Apple silicon Macs.</h2>
+    <p class="lead" style="margin-top: 18px; max-width: 74ch;">
+      Most photo apps are written to run on Windows as well, and it shows — their own rendering
+      stacks, their own widgets, their own idea of how a window should behave. Chili RAW runs on
+      Apple silicon and nothing else. The develop pipeline is built on Metal and Core Image, the
+      AI runs on the Neural Engine, and the interface is native AppKit and SwiftUI rather than an
+      imitation of one.
+    </p>
+    <div class="grid grid-2" style="margin-top: 30px;">
+      <div class="card"><div class="eyebrow">macOS</div><p class="card-sub">15 Sequoia or later</p></div>
+      <div class="card"><div class="eyebrow">Chip</div><p class="card-sub">Apple silicon · M1 or newer</p></div>
+      <div class="card"><div class="eyebrow">Intel</div><p class="card-sub">Not supported</p></div>
+      <div class="card"><div class="eyebrow">Price</div><p class="card-sub">Free · Pro $29, rising to $59</p></div>
+    </div>
+  </div>
+
+  <!-- PRIVACY -->
+  <div class="band section-lg" style="margin-top: clamp(56px, 8vw, 104px); padding-block: 56px;">
+    <div class="wrap" style="padding-top: 0;">
+      <div class="grid grid-3" style="border: none; background: none; gap: 56px;">
+        <div style="background: none; padding: 0;">
+          <div class="eyebrow">your files stay put</div>
+          <p class="lead" style="margin-top: 10px; font-size: 14.5px;">It reads folders already on your disk. Never imports, never copies, never overwrites your pixels.</p>
+        </div>
+        <div style="background: none; padding: 0;">
+          <div class="eyebrow">no account, no telemetry</div>
+          <p class="lead" style="margin-top: 10px; font-size: 14.5px;">No analytics, no crash reporting, nothing to sign in to.</p>
+        </div>
+        <div style="background: none; padding: 0;">
+          <div class="eyebrow">two network requests</div>
+          <p class="lead" style="margin-top: 10px; font-size: 14.5px;">A model you asked for, and a one-time licence activation. Nothing else in the app talks to the internet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="wrap section-lg">
+    <div class="eyebrow">the free version</div>
+    <h2 class="h-sec" style="margin-top: 14px;">The free version is fully featured.</h2>
+    <p class="lead" style="margin-top: 18px; max-width: 76ch;">
+      No nag screens, no time limits, and nothing essential taken out. A complete RAW workflow,
+      free: culling, developing, masking, local adjustments, a searchable catalog, geotagging,
+      metadata and export — all the ground a Lightroom or Photomator user expects, with no account
+      and no time limit. It also does a few things they don't: three RAW decoders to choose between,
+      highlight recovery drawn from the raw file's own headroom, and eleven kinds of mask that
+      combine. Pro adds Film Labor, Pixels, the AI tools and Bokeh, unlocked with a one-time licence.
+    </p>
+    <div class="btn-row" style="margin-top: 28px;">
+      <a class="btn btn-primary" href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW Free</a>
+      <a class="btn" href="/pro/">What Pro adds — $29</a>
+    </div>
+    <div style="font-family: var(--mono); font-size: 11px; color: var(--faint); margin-top: 16px;">
+      1.0.0 · macOS 15+ · Apple silicon · no account, no watermark, no time limit
+    </div>
+  </div>
+</Site>
