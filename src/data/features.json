@@ -1,20 +1,21 @@
 [
  {
+  "slug": "develop",
+  "title": "Develop",
+  "sub": "A complete set of professional tools, non-destructive from end to end.",
+  "lead": "White balance, tone, curves and colour mixing, AgX tone mapping, and highlight recovery from the raw file's own headroom.",
+  "tier": "free",
+  "chapter": "develop",
+  "key": "Develop"
+ },
+ {
   "slug": "decoders",
   "title": "RAW decoders",
   "sub": "Three decoders, three tone mappers, and a different look from each.",
   "lead": "Every other developer decides how your raw is decoded and never mentions it again. Chili RAW puts the decoder in Settings, routes each file to the right one by default, and re-renders your edited thumbnails when you switch — so comparing them is honest rather than flattering.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "two choices, not one",
-    "h2": "The decoder is half of it. The tone mapper is the other half.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Decoders"
  },
  {
   "slug": "culling",
@@ -23,15 +24,7 @@
   "lead": "Culling is the part of the job that decides how the rest of it feels. The grid is built for it: rate and flag from the keyboard, narrow with a filter band that never hides anything by accident, and put the likely keepers first when you don't know where to start.",
   "tier": "free",
   "chapter": "browsing-and-culling",
-  "sections": [
-   {
-    "eyebrow": "the filter band",
-    "h2": "Every rule that decides what you are looking at, in one row.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Culling"
  },
  {
   "slug": "stacks",
@@ -40,17 +33,7 @@
   "lead": "Shoot a run of frames a fraction of a second apart and the grid fills with near-duplicates. Stacks collapse each burst into a single tile so you scan scenes instead of frames, then open one only when you want to choose inside it. Nothing is moved, renamed or deleted — it is a way of looking.",
   "tier": "free",
   "chapter": "stacks",
-  "sections": [
-   {
-    "eyebrow": "in the grid",
-    "h2": "A shoot of near-duplicates becomes a shoot of moments.",
-    "paras": [
-     "The count on a tile tells you how many frames are inside it. Expand one stack, or all of them, and the members appear in place — nothing has moved on disk, and nothing has been thrown away."
-    ],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Stacks"
  },
  {
   "slug": "loupe",
@@ -59,18 +42,7 @@
   "lead": "A loupe you drag across the thumbnails, showing real pixels under the cursor without opening anything. Aperture's was the best tool it had, and it left with it in 2015. This one follows the same idea and adds the part Aperture never had: it can tell you whether the focus actually landed.",
   "tier": "free",
   "chapter": "loupe-and-viewer",
-  "sections": [
-   {
-    "eyebrow": "actual pixels, under the cursor",
-    "h2": "The bubble reads the file, not the thumbnail.",
-    "paras": [
-     "A magnifier that enlarges a thumbnail tells you nothing about focus — the only thing you are trying to find out. This one reads the photo itself, so the difference between a sharp frame and a nearly-sharp one is visible while you are still hovering over the grid.",
-     "Slide it along a burst and the keeper announces itself. Turn on focus peaking and the in-focus edges tint, so it is a decision rather than a guess."
-    ],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Loupe"
  },
  {
   "slug": "masking",
@@ -79,31 +51,7 @@
   "lead": "A local adjustment is only as good as the selection under it. Chili RAW gives you three families of selection — drawn, computed and detected — and lets you combine any of them into a single mask with add, subtract and intersect.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "combining",
-    "h2": "Combine masks: sky minus the mountain, subject intersected with the highlights.",
-    "paras": [
-     "Every mask starts as one part. The + Add and − Subtract row underneath adds another of any kind to the same mask, and each part keeps its own row, its own controls and its own delete button. Click a part's operator to change how it combines."
-    ],
-    "cards": [],
-    "rows": []
-   },
-   {
-    "eyebrow": "every kind",
-    "h2": "Twelve ways to select exactly this part.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   },
-   {
-    "eyebrow": "portrait editing · pro",
-    "h2": "A person can be narrowed down to skin, eyes, lips, or hair.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Masking"
  },
  {
   "slug": "ai-masking",
@@ -112,7 +60,7 @@
   "lead": "One click for the sky, the subject, a single object, or a slice of the scene by distance. Every model runs on-device — no image ever leaves the machine, and nothing runs until you download the model you want.",
   "tier": "pro",
   "chapter": "develop",
-  "sections": []
+  "key": "AIMasking"
  },
  {
   "slug": "portrait",
@@ -121,15 +69,7 @@
   "lead": "Select a person with one click, then narrow the selection to the part you actually want to work on. Lift the skin without dulling the eyes, warm the lips without warming the face, brighten hair without lifting the background. Each part is a normal mask, so the same local adjustments apply inside it — this is targeted editing, not a beauty filter.",
   "tier": "pro",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "nine parts",
-    "h2": "Tick the parts you want, and the mask is made.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Portrait"
  },
  {
   "slug": "repair",
@@ -138,15 +78,7 @@
   "lead": "Three tools, in order of how much of the picture they touch. Heal and Clone fix specks and small blemishes with a circle and a source. Dust detection finds the specks for you and proves each one against neighbouring frames. Generative Remove takes out the things that are too big for a circle.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "heal and clone",
-    "h2": "A circle on the spot, and a circle on the pixels that replace it.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Repair"
  },
  {
   "slug": "bokeh",
@@ -155,22 +87,7 @@
   "lead": "A depth map of your own photograph drives a defocus that runs in scene-linear light, before the tone curve — which is what keeps a specular highlight as a bright disc instead of a grey smudge. It is a lens property, not a selection, so it lives beside the tone controls rather than in the masking tab.",
   "tier": "pro",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "the same frame",
-    "h2": "One depth map, and the street falls away behind the truck.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   },
-   {
-    "eyebrow": "the focus band",
-    "h2": "Set where the focus falls, and how fast it drops away.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Bokeh"
  },
  {
   "slug": "lens-corrections",
@@ -179,15 +96,7 @@
   "lead": "Every lens bends straight lines, darkens the corners and splits colour at the edges. Chili RAW reads the correction tables your camera writes into the file, and ships the Lensfun calibration database for the lenses that have none — then names the one it matched, so you can see what is being applied and to which axis.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "the panel",
-    "h2": "It tells you which lens it matched.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Lens"
  },
  {
   "slug": "versions",
@@ -196,44 +105,7 @@
   "lead": "Try the warm grade and the cold one. Keep the crop you are not sure about. A version is a separate set of develop settings on the same file — instant to switch, free on disk, and comparable side by side with the zoom locked together.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "what a version is",
-    "h2": "A second opinion on the same photograph, without a second photograph.",
-    "paras": [
-     "A version is a separate set of develop settings for one file — the same idea as a virtual copy, and the same idea a colourist means by a grade. Nothing is duplicated on disk. Your RAW file is not copied, not re-encoded, not touched at all; a version is another set of numbers in the sidecar beside it.",
-     "So keeping six interpretations of a frame costs you six sets of numbers, not six RAW files. Try the warm grade and the cold one. Keep the crop you are unsure about. Nothing has to be thrown away to make room for the next idea."
-    ],
-    "cards": [
-     {
-      "e": "branch",
-      "h": "Create New Version",
-      "p": "Copies the edit you are looking at into a fresh version, so you carry on from where you are rather than starting over."
-     },
-     {
-      "e": "switch",
-      "h": "Pick one, it is live",
-      "p": "Choose a version from the chip and the canvas changes to it immediately — no dialog, no re-render wait, no export step."
-     },
-     {
-      "e": "tidy",
-      "h": "Rename and delete",
-      "p": "Name them for what they are — *warm*, *print*, *client*. The last one cannot be deleted, so a photo always has an edit."
-     }
-    ],
-    "rows": []
-   },
-   {
-    "eyebrow": "why it is not a copy",
-    "h2": "Duplicating a RAW file to try something is a habit worth losing.",
-    "paras": [
-     "A copied file is a second thing to keep in sync, a second thing to back up, and a second thing to find when the client asks for the other one six months later. It also doubles what a card of 6000-pixel frames costs you on disk.",
-     "Versions sidestep all of that because they are written where the rest of your edits already live — in the sidecar next to the photograph. Back up the sidecar and you have backed up every version. Delete one and the file is untouched."
-    ],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Versions"
  },
  {
   "slug": "luts",
@@ -242,44 +114,7 @@
   "lead": "Link the LUT folder you already have and it is scanned recursively, subfolders and all. Import the ones you use constantly and they become swatches. Then dial any of them back with Intensity, because a look at 35% is usually the one you wanted.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "your own luts",
-    "h2": "Point it at your LUT folder and they are all just there.",
-    "paras": [
-     "Chili RAW reads ordinary .cube files — the ones you already own, bought, or built in Resolve. Link a folder once in **Settings ▸ Film LUTs** and it is scanned recursively, so the way you have already organised them survives: subfolders arrive as submenus rather than as a flattened list of ninety identical-looking names.",
-     "**Import .cube…** takes the other route — it copies LUTs into Chili RAW's own library, where they appear as swatches you click rather than a file you go and find."
-    ],
-    "cards": [
-     {
-      "e": "link",
-      "h": "Choose LUT Folder…",
-      "p": "Points at a folder you keep elsewhere. Nothing is copied; add a LUT to that folder later and it appears here."
-     },
-     {
-      "e": "import",
-      "h": "Import .cube…",
-      "p": "Copies the file into the app's library so it becomes a swatch. Good for the handful you reach for constantly."
-     },
-     {
-      "e": "pick",
-      "h": "Choose LUT",
-      "p": "The picker itself, straight from the Grading tab, with your folder structure intact as submenus."
-     }
-    ],
-    "rows": []
-   },
-   {
-    "eyebrow": "not the same thing as Film Labor",
-    "h2": "A LUT moves colours. The darkroom simulates the process that made them.",
-    "paras": [
-     "A LUT is a lookup table: for this colour in, that colour out. It is fast, portable and predictable, and for most grading it is exactly the right tool.",
-     "What it cannot express is anything that depends on the neighbouring pixels or on the physics of the medium — halation blooming inside the emulsion, grain that clumps with exposure, the way a print's contrast answers back to the negative's. That is what **Film Labor** is for, and it is a different feature on a different page. Use LUTs for a look; use the darkroom when you want the process."
-    ],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Luts"
  },
  {
   "slug": "film-labor",
@@ -288,31 +123,7 @@
   "lead": "Film Labor renders your photograph the way film would have: exposed onto a negative, scattered inside the emulsion, printed onto paper, then viewed under a light. It is not a filter laid over the image — each stage is measured from datasheets, and the order of the chain is physics rather than preference.",
   "tier": "pro",
   "chapter": "film-labor",
-  "sections": [
-   {
-    "eyebrow": "the chain",
-    "h2": "Five stages, in the order light actually meets them.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   },
-   {
-    "eyebrow": "a film pipeline for photographs",
-    "h2": "Cinema tools have had this for years. RAW developers have not.",
-    "paras": [
-     "Film pipelines — negative stock, print stock, halation, grain, a viewing light — are normal in colour-grading software for motion. A photo RAW developer usually gives you a LUT called “Portra” and stops there. Film Labor is that pipeline, built for a single frame: full resolution, per photo, non-destructive, and saved as a Look you can put on a whole shoot."
-    ],
-    "cards": [],
-    "rows": []
-   },
-   {
-    "eyebrow": "the ring-around",
-    "h2": "Judge a correction the way a darkroom does.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "FilmLabor"
  },
  {
   "slug": "pixels",
@@ -321,15 +132,7 @@
   "lead": "The last step of a picture is often the smallest one — a border, a caption, a glowing date in the corner — and it is absurd that it usually means launching a second application. Pixels is a layer canvas that sits on top of your developed photograph, non-destructive until the moment you export.",
   "tier": "pro",
   "chapter": "pixels",
-  "sections": [
-   {
-    "eyebrow": "what you can put on a photo",
-    "h2": "Overlays that stay editable, and export as layers.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Pixels"
  },
  {
   "slug": "catalog",
@@ -338,60 +141,7 @@
   "lead": "Edits, masks and versions are written to sidecars next to the originals, which are never modified. The catalog on top of that is a fast, searchable index you can throw away and rebuild — and a Vault copies the whole lot to another drive as plain, restorable files.",
   "tier": "free",
   "chapter": "catalog-and-search",
-  "sections": [
-   {
-    "eyebrow": "where your edits actually live",
-    "h2": "Beside the photograph, in a small file you can read, copy and back up.",
-    "paras": [
-     "Every develop setting, mask, repair, overlay and version is written to a sidecar next to the photo it belongs to. Your RAW file is never modified — not on import, not on edit, not on export.",
-     "This is the difference between a catalog you are married to and files you own. Move a folder to another drive and the edits travel with it. Hand a shoot to someone else and they get your work, not a link to it."
-    ],
-    "cards": [
-     {
-      "e": "automatic",
-      "h": "It saves itself",
-      "p": "Edits are written about a second after you stop moving a slider. There is no unsaved state to lose, and no habit to build."
-     },
-     {
-      "e": "your choice",
-      "h": "Metadata, your way",
-      "p": "Captions, keywords, ratings and copyright go either into an XMP sidecar or directly into the file — Settings ▸ Files ▸ Write target decides."
-     },
-     {
-      "e": "readable",
-      "h": "Plain files",
-      "p": "Nothing is locked in a proprietary container. What is on disk is what you can copy, sync and inspect."
-     }
-    ],
-    "rows": []
-   },
-   {
-    "eyebrow": "vaults",
-    "h2": "A backup you could restore with Finder, if you had to.",
-    "paras": [
-     "A Vault is a one-click copy of your work to another drive. A dot in the sidebar footer tells you how fresh it is at a glance — green within a day, amber within a week, red when it has been too long — and Chili RAW can run one on quit, either asking first or silently.",
-     "There are two modes, and the small one is the one most people want."
-    ],
-    "cards": [
-     {
-      "e": "edits only",
-      "h": "A few megabytes",
-      "p": "One dated zip holding the catalog, your Collections, presets, saved map places and every edit sidecar with its folder path. Each backup is a new dated file, so you keep a history rather than one copy that overwrites yesterday."
-     },
-     {
-      "e": "full mirror",
-      "h": "The photographs too",
-      "p": "Also mirrors the actual files and their sidecars into the same folder structure. Incremental — only what changed since last time is copied."
-     },
-     {
-      "e": "restorable",
-      "h": "No special tooling",
-      "p": "Because it is all plain files, the mirror opens in Finder and in every other application. Restoring is unzipping an archive or copying a tree back."
-     }
-    ],
-    "rows": []
-   }
-  ]
+  "key": "Catalog"
  },
  {
   "slug": "search",
@@ -400,7 +150,7 @@
   "lead": "By its name, by the keywords you wrote, by the place it was taken, by who is in it — or by what it looks like, when you cannot remember any of that. Everything is indexed on your own machine, and none of it needs the photos to be imported anywhere.",
   "tier": "free",
   "chapter": "catalog-and-search",
-  "sections": []
+  "key": "Search"
  },
  {
   "slug": "people",
@@ -409,7 +159,7 @@
   "lead": "Scan a library once and the same face is grouped together wherever it appears. Name a group and that person becomes a filter you can combine with everything else — the shoot, the place, the rating. Your photos stay on your disk: detection, grouping and naming all run on your Mac, and nothing is sent to a server.",
   "tier": "pro",
   "chapter": "people",
-  "sections": []
+  "key": "People"
  },
  {
   "slug": "geo-tag",
@@ -418,7 +168,7 @@
   "lead": "Half the frames from a trip have coordinates and half do not, depending on which body shot them. The Geo Tag view fixes that: a map beside a table of every photo, so you can place a frame with a click, search for a place by name, or paste a coordinate onto a whole selection — written as standard GPS metadata every other app can read.",
   "tier": "free",
   "chapter": "geo-tag",
-  "sections": []
+  "key": "Geo"
  },
  {
   "slug": "exif-iptc",
@@ -427,15 +177,7 @@
   "lead": "Every frame arrives carrying what the camera recorded — body, lens, aperture, ISO, the moment it was taken. What it does not carry is what the photo is of, who made it, and who owns it. This view shows the first and lets you write the second, across one photo or two hundred.",
   "tier": "free",
   "chapter": "exif-and-iptc",
-  "sections": [
-   {
-    "eyebrow": "two halves",
-    "h2": "What the camera wrote, and what you write.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Exif"
  },
  {
   "slug": "export",
@@ -444,15 +186,7 @@
   "lead": "Export is where the work either survives or quietly doesn't. Chili RAW renders at full resolution and resamples afterwards, sharpens the pixels that actually get written, and shows you the finished file at actual size before you commit to a batch of two hundred.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "the recipe",
-    "h2": "Everything about the file, in one dialog.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Export"
  },
  {
   "slug": "video",
@@ -461,14 +195,15 @@
   "lead": "The clips from a shoot live in the same folders as the frames, so Chili RAW treats them like the photographs they sit next to — they appear in the grid with a duration badge, they rate and flag with the same keys, they play full screen, and they take a colour grade that is applied per frame on export.",
   "tier": "free",
   "chapter": "develop",
-  "sections": [
-   {
-    "eyebrow": "what a clip gets",
-    "h2": "The controls that hold still from frame to frame.",
-    "paras": [],
-    "cards": [],
-    "rows": []
-   }
-  ]
+  "key": "Video"
+ },
+ {
+  "slug": "detail",
+  "title": "Detail",
+  "sub": "Sharpen what is there, and clean up what is not.",
+  "lead": "Capture sharpening, Apple's raw noise reduction, AI denoise on every decode path, motion-blur rescue and AI Detail.",
+  "tier": "free",
+  "chapter": "develop",
+  "key": "Detail"
  }
 ]
