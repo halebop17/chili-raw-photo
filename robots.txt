@@ -1,0 +1,13 @@
+# Chili RAW — www.chiliraw.com
+#
+# The site is not finished and is not being announced yet. Keep it out of
+# search results until the real pages are up, then replace this file with the
+# one in github/site/seo.md §4, which allows everything and names the sitemap.
+#
+# Note what this does and does not do: it stops crawling, not indexing. A URL
+# discovered some other way can still be listed, bare. There is nothing linking
+# here yet, so that is enough for now — the belt-and-braces `noindex` meta tag
+# arrives with the Astro build, since a page has to be crawlable to be read.
+
+User-agent: *
+Disallow: /

@@ -134,12 +134,15 @@ and depth-based bokeh.
 
 ## Chili RAW Pro
 
-You can support development and unlock every feature with a **Pro licence — $29.99, once**.
-It is perpetual rather than a subscription: the version you unlock is yours to keep, and
-updates are included. Buy it on the website, or inside the app under
-`Settings` ▸ `Pro`.
+You can support development and unlock every feature with a **Pro licence — $29**, one
+payment. That is the founding price, and it holds until **version 1.5**; from version 1.5
+onwards a licence is **$59**. Both buy the same thing, so anyone who buys at $29 gets 1.5 and every
+other Chili RAW 1 release at no extra cost.
 
-<!-- TODO: point this at the Payhip page once the URL exists. -->
+It is a licence rather than a subscription — nothing expires, and nothing stops working if
+you never pay again. Buy it on the website, or inside the app under `Settings` ▸ `Pro`.
+
+<!-- TODO: point this at the purchase page once the URL exists. -->
 **[Unlock Chili RAW Pro →](#)**
 
 Even without a licence the app stays useful indefinitely: culling, developing, cataloguing,
