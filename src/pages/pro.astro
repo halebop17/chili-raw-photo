@@ -1,0 +1,157 @@
+---
+import Site from "../layouts/Site.astro";
+
+const pillars = [
+  ["film labor", "Film emulation", "18 films, 8 papers, halation and grain — measured from datasheets, in the order light meets them."],
+  ["pixels", "Overlays and paint", "Retro overlays, glowing date stamps, borders and Enlarge — layered, and exportable as a PSD."],
+  ["ai", "AI tools, on-device", "Sky, Object and Depth masks, Generative Remove, denoise, upscaling, search by meaning, People."],
+  ["bokeh", "Depth-based blur", "A depth map drives a scene-linear defocus with a five, six or seven-blade iris."],
+];
+
+// [group, feature, free, pro, note]
+const rows = [
+  ["cull & catalog", "Culling, burst Stacks, Compare and Survey", true, true, ""],
+  [null, "Vision keeper score, AI keywords, offline place names", true, true, ""],
+  [null, "Smart Folders, Collections, Vault backups", true, true, ""],
+  [null, "Search by what's in the picture, and Find Similar", false, true, "needs a downloaded model"],
+  [null, "People — faces detected, grouped and named", false, true, "needs a downloaded model"],
+  ["develop", "All three RAW decoders — Apple CIRAWFilter, Adobe DNG SDK, LibRaw", true, true, ""],
+  [null, "Tone, curves, colour mixer, AgX, highlight recovery", true, true, ""],
+  [null, "Masks you draw — radial, linear, brush, colour, luminance, wand", true, true, ""],
+  [null, "One-click Subject, People and Background masks", true, true, "macOS Vision — no download"],
+  [null, "Sky, Object and Depth masks", false, true, "downloaded models"],
+  [null, "Lens corrections — camera profiles and Lensfun", true, true, "distortion, vignetting, fringing"],
+  [null, "Heal, Clone and cross-frame dust detection", true, true, ""],
+  [null, "Generative Remove", false, true, ""],
+  [null, "AI Denoise, motion-blur rescue, AI Detail", false, true, ""],
+  [null, "Bokeh — depth-driven optical blur", false, true, ""],
+  [null, "Versions, Auto Sync, Lift & Stamp, Proof mode", true, true, ""],
+  ["looks", "LUTs, film-stock looks, colour grading, grain", true, true, ""],
+  [null, "Film Labor — negative, halation, grain, print, viewing", false, true, ""],
+  [null, "Pixels — overlays, date stamps, borders, Enlarge", false, true, ""],
+  ["export", "Video — playback, culling, and colour grading", true, true, "MOV, MP4, M4V · exports HEVC or H.264"],
+  [null, "jpegli JPEG, JPEG XL, HEIC, 16-bit TIFF, layered PSD", true, true, ""],
+  [null, "Output sharpening, resize, batch rename, metadata policy", true, true, ""],
+  [null, "AI upscaling on export", false, true, ""],
+];
+
+const reassure = [
+  ["the free version stays free", "The free features stay free. Pro adds to them, and nothing is ever taken away."],
+  ["nothing nags you", "A single quiet link in Settings is the only place the free version ever mentions Pro."],
+  ["your files, either way", "Your edits stay in sidecar files beside your photos. Nothing is locked inside a catalog you can't leave."],
+];
+
+const title = "Chili RAW Pro";
+const description = "Film Labor, the Pixels canvas, the on-device AI tools and depth bokeh. $29 until version 1.5, then $59 — one payment, not a subscription.";
+---
+<Site title={title} description={description}>
+  <!-- HERO -->
+  <div class="wrap" style="padding-top: clamp(40px, 6vw, 64px);">
+    <div class="eyebrow">chili raw pro</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Chili RAW Pro</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 26ch;">
+      Everything you already have, plus Film Labor, Pixels, the AI tools, and Bokeh.
+    </div>
+    <p class="lead" style="margin-top: 20px; max-width: 68ch;">
+      The free version is fully featured: culling, developing and cataloguing are complete in it
+      and stay that way. Pro adds film emulation, the paint canvas, the on-device AI tools and
+      depth-based bokeh.
+    </p>
+    <div class="btn-row" style="margin-top: 28px;">
+      <!-- TODO: point at the purchase page once the URL exists. -->
+      <a class="btn btn-primary" href="#">Unlock Pro — $29</a>
+      <a class="btn" href="https://github.com/halebop17/chili-raw-photo/releases/latest">Keep using the free tier</a>
+    </div>
+    <div style="font-family: var(--mono); font-size: 11px; color: var(--faint); letter-spacing: 0.05em; margin-top: 16px;">
+      $29 founding price · $59 from version 1.5 · one payment, Pro on every 1.x build · 7-day trial to evaluate
+    </div>
+  </div>
+
+  <!-- FOUR PRO PILLARS -->
+  <div class="wrap section">
+    <div class="grid grid-2" style="margin-top: 8px;">
+      {pillars.map(([e, h, p]) => (
+        <div class="card">
+          <div class="eyebrow" style="color: var(--violet);">{e}</div>
+          <h3>{h}</h3>
+          <p>{p}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- COMPARISON -->
+  <div class="wrap section-lg">
+    <h2 class="h-sec">What's in each version</h2>
+    <p class="lead" style="margin-top: 14px;">
+      Pro features are not greyed out in Free — they are not in the build at all.
+    </p>
+    <div class="cmp-scroll" style="margin-top: 30px;">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Free<span>forever</span></th>
+            <th scope="col" class="pro">Pro<span>$29 founding</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(([group, feature, free, pro, note]) => (
+            <>
+              {group && <tr class="grp"><th scope="rowgroup" colspan="3">{group}</th></tr>}
+              <tr>
+                <td>{feature}{note && <span class="note">{note}</span>}</td>
+                <td class="mark">{free ? "✓" : "—"}</td>
+                <td class="mark pro">{pro ? "✓" : "—"}</td>
+              </tr>
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- REASSURANCE -->
+  <div class="wrap section-lg">
+    <div class="grid grid-3">
+      {reassure.map(([e, p]) => (
+        <div class="card"><div class="eyebrow">{e}</div><p>{p}</p></div>
+      ))}
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="band" style="margin-top: clamp(56px, 8vw, 100px); padding-block: 60px;">
+    <div class="wrap">
+      <h2 class="h-sub">Try Pro for seven days before deciding.</h2>
+      <p class="lead" style="margin-top: 14px; max-width: 66ch;">
+        One app: paste the key in <span class="strong-text">Settings ▸ Licence</span> and the
+        features appear. No reinstall, no second download, no migration.
+      </p>
+      <div class="btn-row" style="margin-top: 26px;">
+        <!-- TODO: point at the purchase page once the URL exists. -->
+        <a class="btn btn-primary" href="#">Unlock Pro — $29</a>
+        <a class="btn" href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Free</a>
+      </div>
+      <div style="font-family: var(--mono); font-size: 11px; color: var(--faint); margin-top: 16px;">
+        $29 until version 1.5, then $59 · one payment, no subscription · 7-day trial
+      </div>
+    </div>
+  </div>
+</Site>
+
+<style>
+  .cmp-scroll { overflow-x: auto; border: 1px solid var(--border-soft); border-radius: 10px; }
+  .cmp { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 560px; }
+  .cmp th, .cmp td { text-align: left; padding: 13px 18px; border-bottom: 1px solid var(--border-soft); }
+  .cmp thead th { background: var(--surface); font-size: 15px; font-weight: 600; white-space: nowrap; }
+  .cmp thead th span { display: block; font-family: var(--mono); font-size: 10px;
+                       letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); font-weight: 400; margin-top: 3px; }
+  .cmp thead th.pro { color: var(--accent); }
+  .cmp td { color: var(--dim); line-height: 1.5; }
+  .cmp .note { display: block; font-family: var(--mono); font-size: 10.5px; color: var(--faint); margin-top: 3px; }
+  .cmp .mark { text-align: center; width: 110px; color: var(--mute); font-size: 15px; }
+  .cmp .mark.pro { color: var(--accent); }
+  .cmp .grp th { background: var(--backdrop); font-family: var(--mono); font-size: 10px;
+                 letter-spacing: 0.14em; text-transform: uppercase; color: var(--mute); font-weight: 500; }
+</style>

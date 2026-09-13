@@ -1,0 +1,45 @@
+---
+import Site from "../../layouts/Site.astro";
+import features from "../../data/features.json";
+const free = features.filter((f) => f.tier === "free");
+const pro = features.filter((f) => f.tier === "pro");
+---
+<Site title="Features"
+      description="Everything Chili RAW does: three RAW decoders, culling, masking, repair, the catalog, Film Labor, Pixels and the on-device AI tools.">
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">every room in the app</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Features</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 30ch;">
+      One window, from the card to the finished file.
+    </div>
+    <p class="lead" style="margin-top: 20px; max-width: 68ch;">
+      Most of this is in the free version, in full. The handful that is not is marked.
+    </p>
+  </div>
+
+  <div class="wrap section">
+    <div class="eyebrow">in the free version</div>
+    <div class="grid grid-3" style="margin-top: 22px;">
+      {free.map((f) => (
+        <a class="card" href={`/features/${f.slug}/`} style="color: inherit;">
+          <h3>{f.title}</h3>
+          <p>{f.sub}</p>
+          <span class="more">More info →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="wrap section-lg" style="padding-bottom: 60px;">
+    <div class="eyebrow" style="color: var(--violet);">part of pro</div>
+    <div class="grid grid-3" style="margin-top: 22px;">
+      {pro.map((f) => (
+        <a class="card" href={`/features/${f.slug}/`} style="color: inherit;">
+          <h3>{f.title}</h3>
+          <p>{f.sub}</p>
+          <span class="more">More info →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</Site>

@@ -1,0 +1,84 @@
+---
+import Site from "../../layouts/Site.astro";
+import features from "../../data/features.json";
+
+export function getStaticPaths() {
+  return features.map((f) => ({ params: { slug: f.slug }, props: { f } }));
+}
+const { f } = Astro.props;
+
+// Markdown emphasis carried over from the design copy.
+const md = (t) =>
+  t.replace(/&/g, "&amp;").replace(/</g, "&lt;")
+   .replace(/\*\*(.+?)\*\*/g, '<strong class="strong-text">$1</strong>')
+   .replace(/\*([^*]+?)\*/g, "<em>$1</em>")
+   .replace(/`(.+?)`/g, '<code style="font-family: var(--mono); font-size: 13px;">$1</code>');
+
+const others = features.filter((x) => x.slug !== f.slug).slice(0, 3);
+---
+<Site title={f.title} description={f.sub || f.lead.slice(0, 155)}>
+  <div class="wrap" style="padding-top: clamp(36px, 5vw, 56px);">
+    <div style="display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 11px; color: var(--faint); letter-spacing: 0.06em;">
+      <a href="/features/" style="color: var(--faint);">FEATURES</a><span>/</span>
+      <span style="color: var(--accent);">{f.title.toUpperCase()}</span>
+      {f.tier === "pro" && <span style="color: var(--violet);">· PRO</span>}
+    </div>
+    <h1 class="h-hero" style="margin-top: 22px;">{f.title}</h1>
+    {f.sub && <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 28ch;">{f.sub}</div>}
+    {f.lead && <p class="lead" style="margin-top: 20px; max-width: 68ch;" set:html={md(f.lead)} />}
+  </div>
+
+  {f.sections.map((s) => (
+    <div class="wrap section">
+      <div style="max-width: 800px; display: flex; flex-direction: column; gap: 16px;">
+        {s.eyebrow && <div class="eyebrow">{s.eyebrow}</div>}
+        <h2 class="h-sub">{s.h2}</h2>
+        {s.paras.map((p) => <p class="lead" set:html={md(p)} />)}
+      </div>
+      {s.cards.length > 0 && (
+        <div class="grid grid-3" style="margin-top: 30px;">
+          {s.cards.map((c, i) => (
+            <div class="card">
+              <div class="eyebrow" style={i === 0 ? "color: var(--accent);" : undefined}>{c.e}</div>
+              <h3 style="font-size: 17px;">{c.h}</h3>
+              <p set:html={md(c.p)} />
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  ))}
+
+  <div class="wrap section-lg">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="eyebrow">in the manual</div>
+        <h3>Every control, written down</h3>
+        <p>The manual covers this in full — what each control does, and what it does not.</p>
+        <a class="more" href={`/manual/${f.chapter}/`}>Read the chapter →</a>
+      </div>
+      <div class="card">
+        <div class="eyebrow" style={f.tier === "pro" ? "color: var(--violet);" : undefined}>
+          {f.tier === "pro" ? "part of pro" : "in the free version"}
+        </div>
+        <h3>{f.tier === "pro" ? `${f.title} is part of Chili RAW Pro.` : `${f.title} is free, with no time limit.`}</h3>
+        <p>{f.tier === "pro"
+          ? "$29 until version 1.5, then $59 · one payment, no subscription · 7-day trial."
+          : "No account, no watermark, and no time limit."}</p>
+        <div class="btn-row" style="margin-top: 12px;">
+          <a class="btn btn-primary" style="height: 44px;" href={f.tier === "pro" ? "/pro/" : "https://github.com/halebop17/chili-raw-photo/releases/latest"}>
+            {f.tier === "pro" ? "What Pro adds" : "Download Chili RAW Free"}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section" style="padding-bottom: 60px;">
+    <div class="rule"></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 28px; margin-top: 22px; align-items: baseline;">
+      <span class="eyebrow">next</span>
+      {others.map((o) => <a href={`/features/${o.slug}/`} style="font-size: 14px;">{o.title} →</a>)}
+    </div>
+  </div>
+</Site>

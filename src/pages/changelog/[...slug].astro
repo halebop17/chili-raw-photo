@@ -1,0 +1,104 @@
+---
+import Site from "../../layouts/Site.astro";
+import pages from "../../data/changelog.json";
+
+// One route per page in the data: /changelog/ for what is in development, then
+// /changelog/2026-q3/ and so on. Generated from CHANGELOG.md, which stays the
+// only copy — see tools/changelog-to-site.py in the app repo.
+export function getStaticPaths() {
+  return pages.map((p) => ({ params: { slug: p.slug || undefined }, props: { page: p } }));
+}
+
+const { page } = Astro.props;
+const dot = { New: "oklch(0.78 0.16 145)", Changed: "oklch(0.82 0.13 85)", Fixed: "oklch(0.74 0.10 250)" };
+const href = (p) => (p.slug ? `/changelog/${p.slug}/` : "/changelog/");
+const title = page.slug ? `Changelog — ${page.label}` : "Changelog";
+const description = page.slug
+  ? `What changed in Chili RAW during ${page.label}.`
+  : "What is in development for the next release of Chili RAW.";
+---
+<Site title={title} description={description}>
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">changelog · {page.label}</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Changelog</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 12px;">{page.blurb}</div>
+  </div>
+
+  <div class="wrap" style="margin-top: 32px;">
+    <nav class="pager" aria-label="Changelog pages">
+      {pages.map((p) => (
+        <a href={href(p)} class:list={["pager-tab", { on: p.slug === page.slug }]}
+           aria-current={p.slug === page.slug ? "page" : undefined}>
+          <span class="pager-label">{p.label}</span>
+          <span class="pager-count">{p.count} change{p.count === 1 ? "" : "s"}</span>
+        </a>
+      ))}
+    </nav>
+  </div>
+
+  <div class="wrap" style="padding-bottom: 60px;">
+    {page.sections.map((s) => (
+      <section class="rel">
+        <div class="rel-side">
+          <div class="rel-sticky">
+            <h2 class="h-sub">{s.title}</h2>
+            <div class="rel-ver">{s.version}</div>
+            <div class="rel-n">{s.groups.reduce((n, g) => n + g.items.length, 0)} changes</div>
+            {s.latest && <div class="rel-badge">LATEST</div>}
+          </div>
+        </div>
+        <div>
+          {s.groups.map((g) => (
+            <>
+              <div class="cat">
+                <span class="cat-dot" style={`background: ${dot[g.name] || "var(--faint)"}`}></span>
+                <span class="cat-name" style={`color: ${dot[g.name] || "var(--faint)"}`}>{g.name}</span>
+              </div>
+              {g.items.map((it) => (
+                <div class="entry">
+                  <span class="entry-dot"></span>
+                  <span class="entry-text" set:html={it} />
+                </div>
+              ))}
+            </>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</Site>
+
+<style>
+  .pager { display: flex; flex-wrap: wrap; gap: 6px; padding: 18px 0;
+           border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
+  .pager-tab { display: flex; flex-direction: column; gap: 3px; padding: 11px 18px;
+               border-radius: 7px; border: 1px solid transparent; }
+  .pager-tab:hover { border-color: var(--border-soft); }
+  .pager-tab.on { background: var(--surface2); border-color: var(--border); }
+  .pager-label { font-size: 14.5px; font-weight: 500; color: var(--dim); }
+  .pager-tab.on .pager-label { font-weight: 600; color: var(--text); }
+  .pager-count { font-family: var(--mono); font-size: 10.5px; color: var(--faint); }
+
+  .rel { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 56px;
+         padding: 52px 0 40px; border-top: 1px solid var(--accent); }
+  @media (max-width: 860px) { .rel { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+  .rel-sticky { position: sticky; top: 40px; }
+  @media (max-width: 860px) { .rel-sticky { position: static; } }
+  .rel-ver { font-family: var(--mono); font-size: 11px; color: var(--faint);
+             letter-spacing: 0.04em; margin-top: 8px; }
+  .rel-n { font-family: var(--mono); font-size: 11px; color: var(--faint); margin-top: 14px; }
+  .rel-badge { margin-top: 16px; display: inline-block; font-family: var(--mono); font-size: 10px;
+               letter-spacing: 0.12em; color: var(--accent); border: 1px solid var(--accent);
+               border-radius: 3px; padding: 3px 8px; }
+
+  .cat { display: flex; align-items: center; gap: 9px; margin: 26px 0 12px; }
+  .cat-dot { width: 6px; height: 6px; border-radius: 50%; }
+  .cat-name { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .entry { display: flex; gap: 12px; align-items: baseline; padding: 10px 0;
+           border-bottom: 1px solid var(--border-soft); }
+  .entry-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--faint);
+               flex-shrink: 0; transform: translateY(-3px); }
+  .entry-text { font-size: 14.5px; line-height: 1.62; color: var(--dim); }
+  .entry-text :global(strong) { color: var(--text); font-weight: 600; }
+  .entry-text :global(code) { font-family: var(--mono); font-size: 12.5px; }
+</style>

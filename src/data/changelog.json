@@ -1,0 +1,433 @@
+[
+  {
+    "slug": "",
+    "label": "In development",
+    "blurb": "Merged, not yet in a numbered release.",
+    "sections": [
+      {
+        "title": "In development",
+        "version": "next release",
+        "year": null,
+        "quarter": null,
+        "groups": [
+          {
+            "name": "New",
+            "items": [
+              "<strong>A 7-day Pro trial, and a place to keep your licence.</strong> Settings ▸ Licence — start the trial whenever you like, see how long is left, and enter a key when you buy. When a trial ends the app keeps working and <strong>everything you edited during it still looks exactly the same</strong>; what stops is making new Pro edits.",
+              "<strong>Every mask row shows what it selects.</strong> A small map of the frame on each row in the Masking list, with that mask's own coverage lit up — so two radials in different corners are told apart at a glance instead of both reading <em>Radial Mask</em>. Drag a mask and its map moves with it.",
+              "<strong>⌘Z undoes a develop edit.</strong> Every adjustment is a step you can take back, ⇧⌘Z puts it forward, and the Edit menu names the one you are about to undo. One drag is one ⌘Z, each photo keeps its own history, and it lasts as long as the folder is open.",
+              "<strong>Choose what the photo is judged against</strong> — Settings ▸ General ▸ Photo surround. Black, White or a custom grey, applied at once across Develop, the Lightbox, Compare, Survey, Film Labor's stage and Pixels. <strong>Theme default</strong> keeps the surround each page already had — except Pixels, which gains one (below).",
+              "<strong>Layer thumbnails line up with the rest of the panel, and dragging one reorders the stack.</strong> Grab a row anywhere, thumbnail included; hold the drag at the top or bottom edge to scroll a long list.",
+              "<strong>Duplicate a mask, or duplicate it inverted.</strong> Right-click any mask in Develop. Inverted gives you the face and everything-but-the-face as two masks without drawing the shape twice.",
+              "<strong>Masks have names.</strong> New masks are numbered as you make them — <em>Radial Mask 1</em>, <em>Radial Mask 2</em> — and you can rename any of them. Clear a name to go back to reading by type.",
+              "<strong>Bloom, a new Lens stage in Film Labor.</strong> A diffusion glow at the head of the chain, with <strong>Bloom</strong> for how much and <strong>Spread</strong> for how wide. It runs before the film, so the film's own curve shapes the glow — unlike Halation, which happens inside the emulsion and comes out red. Off by default.",
+              "<strong>Point at the photo, see where it lands on the scope.</strong> A marker tracks the pointer on whichever scope you are in, with the pixel's R/G/B percentages read out in the corner.",
+              "<strong>Faces get their own cluster in the vectorscope.</strong> On a portrait the face paints brightly against the skin-tone line while the rest of the frame drops back, so “is this skin right?” is a glance.",
+              "<strong>Five scopes in Develop, where the histogram used to be.</strong> RGB Overlay, RGB Split, Waveform, RGB Parade and Vectorscope, switched by the glyphs under the graph. The graph is taller, and remembers which you left it on.",
+              "<strong>A ghost of the unedited photo, under the live trace.</strong> Drag Exposure and you watch the trace move off where it started, rather than having to remember. Right-click the scope to turn it off.",
+              "<strong>The clipping percentages are buttons now.</strong> Click one and those pixels are painted on the photo — blue for crushed shadows, red for blown highlights. The chevron makes the graph about twice as tall.",
+              "<strong>Two export favourites, on ⌘E and ⇧⌘E.</strong> Pick a saved export preset in the export dialog's preset menu — <strong>Set as Favourite 1</strong> or <strong>2</strong> — and from then on that key exports the selection straight away, no dialog. Both keys are rebindable in Settings ▸ Shortcuts, and the Export button's preset list shows whichever key each favourite is on.",
+              "<strong>Export straight from the Lightbox.</strong> An <strong>Export</strong> button in its top bar, with your saved presets and the full dialog under them. It writes the photo you are looking at — so a keeper does not mean walking back to the grid, finding it again and exporting it there. Batch export stays on the grid, where you can see the set you picked.",
+              "<strong>Fold the filmstrip away.</strong> Click the thin bar along its top edge, or press <strong>⌥T</strong>. One setting across the Lightbox, Compare, Develop and Pixels, and rebindable in Settings ▸ Shortcuts ▸ Display.",
+              "<strong>Choose where AI models are stored</strong> — Settings ▸ AI ▸ Model location. Move them to an external drive to save space on your boot disk; models you already have are moved, not downloaded again, and a model already in the folder you pick is used where it is. If the drive isn't connected, the AI settings say so instead of offering to download everything again."
+            ]
+          },
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>Pixels sits the photo on the same surround as everywhere else.</strong> The area around the artwork used to be the window grey, a shade off what Develop, the Lightbox and Compare show — so the same photo sat on two different greys depending on which page you opened it in. It now matches them, which on the Neutral Grey theme is a visibly lighter surround than before. Nothing you have painted changes.",
+              "<strong>The tone curve tells you which way is which.</strong> On R, G or B the graph takes that channel's colours, every point prints its height as a percentage, and the foot of the graph is labelled <em>Blacks · Midtones · Whites</em>.",
+              "<strong>The film and paper lists only show stocks you can actually use.</strong> The two greyed-out <em>not baked yet</em> rows are gone. The same 29 films, 4 slide films and 8 papers, all selectable.",
+              "<strong>LibRaw is no longer marked experimental.</strong> The <em>(experimental)</em> label on the ARW / CR2 / CR3 / NEF decoder in <strong>Settings ▸ RAW decoding</strong> is gone. Nothing about how it decodes has changed.",
+              "<strong>Film grain on screen now matches the grain in the exported file.</strong> Grain was drawn a quarter to a half stronger on the canvas than in the file, so expect it to look slightly gentler from now on. <strong>Exported files are unchanged, to the byte.</strong>",
+              "<strong>Chili RAW now brings its own Perl, so a macOS update cannot take your metadata tools away.</strong> Keywords, captions, GPS, lens profiles, export metadata, PSD writing and the vault all run through ExifTool, which needs Perl — and Apple has said the copy macOS ships will be removed one day. Nothing looks or behaves differently.",
+              "<strong>Dark edges inside blown highlights no longer flash black.</strong> On neon or a lit shop front, nudging a Tone slider made dark outlines inside the bright areas snap to solid black for about three seconds. Exported files were never affected.",
+              "<strong>Less magenta fizz along blown highlights, on DxO and other linear DNGs.</strong> Clipped edges carried a fine sprinkle of magenta dots — about 1.8× less of it now. Raw files with a mosaic decode bit-for-bit identically to before.",
+              "<strong>The shadow-clipping overlay works again.</strong> On anything but a small window it painted nothing at all, so a frame with crushed shadows looked clean. It now reads the full-size picture.",
+              "<strong>The clipping percentages now count your photo's pixels, not a blurred copy of them.</strong> The shadow figure could read <strong>0.0 %</strong> on a frame with one pixel in a hundred crushed to black. Expect both figures to read higher on the same photo — the measurement was wrong, not the photo.",
+              "<strong>The Develop preview goes straight from the graphics card to the screen.</strong> Opening a photo and moving a slider are quicker for it. The photo itself is unchanged, to the byte.",
+              "<strong>Resizing the window no longer re-develops the photo while you drag.</strong> Dragging the window border used to restart a full-resolution render of the picture every time the window crossed a size threshold — several times in one drag, each one thrown away by the next. The photo now rescales as you drag and is re-rendered once, when you let go.",
+              "<strong>The filmstrip no longer measures the whole folder on every frame.</strong> It worked out the position of every photo in the folder each time it drew — on a large library, tens of thousands of calculations per frame, for the forty-odd thumbnails actually on screen. It now keeps the arithmetic it already did.",
+              "<strong>The Settings window is taller.</strong> It stays a fixed size, but the longer tabs no longer open already scrolled.",
+              "<strong>The Export dialog is narrower.</strong> On a big display it stretched to fill most of the screen, but everything in it is a fixed width — so the extra room went to empty space beside the controls rather than to anything you could read or click. It now stops growing at a comfortable width. The upscale compare view, the one part that genuinely wants the room, still gets plenty.",
+              "<strong>The Lightbox is one photo at a time.</strong> Rate, flag, export and ⌫ all act on the photo in front of you. The select-all tick is gone, and your grid selection is handed back when you leave.",
+              "<strong>⌘C shows the Copy Settings dialog once, then gets out of the way.</strong> It opens the first time you copy in a folder; every later ⌘C copies silently with the ticks you chose. <strong>⌘⇧C</strong> brings it back.",
+              "<strong>The floating Lift &amp; Stamp panel is gone; the dialog replaced it.</strong> Grid keeps <strong>Lift</strong> and <strong>Stamp</strong> side by side in the action row; in Develop the tag button opens the dialog, showing what is already lifted."
+            ]
+          },
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>Film Labor's small text is readable again — on both themes.</strong> The line under each node in the chain strip, the tool-panel group headings and their small print were all too close to what they sat on. Nothing about what the page renders has changed.",
+              "<strong>Small text across the app is readable now, on both themes.</strong> The worst case was <strong>Neutral Grey</strong>, where a hovered folder's photo count was drawn in the background's own colour. Expect that theme to look quieter and more even; the middle grey around the photo has not moved.",
+              "<strong>Lens profile corrections no longer leave a black border.</strong> A corrected frame now comes out full, at the cost of a sliver of its outermost edge. Detected masks, heal spots and Generative Remove regions follow it; hand-drawn masks on a photo you corrected before this update may want a nudge.",
+              "<strong>Masks and repairs stay on what you put them on when Lens Corrections is switched on.</strong> Detected masks, Heal and Clone patches and the Bokeh depth picker all follow the correction now. Radial, Linear and Brush still sit where you drew them, like a crop.",
+              "<strong>Film Labor's controls now show you when they can't do anything.</strong> With no film chosen, Grain, the paper list, Printer Lights and Developer are greyed and inert, with one line saying what is missing. Choosing a film brings them to life.",
+              "<strong>Leaving the Lightbox puts you back where you were.</strong> The grid returns exactly as you left it, with the photo still selected. Compare, Survey, Versions and the trip through Develop keep their place too.",
+              "<strong>The AI keyword buttons say what they are doing.</strong> <strong>Compute folder</strong> and <strong>Whole library</strong> now get a progress bar with a <strong>Stop</strong>, the row states how many of your photos have keywords at all, and a folder that is already done says so.",
+              "<strong>Keyword suggestions no longer stay dead until you relaunch.</strong> Opening the EXIF panel before the search text model had finished downloading made the app give up on suggestions for the rest of the session — the model arrived and nothing came back. It now notices the model when it turns up, and rebuilds its vocabulary when the model is replaced instead of scoring against the old one.",
+              "<strong>Renaming a photo kept everything that belonged to it.</strong> A rename used to erase the photo's colour flag on disk, orphan its develop edits, and leave the catalog pointing at the old name — so the tile went blank and the edits looked lost. Ratings, flags, labels, edits, versions, masks, faces and stack membership all follow the new name now.",
+              "<strong>Switching folders no longer writes a blank sidecar over the folder you left.</strong>",
+              "<strong>A RAW and its JPEG stop wiping each other's keywords.</strong>",
+              "<strong>Exporting a clip over an existing file no longer deletes that file when the export then fails.</strong>",
+              "<strong>Deselecting actually deselects.</strong> Clicking a tile off, or clicking the empty background, left the old set in place behind the scenes — so the next ⌫, Export or cull acted on photos you thought you had dropped.",
+              "<strong>\"Edits only\" backups keep every saved version</strong>, not just the active one.",
+              "<strong>Saving edits no longer destroys masks written by a newer build</strong>, and unknown mask types survive a round trip instead of being dropped.",
+              "<strong>Clicking in and out of a mixed field leaves it mixed.</strong> It used to clear that field across the whole selection.",
+              "<strong>Colour label \"None\" sticks.</strong> Clearing a label wrote nothing, so the old one came straight back.",
+              "<strong>Capture times are read in the photo's own offset</strong>, not shifted by yours.",
+              "<strong>Synchronize Folder picks up sidecar edits made in another app.</strong>",
+              "<strong>Two exports running at once no longer clobber each other</strong>, and an export that skipped files says so instead of counting them as written.",
+              "<strong>Healing at the very edge of the frame no longer crashes.</strong>",
+              "<strong>A corrupt lens-correction block in a DNG no longer hangs the render.</strong>",
+              "<strong>The grain swatch and the clip player</strong> no longer read memory that has already gone.",
+              "<strong>Cancelled background work stops overwriting the work that replaced it</strong> — thumbnails, film sheets, Pixels renders and folder loads all keep the newest result.",
+              "<strong>Auto Sync stops replacing crops you placed by hand.</strong>",
+              "<strong>Selecting a saved Wand mask just selects it</strong> — it used to re-flood the mask, rewrite the sidecar and push an undo step.",
+              "<strong>Film Labor no longer saves a Look you never chose</strong>, and its stock rows re-render when you change exposure, white balance, printer lights, chemistry, halation or grain — they used to show the old look until you picked a different stock.",
+              "<strong>Printer lights are visible and editable on Scan output</strong>, where they were already doing work invisibly.",
+              "<strong>Blacks no longer flattens saturated out-of-gamut colour.</strong> One click used to remove the very signal the AgX guard rail keys on, and colour jumped hue.",
+              "<strong>A mask's Dehaze works on a cropped or straightened photo.</strong> The veil died completely once the frame had an offset.",
+              "<strong>Heal stops sampling the blemish it is removing</strong> on portrait frames.",
+              "<strong>APS-C bodies that aren't in the lens database are no longer over-corrected</strong> by roughly 2.25×.",
+              "<strong>Semi-transparent gradients render at their real colour</strong> instead of near-white, and <strong>text exports in the font it previewed in.</strong>",
+              "<strong>Small images are no longer crushed to 8-bit before an upscale.</strong>",
+              "<strong>Before/after shows the before frame at the right shape</strong>, not stretched.",
+              "<strong>The half-brite toggle in Pixels is reversible</strong> — it is a view of the palette now, so folding and unfolding cannot scramble your colours. <strong>Ramp edits stop permuting the picture</strong>, the brush stays visible after a palette shrink, empty layers survive into a PSD or TIFF, the <strong>1-bit outline toggle no longer shifts the text</strong>, and a palette crush no longer stalls the window for seconds.",
+              "<strong>Depth-based masks stop serving a stale coverage figure</strong> for the rest of the session.",
+              "<strong>Installed AI models are reported as installed</strong> — SAM 2 Small was quietly falling back to Tiny.",
+              "<strong>Leaving Compare or Survey keeps your grid selection.</strong>",
+              "<strong>Version compare commits the version you can see.</strong>",
+              "<strong>Tiles re-sharpen when you change the tile size</strong> instead of staying soft until they scroll away.",
+              "<strong>The folder tint and the AI mark can't end up the same colour</strong>, and the tint picker no longer renders empty.",
+              "<strong>⌘Z undoes typing</strong> in the filter field, a rename, or a preset name.",
+              "<strong>Rebinding Proof to <code>x</code> no longer kills Reject permanently</strong>, and the shortcut cheat sheet stops swallowing ⌘Q, ⌘W, ⌘H and ⌘M.",
+              "<strong>The Brush Size slider has its full travel</strong>, not four usable positions.",
+              "<strong>Removing a location clears both Latitude and Longitude</strong> in the list, not just Latitude.",
+              "<strong>The export name preview matches the files you get</strong> — the right extension for clips, and the right numbering in a mixed batch of photos and clips.",
+              "<strong>Places within the last 56 m of the search radius are found</strong>, so a photo that close to a town no longer stays permanently unnamed. <strong>Accented place names</strong> are matched the same way everywhere.",
+              "<strong>The map keeps up on large folders</strong>, its pins follow a theme or accent change without a relaunch, and the location search no longer leaves a stale dropdown under an empty field or resolves two branches of the same chain to the wrong one.",
+              "<strong>Face crops are cleaned up when their photos go</strong>, a partly-lost crop cache rebuilds itself, and merging two face groups keeps the cover you picked.",
+              "<strong>4-colour DNGs decode with the fourth channel at the right brightness</strong>, and a camera profile that fails to load no longer leaks into the Adobe Standard fallback.",
+              "<strong>⌘Z undoes your typing.</strong> In any text field — a filter box, a rename, a preset name — Undo was greyed out in the Edit menu and the shortcut did nothing, because the menu item only ever looked at whether the <em>photo</em> had something to undo.",
+              "<strong>The white balance reading belongs to the photo you are looking at.</strong> Opening a RAW showed the previous photo's Temp and Tint until the new one finished decoding — and a nudge made in that moment was measured from the wrong starting point, so it landed somewhere you didn't ask for. Both now show <strong>…</strong> until the real value arrives.",
+              "<strong>Brush strokes get out of the way.</strong> Painting a mask and then moving one of its sliders left the strokes drawn over the very change you were trying to judge. They step aside while you adjust — hold <strong>O</strong> to see them again. Every other mask type already did this.",
+              "<strong>The count on a map cluster is readable on the grey theme.</strong> It was drawn in the window colour, which on grey sat almost on top of the bubble underneath it.",
+              "<strong>Typing a place no longer pushes the map's Standard / Places buttons down the screen.</strong>"
+            ]
+          }
+        ],
+        "latest": false
+      }
+    ],
+    "count": 91
+  },
+  {
+    "slug": "2026-q3",
+    "label": "2026 Q3",
+    "blurb": "Releases from 2026, quarter 3.",
+    "sections": [
+      {
+        "title": "September 2026",
+        "version": "1.0.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "New",
+            "items": [
+              "<strong>Lens Corrections</strong> (Develop ▸ Geometry) — distortion, vignetting and fringing, off by default. Reads your camera's own correction tables where the file carries them (Sony ARW, Fujifilm RAF, DNG), a bundled Lensfun database otherwise, plus manual sliders for lenses nothing has measured.",
+              "<strong>Edit many photos at once.</strong> Auto Sync applies the control you move to the whole selection, live — Edit and Grading tabs, plus aspect ratio, rotation and flips.",
+              "<strong>Auto Level a whole selection</strong>, each photo measured on its own. Photos with no level reference are left alone and counted.",
+              "<strong>Enlarge</strong> in Pixels (<code>E</code>) — click an object and scale it up to 400 % in place. Exports at full resolution and travels into a layered PSD/TIFF.",
+              "<strong>Generative Remove from a selection you already have</strong> — an Object, Subject, Sky, People or Depth mask, instead of painting.",
+              "<strong>Six more Film Labor papers</strong>: Supra Endura, Endura Premier, Crystal Archive DPII, Fujiflex, 2393 Vision Premier, Eterna-CP 3513DI. Eight in all.",
+              "<strong>The sidebar folds away</strong> to a thin rail — <strong>⌥\\</strong>, or the <strong>‹</strong> in its top-right corner. Rebindable.",
+              "<strong>Zoom in Pixels</strong> — ↑/↓, <strong>Z</strong> to fit, Space-drag to pan.",
+              "<strong>AI model updates</strong> — Settings ▸ AI flags a model with a newer version and offers <strong>Update</strong>. Nothing downloads by itself.",
+              "<strong>A photo carrying a film Look is marked</strong> — an amber filmstrip on the grid tile, a <strong>Film</strong> pill on the Develop canvas."
+            ]
+          },
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>Highlights recovery now works on Sony, Canon, Nikon and Fujifilm raws</strong>, not only on DNG.",
+              "<strong>Blown highlights rebuild neutral</strong> instead of drifting peachy.",
+              "<strong>Generative Remove reconstructs large areas at 1024 px</strong> instead of 512. Delete and re-download the model in Settings ▸ AI to get it.",
+              "<strong>Print Exposure reads as brightness — up is lighter.</strong> Saved Looks render exactly as before.",
+              "<strong>Develop keeps your selection</strong> — arrow keys move through it, ⌘-click and ⇧-click build it in the filmstrip.",
+              "<strong>Grain on formats larger than 35 mm</strong> now gets finer on screen too, not only in an export."
+            ]
+          },
+          {
+            "name": "Fixed",
+            "items": [
+              "Switching version switches its Film Labor Look with it, and Compare Versions renders each pane with its own version's film.",
+              "Changing the RAW decoder, or the LibRaw colour profile, re-renders edited raw thumbnails. (An unedited raw shows the camera's own preview and is unaffected.)",
+              "A blend layer is developed with the decoder you have selected.",
+              "Re-importing a <code>.cube</code>, or editing one in a linked folder, updates the thumbnails.",
+              "Heal, Clone and Detect Spots work on a cropped or straightened photo.",
+              "Visualize Spots is framed like the photo rather than the whole sensor frame.",
+              "Composition guides stay on when you change photo.",
+              "Auto Sync matches white balance by Kelvin, so a batch lands on the same temperature. JPEGs in a raw selection are skipped and reported.",
+              "A manual lens slider no longer drops the file's own built-in correction.",
+              "\"Landscape\" fits on one line in Crop ▸ Aspect ratio.",
+              "The Lift &amp; Stamp close button is a normal-sized target."
+            ]
+          }
+        ],
+        "latest": true
+      },
+      {
+        "title": "August 2026",
+        "version": "0.9.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "New",
+            "items": [
+              "<strong>Generative Remove</strong> — paint over something and the background is rebuilt around it, on your Mac, on a model you download. No text prompt: it makes things disappear rather than adding new ones. Regions are listed and can be extended, switched off or deleted.",
+              "<strong>Search your photos by what's in them</strong> — type \"red car at sunset\", or right-click a photo for <em>Find Similar</em>. Indexing runs in the background, and the app can suggest keywords.",
+              "<strong>AI Denoise</strong> — high-ISO noise removal that works on every RAW path, with a strength slider.",
+              "<strong>AI upscaling on export</strong> — SPAN, Real-ESRGAN or the macOS 4× scaler, chosen by how far you are enlarging and how big the source is, with a side-by-side compare in the export sheet.",
+              "<strong>AI tools are colour-marked</strong> — teal for the AI built into macOS, violet for a model you downloaded, grey for the tools you drive yourself.",
+              "<strong>Screenshots and screen captures are flagged automatically.</strong>"
+            ]
+          },
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>A true 1:1 view</strong> — 100 % renders real pixels from the full-resolution file, and panning no longer re-renders what you just looked at.",
+              "Develop sliders below the heavy stages no longer re-run everything above them, so Highlights, Shadows and the tone controls respond faster.",
+              "Export's enlargement is a plain three-way choice instead of a hidden double negative.",
+              "The Noise Reduction slider says it is Apple's, and disables itself on the decode paths where it does nothing."
+            ]
+          },
+          {
+            "name": "Fixed",
+            "items": [
+              "The mask overlay follows your crop instead of switching itself off."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "August 2026",
+        "version": "0.8.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "New",
+            "items": [
+              "<strong>AI masking</strong> in Develop, all on-device — <strong>Sky</strong>, <strong>Object</strong> (click to extend, ⌥-click to cut out), <strong>People</strong> (whole person, or per part: face skin, eyebrows, eyes, lips, teeth, hair, neck, clothing) and <strong>Depth</strong> (Near/Far sliders), plus <strong>Subject</strong> and <strong>Background</strong> built into macOS.",
+              "<strong>Masks combine</strong> — add, subtract or intersect any mask with another, each part still editable.",
+              "<strong>Feather on AI masks</strong>, with an optional outward falloff.",
+              "<strong>AuraFace</strong> face-recognition model, downloadable in Settings ▸ AI. Re-indexing keeps your names."
+            ]
+          },
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>The Masking tab was redesigned</strong> — a tile per mask type, a mask list with plain-language summaries, and a drill-in editor showing what each mask is built from.",
+              "<strong>No models ship with the app</strong> — download only what you want in Settings ▸ AI. Each is verified, individually deletable, and shows its licence and credits.",
+              "Quick adjust presets moved into the mask editor and merge into a mask instead of replacing it.",
+              "The folder you are browsing is highlighted in the sidebar and scrolled into view.",
+              "The person menu's \"Manage…\" sheet highlights the face under your pointer."
+            ]
+          },
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>\"Remove GPS\" removes everything</strong> — altitude, timestamp, speed and heading are scrubbed too.",
+              "A failed export can no longer destroy the file it was overwriting.",
+              "Develop edits, versions and Pixels overlays work in multi-folder views, and save into each photo's own folder sidecar.",
+              "A failed write of edits or cull state is reported instead of losing the work silently.",
+              "<strong>Synchronize</strong> on an unreachable folder no longer wipes its catalog entries and AI keywords.",
+              "Edits made on the hidden twin of a RAW+JPEG pair are no longer dropped.",
+              "Switching folders during a metadata write no longer disables all further saving until relaunch.",
+              "⌘Z undo of a move to Trash works after you switch folders.",
+              "Thumbnail cache files are written atomically; renamed files keep their previews; edited thumbnails re-render when the file changes.",
+              "RAW decoding fails gracefully instead of crashing when memory is critically low.",
+              "Fixed two freezes — the Vault backup's zip step and JPEG/JXL export encoding.",
+              "<strong>Update DNG Preview</strong> honours \"Back up files before writing\".",
+              "Pixels overlays are included in the off-folder sidecar backups."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "August 2026",
+        "version": "0.7.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>HDR bracket merge</strong>: select an exposure bracket and merge it into a single DNG — automatic alignment, deghosting, and a floating-point linear DNG you can develop like any other RAW.",
+              "New <strong>comparison modes</strong> for culling: <strong>Compare</strong> (<code>C</code>) puts candidates side by side, <strong>Survey</strong> (<code>N</code>) lays out the whole selection — both with 1:1 inspection and rating/flagging without leaving the mode. Right-click a burst stack to Survey it in one go.",
+              "<strong>Blend modes / double exposure</strong> in Develop: stack a second image over your photo with opacity and classic blend modes.",
+              "New <strong>Punch</strong> slider in Develop → Presence: the life Lightroom's Dehaze gives flat images — broad local contrast plus a touch of saturation — without the haze-removal side effects. Pull it negative to soften and lay down a gentle fog veil. Independent from Dehaze, Clarity, and Contrast.",
+              "The Develop before/after loupe is bigger and now actually magnifies — it shows the \"before\" enlarged instead of the same size. Zoom the glass with the scroll wheel, the <code>=</code> / <code>-</code> keys, or the on-screen ± buttons (all rebindable in Settings → Shortcuts → \"Develop loupe\"). Its controls moved to a compact icon column so they no longer overlap the photo.",
+              "The catalog now <strong>backs itself up automatically when you quit</strong>, with a new Backups tab in Settings.",
+              "Grid quality-of-life: right-click menu for flags, color labels, and ratings; press the same number again to clear a star rating; bigger maximum thumbnail size; smoother Loupe hover.",
+              "Pixels tab: drag layers to reorder them (the list now matches the visual stacking), date stamps and other overlays are draggable again, and the layers list is roomier.",
+              "Heal tool: resize the heal circle with the keyboard or scroll wheel.",
+              "Tidier menus and controls: one unified <strong>View</strong> menu, easier-to-click zoom buttons, Makeup sub-sliders that move as a group, and ⌘F now lands the cursor in the search field."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "August 2026",
+        "version": "0.6.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "Export redesigned: a cleaner dialog with resize, metadata options, presets, and a real <strong>File Naming</strong> module (custom names + auto sequence) with clearer handling of name collisions.",
+              "Export now remembers your last-used settings each time you open it.",
+              "New <strong>dehaze</strong> engine in a dedicated Dehaze block, plus local Dehaze inside masks.",
+              "Grid, filmstrip, and lightbox thumbnails now reflect your Develop edits instead of showing the untouched original.",
+              "Filmstrip: hover and use the scroll wheel to pan through it.",
+              "Faster, smoother Develop, including a preview-quality setting (Full / Half / Quarter) and quicker Fujifilm RAF handling.",
+              "Makeup controls tidied — now grouped under Highlights and Shadows.",
+              "Mask overlays now hide automatically when you leave the Masking tab."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "July 2026",
+        "version": "0.5.0",
+        "year": 2026,
+        "quarter": 3,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "Renamed the app to <strong>Chili RAW</strong>, with a new icon and identity.",
+              "Highlight recovery rebuilt: recover real detail in blown skies and bright edges instead of graying them out.",
+              "New <strong>Shadows</strong> engine for smoother, halo-free shadow lifts.",
+              "Added <strong>Texture</strong> and <strong>Makeup</strong> controls for fine detail and skin.",
+              "New straighten tools: draw a line to level a photo, plus auto-straighten.",
+              "Faster, cleaner map: native pins, clustering for big folders, and no lag opening Geo Tag.",
+              "Lightbox culling view with dedicated cull shortcuts.",
+              "Metadata now saves automatically — no more ⌘S.",
+              "Confirmation prompt before deleting, so nothing goes by accident.",
+              "Missing files stay in the catalog as \"Media Offline\" placeholders instead of vanishing.",
+              "Many smaller fixes to masks, filters, badges, and the develop info bar."
+            ]
+          }
+        ],
+        "latest": false
+      }
+    ],
+    "count": 89
+  },
+  {
+    "slug": "2026-q2",
+    "label": "2026 Q2",
+    "blurb": "Releases from 2026, quarter 2.",
+    "sections": [
+      {
+        "title": "June 2026",
+        "version": "0.4.0",
+        "year": 2026,
+        "quarter": 2,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "Much faster grid: smooth scrolling through huge folders, background thumbnail prebuild, and smarter caching.",
+              "New RAW engine with Adobe DNG and LibRaw decoding for more accurate color on proprietary RAW files.",
+              "Choose your look: <strong>Standard</strong>, <strong>AgX</strong>, and <strong>Neutral</strong> tone-mapping tabs.",
+              "<strong>Film grain</strong> module with a live preview, baked into exports.",
+              "<strong>Dust removal</strong> and <strong>color grading</strong> modules.",
+              "<strong>Clarity</strong> rebuilt for crisp local contrast without halos.",
+              "White balance, sharpening, and whites/highlights brought closer to Lightroom.",
+              "Selectable UI themes and accent colors (Dark / Neutral Grey · Amber / Blue)."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "May 2026",
+        "version": "0.3.0",
+        "year": 2026,
+        "quarter": 2,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "<strong>Catalog &amp; smart folders</strong>: organize, sync, and search your whole library.",
+              "<strong>AI keywords</strong> and keyword search.",
+              "<strong>People</strong>: face recognition with named people.",
+              "<strong>Stacks</strong>, <strong>Collections</strong>, and <strong>Vaults</strong> for grouping and backing up work.",
+              "<strong>Loupe</strong> view with focus peaking and quick brushes.",
+              "Rate-and-advance culling flow.",
+              "<strong>Video</strong> support alongside photos.",
+              "<strong>JPEG XL</strong> support.",
+              "Develop upgrades to dehaze, tone rendering, and display."
+            ]
+          }
+        ],
+        "latest": false
+      },
+      {
+        "title": "April 2026",
+        "version": "0.2.0",
+        "year": 2026,
+        "quarter": 2,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "Core photo browser: grid, ratings, flags, batch rename, search, sort, and reorder.",
+              "<strong>Geo Tag</strong>: place photos on a map, search locations, and add or remove GPS.",
+              "<strong>EXIF / IPTC</strong> metadata viewing and editing.",
+              "Support for major RAW formats (ARW, CR2/CR3, NEF, RW2, ORF, RAF).",
+              "<strong>Develop</strong> page: film LUTs, RAW adjustments, dehaze, crop, transform, and export.",
+              "<strong>Masking</strong>: radial, linear, and brush masks.",
+              "Configurable keyboard shortcuts."
+            ]
+          }
+        ],
+        "latest": false
+      }
+    ],
+    "count": 24
+  },
+  {
+    "slug": "2026-q1",
+    "label": "2026 Q1",
+    "blurb": "Releases from 2026, quarter 1.",
+    "sections": [
+      {
+        "title": "March 2026",
+        "version": "0.1.0",
+        "year": 2026,
+        "quarter": 1,
+        "groups": [
+          {
+            "name": "Changed",
+            "items": [
+              "Initial internal build."
+            ]
+          }
+        ],
+        "latest": false
+      }
+    ],
+    "count": 1
+  }
+]
