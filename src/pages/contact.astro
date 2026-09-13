@@ -1,0 +1,54 @@
+---
+import Site from "../layouts/Site.astro";
+---
+<Site title="Contact"
+      description="Bugs and feature requests go to GitHub, where they stay visible. For licensing, press, or a question the manual did not answer, there is a form.">
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">contact</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Contact</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 28ch;">
+      Bugs go to GitHub. Everything else, use the form.
+    </div>
+    <p class="lead" style="margin-top: 20px; max-width: 66ch;">
+      Bugs and feature requests stay visible and get closed in public, so the next person with
+      the same problem can find the answer. For licensing, press, or a question the manual did
+      not answer, the form reaches us directly.
+    </p>
+  </div>
+
+  <div class="wrap section" style="padding-bottom: 70px;">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="eyebrow">bugs &amp; requests</div>
+        <h3>GitHub Issues</h3>
+        <p>
+          Three forms — a bug, an unsupported camera, and a feature request. They ask for your
+          Mac, your camera and which RAW decoder you had selected, because a camera can render
+          correctly on one of the three decoders and badly on another.
+        </p>
+        <div class="btn-row" style="margin-top: 14px;">
+          <a class="btn btn-primary" style="height: 44px;"
+             href="https://github.com/halebop17/chili-raw-photo/issues/new/choose">Open an issue →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">everything else</div>
+        <h3>Send a message</h3>
+        <p>
+          Licensing, press, or anything the manual did not answer. The form is on our store,
+          which is where the licence you may be asking about lives.
+        </p>
+        <div class="btn-row" style="margin-top: 14px;">
+          <a class="btn" style="height: 44px;" href="https://monokern.app/contact"
+             rel="noopener">Open the contact form →</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top: 26px; font-size: 14px; color: var(--faint); max-width: 66ch;">
+      Chili RAW itself never sends anything anywhere — there is no account, no telemetry and no
+      crash reporting, so a problem only reaches us if you tell us about it.
+    </p>
+  </div>
+</Site>
