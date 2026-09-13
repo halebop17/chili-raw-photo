@@ -1,0 +1,10 @@
+---
+import Site from "../../layouts/Site.astro";
+import bodies from "../../data/feature-pages.json";
+const body = bodies.Article;
+---
+<Site type="article"
+      title="Why we built a new type of RAW developer toolbox for photographers"
+      description="A folder of twelve hundred frames, an afternoon gone before anyone reached the good ones, and a monthly fee for the privilege.">
+  <div class="feat" set:html={body} />
+</Site>
