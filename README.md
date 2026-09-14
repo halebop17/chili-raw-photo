@@ -164,9 +164,6 @@ fixed in one pass instead of three.
 <div align="center">
 
 © 2026 Chili RAW  ·  Not affiliated with Adobe, Apple, Fujifilm,
-Kodak or any other manufacturer named in the app.<br>
-Built on <a href="https://github.com/halebop17/chili-raw-photo/wiki/Licences">the work of others</a> — ExifTool, LibRaw, the Adobe DNG SDK, libjxl, GeoNames, Lensfun and more.<br>
-Film and paper names identify the stock being emulated; the emulations are built from
-published datasheets and are not replicas.
+Kodak or any other manufacturer named in the app.
 
 </div>
