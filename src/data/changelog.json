@@ -9,11 +9,18 @@
         "version": "next release",
         "year": null,
         "quarter": null,
-        "groups": [],
+        "groups": [
+          {
+            "name": "New",
+            "items": [
+              "<strong>Arrange the Develop panel your way.</strong> Drag a section by its header, or right-click it for Move Up, Move Down, Move to Top, Move to Bottom and Reset Panel Order — the Edit and Grading tabs each keep their order across photos and relaunches."
+            ]
+          }
+        ],
         "latest": false
       }
     ],
-    "count": 0
+    "count": 1
   },
   {
     "slug": "2026-q3",

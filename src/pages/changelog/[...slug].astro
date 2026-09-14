@@ -12,6 +12,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const dot = { New: "oklch(0.78 0.16 145)", Changed: "oklch(0.82 0.13 85)", Fixed: "oklch(0.74 0.10 250)" };
 const href = (p) => (p.slug ? `/changelog/${p.slug}/` : "/changelog/");
+const count = (s) => s.groups.reduce((n, g) => n + g.items.length, 0);
 const title = page.slug ? `Changelog — ${page.label}` : "Changelog";
 const description = page.slug
   ? `What changed in Chili RAW during ${page.label}.`
@@ -43,15 +44,15 @@ const description = page.slug
           <div class="rel-sticky">
             <h2 class="h-sub">{s.title}</h2>
             <div class="rel-ver">{s.version}</div>
-            <div class="rel-n">{s.groups.reduce((n, g) => n + g.items.length, 0)} changes</div>
+            <div class="rel-n">{count(s)} change{count(s) === 1 ? "" : "s"}</div>
             {s.latest && <div class="rel-badge">LATEST</div>}
           </div>
         </div>
         <div>
           {s.groups.length === 0 && (
             <p class="rel-empty">
-              Nothing merged since the last release. The newest changes are in
-              <a href={`/changelog/${pages[1].slug}/`}>{pages[1].label}</a>.
+              Nothing merged since the last release. The newest changes are in <a
+                href={`/changelog/${pages[1].slug}/`}>{pages[1].label}</a>.
             </p>
           )}
           {s.groups.map((g) => (
