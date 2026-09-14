@@ -41,4 +41,3 @@ Features that belong to the Pro version are marked **Pro** where they come up.
 13. **[Settings](/manual/settings/)** — Every preference, tab by tab.
 14. **[Collections & backups](/manual/collections-and-backups/)** — Hand-picked sets, and Vault backups to another drive.
 15. **[Keyboard shortcuts](/manual/keyboard-shortcuts/)** — Every key in the app, on one page.
-16. **[Licences & credits](/manual/licences/)** — The third-party work Chili RAW is built on.

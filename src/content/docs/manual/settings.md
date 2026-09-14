@@ -110,3 +110,12 @@ Chili RAW keeps a disk cache of thumbnails and previews so folders reopen instan
 - **Current disk usage** and free space on the drive — click **Refresh** to measure, or **Clear cache** to wipe it (thumbnails regenerate as you browse).
 - **Face thumbnails** — the small crops behind the People view. They're kept *out* of the size limit and never evicted (cheap to store, expensive to rebuild); **Clear face thumbnails** re-crops every photo with a face on your next visit to People.
 - **Cache location** — click **Move…** to relocate the cache to another drive (for example an external SSD) to save room on your boot disk; existing thumbnails are moved, not regenerated. **Reset to Default** returns it to the standard location.
+
+## Updates
+
+Chili RAW installs its own updates — no downloading a disk image and dragging anything.
+
+- **Check for Updates Now** asks straight away and tells you either way, including when you are already up to date. It is also in the **Chili RAW** menu.
+- **Check for updates automatically** — on, once a day. It costs a few kilobytes and is how a fix actually reaches you.
+- **Download updates in the background** — off unless you turn it on. An update is around 145 MB, so Chili RAW asks before fetching one; leave this off if you are often on a phone hotspot.
+- Every Chili RAW 1 release is included — 1.1, 1.2, 1.7, all of them. A future Chili RAW 2 is a separate purchase and is never installed by this updater.

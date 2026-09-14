@@ -3,11 +3,26 @@ title: "Licences & credits"
 description: "The third-party work Chili RAW is built on."
 sidebar:
   order: 16
+  hidden: true
 ---
 
 Chili RAW is not open source, but it stands on work that is. This page lists every third-party component the app ships, links or builds on, and the terms each is used under.
 
 It is generated from the `NOTICE` file in the app's source tree — that file is the authoritative copy.
+
+## Sparkle (the Sparkle Project)
+
+<https://github.com/sparkle-project/Sparkle>
+
+The updater behind Settings ▸ Updates. Embedded in the app.
+
+Copyright (c) 2006-2013 Andy Matuschak, (c) 2009-2013 Elgato Systems GmbH,
+(c) 2011-2014 Kornel Lesinski, (c) 2015-2017 Mayur Pawashe,
+(c) 2014 C.W. Betts, (c) 2014 Petroules Corporation,
+(c) 2014 Big Nerd Ranch. Licensed under the MIT License.
+
+Includes bsdiff/bspatch (BSD-2-Clause, Colin Percival) and libbz2
+(BSD-like, Julian R Seward).
 
 ## ExifTool (Phil Harvey)
 

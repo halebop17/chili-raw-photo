@@ -1,9 +1,0 @@
----
-// Starlight renders its own footer — the previous/next chapter links and the
-// last-updated line. Keep that, and put the site's footer underneath it, so a
-// manual page ends the same way every other page does.
-import Default from "@astrojs/starlight/components/Footer.astro";
-import SiteFooter from "./Footer.astro";
----
-<Default><slot /></Default>
-<SiteFooter variant="docs" />

@@ -1,0 +1,49 @@
+---
+// Starlight's sidebar, with a small block at the foot of it: the mark and the
+// four links someone reading the manual is most likely to want next.
+import Default from "@astrojs/starlight/components/Sidebar.astro";
+import Chili from "./Chili.astro";
+---
+<Default><slot /></Default>
+
+<div class="sb-foot">
+  <a class="sb-foot__brand" href="/">
+    <Chili id="sb-wm" width={9} />
+    <span class="sb-foot__word"><span>chili</span><span class="sb-foot__dot"></span><span>raw</span></span>
+  </a>
+  <div class="sb-foot__links">
+    <a href="/contact/">Contact</a>
+    <a href="https://github.com/halebop17/chili-raw-photo/issues/new/choose">Report a problem</a>
+    <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download</a>
+    <a href="/changelog/">Changelog</a>
+  </div>
+</div>
+
+<style>
+  /* Pushed to the bottom of the sidebar column, with a rule above it so it
+     reads as a separate thing from the chapter list. */
+  .sb-foot {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-hairline-light);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .sb-foot__brand { display: flex; align-items: center; gap: 8px; text-decoration: none; }
+  .sb-foot__word {
+    display: flex; align-items: center; gap: 5px;
+    font-family: "Avenir Next", Avenir, "Nunito Sans", var(--sl-font);
+    font-size: 14px; font-weight: 600; letter-spacing: -0.005em;
+    color: var(--sl-color-white);
+  }
+  .sb-foot__dot { width: 3px; height: 3px; border-radius: 1px; background: #E5402A; }
+  .sb-foot__links { display: flex; flex-direction: column; gap: 0.4rem; }
+  .sb-foot__links a {
+    font-size: 0.8rem;
+    color: var(--sl-color-gray-3);
+    text-decoration: none;
+    line-height: 1.4;
+  }
+  .sb-foot__links a:hover { color: var(--sl-color-white); }
+</style>
