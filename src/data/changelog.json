@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Chili RAW updates itself.</strong> When a new version is out it offers to install it, and puts it in place without you downloading a disk image and dragging anything. Settings ▸ Updates has a Check Now button and switches for automatic checking and background downloading — downloading stays off unless you ask, because updates are around 145 MB.",
               "<strong>A 7-day Pro trial, and a place to keep your licence.</strong> Settings ▸ Licence — start the trial whenever you like, see how long is left, and enter a key when you buy. When a trial ends the app keeps working and <strong>everything you edited during it still looks exactly the same</strong>; what stops is making new Pro edits.",
               "<strong>Every mask row shows what it selects.</strong> A small map of the frame on each row in the Masking list, with that mask's own coverage lit up — so two radials in different corners are told apart at a glance instead of both reading <em>Radial Mask</em>. Drag a mask and its map moves with it.",
               "<strong>⌘Z undoes a develop edit.</strong> Every adjustment is a step you can take back, ⇧⌘Z puts it forward, and the Edit menu names the one you are about to undo. One drag is one ⌘Z, each photo keeps its own history, and it lasts as long as the folder is open.",
@@ -120,7 +121,7 @@
         "latest": false
       }
     ],
-    "count": 91
+    "count": 92
   },
   {
     "slug": "2026-q3",

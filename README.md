@@ -119,9 +119,6 @@ and depth-based bokeh.
 2. Drag **Chili RAW** to your Applications folder.
 3. Open it.
 
-<!-- TODO: once notarization is in the release pipeline, say so here — until then,
-     macOS may ask you to confirm the first launch (right-click ▸ Open). -->
-
 ---
 
 ## Privacy
