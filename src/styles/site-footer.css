@@ -1,0 +1,70 @@
+/* The site footer, self-contained.
+
+   It renders on two kinds of page — the marketing pages, which load site.css,
+   and the manual, which does not — so it carries its own tokens and layout
+   rather than borrowing them. Scoping them to .site-foot keeps them from
+   reaching anything else on the page. */
+
+.site-foot {
+  --sf-text: oklch(0.96 0.003 80);
+  --sf-dim: oklch(0.72 0.003 80);
+  --sf-mute: oklch(0.55 0.003 80);
+  --sf-faint: oklch(0.42 0.003 80);
+  --sf-accent: oklch(0.82 0.13 85);
+  --sf-line: oklch(0.25 0.004 80);
+  --sf-ui: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sf-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 56px clamp(20px, 9vw, 130px) 44px;
+  font-family: var(--sf-ui);
+  color: var(--sf-dim);
+  letter-spacing: -0.005em;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.site-foot__grid { display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 40px; }
+@media (max-width: 860px) { .site-foot__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.site-foot__col { display: flex; flex-direction: column; gap: 10px; }
+.site-foot__head {
+  font-family: var(--sf-mono); font-size: 10.5px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--sf-mute);
+}
+.site-foot a { color: var(--sf-dim); text-decoration: none; font-size: 13.5px; }
+.site-foot a:hover { color: var(--sf-text); }
+.site-foot__brand { display: flex; align-items: center; gap: 9px; color: var(--sf-text); }
+.site-foot__word {
+  display: flex; align-items: center; gap: 5.2px;
+  font-family: "Avenir Next", Avenir, "Nunito Sans", var(--sf-ui);
+  font-size: 15px; font-weight: 600; letter-spacing: -0.005em; color: var(--sf-text);
+}
+.site-foot__dot { width: 3.2px; height: 3.2px; border-radius: 1px; background: #E5402A; }
+.site-foot__fine { font-size: 13px; color: var(--sf-faint); line-height: 1.55; max-width: 300px; margin: 0; }
+
+/* The marketing pages are dark by design. The manual follows the reader's
+   theme, so the footer has to as well — otherwise near-white text lands on a
+   near-white page, which is what it did the first time. */
+:root[data-theme="light"] .site-foot {
+  --sf-text: oklch(0.25 0.004 80);
+  --sf-dim: oklch(0.42 0.003 80);
+  --sf-mute: oklch(0.52 0.003 80);
+  --sf-faint: oklch(0.55 0.003 80);
+  --sf-accent: oklch(0.55 0.14 55);
+  --sf-line: oklch(0.88 0.004 80);
+}
+
+/* On the manual it sits inside the article column, which is narrower than a
+   marketing page — four columns do not fit there. */
+.site-foot--docs {
+  border-top: 1px solid var(--sf-line);
+  margin-top: 56px;
+  padding-inline: 0;
+  font-size: 15px;
+}
+.site-foot--docs .site-foot__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.site-foot--docs .site-foot__col:first-child { grid-column: 1 / -1; }
+.site-foot--docs .site-foot__fine { max-width: none; }
+@media (max-width: 640px) {
+  .site-foot--docs .site-foot__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

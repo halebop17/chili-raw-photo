@@ -125,15 +125,6 @@ p { margin: 0; }
 .rule { height: 1px; background: var(--border-soft); }
 .band { background: var(--backdrop); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }
 
-/* ── footer ─────────────────────────────────────────────────────────── */
-
-.foot { padding-block: 56px 44px; }
-.foot-grid { display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 40px; }
-@media (max-width: 860px) { .foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.foot-col { display: flex; flex-direction: column; gap: 10px; }
-.foot-col a { font-size: 13.5px; color: var(--dim); }
-.foot-col a:hover { color: var(--text); }
-.foot-fine { font-size: 13px; color: var(--faint); line-height: 1.55; max-width: 300px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }

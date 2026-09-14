@@ -17,6 +17,8 @@ export default defineConfig({
       customCss: ["./src/styles/manual.css"],
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/halebop17/chili-raw-photo" }],
       sidebar: [{ label: "The manual", items: [{ autogenerate: { directory: "manual" } }] }],
+      // The manual ends with the same footer as the rest of the site.
+      components: { Footer: "./src/components/DocsFooter.astro" },
       pagination: true,
       lastUpdated: false,
       credits: false,

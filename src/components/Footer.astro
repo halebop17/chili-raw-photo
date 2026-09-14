@@ -1,33 +1,35 @@
 ---
 import Chili from "./Chili.astro";
+import "../styles/site-footer.css";
+const { variant } = Astro.props;
 const year = new Date().getFullYear();
 ---
-<div class="wrap foot">
-  <div class="foot-grid">
-    <div class="foot-col">
-      <a class="brand" href="/">
+<div class:list={["site-foot", { "site-foot--docs": variant === "docs" }]}>
+  <div class="site-foot__grid">
+    <div class="site-foot__col">
+      <a class="site-foot__brand" href="/">
         <Chili id="foot-wm" width={9} />
-        <span class="brand-word" style="font-size: 15px;"><span>chili</span><span class="brand-dot"></span><span>raw</span></span>
+        <span class="site-foot__word"><span>chili</span><span class="site-foot__dot"></span><span>raw</span></span>
       </a>
-      <p class="foot-fine">
-        © {year} Chili RAW.
-        Not affiliated with Adobe, Apple, Fujifilm, Kodak or any other manufacturer named in the app.
+      <p class="site-foot__fine">
+        © {year} Chili RAW. Not affiliated with Adobe, Apple, Fujifilm, Kodak or any other
+        manufacturer named in the app.
       </p>
     </div>
-    <div class="foot-col">
-      <div class="eyebrow">Product</div>
+    <div class="site-foot__col">
+      <div class="site-foot__head">Product</div>
       <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download</a>
       <a href="/pro/">What Pro adds</a>
       <a href="/changelog/">Changelog</a>
     </div>
-    <div class="foot-col">
-      <div class="eyebrow">Learn</div>
+    <div class="site-foot__col">
+      <div class="site-foot__head">Learn</div>
       <a href="/manual/">Manual</a>
       <a href="/manual/keyboard-shortcuts/">Keyboard shortcuts</a>
       <a href="/features/">Features</a>
     </div>
-    <div class="foot-col">
-      <div class="eyebrow">Support</div>
+    <div class="site-foot__col">
+      <div class="site-foot__head">Support</div>
       <a href="https://github.com/halebop17/chili-raw-photo/issues/new/choose">Report a problem</a>
       <a href="/contact/">Contact</a>
       <a href="/manual/licences/">Licences</a>
