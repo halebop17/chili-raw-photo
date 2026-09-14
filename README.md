@@ -139,7 +139,6 @@ other Chili RAW 1 release at no extra cost.
 It is a licence rather than a subscription — nothing expires, and nothing stops working if
 you never pay again. Buy it on the website, or inside the app under `Settings` ▸ `Pro`.
 
-<!-- TODO: point this at the purchase page once the URL exists. -->
 **[Unlock Chili RAW Pro →](#)**
 
 Even without a licence the app stays useful indefinitely: culling, developing, cataloguing,
@@ -164,7 +163,7 @@ fixed in one pass instead of three.
 
 <div align="center">
 
-© 2026 <!-- TODO: your name or company -->  ·  Not affiliated with Adobe, Apple, Fujifilm,
+© 2026 Chili RAW  ·  Not affiliated with Adobe, Apple, Fujifilm,
 Kodak or any other manufacturer named in the app.<br>
 Built on <a href="https://github.com/halebop17/chili-raw-photo/wiki/Licences">the work of others</a> — ExifTool, LibRaw, the Adobe DNG SDK, libjxl, GeoNames, Lensfun and more.<br>
 Film and paper names identify the stock being emulated; the emulations are built from
