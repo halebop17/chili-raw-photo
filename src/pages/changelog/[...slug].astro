@@ -48,6 +48,12 @@ const description = page.slug
           </div>
         </div>
         <div>
+          {s.groups.length === 0 && (
+            <p class="rel-empty">
+              Nothing merged since the last release. The newest changes are in
+              <a href={`/changelog/${pages[1].slug}/`}>{pages[1].label}</a>.
+            </p>
+          )}
           {s.groups.map((g) => (
             <>
               <div class="cat">
@@ -82,6 +88,7 @@ const description = page.slug
   .rel { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 56px;
          padding: 52px 0 40px; border-top: 1px solid var(--accent); }
   @media (max-width: 860px) { .rel { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
+  .rel-empty { font-size: 15px; line-height: 1.6; color: var(--dim); margin: 0; }
   .rel-sticky { position: sticky; top: 40px; }
   @media (max-width: 860px) { .rel-sticky { position: static; } }
   .rel-ver { font-family: var(--mono); font-size: 11px; color: var(--faint);
