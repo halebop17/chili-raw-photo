@@ -1,6 +1,6 @@
 ---
 // Starlight's sidebar, with a small block at the foot of it: the mark and the
-// four links someone reading the manual is most likely to want next.
+// three links someone reading the manual is most likely to want next.
 import Default from "@astrojs/starlight/components/Sidebar.astro";
 import Chili from "./Chili.astro";
 ---
@@ -12,7 +12,6 @@ import Chili from "./Chili.astro";
     <span class="sb-foot__word"><span>chili</span><span class="sb-foot__dot"></span><span>raw</span></span>
   </a>
   <div class="sb-foot__links">
-    <a href="/contact/">Contact</a>
     <a href="https://github.com/halebop17/chili-raw-photo/issues/new/choose">Report a problem</a>
     <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download</a>
     <a href="/changelog/">Changelog</a>
@@ -38,7 +37,11 @@ import Chili from "./Chili.astro";
     color: var(--sl-color-white);
   }
   .sb-foot__dot { width: 3px; height: 3px; border-radius: 1px; background: #E5402A; }
-  .sb-foot__links { display: flex; flex-direction: column; gap: 0.4rem; }
+  /* Indented to start where the wordmark does: 9px mark + 8px gap. */
+  .sb-foot__links {
+    display: flex; flex-direction: column; gap: 0.4rem;
+    padding-left: 17px;
+  }
   .sb-foot__links a {
     font-size: 0.8rem;
     color: var(--sl-color-gray-3);
