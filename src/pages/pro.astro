@@ -1,11 +1,19 @@
 ---
 import Site from "../layouts/Site.astro";
 
+// One card per thing Pro actually unlocks, in the order of `ProFeature` in
+// Entitlement.swift — that enum is the tier line, so this list is checked
+// against it rather than written from memory.
 const pillars = [
-  ["film labor", "Film emulation", "18 films, 8 papers, halation and grain — measured from datasheets, in the order light meets them."],
-  ["pixels", "Overlays and paint", "Retro overlays, glowing date stamps, borders and Enlarge — layered, and exportable as a PSD."],
-  ["ai", "AI tools, on-device", "Sky, Object and Depth masks, Generative Remove, denoise, upscaling, search by meaning, People."],
-  ["bokeh", "Depth-based blur", "A depth map drives a scene-linear defocus with a five, six or seven-blade iris."],
+  ["film labor", "Film emulation", "18 films, 8 papers, halation and grain — measured from datasheets, in the order light meets them.", "film-labor"],
+  ["pixels", "Overlays and paint", "Retro overlays, glowing date stamps, borders and Enlarge — layered, and exportable as a PSD.", "pixels"],
+  ["ai masks", "Sky, Object and Depth", "One click on a sky, a subject or a distance. The masks macOS can do stay free; these three are model-backed.", "ai-masking"],
+  ["portrait", "Skin, eyes, lips and hair", "A face parted into pieces you can mask one at a time, rather than one soft oval over the whole head.", "portrait"],
+  ["repair", "Generative Remove", "Paint over what should not be there and the space is filled in — in Develop and on the Pixels canvas.", "repair"],
+  ["bokeh", "Depth-based blur", "A depth map drives a scene-linear defocus with a five, six or seven-blade iris.", "bokeh"],
+  ["detail", "Denoise, Detail, deblur", "Free removes noise; Pro reconstructs the detail underneath it, and rescues a frame lost to motion.", "detail"],
+  ["search", "Search by meaning", "Describe the photograph you are looking for, in your own words, and find the ones like it.", "search"],
+  ["export", "Upscaling on export", "Enlarge on the way out with a model rather than a resample, at the size the print needs.", "export"],
 ];
 
 // [group, feature, free, pro, note]
@@ -66,15 +74,16 @@ const description = "Film Labor, the Pixels canvas, the on-device AI tools and d
     </div>
   </div>
 
-  <!-- FOUR PRO PILLARS -->
+  <!-- WHAT PRO UNLOCKS -->
   <div class="wrap section">
-    <div class="grid grid-2" style="margin-top: 8px;">
-      {pillars.map(([e, h, p]) => (
-        <div class="card">
+    <div class="grid grid-3" style="margin-top: 8px;">
+      {pillars.map(([e, h, p, slug]) => (
+        <a class="card" href={`/features/${slug}/`} style="color: inherit;">
           <div class="eyebrow" style="color: var(--violet);">{e}</div>
           <h3>{h}</h3>
           <p>{p}</p>
-        </div>
+          <span class="more">More info →</span>
+        </a>
       ))}
     </div>
   </div>
