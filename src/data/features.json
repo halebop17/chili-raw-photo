@@ -200,8 +200,8 @@
  {
   "slug": "detail",
   "title": "Detail",
-  "sub": "Sharpen what is there, and clean up what is not.",
-  "lead": "Capture sharpening, Apple's raw noise reduction, AI denoise on every decode path, motion-blur rescue and AI Detail.",
+  "sub": "Sharpen what is there, and rebuild what is not.",
+  "lead": "One panel, split by a divider. Above it is capture sharpening \u2014 the pass every raw file needs, already at 40 when the photo opens. Below it are the four that deal with what the sensor did not record cleanly: Apple's raw noise reduction, and three models you download once and run on your own Mac.",
   "tier": "free",
   "chapter": "develop",
   "key": "Detail"
