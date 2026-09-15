@@ -14,10 +14,10 @@
             "name": "New",
             "items": [
               "<strong>The full right-click menu, everywhere a photo is.</strong> Right-click a filmstrip thumbnail in Develop, Pixels, Compare or the Lightbox — or the Lightbox photo itself — for the same menu the Grid has, Show in Finder included.",
-              "<strong>Arrange the Develop panel your way.</strong> Drag a section by its header, or right-click it for Move Up, Move Down, Move to Top, Move to Bottom and Reset Panel Order — the Edit and Grading tabs each keep their order across photos and relaunches.",
-              "<strong>A watermark on export.</strong> Put a line of text or a PNG on every copy an export writes — nine positions, your own font, size, colour, opacity and margin, previewed on the photo before the batch runs. Off unless you switch it on.",
-              "<strong>A border round your photos on export.</strong> Add an inset frame to every copy a batch writes — any thickness, in white, black or grey. Pro adds a colour sampled from the photo itself, and 1:1, 4:5 and 9:16 shapes the photo is padded onto rather than cropped to.",
-              "<strong>Switch a RAW+JPEG pair with one click.</strong> When a pair is merged into one frame, a corner badge says which file you are looking at — click it for the other one, in the Grid or in Develop. Each file keeps its own edits and your choice is remembered per photo."
+              "<strong>Arrange the Develop panel your way.</strong> Drag a section by its header, or right-click it to move it. Edit and Grading each keep their own order.",
+              "<strong>A watermark on export.</strong> Text or a PNG on every copy a batch writes, in one of nine positions, previewed before it runs.",
+              "<strong>A border round your photos on export.</strong> Any thickness, in white, black or grey. Pro adds a colour sampled from the photo, and 1:1, 4:5 and 9:16 shapes the photo is padded onto rather than cropped to.",
+              "<strong>Switch a RAW+JPEG pair with one click.</strong> A corner badge says which file you are looking at; click it for the other one. Each keeps its own edits."
             ]
           }
         ],
