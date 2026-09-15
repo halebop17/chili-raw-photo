@@ -362,6 +362,8 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 | **Resize** | Full size, or fit the **long edge / short edge / width / height** to a pixel count. The render is always done full-size and *then* resampled, so radius-based looks (Clarity, dehaze, sharpening) come out identical. |
 | **Enlarge** | What happens when the target is bigger than the photo: don't enlarge, resample, or **AI upscale** (Pro). |
 | **Sharpen** | Output sharpening — **None / Low / Standard / High**, applied *after* the resize. |
+| **Frame** | Off, or a border added **around** every copy — any thickness, in white, black or grey, with a colour sampled from the photo and 1:1 / 4:5 / 9:16 shapes in Pro. |
+| **Watermark** | Off, or a line of **text** or a **PNG** on every copy — font, size, colour, opacity, one of nine positions and a margin. |
 | **Resolution** | The ppi written into the file's metadata (it doesn't change the pixels). |
 | **Naming** | Original filename, a custom name, or a custom name with a **sequence** (separator, start number, extension case). A **RESULT** block previews the names before you commit. Originals are never renamed. |
 | **Metadata** | **All metadata** or **None**, with **Write GPS coordinates** and **Remove person info & faces** as separate switches — the two things you might not want to publish. |
@@ -382,6 +384,33 @@ Your Sharpening slider works on the full-size render, and a downsize throws most
 
 To judge sharpening or an upscale on the *whole* photo rather than a crop, leave the dialog and press **⌥P** for Proof.
 
+## Framing
+
+Switch **Frame** on in the export dialog to put a border around every copy the export writes. It is off unless you turn it on, and it is one setting for the whole batch.
+
+The canvas **grows** to make room: nothing is drawn over the photograph, and nothing is cropped off it. That is what separates this from the frames in Pixels, which paint over the edges of the picture at its own size — the two are different things and they can be used together.
+
+- **Thickness** is a percentage of the photo's *short* side, not a pixel count, which keeps the border looking the same on a 2048 px web JPEG and on a full-size master.
+- **Colour** is white, black or grey — or, in Pro, **sampled from the photo itself**, so the border belongs to the picture. Read it as the photo's **dominant colour** or as the **average of its edges**, and nudge the result lighter or darker. Pro also takes any colour you pick.
+- **Shape** (Pro) pads the photo onto a **1:1**, **4:5** or **9:16** canvas — the Instagram and Stories sizes — or a ratio you type. The photo is centred and padded, never cropped, so the border is deeper on two sides when the shapes disagree and the thickness you set is the minimum on the other two.
+
+The **Preview** shows the whole framed canvas fitted in a fixed box, so a 3:2 and a 9:16 can be judged against the same frame of reference. What you are reading there is the proportion of border to picture, which is the thing "5 %" can't be pictured from.
+
+If you also resize, the pixel count you type applies to the **photo**, and the border goes on after it — so a long edge of 2048 gives a 2048 px photograph with the border around it. A watermark is drawn **after** the frame, on the framed canvas, so it can sit on the border itself. Clips are always written unframed.
+
+## Watermarking
+
+Switch **Watermark** on in the export dialog to put a mark on every copy the export writes. It is off unless you turn it on, and it is the same setting for the whole batch, so one change marks all 200 files.
+
+- **Text** — anything you type, in any installed font, in a colour and opacity you choose. `{year}` becomes the year the photo was taken, so `© {year} Your Name` dates each frame correctly.
+- **Image** — a PNG, transparency and all. A logo with an alpha channel keeps its shape; anything else arrives as a rectangle. The file is copied into the app when you choose it, so moving or deleting the original later doesn't break the recipe.
+
+**Size** and **Margin** are percentages of the *short* edge, not pixel counts, which is what keeps a mark looking the same on a 2048 px web JPEG and on a full-size master — and on a portrait frame as readily as a landscape one. With a **Frame** on, they are percentages of the framed canvas, since that is what gets written. For text, the size is the height of a capital letter. Nine positions place it in a corner, an edge or the middle; a centred mark ignores the margin.
+
+The **Preview** shows the whole frame with the mark on it, so you can judge the placement before committing a batch. The mark is drawn last of all — after the resize and after output sharpening — so it comes out crisp at output size rather than resampled with the photo.
+
+Saving all this into a preset carries the watermark with it; a preset that has one says so in the preset menu. Clips are always written unmarked.
+
 ## Exporting with layers
 
 If a photo has **Pixels** layers on it, two formats can carry them to Photoshop or Affinity as a real, editable layer stack instead of flattening them in:
@@ -389,7 +418,7 @@ If a photo has **Pixels** layers on it, two formats can carry them to Photoshop 
 - **TIFF** with **Keep Pixels layers** ticked. The file stays an ordinary 16-bit TIFF with an embedded colour profile — anything that can't read layers just sees the finished photo — and the layer stack rides along beside it.
 - **PSD · layered**, which is layered by nature.
 
-Either way the photo itself goes in as the **bottom layer**, with each Pixels layer above it keeping its name, blend mode, opacity, visibility and clipping. **Layered files are roughly twice the size**, because the photo is stored twice: once as the flattened image every app can open, once as the bottom layer. Photos with no Pixels layers are written exactly as before.
+Either way the photo itself goes in as the **bottom layer**, with each Pixels layer above it keeping its name, blend mode, opacity, visibility and clipping. A watermark arrives as its own layer on top, so you can move or remove it in Photoshop. **Layered files are roughly twice the size**, because the photo is stored twice: once as the flattened image every app can open, once as the bottom layer. Photos with no Pixels layers are written exactly as before.
 
 PSD tops out at 30,000 pixels per side; past that, export TIFF.
 
