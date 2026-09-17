@@ -16,15 +16,25 @@
               "<strong>The full right-click menu, everywhere a photo is.</strong> Right-click a filmstrip thumbnail in Develop, Pixels, Compare or the Lightbox — or the Lightbox photo itself — for the same menu the Grid has, Show in Finder included.",
               "<strong>Arrange the Develop panel your way.</strong> Drag a section by its header, or right-click it to move it. Edit and Grading each keep their own order.",
               "<strong>A watermark on export.</strong> Text or a PNG on every copy a batch writes, in one of nine positions, previewed before it runs.",
-              "<strong>A border round your photos on export.</strong> Any thickness, in white, black or grey. Pro adds a colour sampled from the photo, and 1:1, 4:5 and 9:16 shapes the photo is padded onto rather than cropped to.",
-              "<strong>Switch a RAW+JPEG pair with one click.</strong> A corner badge says which file you are looking at; click it for the other one. Each keeps its own edits."
+              "<strong>A border round your photos on export.</strong> Any thickness, in white, black or grey. Pro adds 1:1, 4:5 and 9:16 shapes the photo is padded onto rather than cropped to.",
+              "<strong>Frames in Pixels, in the photo's own colours.</strong> A Mount grows the canvas around the picture instead of painting over it, in a colour read from the photo itself. A photo with its own mount keeps it when you export.",
+              "<strong>Switch a RAW+JPEG pair with one click.</strong> A corner badge says which file you are looking at; click it for the other one. Each keeps its own edits.",
+              "<strong>Chili RAW is in the Shortcuts app.</strong> Four actions — export with a preset, apply a develop preset, set a rating, set a flag — so a folder of photos can go through Chili RAW on its way somewhere else, without opening the app. Pro."
+            ]
+          },
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>Renaming several photos at once no longer empties the folder.</strong> Coming back to it showed every photo as missing until you ran Synchronize Folder.",
+              "<strong>A launch can no longer stall on a blank screen.</strong> The window opens straight away and the app carries on.",
+              "<strong>A chosen crop ratio now holds while you drag.</strong> With 1:1, 3:2 or a custom ratio selected, the corners resize the crop but keep its shape."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 5
+    "count": 10
   },
   {
     "slug": "2026-q3",
@@ -65,7 +75,7 @@
             "items": [
               "<strong>Pixels sits the photo on the same surround as everywhere else.</strong> The area around the artwork used to be the window grey, a shade off what Develop, the Lightbox and Compare show — so the same photo sat on two different greys depending on which page you opened it in. It now matches them, which on the Neutral Grey theme is a visibly lighter surround than before. Nothing you have painted changes.",
               "<strong>The tone curve tells you which way is which.</strong> On R, G or B the graph takes that channel's colours, every point prints its height as a percentage, and the foot of the graph is labelled <em>Blacks · Midtones · Whites</em>.",
-              "<strong>The film and paper lists only show stocks you can actually use.</strong> The two greyed-out <em>not baked yet</em> rows are gone. The same 29 films, 4 slide films and 8 papers, all selectable.",
+              "<strong>The film and paper lists only show stocks you can actually use.</strong> The two greyed-out <em>not baked yet</em> rows are gone. The same 29 film profiles across 17 stocks, 4 slide films and 8 papers, all selectable.",
               "<strong>LibRaw is no longer marked experimental.</strong> The <em>(experimental)</em> label on the ARW / CR2 / CR3 / NEF decoder in <strong>Settings ▸ RAW decoding</strong> is gone. Nothing about how it decodes has changed.",
               "<strong>Film grain on screen now matches the grain in the exported file.</strong> Grain was drawn a quarter to a half stronger on the canvas than in the file, so expect it to look slightly gentler from now on. <strong>Exported files are unchanged, to the byte.</strong>",
               "<strong>Chili RAW now brings its own Perl, so a macOS update cannot take your metadata tools away.</strong> Keywords, captions, GPS, lens profiles, export metadata, PSD writing and the vault all run through ExifTool, which needs Perl — and Apple has said the copy macOS ships will be removed one day. Nothing looks or behaves differently.",
