@@ -26,6 +26,7 @@
             "name": "Fixed",
             "items": [
               "<strong>Renaming several photos at once no longer empties the folder.</strong>",
+              "<strong>A renamed photo keeps everything you gave it</strong> — its people, its film look, its collections and its RAW+JPEG side choice.",
               "<strong>A launch can no longer stall on a blank screen.</strong>",
               "<strong>A chosen crop ratio now holds while you drag.</strong>",
               "<strong>A cropped photo fills the Develop canvas again.</strong>"
@@ -35,7 +36,7 @@
         "latest": false
       }
     ],
-    "count": 11
+    "count": 12
   },
   {
     "slug": "2026-q3",
