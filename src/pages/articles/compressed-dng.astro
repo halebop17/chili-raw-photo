@@ -1,0 +1,90 @@
+---
+import Site from "../../layouts/Site.astro";
+---
+<Site type="article"
+      title="Compressed DNG and DxO's JPEG XL files"
+      description="Compressed DNG files have been awkward for years. How JPEG XL makes them small, why some apps decode them wrong, and how Chili RAW reads DxO PureRAW files."
+      image="/img/compressed-dng.png">
+  <div class="wrap" style="padding-top: clamp(30px, 4vw, 48px);">
+    <a href="/articles/" class="eyebrow" style="color: var(--mute);">&#8592; Articles</a>
+  </div>
+
+  <div class="wrap" style="padding-top: clamp(22px, 3vw, 34px);">
+    <div class="eyebrow" style="color: var(--accent);">compressed dng</div>
+    <h1 class="h-hero" style="margin-top: 16px; max-width: 22ch;">Chili RAW fully supports compressed DNG files, including the ones from DxO</h1>
+    <div class="eyebrow" style="margin-top: 22px;">19 September 2026 &#183; 6 min read</div>
+  </div>
+
+  <div class="wrap" style="padding-top: clamp(30px, 4vw, 44px);">
+    <img src="/img/compressed-dng.png" width="2360" height="1120"
+         alt="compressed DNG. A bar showing 144 MB of uncompressed pixel data, of which 7.3 MB is the JPEG XL payload and 2.7 MB an embedded JPEG preview. Adobe DNG SDK 1.7.1 reads it."
+         style="display: block; width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-soft);" />
+    <p class="art-cap">The file this article measures: 10.1 MB on disk, holding 144 MB of pixel data.</p>
+  </div>
+
+  <article class="art">
+  <p class="art-p">Compressed DNG files have been awkward to work with for years. Some applications will not open them at all. Others open them and hand back a smudged picture, which is worse than refusing, and Apple&#x27;s own raw engine is one of those.</p>
+  <p class="art-p">That is why Chili RAW includes the Adobe DNG SDK. It is Adobe&#x27;s own reference implementation of the DNG format, and using it was the only way I found to read these files correctly every time. The app has three raw decoders and the Adobe SDK is one of them, so every .dng goes through it unless you say otherwise. The decoder is a visible setting, like the tone mapper, which means you can put the same file through the others and see what they do with it.</p>
+  <p class="art-p">It is worth explaining what these files actually are, because there are going to be a lot more of them.</p>
+  <p class="art-p">A compressed DNG from DxO PureRAW sits on my disk here. It is 6000 by 4000 pixels, three colour channels, sixteen bits per channel. Written out plainly that comes to 144 million bytes, or 144 MB of pixel data. The file is 10.1 MB. Two and a half of those megabytes are a JPEG preview, so the image data itself is 7.3 MB.</p>
+  <p class="art-p">It is still a raw file. The data is linear, white balance is still an open setting, the highlight headroom is there, and no tone curve has been applied. It takes an exposure push the same way the original ARW does.</p>
+  <p class="art-p">That is compressed DNG. It has been in the DNG specification since 2023, DxO and Adobe both write it, and recent iPhones write it as well. A fair amount of photo software still cannot read it properly.</p>
+  <h2 class="h-sub art-h">What it is</h2>
+  <p class="art-p">DNG is a container. The pixels inside it can be stored in several ways, and a tag in the file records which way was used. For a long time the practical options were uncompressed, or lossless JPEG, which is an old and fairly weak coder.</p>
+  <p class="art-p">DNG 1.7, published by Adobe in 2023, added JPEG XL to that list as compression type 52546. Nothing else about the container changed. The metadata, the colour matrices, the lens opcodes and the camera profiles are all where they were. Only the packing of the pixels is different.</p>
+  <p class="art-p">That explains the failure mode. An application that has read DNG files for fifteen years will open one of these, recognise every tag in it, reach the pixels, and not know the codec. It does not get a file it can see is unreadable. It gets a file it can almost read.</p>
+  <p class="art-p">DxO calls their version High-Fidelity Compression. It is two steps rather than one: a dynamic range compression stage, then JPEG XL at a near-lossless setting.</p>
+  <h2 class="h-sub art-h">Why JPEG XL helps</h2>
+  <p class="art-p">Lossless JPEG predicts each pixel from its neighbours and stores the error. That is the whole method, and it was designed for eight-bit images.</p>
+  <p class="art-p">JPEG XL was designed for high bit depth, wide gamut and high dynamic range from the start. It has better context modelling, a proper modular lossless mode, and it works in tiles, so a decoder can read part of an image without decoding all of it. The DxO file here is cut into 150 tiles of 400 by 400 pixels.</p>
+  <p class="art-p">The near-lossless setting these converters use is not the same thing as a high-quality JPEG. The error it introduces sits below the sensor noise already in the data.</p>
+  <h2 class="h-sub art-h">Demosaicing first is what makes it small</h2>
+  <p class="art-p">This is the part I found interesting when I looked into it.</p>
+  <p class="art-p">Adobe ships sample files with the DNG SDK. Two of them are directly comparable, because both use JPEG XL and both are 16-bit:</p>
+  <ul class="art-list">
+    <li>9504 by 6336, already demosaiced, three channels. Uncompressed that is about 361 MB. The file is 9 MB, so roughly 40 to 1.</li>
+    <li>10240 by 7168, undemosaiced Bayer data, one channel. Uncompressed about 147 MB. The file is 25 MB, so roughly 6 to 1.</li>
+  </ul>
+  <p class="art-p">Same codec, same bit depth, and a sevenfold difference in the result.</p>
+  <p class="art-p">Bayer data is difficult to compress. The pixel to the left of any given pixel sits behind a different colour filter, so a predictor looking at its neighbours is not looking at neighbouring samples of the same signal. Statistically it has more in common with noise than with a photograph.</p>
+  <p class="art-p">After demosaicing there are smooth gradients, real edges, and correlation between the three channels. That is the kind of data image codecs are built for, and it compresses accordingly.</p>
+  <p class="art-p">So a linear DNG from DxO is not incidental. The demosaic is what makes the compression work this well.</p>
+  <h2 class="h-sub art-h">Is it still raw</h2>
+  <p class="art-p">Yes, with two things worth knowing.</p>
+  <p class="art-p">What you keep: linear scene data, full bit depth, white balance as an open setting, highlight headroom above white, the camera colour matrices and the lens correction opcodes. Exposure and tone latitude behave as they should. Five stops of shadow lift looks like a raw file being lifted, not a JPEG coming apart.</p>
+  <p class="art-p">What you give up: the codec is lossy in the strict sense, even with the error below the noise floor. And the file is linear, so the demosaic has already happened. You cannot re-demosaic it later with a better algorithm, and you cannot hand it to another converter and ask for its reading of the mosaic.</p>
+  <p class="art-p">With a DxO file that is the intention. You ran it through DeepPRIME to get their demosaic and their denoising. It is still a one-way step, and I would keep the original raw files rather than delete them for the space saved.</p>
+  <p class="art-p">Linear and compressed are separate choices, incidentally. JPEG XL compresses undemosaiced mosaic data perfectly well, as the second sample above shows. DxO combines the two.</p>
+  <h2 class="h-sub art-h">You may already have some</h2>
+  <p class="art-p">Apple ProRAW on the 48 MP main camera of the iPhone 16 Pro and 17 Pro writes JPEG XL compressed linear DNG files. Ten-bit, tiled, DNG 1.7, compression 52546. Structurally the same sort of file as the DxO one.</p>
+  <p class="art-p">So this is not one setting in one desktop converter. There are a lot of these files around already.</p>
+  <h2 class="h-sub art-h">What does not read them</h2>
+  <p class="art-p">darktable cannot open them in any released version. The request has been open in rawspeed, darktable&#x27;s raw decoding library, as issue 516 since September 2023. An implementation was submitted as pull request 971 in June 2026 and has not been merged. That is volunteer work and I am not criticising anyone for it, but it is where things stand at the time of writing.</p>
+  <p class="art-p">Apple&#x27;s imaging stack is the more awkward case, because it opens the file and returns the wrong picture rather than refusing it. On the DxO file I have been measuring, both Core Image&#x27;s raw pipeline and ImageIO decode it soft and smeared, with an orange cast in the skin tones. The same file opens sharp and neutral in Lightroom, and the JPEG preview DxO embedded in the file shows normal colour. The file is fine. The decode is not.</p>
+  <p class="art-p">Any Mac application built on Apple&#x27;s raw engine inherits that, whether its developer has noticed or not.</p>
+  <h2 class="h-sub art-h">How Chili RAW handles them</h2>
+  <p class="art-p">Every .dng in Chili RAW goes to the Adobe DNG SDK 1.7.1, compiled with JPEG XL support included.</p>
+  <p class="art-p">There is nothing clever about this on my part. Compressed DNG is awkward to support because implementing a raw format from its specification is a large job, and JPEG XL is a large codec on top of that. Using the reference implementation means there is no second implementation to get wrong. The files open at full resolution, with correct colour and orientation.</p>
+  <p class="art-p">You can check the difference yourself. Open one of these files, switch the decoder to Apple&#x27;s CIRAWFilter in Settings, and switch back. Edited thumbnails re-render each time, and the smearing and the colour cast appear and disappear.</p>
+  <h2 class="h-sub art-h">Where this is going</h2>
+  <p class="art-p">File sizes are not going to fall on their own. Sensor resolution keeps rising and storage does not get cheaper at the same rate, so a format that removes a large part of a raw file without changing much about what you can do with it is going to get used. It is in the specification, DxO has shipped it, and Apple is writing these files from the phone camera.</p>
+  <p class="art-p">The gap is on the reading side, and it will close. Until it does, whether an application opens a compressed DNG correctly is worth checking before you convert a library to it.</p>
+  <p class="art-p art-cta"><a href="https://github.com/halebop17/chili-raw-photo/releases/latest">The download is free</a>, and all three decoders are in the free tier.</p>
+  </article>
+</Site>
+
+<style>
+  /* A centred reading column under a wider image, as the first article sets it. */
+  .art { width: min(820px, 100% - 2 * var(--gutter)); margin-inline: auto;
+         padding-top: clamp(38px, 5vw, 58px); padding-bottom: clamp(64px, 8vw, 100px);
+         display: flex; flex-direction: column; gap: 22px; }
+  .art-p { font-size: clamp(15.5px, 1.3vw, 17.5px); line-height: 1.68;
+           color: var(--dim); text-wrap: pretty; }
+  .art-h { max-width: 24ch; margin-top: clamp(22px, 3vw, 34px); color: var(--text); }
+  .art-list { margin: 0; padding-left: 1.15em; display: flex;
+              flex-direction: column; gap: 10px; color: var(--dim);
+              font-size: clamp(15.5px, 1.3vw, 17.5px); line-height: 1.68; }
+  .art-cap { font-family: var(--mono); font-size: 12px; color: var(--faint);
+             margin-top: 14px; line-height: 1.6; }
+  .art-cta { color: var(--text); }
+</style>
