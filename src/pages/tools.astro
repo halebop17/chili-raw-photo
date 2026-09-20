@@ -1,0 +1,43 @@
+---
+import Site from "../layouts/Site.astro";
+const mono = "font-family: var(--mono); font-size: 0.92em; color: var(--text);";
+---
+<Site title="Free tools"
+      description="Small free tools from the makers of Chili RAW. The xmp to .cube converter turns a Lightroom preset into a LUT, on a Mac or on Windows.">
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">free tools</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Free tools</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 30ch;">
+      Small things we built for ourselves, free for anyone.
+    </div>
+  </div>
+
+  <div class="wrap section" style="padding-bottom: 70px;">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="eyebrow">lightroom plugin</div>
+        <h3>xmp to .cube converter</h3>
+        <p>
+          Turns a Lightroom preset into a LUT. Point it at your <span style={mono}>.xmp</span> presets
+          and it writes <span style={mono}>.cube</span> files you can use in Chili RAW — or in Resolve,
+          Photomator, or anything else that reads a LUT.
+        </p>
+        <p>It runs wherever Lightroom does, Windows included, and it costs nothing.</p>
+        <div class="btn-row" style="margin-top: auto; padding-top: 18px;">
+          <a class="btn btn-primary btn-wide" href="https://github.com/halebop17/xmp-to-cube-converter"
+             rel="noopener">Get it on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">what it carries</div>
+        <h3>Colour, not texture</h3>
+        <p>
+          A LUT is a lookup table, so the colour in a preset comes across exactly. What does not is
+          anything that reads the pixels around it — clarity, sharpening, grain, noise reduction.
+          Those belong to the photograph rather than to the look, and Chili RAW has its own.
+        </p>
+      </div>
+    </div>
+  </div>
+</Site>
