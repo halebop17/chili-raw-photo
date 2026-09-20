@@ -15,7 +15,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 
 <img src="public/assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
 
-**[⬇︎ Download Chili RAW 1.0.0](https://github.com/halebop17/chili-raw-photo/releases/latest)**
+**[⬇︎ Download Chili RAW 1.1](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 
 <sub>
 <b>macOS 15 Sequoia or later · Apple silicon (M1 or newer)</b><br>
@@ -24,7 +24,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 <a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
-`macOS 15+`  `Apple silicon`  `v1.0.0`  `Free to use`  `No account`
+`macOS 15+`  `Apple silicon`  `v1.1.0`  `Free to use`  `No account`
 
 </div>
 
@@ -37,8 +37,8 @@ Chili RAW is a complete RAW photo workflow for the Mac.
 The grid is a full asset manager: burst stacking, filters for rating, flag, media type,
 place and people, Smart Folders, Collections, and search that finds a photo by filename,
 keyword, place — or by what is in the picture. The develop side is a non-destructive RAW
-pipeline with tone, curves, colour, local adjustments and masking, plus LUTs, film-stock
-looks and a full film darkroom. Add culling, geotagging, metadata editing and export, and
+pipeline with tone, curves, colour, local adjustments and masking, plus LUTs and a full
+film darkroom. Add culling, geotagging, metadata editing and export, and
 it is the toolset you would expect from Lightroom, in one window.
 
 It reads the folders you already have. Nothing is imported, copied or uploaded, and your
@@ -84,7 +84,7 @@ and depth-based bokeh.
 - Multiple **versions** per photo, batch editing with Auto Sync, and **Proof** mode.
 
 ### Film Labor *
-- Eighteen film stocks and eight papers, each modelled from published datasheets.
+- 29 colour negative film profiles across seventeen stocks, four slide films and eight papers, each modelled from published datasheets.
 - The stages a real frame goes through: exposure onto the negative, halation, grain, the print, and the light you view it under.
 - A ring-around that renders your own frame at seven steps either side of where you are.
 
@@ -125,7 +125,7 @@ and depth-based bokeh.
 
 - **Your photos stay where they are.** Chili RAW reads folders on your disk. It never imports, copies or moves your originals, and never overwrites your pixels.
 - **No account, no telemetry, no analytics, no crash reporting.**
-- **The app makes two kinds of network request:** downloading an AI model when you press Download, and a one-time licence activation if you unlock Pro. Nothing else in it talks to the internet — place names come from a table inside the app, and no image ever leaves your Mac.
+- **The app makes three kinds of network request:** downloading an AI model when you press Download, a one-time licence activation if you unlock Pro, and a daily check for a new version (Settings ▸ Updates, switch it off there). Nothing else in it talks to the internet — place names come from a table inside the app, and no image ever leaves your Mac.
 
 ---
 
@@ -137,9 +137,11 @@ onwards a licence is **$59**. Both buy the same thing, so anyone who buys at $29
 other Chili RAW 1 release at no extra cost.
 
 It is a licence rather than a subscription — nothing expires, and nothing stops working if
-you never pay again. Buy it on the website, or inside the app under `Settings` ▸ `Pro`.
+you never pay again. One licence covers **up to five Macs you use yourself**; if you need it
+on more than that, please buy a second one. Buy it on the website, or inside the app under
+`Settings` ▸ `Licence`.
 
-**[Unlock Chili RAW Pro →](#)**
+**[Unlock Chili RAW Pro →](https://monokern.app/b/chiliraw-v1)**
 
 Even without a licence the app stays useful indefinitely: culling, developing, cataloguing,
 geotagging and export are free, with no account, no watermark and no time limit. A 7-day
