@@ -157,7 +157,7 @@
   "title": "People",
   "sub": "Find every photo of a person, without uploading anything to the cloud.",
   "lead": "Scan a library once and the same face is grouped together wherever it appears. Name a group and that person becomes a filter you can combine with everything else — the shoot, the place, the rating. Your photos stay on your disk: detection, grouping and naming all run on your Mac, and nothing is sent to a server.",
-  "tier": "pro",
+  "tier": "free",
   "chapter": "people",
   "key": "People"
  },
