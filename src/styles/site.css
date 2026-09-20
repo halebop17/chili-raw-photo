@@ -174,3 +174,10 @@ p { margin: 0; }
    the paired variant drops the glow and keeps only the inner highlight. */
 .btn-wide { height: 46px; width: 232px; padding-inline: 18px; }
 .btn-primary.btn-wide { box-shadow: inset 0 1px 0 oklch(1 0 0 / 0.22); }
+
+/* The first step of a feature page's breadcrumb goes back to the index. It
+   keeps the colour it inherits — an amber link in a grey crumb reads as a
+   mistake — and says so only on hover. `.feat a` is more specific than a bare
+   class, hence the pair. */
+.feat a.crumb, a.crumb { color: inherit; }
+.feat a.crumb:hover, a.crumb:hover { color: var(--dim); }
