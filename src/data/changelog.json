@@ -13,6 +13,10 @@
           {
             "name": "New",
             "items": [
+              "<strong>Put back an earlier copy of a folder's edits.</strong> File ▸ Earlier Copies of This Folder… lists what Chili RAW has kept for it, so a change you regret can be walked back one folder at a time.",
+              "<strong>A backup drive that would silently lose your edits is caught before you rely on it.</strong> Some drives and sync folders quietly discard them when you mirror your photos, and the Backups settings now say so.",
+              "<strong>Restore from a backup.</strong> Pick one, confirm, and your edits, presets, albums, Looks, LUTs, watermarks, named faces and photo folders come back — your photo files are never touched.",
+              "<strong>Look inside a backup before you need it.</strong> File ▸ Look Inside a Backup… shows what a backup holds — your edits, named faces, presets and albums — and flags any photo folder that is not on this Mac.",
               "<strong>The full right-click menu, everywhere a photo is</strong> — the filmstrip in Develop, Pixels, Compare and the Lightbox, and the Lightbox photo itself.",
               "<strong>Arrange the Develop panel your way.</strong> Drag a section by its header, or right-click it to move it. Edit and Grading each keep their own order.",
               "<strong>A watermark on export.</strong> Text or a PNG on every copy a batch writes, in one of nine positions, previewed before it runs.",
@@ -23,20 +27,45 @@
             ]
           },
           {
+            "name": "Changed",
+            "items": [
+              "<strong>Film Labor's Grain slider reaches much further.</strong> What used to be full strength sits about a third of the way along it now, so grain shows where it was barely there before.",
+              "<strong>The Film Labor picture is sharper on a large window</strong>, and grain there now reads the way it does in an exported file.",
+              "<strong>Zooming into the Film Labor picture shows real detail.</strong> Past Fit you now see the grain your file will have, rather than a magnified version of the small one.",
+              "<strong>A film stock now arrives at 75 % strength rather than full</strong>, on a Look slider that is longer than it was, so small adjustments are easier to make.",
+              "<strong>The Film Stock swatches are gone from the Grading panel.</strong> LUTs are now the one place for a film look — import a <code>.cube</code> of your own, or link a folder of them."
+            ]
+          },
+          {
             "name": "Fixed",
             "items": [
+              "<strong>A backup that fails now says so, and names what it couldn't copy</strong> — with a <strong>Copy Details</strong> button in Settings ▸ Backups for the full list.",
+              "<strong>A failed backup no longer replaces the one you already had.</strong> Backing up twice in one day, with the second attempt failing, used to leave you with neither.",
+              "<strong>Renaming the backup subfolder no longer doubles your library</strong>, or empties it when a folder above your photos happens to share the name.",
+              "<strong>The hidden safety copies no longer pile up.</strong> Each is removed once the write it protects is confirmed good, instead of staying on your drive for ever.",
+              "<strong>The safety-copy folder can no longer be renamed.</strong> A name you already chose keeps working.",
+              "<strong>Two photo folders with the same name both make it into a backup.</strong> Only the first used to; the second's edits were left out without a word.",
+              "<strong>Old backups are cleared away.</strong> The ten most recent dated backups are kept and older ones removed, instead of one building up per day for ever.",
+              "<strong>A backup now carries every face you have named.</strong> Detection can find the faces again, but never who they are.",
+              "<strong>A backup now carries your export presets, your watermarks and your photo folders</strong>, so a restore gives back the export side of the app too.",
+              "<strong>The restore notes inside a backup now cover everything in it</strong> — the catalog and your edits, not only the app's own settings — and say how to put each piece back.",
+              "<strong>A film look no longer flattens the brightest parts of a photo.</strong> The sun, a lamp or a bright reflection kept its shape instead of turning into a flat patch of sky.",
+              "<strong>Print Character now relaxes the paper instead of darkening the picture.</strong> Turning it down used to deepen the shadows; it opens them.",
               "<strong>Renaming several photos at once no longer empties the folder.</strong>",
               "<strong>A renamed photo keeps everything you gave it</strong> — its people, its film look, its collections and its RAW+JPEG side choice.",
               "<strong>A launch can no longer stall on a blank screen.</strong>",
               "<strong>A chosen crop ratio now holds while you drag.</strong>",
-              "<strong>A cropped photo fills the Develop canvas again.</strong>"
+              "<strong>A cropped photo fills the Develop canvas again.</strong>",
+              "<strong>A backup now carries your imported LUTs, your starred LUTs and your saved Looks</strong>, along with the folder you linked them from.",
+              "<strong>The histogram follows a clip while it plays</strong> instead of freezing on the frame you started from.",
+              "<strong>Darkroom (⌃⌘F) now clears the whole screen</strong>, Develop panel and filmstrip included, and takes the window full-screen. ⌃⌘F again brings it all back."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 12
+    "count": 36
   },
   {
     "slug": "2026-q3",
