@@ -52,9 +52,6 @@ rather than an imitation of one.
 from it. A Pro licence adds the film darkroom, the paint canvas, the on-device AI tools
 and depth-based bokeh.
 
-> **Chili RAW is free to use, but it is not open source.** This repository is where the app
-> is distributed and supported — releases, the manual, and issues. The source is not in here.
-
 ---
 
 ## What it does
@@ -68,7 +65,7 @@ and depth-based bokeh.
 - A distraction-free Darkroom for judging a frame with nothing else on screen.
 
 ### Develop
-- **Three RAW decoders you choose between** — Apple CIRAWFilter, the Adobe DNG SDK, and LibRaw with your own DCP profiles — and **three tone mappers** (AgX, Standard, Neutral).
+- **Three RAW decoders you choose between** — Apple CIRAWFilter, the Adobe DNG SDK, and LibRaw with your own DCP profiles — and **three tone mappers** (AgX, Standard, Minimal).
 - Compressed DNG, including the JPEG XL compression DNG 1.7 introduced.
 - Tone, curves, colour mixing, texture, clarity and a physical dehaze.
 - RAW highlight recovery drawn from the file's own headroom.
