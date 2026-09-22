@@ -84,8 +84,8 @@ Everything about copies of your work — the Vault, and the per-folder safety ne
 - **Vault location** — the drive or folder your dated backups go to (an external drive is recommended). **Reveal in Finder** and *Change location* are on the right-click menu. Full details in [chapter 14](/manual/collections-and-backups/).
 - **What to back up** — **Include photos (full mirror)** off means a small dated zip of your edits and database; on means the photo files are mirrored too (incremental — only changed files are copied).
 - **Automatic backup** — on quit, Chili RAW can back up **Off**, **Remind** (asks first) or **Silent** (just does it), with a **Frequency** that limits how often it fires. Set a Vault location first.
-- **Status** — freshness, progress, and a **Back Up Now** button.
-- **Per-folder file backup** — a separate safety net: **Back up files before writing** (on by default) copies each original into a timestamped subfolder inside the active folder before metadata is written to it. **Backup subfolder** names that folder (default `.chiliraw-backups`).
+- **Status** — freshness, progress, and a **Back Up Now** button. The ten most recent dated backups are kept; older ones are removed after a backup that completed. A backup that fails says so and names what it could not copy; **Copy Details** puts the full list, with paths, on the clipboard.
+- **Per-folder file backup** — a separate safety net: **Back up files before writing** (on by default) copies each original into a hidden `.chiliraw-backups` folder beside it before metadata is written to it, then removes the copy once the written file is confirmed readable. If a write leaves a file that cannot be read back, the copy stays and Chili RAW says so.
 
 ## AI
 

@@ -147,7 +147,7 @@ The three AI rows carry a violet dot: they run a model you downloaded yourself, 
 
 **Blend** *(collapsed by default)*. Puts a second photo over this one as a layer. Drag a photo from the filmstrip onto the image, or add it from the panel, then set **Mode** (the usual blend modes), **Opacity**, **Scale** (50…200 %) and **X / Y Offset**. **Use layer's own edits** renders the other photo through *its* develop settings rather than raw. The blend happens after developing, so both photos arrive in the same rendering.
 
-## Grading tab — color grading, film stocks, LUTs and grain
+## Grading tab — color grading, LUTs and grain
 
 ## Color grading — three-way wheels
 
@@ -165,9 +165,8 @@ Below the three wheels:
 - **Blending** (0…100, default 50) — how softly the Shadows / Midtones / Highlights ranges hand off to each other. Higher blends them more gradually; lower makes the split more distinct.
 - **Balance** (−100…+100) — shifts where the split between ranges falls. Positive pushes it toward the highlights (the Highlights wheel reaches further down into the midtones); negative toward the shadows.
 
-- **Film Stock** is a grid of swatches: **None** plus color stocks (Portra, Gold, Ektar, Velvia, the Fuji stocks, Cinema, and more), with a separate **B&W** group below. Click a swatch to apply that look.
-- When a stock is active, an **Active: [name]** line and an **Intensity** slider (0…100%, default 100) stay visible even if you collapse the swatch grid — dial Intensity down to blend the look with your straight develop.
-- **LUTs.** Click **Choose LUT** to pick from a folder of your own `.cube` LUTs (with subfolders as submenus), or **Choose LUT Folder…** to link one. **Import .cube…** copies LUT files into Chili RAW's own library so they appear as swatches. You can also link a LUT folder up front in **Settings ▸ Film LUTs ▸ LUT folder** (scanned recursively).
+- **LUTs.** Click **Choose LUT** to pick from a folder of your own `.cube` LUTs (with subfolders as submenus), or **Choose LUT Folder…** to link one. **Import .cube…** copies LUT files into Chili RAW's own library, where they appear under **Imported**. You can also link a LUT folder up front in **Settings ▸ Film LUTs ▸ LUT folder** (scanned recursively).
+- **Strength** (0…100%, default 100) blends the LUT over the graded image — dial it down to mix the look with your straight develop. 0 is off.
 
 ## Grain — physically-based film grain
 
@@ -337,7 +336,7 @@ Select a batch in the filmstrip (⌘-click and ⇧-click work there, and your se
 
 ## Grading a video clip
 
-A clip opens in Develop like a photo, with the controls that survive frame-to-frame: white balance, exposure and the tone sliders, curve, colour mixer, tone mapping, LUTs and film stocks, colour grading, and crop. What's absent is absent on purpose — Highlights and Shadows, Texture / Clarity / Punch / Dehaze, sharpening, noise reduction, every AI stage, grain, bokeh and blend layers are whole-frame or per-render passes that boil or crawl in motion. Export writes a graded clip: pick the **Codec** and **Container** in the export dialog, and the grade is applied frame by frame at the clip's own resolution.
+A clip opens in Develop like a photo, with the controls that survive frame-to-frame: white balance, exposure and the tone sliders, curve, colour mixer, tone mapping, LUTs, colour grading, and crop. What's absent is absent on purpose — Highlights and Shadows, Texture / Clarity / Punch / Dehaze, sharpening, noise reduction, every AI stage, grain, bokeh and blend layers are whole-frame or per-render passes that boil or crawl in motion. Export writes a graded clip: pick the **Codec** and **Container** in the export dialog, and the grade is applied frame by frame at the clip's own resolution.
 
 ## Presets and Lift & Stamp
 
@@ -391,10 +390,13 @@ Switch **Frame** on in the export dialog to put a border around every copy the e
 The canvas **grows** to make room: nothing is drawn over the photograph, and nothing is cropped off it. That is what separates this from the frames in Pixels, which paint over the edges of the picture at its own size — the two are different things and they can be used together.
 
 - **Thickness** is a percentage of the photo's *short* side, not a pixel count, which keeps the border looking the same on a 2048 px web JPEG and on a full-size master.
-- **Colour** is white, black or grey — or, in Pro, **sampled from the photo itself**, so the border belongs to the picture. Read it as the photo's **dominant colour** or as the **average of its edges**, and nudge the result lighter or darker. Pro also takes any colour you pick.
+- **Colour** is white, black or grey. A colour sampled from the photo itself, or one you pick by hand, lives in **Pixels** — see *Mounts* below.
 - **Shape** (Pro) pads the photo onto a **1:1**, **4:5** or **9:16** canvas — the Instagram and Stories sizes — or a ratio you type. The photo is centred and padded, never cropped, so the border is deeper on two sides when the shapes disagree and the thickness you set is the minimum on the other two.
+- **Orientation** decides which way up a shape stands. Left off, 4:5 and 9:16 are the portrait post and the Story whatever the photo is, so a landscape frame gets deep bars above and below. Turn it on and the shape follows the photo — 9:16 becomes 16:9 for a landscape frame, and the border stays even. A square is a square either way.
 
 The **Preview** shows the whole framed canvas fitted in a fixed box, so a 3:2 and a 9:16 can be judged against the same frame of reference. What you are reading there is the proportion of border to picture, which is the thing "5 %" can't be pictured from.
+
+A photo that carries its own **Mount** from Pixels keeps that instead of this frame, and the dialog says how many in the selection do.
 
 If you also resize, the pixel count you type applies to the **photo**, and the border goes on after it — so a long edge of 2048 gives a 2048 px photograph with the border around it. A watermark is drawn **after** the frame, on the framed canvas, so it can sit on the border itself. Clips are always written unframed.
 
@@ -427,6 +429,6 @@ Export is **non-blocking**: a processing panel slides in from the right showing 
 ## Tips
 
 - Leave the tools collapsed to use Develop as a fast, full-screen browser; the heavy render only kicks in when you open the tools or the photo already has edits.
-- Dial **Intensity** down on a film stock for a subtler, blended look rather than a full LUT.
+- Dial **Strength** down on a LUT for a subtler, blended look rather than the full effect.
 - Reach for a **Quick Brush** (Dodge/Burn) before building a mask by hand — it's one click to a paintable adjustment.
 - Because everything is non-destructive, **Reset All** always returns you to the untouched original.

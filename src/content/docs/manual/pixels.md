@@ -207,10 +207,22 @@ Whether you're setting the New-shape style or editing an existing shape:
 
 A frame draws a border around the whole photo. Options:
 
-- **Style** — **Solid**, **Dithered edge** (fades inward with a retro stipple), or **Film frame** (dark film base with sprocket holes and an orange edge code).
+- **Style** — **Solid**, **Dithered edge** (fades inward with a retro stipple), **Film frame** (dark film base with sprocket holes and an orange edge code), or **Mount** (see below).
 - **Thickness** (1–15% of the short side).
 - **Colour** (called **Film base** for the film style).
 - **Frame number** — for the film style, the little edge code, e.g. `24A`.
+
+## Mounts
+
+The first three styles paint **on** the photo — they cover its edges. A **Mount** does the opposite: the canvas grows and the photo sits inside it, so nothing is covered and nothing is cropped. It is the border you want for Instagram, and it is where the clever colours live.
+
+- **Thickness** — a percentage of the photo's short side.
+- **Colour** — white, black or grey, a colour you pick, or **Sampled from the photo**, which reads the picture's edges so the mount belongs to it. **Shade** then nudges that lighter or darker.
+- **Shape** — pad onto **1:1**, **4:5**, **9:16** or a ratio you type. **Turn shape to the photo** makes 9:16 become 16:9 for a landscape frame, so the border stays even instead of adding deep bars.
+
+A mount appears in the layer list as **Background**, always at the foot of the stack — it is the page your other layers sit on, so it has no position to move to. Select it to edit, or right-click to delete. Switching its Style back to one of the other three turns it into an ordinary frame layer again.
+
+A photo with a mount keeps it when you export, in place of the frame set in the export dialog.
 
 ## Gradient wash
 

@@ -39,6 +39,10 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Thumbnails keep filling in while you edit.</strong> In a folder of edited photos the filmstrip and the grid used to stop on grey placeholders for seconds at a time.",
+              "<strong>Turning on lens corrections no longer closes the app.</strong> Ticking Enable Profile Corrections in Develop ▸ Geometry now reads the photo's built-in correction data without interrupting the panel.",
+              "<strong>The filter band lays out properly in a narrow window.</strong> The count and its two buttons drop below the filters instead of squeezing them into a corner, the columns spread to fill each line, and the number of photos shown no longer breaks across two lines.",
+              "<strong>Develop tabs remember where you were.</strong> Geometry opens at the top the first time instead of part way down, and after that each tab comes back to the spot you left it.",
               "<strong>A backup that fails now says so, and names what it couldn't copy</strong> — with a <strong>Copy Details</strong> button in Settings ▸ Backups for the full list.",
               "<strong>A failed backup no longer replaces the one you already had.</strong> Backing up twice in one day, with the second attempt failing, used to leave you with neither.",
               "<strong>Renaming the backup subfolder no longer doubles your library</strong>, or empties it when a folder above your photos happens to share the name.",
@@ -58,14 +62,15 @@
               "<strong>A cropped photo fills the Develop canvas again.</strong>",
               "<strong>A backup now carries your imported LUTs, your starred LUTs and your saved Looks</strong>, along with the folder you linked them from.",
               "<strong>The histogram follows a clip while it plays</strong> instead of freezing on the frame you started from.",
-              "<strong>Darkroom (⌃⌘F) now clears the whole screen</strong>, Develop panel and filmstrip included, and takes the window full-screen. ⌃⌘F again brings it all back."
+              "<strong>Darkroom (⌃⌘F) now clears the whole screen</strong>, Develop panel and filmstrip included, and takes the window full-screen. ⌃⌘F again brings it all back.",
+              "<strong>Switching folders with a filter on no longer closes the app.</strong> Filtering the grid and then clicking another folder in the sidebar could quit Chili RAW."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 36
+    "count": 41
   },
   {
     "slug": "2026-q3",

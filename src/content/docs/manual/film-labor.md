@@ -41,13 +41,13 @@ Clicking a card also changes the picture on screen to *what the image looks like
 
 Everything the panel holds — the two stocks and every slider — is one **Look**, saved **per version** of a photo ([chapter 5](/manual/develop/)) — switch version and the film on the canvas switches with it; delete a version and its Look goes too. Name it in the **LOOKS** box at the bottom of the panel and it joins the library; from there you can apply it to a whole grid selection at once.
 
-**LOOK** in the footer is how much of the entire chain is in the photograph. At 100 % you get the full film rendering; at 0 % you get your untouched photograph back, exactly as if Film Labor were switched off. It is the control to reach for when you want *less film*, and it is a different thing from **Character** in the Print group.
+**LOOK** in the footer is how much of the entire chain is in the photograph. A film you have just chosen arrives at 75 %: push the slider to 100 % for the full rendering, or down to 0 % for your untouched photograph back, exactly as if Film Labor were switched off. It does not start at the top because a stock at full strength is more film than most photographs want, and it is the control to reach for when you want *less* of it. It is a different thing from **Character** in the Print group.
 
 **A photo carrying a Look is marked.** A good Look is supposed to read as a photograph, which means the picture itself cannot tell you film has been through it. So a small amber filmstrip appears in the top-right corner of the grid tile, beside the versions and GPS marks, and a **Film** pill sits in the bottom-right of the Develop canvas. The mark follows the Look: clear it and the mark goes.
 
 ## The ring-around
 
-A darkroom judges a correction by printing its neighbours beside it. The tray below the image does the same: pick an axis and it renders your frame at seven steps either side of where you are, with the current setting marked. The **Negative** and **Print** axes are the exception — stocks are not a continuum, so those two show every stock rather than a sweep.
+A darkroom judges a correction by printing its neighbours beside it. The tray below the image does the same: pick an axis and it renders your frame at a row of steps either side of where you are, with the current setting marked. The **Negative** and **Print** axes are the exception — stocks are not a continuum, so those two show every stock rather than a sweep.
 
 ---
 
