@@ -145,23 +145,52 @@ p { margin: 0; }
    render ported markup, and they all need them. */
 
 .feat > * { max-width: 1440px; margin-inline: auto; }
+/* The homepage's laptop is lit by a blurred glow drawn half again as wide as
+   the machine, and its base is wider than its lid — both on purpose, both
+   outside the page's gutters. `clip` stops them reaching the scrollbar
+   without making a scroll container of the page, which `hidden` would, and
+   which would break every sticky heading under it. */
+.feat { overflow-x: clip; }
+
+/* A ladder of seven thumbnails is drawn 568px wide. A flex item will not go
+   below its own content's width unless it is told it may, so they shrink to
+   share whatever column they are in instead of running out of the side of
+   it — at any width, so there is no breakpoint where they are cut off. */
+.feat .pg-thumbs > img { min-width: 0; }
 .feat img { display: block; }
 .feat a { color: var(--accent); }
 .feat a:hover { color: var(--accent-dim); }
 
+/* Every ported grid carries a class saying what shape it was drawn in, put
+   there by tools/design-to-site.py, and they give way at different widths.
+   Matching the inline styles as literal strings covered four shapes out of
+   thirty and left the rest at full width on a phone. */
+
 @media (max-width: 1080px) {
   .feat .pg-4,
   .feat .pg-3 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  /* A screenshot drawn 400-560px wide leaves the paragraph beside it nothing
+     to live in long before the page itself runs out of room. */
+  .feat .pg-wide { grid-template-columns: minmax(0, 1fr) !important; }
 }
 @media (max-width: 820px) {
   .feat .pg-2,
   .feat .pg-3,
   .feat .pg-4 { grid-template-columns: minmax(0, 1fr) !important; }
-  .feat [style*="grid-template-columns: minmax(0, 1.15fr)"],
-  .feat [style*="grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)"] {
-    grid-template-columns: minmax(0, 1fr) !important;
-    gap: 28px !important;
-  }
+  /* Eight frames of a burst are a strip; a strip one frame wide is a list. */
+  .feat .pg-strip-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .feat .pg-strip-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  /* A gutter drawn to hold two columns apart becomes a hole between two rows. */
+  .feat .pg-gap { gap: 28px !important; }
+  /* A heading beside its lead paragraph is a two-column layout written in
+     flex. `align-items: end` puts them on a baseline across a row and shoves
+     them to the right once the row becomes a column, so it goes too. */
+  .feat .pg-stack { flex-direction: column; align-items: stretch !important; gap: 20px !important; }
+}
+@media (max-width: 560px) {
+  /* A label beside its value reads at widths that stack two columns of prose,
+     so it is the last thing to break rather than the first. */
+  .feat .pg-row { grid-template-columns: minmax(0, 1fr) !important; gap: 8px !important; }
 }
 @media (max-width: 640px) {
   .feat h1 { font-size: clamp(34px, 11vw, 48px) !important; }
