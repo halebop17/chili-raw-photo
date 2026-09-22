@@ -181,3 +181,14 @@ p { margin: 0; }
    class, hence the pair. */
 .feat a.crumb, a.crumb { color: inherit; }
 .feat a.crumb:hover, a.crumb:hover { color: var(--dim); }
+
+/* The feature glyphs. One per card, top right, out of the way of the heading
+   and opposite the mono numbering on the homepage. They inherit the card's
+   colour, so only the one coloured element in each is ever its own hue. */
+.card.has-mark, .card-mark { position: relative; }
+.card .mark, .card-mark > .mark { position: absolute; top: 24px; right: 24px; width: 46px; height: 46px;
+              color: var(--faint); pointer-events: none; }
+.card .mark svg, .card-mark > .mark svg { display: block; width: 100%; height: 100%; }
+.card.has-mark h3, .card-mark h3 { max-width: calc(100% - 58px); }
+a.card:hover .mark { color: var(--mute); }
+@media (max-width: 520px) { .card .mark { width: 38px; height: 38px; top: 20px; right: 20px; } }

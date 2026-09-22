@@ -1,6 +1,9 @@
 ---
 import Site from "../../layouts/Site.astro";
 import features from "../../data/features.json";
+// one glyph per feature, named for its slug — see src/icons/README.md
+const glyphs = import.meta.glob("../../icons/*.svg", { query: "?raw", import: "default", eager: true });
+const glyph = (slug) => glyphs[`../../icons/${slug}.svg`] ?? "";
 const free = features.filter((f) => f.tier === "free");
 const pro = features.filter((f) => f.tier === "pro");
 ---
@@ -21,7 +24,8 @@ const pro = features.filter((f) => f.tier === "pro");
     <div class="eyebrow">in the free version</div>
     <div class="grid grid-3" style="margin-top: 22px;">
       {free.map((f) => (
-        <a class="card" href={`/features/${f.slug}/`} style="color: inherit;">
+        <a class="card has-mark" href={`/features/${f.slug}/`} style="color: inherit;">
+          <span class="mark" set:html={glyph(f.slug)} />
           <h3>{f.title}</h3>
           <p>{f.sub}</p>
           <span class="more">More info →</span>
@@ -34,7 +38,8 @@ const pro = features.filter((f) => f.tier === "pro");
     <div class="eyebrow" style="color: var(--violet);">part of pro</div>
     <div class="grid grid-3" style="margin-top: 22px;">
       {pro.map((f) => (
-        <a class="card" href={`/features/${f.slug}/`} style="color: inherit;">
+        <a class="card has-mark" href={`/features/${f.slug}/`} style="color: inherit;">
+          <span class="mark" set:html={glyph(f.slug)} />
           <h3>{f.title}</h3>
           <p>{f.sub}</p>
           <span class="more">More info →</span>

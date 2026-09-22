@@ -1,0 +1,6 @@
+<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M17.4 6.4c-4.3-.6-8.6-.6-12.9.1M4.1 7.9c-1.2 6.6-1 13.4.1 20M5.1 29.4c7.2.8 14.5.7 21.7-.1M27.4 28.1c.7-4 .9-8.1.6-12.1"/>
+  <path d="M14.9 19.6c3.9-4.6 8.6-8.3 13.9-10.9" stroke="var(--accent)" stroke-width="2.6"/>
+  <path d="M20.4 7.9c2.9-.1 5.7 0 8.6.4M29.1 8.4c.4 2.9.5 5.8.3 8.7" stroke="var(--accent)" stroke-width="2.6"/>
+</svg>

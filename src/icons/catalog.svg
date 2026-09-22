@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M9.4 10.4c4.4-.9 9-1 13.4-.2M9.4 11.9c-.4 2.2-.4 4.4 0 6.6" opacity=".35"/>
+  <path d="M7.4 13.4c5.6-.9 11.4-1 17-.2M7.4 14.9c-.5 2.8-.5 5.6 0 8.4" opacity=".6"/>
+  <path d="M5.4 16.4c7 -1 14.2-1.1 21.2-.2M5.4 17.9c-.5 3.3-.5 6.7 0 10"/>
+  <path d="M2.9 21.4c9-1.1 18.2-1.2 27.2-.2M30.1 22.9c.4 2.6.3 5.2-.2 7.8M29.4 31.4c-9 1-18.2.9-27.2-.1M2.4 31.9c-.6-3-.5-6.1.1-9.1"/>
+  <path d="M12.4 26.4c2.6-.5 5.3-.5 7.9 0" stroke="var(--accent)" stroke-width="2.8"/>
+</svg>
