@@ -32,7 +32,7 @@ Open Settings with **⌘,** (or **Chili RAW → Settings…**). The window has s
 
 These four decide what a RAW file looks like before you touch a slider. Changing one re-renders your edited raw thumbnails so the grid answers honestly — an *unedited* raw won't change, because its thumbnail is the preview your camera wrote into the file and no decoder ever runs for it.
 
-- **Default look** — which tone-mapper a freshly-opened image starts on: **Chili RAW (AgX)** (the filmic default), **Standard** (Lightroom-style: the Adobe render plus your chosen profile), or **Neutral**. You can still switch per photo on the Edit tab.
+- **Default look** — which tone-mapper a freshly-opened image starts on: **Chili RAW (AgX)** (the filmic default), **Standard** (Lightroom-style: the Adobe render plus your chosen profile), or **Minimal** (no automatic tone at all — see Tone Mapping). You can still switch per photo on the Edit tab.
 - **DNG decoder** — how `.dng` files are decoded. The **Adobe DNG SDK** gives correct colour and orientation for DxO JPEG-XL and other DNGs; **Apple** is the fallback / comparison option.
 - **Proprietary raw decoder** — for ARW / CR2 / CR3 / NEF. **LibRaw** renders through the DCP camera profile you pick below, for colour that follows your camera rather than macOS's default interpretation (falls back to Apple on failure); **Apple** is the default.
 - **Colour profile** — which Adobe DCP profile the LibRaw path renders through, read from your Lightroom / ACR profiles. *Adobe Standard* is the neutral default; the *Camera* looks emulate the maker's JPEG rendering.
@@ -89,7 +89,7 @@ Everything about copies of your work — the Vault, and the per-folder safety ne
 
 ## AI
 
-Every AI feature runs **on-device — no image ever leaves your Mac.** The app ships with **no** AI models: each one is downloaded here on demand and can be deleted at any time. The built-in Subject and People masks use macOS directly and need no download.
+Every AI feature runs **on-device — no image ever leaves your Mac.** The app ships with **no** AI models: each one is downloaded here on demand and can be deleted at any time. The built-in Subject and Person masks use macOS directly and need no download.
 
 - **Activate AI features** — the master switch. With it off, no model runs and the AI controls stay out of the way.
 - **The model list**, grouped by what each does: **Download** fetches one (40–290 MB), **Cancel** stops a download, **Delete** removes it. A model whose download has moved on shows *“A newer version is available”* with an **Update** button — **nothing ever downloads by itself**, the model you have keeps working in the meantime, and a cancelled or failed update leaves it exactly where it was. No restart needed.

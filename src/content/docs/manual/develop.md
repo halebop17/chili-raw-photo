@@ -103,7 +103,23 @@ Two buttons sit in a footer that's visible on every tab: the amber **Export…**
 
 **Color Mixer (HSL).** Targeted, corrective color: eight color bands (**Red, Orange, Yellow, Green, Aqua, Blue, Purple, Magenta**) with **Hue / Saturation / Luminance** tabs — eight sliders per tab. Use it to fix a *specific* color in the photo: pull a too-loud sky's Blue Saturation down, nudge skin Hue, darken foliage Luminance. Greys are left alone, so a Luminance move on "Red" only touches actually-red pixels. (For adding a *creative* color wash to a whole tonal range, use the Color Grading wheels on the Grading tab instead.)
 
-**Tone Mapping.** Sets the display tone transform. **Mode** is **AgX** (the default — a hue-preserving filmic roll-off) or **Neutral**. In AgX you also get Contrast (1.5…5, default 2.5), Toe (shadow roll-off), Shoulder (highlight roll-off), Preserve Hue (0…100%, default 60) and Saturation. Your Basic Contrast still applies in both modes.
+**Tone Mapping.** Sets the display tone transform. **Mode** is one of three:
+
+- **AgX** (the default) — a hue-preserving filmic roll-off. In AgX you also get Toe (shadow roll-off), Shoulder (highlight roll-off) and Preserve Hue (0…100%, default 60). Contrast and Saturation are the ordinary Basic sliders; they feed AgX rather than having separate copies here.
+- **Standard** — the Lightroom-style render: Adobe's own tone curve, applied with the camera profile you picked. Reach for it when you want a file to match what Lightroom or Camera Raw would have made of it.
+- **Minimal** — no automatic tone at all. Your own adjustments still apply; what Minimal leaves out is the display curve the other two put on top.
+
+Your Basic Contrast still applies in all three modes.
+
+*What Minimal is for.* It is a **reference, not a look**: nothing is added, so what you see is what the decoder produced. Three reasons to reach for it.
+
+**As the base for a film Look or a LUT.** A print emulation already contains its own curve. Run it on top of AgX's filmic shoulder and you get two filmic curves stacked — the look comes out flatter and more compressed than it was designed to be, and no amount of adjusting the Look itself fixes it. Minimal hands the Look a clean input, so it behaves the way it was built to.
+
+**As a diagnostic baseline,** when you want to see what came off the sensor before any tone opinion — useful when you are judging a decoder setting or a camera profile and want nothing else in the way.
+
+**As a base for your own tone,** if you would rather shape everything yourself with Curve and the Basic sliders.
+
+*The trade.* With no automatic shoulder, blown highlights **clip hard instead of rolling off** — a bright sky can go to a flat white edge where AgX would have held gradation. That is the point of the mode, but it means highlight control is yours: use **Highlights** and **Highlight Recovery** in Basic when a frame needs it.
 
 **AgX Primaries.** An advanced section that appears **only when Mode is AgX**. It exposes the color-science behind the look: a **Base** primaries picker (Rec2020, sRGB, P3, Adobe), per-channel **Purity** and **Rotate** for R/G/B, plus **Restore** and **Reverse** masters.
 
@@ -235,7 +251,7 @@ A **violet glyph** marks the mode that runs a downloaded AI model (Generative Re
 
 Heal and Clone work whatever crop, straighten, rotation or transform the photo carries. The circles are still *stored* on the uncropped frame — so a crop you apply later moves them with the picture instead of sliding them off — but you place them on the photo as you see it.
 
-**Generative Remove** (Pro; needs the model downloaded in **Settings ▸ AI**) removes whole objects rather than specks. Paint over what you want gone and the background is rebuilt when you release. You can also **remove something you have already selected**: outline it with the Masking tab's Object tool (or use a Subject, Sky, People or Depth mask you already have), then choose **Generative Remove** from that mask's menu — no painting over a thing the app had already outlined. The selection is copied into the removal, so retuning or deleting the mask afterwards leaves the removal alone. Big removals reconstruct at a higher resolution than small ones, so a large object against a treeline comes back as foliage rather than a smear. It continues the surroundings inward — it can't recover what was actually hidden, and there's no prompt: it makes things disappear, it doesn't add new ones. Each painted area becomes a **Region** row that can be switched **On/Off** or **Delete**d on its own; hover a row to light that region up on the photo, and paint over it again to extend it. **Show Regions** reveals the paint (it's hidden by default so you can judge the result), and **Clear All** drops every region. Painting is paused while a rotation, straighten, flip, transform or lens correction is active, because none of those can be undone back to the uncropped frame with a plain rectangle. A crop on its own is fine.
+**Generative Remove** (Pro; needs the model downloaded in **Settings ▸ AI**) removes whole objects rather than specks. Paint over what you want gone and the background is rebuilt when you release. You can also **remove something you have already selected**: outline it with the Masking tab's Object tool (or use a Subject, Sky, Person or Depth mask you already have), then choose **Generative Remove** from that mask's menu — no painting over a thing the app had already outlined. The selection is copied into the removal, so retuning or deleting the mask afterwards leaves the removal alone. Big removals reconstruct at a higher resolution than small ones, so a large object against a treeline comes back as foliage rather than a smear. It continues the surroundings inward — it can't recover what was actually hidden, and there's no prompt: it makes things disappear, it doesn't add new ones. Each painted area becomes a **Region** row that can be switched **On/Off** or **Delete**d on its own; hover a row to light that region up on the photo, and paint over it again to extend it. **Show Regions** reveals the paint (it's hidden by default so you can judge the result), and **Clear All** drops every region. Painting is paused while a rotation, straighten, flip, transform or lens correction is active, because none of those can be undone back to the uncropped frame with a plain rectangle. A crop on its own is fine.
 
 The bottom line of the panel counts what this photo carries — *"3 repairs on this photo"* — with **Clear All** beside it. Repairs live in the photo's sidecar, so the original file is never touched.
 
@@ -248,7 +264,7 @@ Masks let you push an adjustment into just part of the frame. The tiles at the t
 | Tile | Selects | Marking |
 |---|---|---|
 | **Subject** | The main subject | teal (macOS) |
-| **People** | Everyone in the frame; a downloaded model can split a person into face, hair, skin and clothing parts | teal (macOS) |
+| **Person** | Everyone in the frame; a downloaded model can split a person into face, hair, skin and clothing parts | teal (macOS) |
 | **Background** | Everything that isn't the subject | teal (macOS) |
 | **Sky** | The sky, tuned side by side against Lightroom | violet (model) |
 | **Object** | Click a thing and it is outlined (SAM 2) | violet (model) |
@@ -268,7 +284,7 @@ Masks let you push an adjustment into just part of the frame. The tiles at the t
 
 **Masks can be combined.** Every mask starts as one part, and the **+ Add** / **− Subtract** row under it adds another of *any* kind to the same mask: Sky **minus** a Brush stroke over the mountain, Subject **intersected with** a Luminance range so only the lit half of a face is touched. Each part carries its own row, can be deleted on its own, and clicking a part's operator changes how it combines (**Add**, **Subtract**, **Intersect**).
 
-**Masks and Lens Corrections.** The detected masks — Subject, People, Background, Sky, Object, Depth — bend with the picture when you switch **Lens Corrections** on, so a selection stays on the thing it selected. So do Color, Luminance and Wand, which are read from the pixels each time. The three you draw yourself — Radial, Linear and Brush — are placed on the photo as it looks while you draw, exactly like a crop: turning Lens Corrections on or off afterwards moves the picture under them. Draw them after you have settled the correction, or nudge them if you change it.
+**Masks and Lens Corrections.** The detected masks — Subject, Person, Background, Sky, Object, Depth — bend with the picture when you switch **Lens Corrections** on, so a selection stays on the thing it selected. So do Color, Luminance and Wand, which are read from the pixels each time. The three you draw yourself — Radial, Linear and Brush — are placed on the photo as it looks while you draw, exactly like a crop: turning Lens Corrections on or off afterwards moves the picture under them. Draw them after you have settled the correction, or nudge them if you change it.
 
 **Masks are named.** Each one is numbered as you make it — *Radial Mask 1*, *Radial Mask 2* — so two of a kind are never the same row twice. Open a mask and type over the name at the top to call it what it actually is; clear the name and it goes back to reading by type. Masks made before names existed read by type until you give them one.
 
@@ -285,7 +301,7 @@ Each selected mask has its own controls:
 - Radial / Linear: **Feather** (0…100%, default 50).
 - Brush: **Size** (1…25%, default 6), **Hardness** (0…100%, default 50), an **Erase** toggle, and **Clear**.
 - Color: the sampled swatches, plus **Refine**. Luminance: the **min / max** brightness pair, plus **Feather**. Wand: **Tolerance** and a contiguous toggle.
-- Detected masks (Sky, Object, People): **Feather** softens the boundary, and **Edge** (−100…+100%, default 0) moves it — negative pulls the mask *in*, positive pushes it *out*. They fix different halves of a bad edge: Feather alone leaves a halo where the detection cut wide, Edge alone leaves a hard line. Small values do the work; ±100% is about 2% of the frame's short side. **Subject** and **Background** masks have Edge only — their detected edge is already fine-grained and is left as the model drew it. **Depth** has **Softness** instead, which widens the falloff at both ends of its distance band.
+- Detected masks (Sky, Object, Person): **Feather** softens the boundary, and **Edge** (−100…+100%, default 0) moves it — negative pulls the mask *in*, positive pushes it *out*. They fix different halves of a bad edge: Feather alone leaves a halo where the detection cut wide, Edge alone leaves a hard line. Small values do the work; ±100% is about 2% of the frame's short side. **Subject** and **Background** masks have Edge only — their detected edge is already fine-grained and is left as the model drew it. **Depth** has **Softness** instead, which widens the falloff at both ends of its distance band.
 - **Invert** flips which side of the mask is affected.
 - Local adjustments applied inside the mask: Exposure (−3…+3 EV), Contrast, Highlights, Shadows, Saturation, Temp, Clarity and Dehaze (Strength + Distance, the same module as the Edit tab's) — each −100…+100.
 
@@ -364,7 +380,7 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 | **Frame** | Off, or a border added **around** every copy — any thickness, in white, black or grey, with a colour sampled from the photo and 1:1 / 4:5 / 9:16 shapes in Pro. |
 | **Watermark** | Off, or a line of **text** or a **PNG** on every copy — font, size, colour, opacity, one of nine positions and a margin. |
 | **Resolution** | The ppi written into the file's metadata (it doesn't change the pixels). |
-| **Naming** | Original filename, a custom name, or a custom name with a **sequence** (separator, start number, extension case). A **RESULT** block previews the names before you commit. Originals are never renamed. |
+| **Naming** | Original filename, a custom name, or a custom name with a **sequence** (separator, start number, extension case), plus **Include all versions** (see below). A **RESULT** block previews the names before you commit. Originals are never renamed. |
 | **Metadata** | **All metadata** or **None**, with **Write GPS coordinates** and **Remove person info & faces** as separate switches — the two things you might not want to publish. |
 | **If the file exists** | Add a number so nothing is overwritten (default), overwrite, or skip. |
 | **Output** | Default is an **Exports/** subfolder inside each photo's folder; **Choose…** to override, **Default** to revert |
@@ -374,6 +390,24 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 Two of your presets can sit on a key. In the export dialog's preset menu, pick a preset and choose **Set as Favourite 1** or **Set as Favourite 2**; from then on **⌘E** or **⇧⌘E** exports the current selection with that recipe immediately — no dialog, straight to the queue. The Export button's preset list shows which key each favourite is on.
 
 Both keys are rebindable in **Settings → Shortcuts → Export favourites**, and the key belongs to the *slot*, not the preset: point Favourite 1 at a different preset whenever you like and the key follows. Delete the preset a slot points at and the slot is simply empty — the key says so rather than running something you didn't mean.
+
+## Exporting every version
+
+A photo can carry several **versions** ([chapter 5](/manual/develop/)). Normally an export writes the one that is live — the version you would see if you opened the photo — and nothing else.
+
+Tick **Include all versions**, in the dialog's **File naming** section, and each version gets its own file instead. The name tells you which is which:
+
+```
+red_car_001_Warm.jpg
+red_car_002_Cool.jpg
+red_car_003_Punchy.jpg
+```
+
+The number is the version's place in the list and the name is the one you gave it, so two versions that happen to share a name still land as separate files. Photos with no versions are untouched — they write a single file, named as they always were — and the **RESULT** block shows you the whole expansion before you commit.
+
+Each file is rendered with its own version's settings *and* its own Film Labor Look, so a version you filmed and a version you didn't come out as the two different photographs they are. Pixels overlays, frames and watermarks belong to the photo rather than to a version, so every copy carries the same ones.
+
+When nothing in the selection has versions the note under the box says so, but the box itself stays live — it is part of the export recipe, and a preset on ⌘E runs it without showing you a dialog.
 
 ## Resizing, enlarging and output sharpening
 
