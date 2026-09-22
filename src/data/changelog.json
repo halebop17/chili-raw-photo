@@ -31,6 +31,7 @@
             "name": "Changed",
             "items": [
               "<strong>The People mask is now called Person.</strong> The People view, where you name faces, is unchanged.",
+              "<strong>Generative Remove no longer appears when a Person mask is narrowed to a face part.</strong> Erasing someone's lips or eyes was never a useful edit; it stays for Whole person.",
               "<strong>The mask panel no longer explains Generative Remove at length.</strong> The button is where it was, with the sliders back in easy reach under it.",
               "<strong>Film Labor's Grain slider reaches much further.</strong> What used to be full strength sits about a third of the way along it now, so grain shows where it was barely there before.",
               "<strong>The Film Labor picture is sharper on a large window</strong>, and grain there now reads the way it does in an exported file.",
@@ -74,7 +75,7 @@
         "latest": false
       }
     ],
-    "count": 45
+    "count": 46
   },
   {
     "slug": "2026-q3",
