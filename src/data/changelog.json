@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Export every version of a photo, not just the live one.</strong> Tick <em>Include all versions</em> and each one writes its own file, named after the version it came from.",
               "<strong>Put back an earlier copy of a folder's edits.</strong> File ▸ Earlier Copies of This Folder… lists what Chili RAW has kept for it, so a change you regret can be walked back one folder at a time.",
               "<strong>A backup drive that would silently lose your edits is caught before you rely on it.</strong> Some drives and sync folders quietly discard them when you mirror your photos, and the Backups settings now say so.",
               "<strong>Restore from a backup.</strong> Pick one, confirm, and your edits, presets, albums, Looks, LUTs, watermarks, named faces and photo folders come back — your photo files are never touched.",
@@ -29,6 +30,8 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>The People mask is now called Person.</strong> The People view, where you name faces, is unchanged.",
+              "<strong>The mask panel no longer explains Generative Remove at length.</strong> The button is where it was, with the sliders back in easy reach under it.",
               "<strong>Film Labor's Grain slider reaches much further.</strong> What used to be full strength sits about a third of the way along it now, so grain shows where it was barely there before.",
               "<strong>The Film Labor picture is sharper on a large window</strong>, and grain there now reads the way it does in an exported file.",
               "<strong>Zooming into the Film Labor picture shows real detail.</strong> Past Fit you now see the grain your file will have, rather than a magnified version of the small one.",
@@ -39,6 +42,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>A Person mask's Hair no longer stops in a straight line across the photo.</strong> Long hair is now masked to its ends, and Neck and Clothing reach as far as they need to.",
               "<strong>Thumbnails keep filling in while you edit.</strong> In a folder of edited photos the filmstrip and the grid used to stop on grey placeholders for seconds at a time.",
               "<strong>Turning on lens corrections no longer closes the app.</strong> Ticking Enable Profile Corrections in Develop ▸ Geometry now reads the photo's built-in correction data without interrupting the panel.",
               "<strong>The filter band lays out properly in a narrow window.</strong> The count and its two buttons drop below the filters instead of squeezing them into a corner, the columns spread to fill each line, and the number of photos shown no longer breaks across two lines.",
@@ -70,7 +74,7 @@
         "latest": false
       }
     ],
-    "count": 41
+    "count": 45
   },
   {
     "slug": "2026-q3",
