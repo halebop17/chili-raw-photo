@@ -123,3 +123,21 @@ Chili RAW installs its own updates — no downloading a disk image and dragging 
 - **Check for updates automatically** — on, once a day. It costs a few kilobytes and is how a fix actually reaches you.
 - **Download updates in the background** — off unless you turn it on. An update is around 145 MB, so Chili RAW asks before fetching one; leave this off if you are often on a phone hotspot.
 - Every Chili RAW 1 release is included — 1.1, 1.2, 1.7, all of them. A future Chili RAW 2 is a separate purchase and is never installed by this updater.
+
+## Automation — the Shortcuts app
+
+Chili RAW's actions appear in Apple's **Shortcuts** app, so a job you do often can become a shortcut, a Finder Quick Action or a Folder Action. There are four, and they are **Pro**:
+
+| Action | What it does |
+|---|---|
+| **Export Photos** | Exports the photos you pass in, using one of your saved export presets. |
+| **Apply Develop Preset** | Applies one of your saved develop presets to the photos you pass in. |
+| **Set Rating** | None, or one to five stars. |
+| **Set Flag** | Pick, reject, or no flag. |
+
+Ratings and flags are written exactly the way Chili RAW writes them itself — into the file or into an XMP sidecar, following **Settings ▸ Files**.
+
+Two things worth knowing:
+
+- **Pass real files.** Use **Get Contents of Folder**, or anything else that hands over files on disk. Photos that arrive as data rather than as files cannot be changed, and the action tells you so instead of failing quietly.
+- **Close the folder first.** If Chili RAW has photos from that folder open, the action stops and names the folder. The open window is holding its own copy of those edits and would write them back over whatever the shortcut had just done. Switch folders or quit Chili RAW, then run the shortcut again.

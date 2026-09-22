@@ -87,6 +87,14 @@ The panel has five tabs. Each (except Edit) has a **toggle shortcut** — press 
 
 Two buttons sit in a footer that's visible on every tab: the amber **Export…** button and **Reset All** (which clears all edits back to neutral). You can collapse any section by clicking its header. Presets live outside the panel entirely — the aperture button at the top-right of the photo.
 
+## Rearranging the panel
+
+**Edit** and **Grading** carry enough sections that the order is worth having your own way round. **Drag a section by its header** to move it, or **right-click a header** for **Move to Top**, **Move Up**, **Move Down**, **Move to Bottom** and **Reset Panel Order**.
+
+Each tab keeps its own order and both survive a relaunch. Geometry, Repair and Masking have one or two sections apiece, so there is nothing to arrange and they are unchanged.
+
+The order is how the panel is laid out and nothing more. It touches no edit, no version and no sidecar: two photos given the same adjustments look the same whichever order you keep the sections in.
+
 ## Edit tab
 
 **Basic.** In Lightroom order:
