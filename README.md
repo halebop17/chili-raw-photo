@@ -122,7 +122,7 @@ and depth-based bokeh.
 
 - **Your photos stay where they are.** Chili RAW reads folders on your disk. It never imports, copies or moves your originals, and never overwrites your pixels.
 - **No account, no telemetry, no analytics, no crash reporting.**
-- **The app makes three kinds of network request:** downloading an AI model when you press Download, a one-time licence activation if you unlock Pro, and a daily check for a new version (Settings ▸ Updates, switch it off there). Nothing else in it talks to the internet — place names come from a table inside the app, and no image ever leaves your Mac.
+- **Nothing is uploaded.** No image ever leaves your Mac. Place names come from a table inside the app, and every AI model runs on your own hardware.
 
 ---
 
