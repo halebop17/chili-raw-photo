@@ -11,6 +11,12 @@
         "quarter": null,
         "groups": [
           {
+            "name": "New",
+            "items": [
+              "<strong>See an HDR merge before it is written, and choose how it is made.</strong> HDR Merge Preview lets you pick the frame it is anchored on, how strongly moving things are kept out and whether to align and crop, with an overlay showing where it decided."
+            ]
+          },
+          {
             "name": "Fixed",
             "items": [
               "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size."
@@ -20,7 +26,7 @@
         "latest": false
       }
     ],
-    "count": 1
+    "count": 2
   },
   {
     "slug": "2026-q3",
