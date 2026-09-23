@@ -122,7 +122,7 @@ Chili RAW installs its own updates — no downloading a disk image and dragging 
 - **Check for Updates Now** asks straight away and tells you either way, including when you are already up to date. It is also in the **Chili RAW** menu.
 - **Check for updates automatically** — on, once a day. It costs a few kilobytes and is how a fix actually reaches you.
 - **Download updates in the background** — off unless you turn it on. An update is around 145 MB, so Chili RAW asks before fetching one; leave this off if you are often on a phone hotspot.
-- Every Chili RAW 1 release is included — 1.1, 1.2, 1.7, all of them. A future Chili RAW 2 is a separate purchase and is never installed by this updater.
+- Every Chili RAW 1 release is included — 1.1, 1.2, 1.7, all of them. Chili RAW 2 will be a separate download rather than an update, and a Chili RAW 1 licence unlocks it too.
 
 ## Automation — the Shortcuts app
 
