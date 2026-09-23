@@ -101,7 +101,6 @@
             "name": "New",
             "items": [
               "<strong>Chili RAW updates itself</strong> — Settings ▸ Updates offers a new version and puts it in place, with no disk image to drag.",
-              "<strong>A 7-day Pro trial, and a place to keep your licence</strong> — Settings ▸ Licence. What you edited during a trial still looks the same after it ends.",
               "<strong>Every mask row shows what it selects</strong>: a small map of the frame with that mask's own coverage lit up.",
               "<strong>⌘Z undoes a develop edit</strong>, ⇧⌘Z puts it forward, and each photo keeps its own history.",
               "<strong>Choose what the photo is judged against</strong> — Settings ▸ General ▸ Photo surround: black, white or a custom grey.",
@@ -411,7 +410,7 @@
         "latest": false
       }
     ],
-    "count": 228
+    "count": 227
   },
   {
     "slug": "2026-q2",
