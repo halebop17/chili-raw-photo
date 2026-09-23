@@ -19,14 +19,16 @@
           {
             "name": "Fixed",
             "items": [
-              "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size."
+              "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size.",
+              "<strong>JPEG brackets merge properly.</strong> Every frame now counts, where the merge used to keep mostly one of them, and blown areas fill in without flat grey patches.",
+              "<strong>A bracket shot RAW+JPEG merges its raw files.</strong> The JPEGs are left out instead of being mixed in with them."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 2
+    "count": 4
   },
   {
     "slug": "2026-q3",
