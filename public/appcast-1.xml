@@ -4,7 +4,7 @@
         <title>Chili RAW</title>
         <item>
             <title>1.2.0</title>
-            <pubDate>Wed, 23 Sep 2026 15:20:10 +0700</pubDate>
+            <pubDate>Wed, 23 Sep 2026 16:19:20 +0700</pubDate>
             <link>https://www.chiliraw.com/</link>
             <sparkle:fullReleaseNotesLink>https://www.chiliraw.com/changelog/</sparkle:fullReleaseNotesLink>
             <sparkle:version>3</sparkle:version>
@@ -13,7 +13,6 @@
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<h3>New</h3>
 <ul>
-<li><strong>Settings ▸ Licence shows how many of your five Macs are using your licence.</strong> <em>Deactivate this Mac</em> frees its place for another one.</li>
 <li><strong>Export every version of a photo, not just the live one.</strong> Tick <em>Include all versions</em> and each one writes its own file, named after the version it came from.</li>
 <li><strong>Put back an earlier copy of a folder's edits.</strong> File ▸ Earlier Copies of This Folder… lists what Chili RAW has kept for it, so a change you regret can be walked back one folder at a time.</li>
 <li><strong>A backup drive that would silently lose your edits is caught before you rely on it.</strong> Some drives and sync folders quietly discard them when you mirror your photos, and the Backups settings now say so.</li>
