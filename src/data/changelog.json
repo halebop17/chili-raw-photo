@@ -9,11 +9,18 @@
         "version": "next release",
         "year": null,
         "quarter": null,
-        "groups": [],
+        "groups": [
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size."
+            ]
+          }
+        ],
         "latest": false
       }
     ],
-    "count": 0
+    "count": 1
   },
   {
     "slug": "2026-q3",
