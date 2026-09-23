@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Settings ▸ Licence shows how many of your five Macs are using your licence.</strong> <em>Deactivate this Mac</em> frees its place for another one.",
               "<strong>Export every version of a photo, not just the live one.</strong> Tick <em>Include all versions</em> and each one writes its own file, named after the version it came from.",
               "<strong>Put back an earlier copy of a folder's edits.</strong> File ▸ Earlier Copies of This Folder… lists what Chili RAW has kept for it, so a change you regret can be walked back one folder at a time.",
               "<strong>A backup drive that would silently lose your edits is caught before you rely on it.</strong> Some drives and sync folders quietly discard them when you mirror your photos, and the Backups settings now say so.",
@@ -76,7 +77,7 @@
         "latest": false
       }
     ],
-    "count": 47
+    "count": 48
   },
   {
     "slug": "2026-q3",
