@@ -15,7 +15,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 
 <img src="public/assets/hero-macbook-neon.png" alt="Chili RAW on a MacBook Pro" width="900">
 
-**[⬇︎ Download Chili RAW 1.1](https://github.com/halebop17/chili-raw-photo/releases/latest)**
+**[⬇︎ Download Chili RAW 1.2](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 
 <sub>
 <b>macOS 15 Sequoia or later · Apple silicon (M1 or newer)</b><br>
@@ -24,7 +24,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 <a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
-`macOS 15+`  `Apple silicon`  `v1.1.0`  `Free to use`  `No account`
+`macOS 15+`  `Apple silicon`  `v1.2.0`  `Free to use`  `No account`
 
 </div>
 

@@ -9,6 +9,22 @@
         "version": "next release",
         "year": null,
         "quarter": null,
+        "groups": [],
+        "latest": false
+      }
+    ],
+    "count": 0
+  },
+  {
+    "slug": "2026-q3",
+    "label": "2026 Q3",
+    "blurb": "Releases from 2026, quarter 3.",
+    "sections": [
+      {
+        "title": "September 2026",
+        "version": "1.2.0",
+        "year": 2026,
+        "quarter": 3,
         "groups": [
           {
             "name": "New",
@@ -74,16 +90,8 @@
             ]
           }
         ],
-        "latest": false
-      }
-    ],
-    "count": 48
-  },
-  {
-    "slug": "2026-q3",
-    "label": "2026 Q3",
-    "blurb": "Releases from 2026, quarter 3.",
-    "sections": [
+        "latest": true
+      },
       {
         "title": "September 2026",
         "version": "1.1.0",
@@ -198,7 +206,7 @@
             ]
           }
         ],
-        "latest": true
+        "latest": false
       },
       {
         "title": "September 2026",
@@ -404,7 +412,7 @@
         "latest": false
       }
     ],
-    "count": 181
+    "count": 229
   },
   {
     "slug": "2026-q2",
