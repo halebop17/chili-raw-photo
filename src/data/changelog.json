@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Shape the Color Mixer as a curve.</strong> Add your own points between its eight colours, for a sky between Aqua and Blue or skin between Red and Orange.",
               "<strong>Choose what a preset carries, slider by slider, and sort presets into categories.</strong> A new preset leaves exposure and white balance alone unless you tick them.",
               "<strong>Darken or lighten the corners with a vignette.</strong> It follows your crop, and Midpoint, Roundness, Feather and Highlights shape it.",
               "<strong>See an HDR merge before it is written, and choose how it is made.</strong> HDR Merge Preview lets you pick the frame it is anchored on, how strongly moving things are kept out and whether to align and crop, with an overlay showing where it decided."
@@ -39,7 +40,7 @@
         "latest": false
       }
     ],
-    "count": 10
+    "count": 11
   },
   {
     "slug": "2026-q3",
