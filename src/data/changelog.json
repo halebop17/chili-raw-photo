@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Choose what a preset carries, slider by slider, and sort presets into categories.</strong> A new preset leaves exposure and white balance alone unless you tick them.",
               "<strong>Darken or lighten the corners with a vignette.</strong> It follows your crop, and Midpoint, Roundness, Feather and Highlights shape it.",
               "<strong>See an HDR merge before it is written, and choose how it is made.</strong> HDR Merge Preview lets you pick the frame it is anchored on, how strongly moving things are kept out and whether to align and crop, with an overlay showing where it decided."
             ]
@@ -20,12 +21,14 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>Copy Settings lists every slider,</strong> and Crop can copy just the aspect ratio, centred on each photo.",
               "<strong>Decimals follow your Mac's region.</strong> Where your region writes numbers with a comma, readouts show 1,5 EV rather than 1.5 EV."
             ]
           },
           {
             "name": "Fixed",
             "items": [
+              "<strong>Lift &amp; Stamp copies Color Mixer, Color Grading and Grain.</strong>",
               "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size.",
               "<strong>JPEG brackets merge properly.</strong> Every frame now counts, where the merge used to keep mostly one of them, and blown areas fill in without flat grey patches.",
               "<strong>A bracket shot RAW+JPEG merges its raw files.</strong> The JPEGs are left out instead of being mixed in with them.",
@@ -36,7 +39,7 @@
         "latest": false
       }
     ],
-    "count": 7
+    "count": 10
   },
   {
     "slug": "2026-q3",
