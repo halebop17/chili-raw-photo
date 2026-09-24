@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Darken or lighten the corners with a vignette.</strong> It follows your crop, and Midpoint, Roundness, Feather and Highlights shape it.",
               "<strong>See an HDR merge before it is written, and choose how it is made.</strong> HDR Merge Preview lets you pick the frame it is anchored on, how strongly moving things are kept out and whether to align and crop, with an overlay showing where it decided."
             ]
           },
@@ -35,7 +36,7 @@
         "latest": false
       }
     ],
-    "count": 6
+    "count": 7
   },
   {
     "slug": "2026-q3",
