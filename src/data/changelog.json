@@ -17,6 +17,12 @@
             ]
           },
           {
+            "name": "Changed",
+            "items": [
+              "<strong>Decimals follow your Mac's region.</strong> Where your region writes numbers with a comma, readouts show 1,5 EV rather than 1.5 EV."
+            ]
+          },
+          {
             "name": "Fixed",
             "items": [
               "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size.",
@@ -29,7 +35,7 @@
         "latest": false
       }
     ],
-    "count": 5
+    "count": 6
   },
   {
     "slug": "2026-q3",
