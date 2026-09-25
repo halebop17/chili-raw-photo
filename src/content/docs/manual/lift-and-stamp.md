@@ -86,6 +86,6 @@ After that it stays out of the way: every later ⌘C copies silently with the ti
 
 - **Cull a shoot fast:** nail the look on one frame, select the rest of that scene in Grid, and stamp all of them in a single click.
 - **Keep geometry per-photo:** leave Crop and Transform off unless the shots are framed identically — a crop that suits one composition usually won't suit another. To give a mixed batch the same shape, use Crop's **Aspect ratio only**.
-- **Copied masks are independent.** Each stamped photo gets its own copy, so tweaking a mask on one image won't disturb the others.
+- **Copied masks are independent.** Each stamped photo gets its own copy, so tweaking a mask on one image won't disturb the others. A Person mask narrowed to certain people covers everyone on the photos it is stamped onto — the people it picked are in the other photo.
 - **Re-lift any time:** focus a different photo and click **Lift** (or press ⌘C) again to replace what's on the board.
 - **The Copy Settings dialog only nags once.** If you want it every time, press ⌘⇧C instead of ⌘C.

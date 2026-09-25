@@ -290,7 +290,7 @@ Masks let you push an adjustment into just part of the frame. The tiles at the t
 | Tile | Selects | Marking |
 |---|---|---|
 | **Subject** | The main subject | teal (macOS) |
-| **Person** | Everyone in the frame; a downloaded model can split a person into face, hair, skin and clothing parts | teal (macOS) |
+| **Person** | Everyone in the frame, or only the people you pick; a downloaded model can split a person into face, hair, skin and clothing parts | teal (macOS) |
 | **Background** | Everything that isn't the subject | teal (macOS) |
 | **Sky** | The sky, tuned side by side against Lightroom | violet (model) |
 | **Object** | Click a thing and it is outlined (SAM 2) | violet (model) |
@@ -309,6 +309,8 @@ Masks let you push an adjustment into just part of the frame. The tiles at the t
 - **Brush** — paint coverage directly on the photo. The circle cursor shows the brush size; painted strokes stay faintly visible.
 
 **Masks can be combined.** Every mask starts as one part, and the **+ Add** / **− Subtract** row under it adds another of *any* kind to the same mask: Sky **minus** a Brush stroke over the mountain, Subject **intersected with** a Luminance range so only the lit half of a face is touched. Each part carries its own row, can be deleted on its own, and clicking a part's operator changes how it combines (**Add**, **Subtract**, **Intersect**).
+
+**A Person mask can pick who.** With two to four people in the photo, a Person mask lists them under **People**: **Everyone**, then one button per person from left to right. Someone you have named in the People view shows by name; the rest are numbered. Click people to narrow the mask to them, and **Everyone** to widen it again. The face parts work with it, so the mask can be one person's lips rather than everyone's. **One Mask per Person** replaces the mask with one mask for each person it covers, with the same parts and adjustments, each named after who it covers — lift one face, cool another. Where people stand very close the app can take two of them for one, and their button then carries both names. With more than four people there is no list, and the mask covers everyone.
 
 **Masks and Lens Corrections.** The detected masks — Subject, Person, Background, Sky, Object, Depth — bend with the picture when you switch **Lens Corrections** on, so a selection stays on the thing it selected. So do Color, Luminance and Wand, which are read from the pixels each time. The three you draw yourself — Radial, Linear and Brush — are placed on the photo as it looks while you draw, exactly like a crop: turning Lens Corrections on or off afterwards moves the picture under them. Draw them after you have settled the correction, or nudge them if you change it.
 
