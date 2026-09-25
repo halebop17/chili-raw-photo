@@ -99,6 +99,7 @@ These rating and flag keys work on the focused photo (or the whole selection) in
 | Z | Fit to screen | |
 | I | Toggle the info box | |
 | O | Peek mask coverage (hold) | |
+| `[` / `]` | Smaller / larger brush — the mask brush and the Repair brush | |
 | \\ | Show the original (whole frame) | |
 | ⇧\\ | Before / after curtain | |
 | B | Before / after loupe | |
