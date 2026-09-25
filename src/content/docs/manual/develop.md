@@ -306,7 +306,7 @@ Masks let you push an adjustment into just part of the frame. The tiles at the t
 
 - **Radial** — an ellipse. Drag it to move; the four side dots resize it.
 - **Linear** — a gradient. Drag the two end points to set it; drag the middle to move the whole thing.
-- **Brush** — paint coverage directly on the photo. The circle cursor shows the brush size; painted strokes stay faintly visible.
+- **Brush** — paint coverage directly on the photo. The circle cursor shows the brush size; painted strokes stay faintly visible. With **Match Color** on, a stroke only takes on colours like the one under the brush where it starts: paint across the sky and the branches in front of it stay out.
 
 **Masks can be combined.** Every mask starts as one part, and the **+ Add** / **− Subtract** row under it adds another of *any* kind to the same mask: Sky **minus** a Brush stroke over the mountain, Subject **intersected with** a Luminance range so only the lit half of a face is touched. Each part carries its own row, can be deleted on its own, and clicking a part's operator changes how it combines (**Add**, **Subtract**, **Intersect**).
 
@@ -327,7 +327,7 @@ The coverage tint is a *targeting aid*: it shows while the mask is still empty, 
 Each selected mask has its own controls:
 
 - Radial / Linear: **Feather** (0…100%, default 50).
-- Brush: **Size** (1…25%, default 6), **Hardness** (0…100%, default 50), an **Erase** toggle, and **Clear**.
+- Brush: **Size** (1…25%, default 6), **Hardness** (0…100%, default 50), an **Erase** toggle, **Clear**, and **Match Color**. With Match Color on, a cross in the cursor marks where each stroke reads its colour, the coverage overlay shows what the stroke is taking while you paint, and **Tolerance** (0…100, default 50) widens or tightens the match — for strokes already painted too. Erasing obeys it as well, removing only the matching colour. The match follows the photo, so a stroke keeps its selection when you change exposure or white balance afterwards.
 - Color: the sampled swatches, plus **Refine**. Luminance: the **min / max** brightness pair, plus **Feather**. Wand: **Tolerance** and a contiguous toggle.
 - Detected masks (Sky, Object, Person): **Feather** softens the boundary, and **Edge** (−100…+100%, default 0) moves it — negative pulls the mask *in*, positive pushes it *out*. They fix different halves of a bad edge: Feather alone leaves a halo where the detection cut wide, Edge alone leaves a hard line. Small values do the work; ±100% is about 2% of the frame's short side. **Subject** and **Background** masks have Edge only — their detected edge is already fine-grained and is left as the model drew it. **Depth** has **Softness** instead, which widens the falloff at both ends of its distance band.
 - **Invert** flips which side of the mask is affected.

@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Paint a mask that stays on one colour.</strong> Turn on Match Color for the brush and a stroke only takes on colours like the one where it starts — the sky, not the branches in front of it.",
               "<strong>Mask one person, not everyone.</strong> A People mask lists who is in the photo, by name when the People tab knows them, and One Mask per Person gives each their own.",
               "<strong>Hide the Develop sections you don't use.</strong> Right-click a section header on Edit or Grading and choose Show/Hide Sections…; a hidden section keeps its edits.",
               "<strong>See where the camera focused.</strong> Show focus point (⇧E) marks it on Canon, Fujifilm, Nikon, Olympus / OM System, Panasonic and Sony photos, in the Lightbox, Compare, Survey, Develop and the grid's magnifier.",
@@ -48,7 +49,7 @@
         "latest": false
       }
     ],
-    "count": 19
+    "count": 20
   },
   {
     "slug": "2026-q3",
