@@ -23,6 +23,8 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>At startup Chili RAW re-reads only the folders that changed since it last ran.</strong>",
+              "<strong>Deleting a photo inside Chili RAW marks its folder with the amber dot</strong> until you synchronize the folder or undo the delete.",
               "<strong>Focus peaking works in the Lightbox, Compare, Survey and Develop,</strong> not only the grid's Loupe: one switch, and E toggles it anywhere.",
               "<strong>Copy Settings lists every slider,</strong> and Crop can copy just the aspect ratio, centred on each photo.",
               "<strong>Decimals follow your Mac's region.</strong> Where your region writes numbers with a comma, readouts show 1,5 EV rather than 1.5 EV."
@@ -31,6 +33,8 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>The amber dot marks folders changed while Chili RAW was closed,</strong> and synchronizing one folder leaves every other folder's dot in place.",
+              "<strong>A missing photo shows Media Offline in the filmstrip.</strong>",
               "<strong>Lift &amp; Stamp copies Color Mixer, Color Grading and Grain.</strong>",
               "<strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size.",
               "<strong>JPEG brackets merge properly.</strong> Every frame now counts, where the merge used to keep mostly one of them, and blown areas fill in without flat grey patches.",
@@ -42,7 +46,7 @@
         "latest": false
       }
     ],
-    "count": 13
+    "count": 17
   },
   {
     "slug": "2026-q3",
