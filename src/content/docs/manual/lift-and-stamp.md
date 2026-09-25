@@ -24,20 +24,31 @@ Ticking is done in the **Copy Settings** dialog, which opens centred over the im
 
 ## What each tick copies
 
-The tick list is split into two sections. Toggle any row on or off; your choices stay put for the next stamp until you change them.
+The tick list has four columns. Toggle any row on or off; your choices stay put for the next stamp until you change them.
 
-**DEVELOP** — the look. The first five are **on by default**; the last three are **off by default** because geometry and masks rarely transfer cleanly between different frames.
+**EDIT and GRADING** — the look, grouped the way the Develop panel is, and **on by default**. Each group shows how many of its sliders are ticked; click the **›** beside it to open the group and tick or untick single sliders — say, everything in Tone except Exposure. A group that is partly ticked shows a dash. Color Mixer and Color Grading open as small grids (colour or tonal range down, Hue / Sat / Lum across).
 
-| Tick | Default | Copies |
-|---|---|---|
-| Film look | On | The chosen film-simulation profile and its Intensity (strength) |
-| White Balance | On | Temp (warm/cool) and Tint (green/magenta) |
-| Tone | On | Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Highlight Recovery, and the AgX tone-curve controls |
-| Presence | On | Vibrance, Saturation, Clarity, Dehaze, and the Black & White toggle |
-| Detail | On | Sharpening and Noise Reduction |
-| Crop | Off | The crop rectangle, Straighten angle, and horizontal/vertical flips |
-| Transform | Off | Vertical & horizontal keystone, fine Rotate, Aspect, Scale, and X/Y offset |
-| Masks | Off | Every local-adjustment mask (radial, linear, brush) on the source, copied as fresh independent masks |
+| Group | Copies |
+|---|---|
+| White Balance | Temp and Tint |
+| Tone | Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Highlight Recovery and its Amount, the Makeup sliders and the Shadow grip sliders |
+| Presence | Vibrance, Saturation, Texture, Clarity, Punch, Dehaze and its Distance, and the Black & White toggle |
+| Tone Mapping | The mode (AgX / Standard / Minimal) and every AgX shaping and primaries control |
+| Curve | The RGB and per-channel point curves, the four region sliders and their split points |
+| Color Mixer | Hue, Saturation and Luminance for all eight colour bands, and the points added on its curves |
+| Detail | Sharpening (Amount, Radius, Detail, Masking), NR (Apple) and the AI detail controls |
+| Vignette | Amount, Midpoint, Roundness, Feather and Highlights |
+| Color Grading | Hue, Saturation and Luminance for Shadows, Midtones and Highlights, plus Blending and Balance |
+| LUT | The chosen LUT and its Intensity |
+| Grain | Amount, Size, Variation, Softness and Mode — each photo keeps its own grain pattern |
+
+**GEOMETRY** — **off by default**, because geometry and masks rarely transfer cleanly between different frames.
+
+| Tick | Copies |
+|---|---|
+| Crop | Open it with **›** to choose: **Exact crop** (the default) copies the crop rectangle, Straighten angle, 90° turns and flips — the same part of every photo, for a series shot from a tripod. **Aspect ratio only** copies just the crop's shape and centres it on each photo, so a mix of portrait and landscape frames all get, say, 4:5. |
+| Transform | Vertical & horizontal keystone, fine Rotate, Aspect, Scale, and X/Y offset |
+| Masks | Every local-adjustment mask (radial, linear, brush) on the source, copied as fresh independent masks |
 
 **METADATA** — all three are **off by default**, so a normal stamp never touches ratings, flags, or location unless you ask it to.
 
@@ -61,7 +72,7 @@ You don't have to open the panel at all. ⌘C copies the focused photo, and ⌘V
 | ⌘⇧C | Copy, and always show the Copy Settings dialog |
 | ⌘V | Stamp the ticked parts onto the selection (or the focused photo) |
 
-**The Copy Settings dialog.** The first time you press ⌘C in a folder, a dialog opens centred over the image showing every tick in three columns — Develop, Geometry, Metadata — so you can see the whole list without scrolling. Change what you want, click **Copy**, and it closes.
+**The Copy Settings dialog.** The first time you press ⌘C in a folder, a dialog opens centred over the image showing every tick in four columns — Edit, Grading, Geometry, Metadata — so you can see the whole list without scrolling. Change what you want, click **Copy**, and it closes.
 
 After that it stays out of the way: every later ⌘C copies silently with the ticks you chose, so ⌘C → ⌘V is a two-keystroke copy of a look. Press **⌘⇧C** whenever you want the dialog back to change what gets copied. It also re-arms itself when you open a different folder, so a new shoot gets one look at the list.
 
@@ -74,7 +85,7 @@ After that it stays out of the way: every later ⌘C copies silently with the ti
 ## Tips
 
 - **Cull a shoot fast:** nail the look on one frame, select the rest of that scene in Grid, and stamp all of them in a single click.
-- **Keep geometry per-photo:** leave Crop and Transform off unless the shots are framed identically — a crop that suits one composition usually won't suit another.
+- **Keep geometry per-photo:** leave Crop and Transform off unless the shots are framed identically — a crop that suits one composition usually won't suit another. To give a mixed batch the same shape, use Crop's **Aspect ratio only**.
 - **Copied masks are independent.** Each stamped photo gets its own copy, so tweaking a mask on one image won't disturb the others.
 - **Re-lift any time:** focus a different photo and click **Lift** (or press ⌘C) again to replace what's on the board.
 - **The Copy Settings dialog only nags once.** If you want it every time, press ⌘⇧C instead of ⌘C.

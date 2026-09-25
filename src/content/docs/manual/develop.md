@@ -95,6 +95,12 @@ Each tab keeps its own order and both survive a relaunch. Geometry, Repair and M
 
 The order is how the panel is laid out and nothing more. It touches no edit, no version and no sidecar: two photos given the same adjustments look the same whichever order you keep the sections in.
 
+## Showing and hiding sections
+
+**Right-click any section header** on Edit or Grading and choose **Show/Hide Sections…**. A list of both tabs' sections opens beside the panel: untick one to take it out of the panel, tick it again to bring it back where it was, or click **Show All**.
+
+Hiding a section only tidies the panel. Its edits stay on the photo, and a hidden section whose settings aren't at their defaults on the current photo is marked **Has edits** in the list. If you hide every section on a tab, the tab shows a **Show Sections…** button in their place.
+
 ## Edit tab
 
 **Basic.** In Lightroom order:
@@ -110,6 +116,8 @@ The order is how the panel is laid out and nothing more. It touches no edit, no 
 **Curve.** A tone curve with **RGB** plus separate **R / G / B** channels. Click the line to add a point, drag to shape it, drag an interior point off the top or bottom to delete it. Below the graph is a **parametric** curve — four region sliders (**Highlights / Lights / Darks / Shadows**) that bend the curve *smoothly* within their tonal band instead of as a straight lift, so it never kinks. Hovering a region slider shades the stretch of the curve it reaches (widest where it bites, tapering to nothing at the ends). The three small handles under the graph move the boundaries between the four regions. The parametric layer stacks *on top of* the point curve — you can use either or both.
 
 **Color Mixer (HSL).** Targeted, corrective color: eight color bands (**Red, Orange, Yellow, Green, Aqua, Blue, Purple, Magenta**) with **Hue / Saturation / Luminance** tabs — eight sliders per tab. Use it to fix a *specific* color in the photo: pull a too-loud sky's Blue Saturation down, nudge skin Hue, darken foliage Luminance. Greys are left alone, so a Luminance move on "Red" only touches actually-red pixels. (For adding a *creative* color wash to a whole tonal range, use the Color Grading wheels on the Grading tab instead.)
+
+*As a curve.* The switch at the top of the section, **Sliders | Curve**, shows the same mixer as three curves — Hue, Saturation and Luminance, on the same tabs — with every hue from red to red across and flat through the middle meaning no change. The eight colored dots on the curve are the eight sliders: drag one up or down and its slider moves with it. Click anywhere on the curve to add a point of your own at that hue, for a color that falls between two bands — a sky between Aqua and Blue, skin between Red and Orange — and drag it wherever you like. A point only reaches as far as the points either side of it, so it changes that color and nothing else. Double-click a point you added, or drag it off the top or bottom, to remove it. The strip under the curve shows every hue, and the thinner strip below it what each becomes. While you're on the sliders, a dot on **Curve** means points have been added there. The section remembers which view you used last.
 
 **Tone Mapping.** Sets the display tone transform. **Mode** is one of three:
 
@@ -160,6 +168,16 @@ Your Basic Contrast still applies in all three modes.
 - **AI Detail** (0…100, Pro) — runs the ×2 upscaling model and resamples straight back down, keeping the structure it restores and discarding the resolution it invents. **Judge it at 1:1** — at fit view you are looking at a proxy.
 
 The three AI rows carry a violet dot: they run a model you downloaded yourself, on your own Mac.
+
+**Vignette.** Darkens or lightens the corners on purpose, as a finishing touch. It follows your crop: the vignette is centred on the picture as you cropped and straightened it, not on the original frame. (Removing the darkening your *lens* put in the corners is a different job — that is **Lens Corrections** on the Geometry tab.)
+
+- **Amount** (−100…+100) — negative darkens the corners, positive fades them towards white. 0 is off.
+- **Midpoint** (0…100, default 50) — how far in the vignette reaches. Lower brings it in towards the centre; higher keeps it in the corners.
+- **Roundness** (−100…+100) — 0 is an oval that fits the frame, +100 a circle, −100 a rounded rectangle.
+- **Feather** (0…100, default 50) — how soft the transition is. 0 gives a hard edge.
+- **Highlights** (0…100) — with a negative Amount, keeps bright things in the corners bright: a lamp or a window stays lit while the shadows around it darken.
+
+The four sliders under Amount wait until Amount moves. The vignette isn't offered for video clips.
 
 **Bokeh** *(Pro)*. A depth-based background blur, driven by the photo's own distance map — an optical blur, not a mask. It runs in scene-linear *before* the tone map, which is what keeps specular highlights as bright discs instead of grey smudges.
 
@@ -366,8 +384,12 @@ A clip opens in Develop like a photo, with the controls that survive frame-to-fr
 
 Two ways to reuse a look:
 
-- **Presets** (the aperture button, top-right of the photo, next to Lift & Stamp). Click a saved preset to apply it, × to delete one, or **Save current as preset…** to name the current photo's look and add it to the list. A preset carries the *look* only — film, white balance, tone, presence and detail — and leaves each photo's own crop, transform and masks untouched, so applying one across a selection never disturbs your framing or local work.
-- **Copy Settings** (the tag button, top-right). It opens the centred dialog listing exactly which parts carry over — Film look, White Balance, Tone, Presence, Detail, Crop, Transform, Masks, and even metadata (Rating, Flag, GPS). Tonal groups are ticked on by default; crop, transform, masks and metadata are off. **⌘C** copies the current photo, raising that dialog the first time in a folder, and **⌘V** stamps it onto the selection. **⌘⇧C** and the tag button bring the dialog back without re-lifting.
+- **Presets** (the aperture button, top-right of the photo, next to Lift & Stamp). Click a saved preset to apply it to the selection, × to delete one, or **Save current as preset…** to save the current photo's look.
+  - **Saving** opens a window with a name, a category and the same tick list as Copy Settings (below), Edit and Grading side by side. Tick exactly what the preset carries — whole groups, or single sliders inside them. It starts with **White Balance and Exposure off**, so a look preset leaves each photo's colour temperature and brightness alone; tick them if you want them. The line above the ticks counts what the preset carries and names what it skips.
+  - **Crop – aspect ratio only**, under Geometry, saves the ratio of the current photo's crop (say 4:5). Applied, it crops each photo to that ratio, centred on the photo itself — portrait or landscape. It's off unless you tick it, and only available when the photo is cropped. A preset never carries a crop's exact position, straighten, transform, masks, ratings or GPS: those belong to one photo.
+  - **Categories.** Presets are listed under their category. Right-click a preset to **Apply**, **Change What It Carries…** (the same window, for a preset you already have), **Move to** another category or a **New Category…**, **Rename…** or **Delete**. Right-click a category heading to rename or remove it — removing keeps its presets, which move to Uncategorised. Each row notes what the preset carries, so you know before you click.
+  - Presets saved before the tick list existed carry everything, exactly as they always did, until you change them.
+- **Copy Settings** (the tag button, top-right). It opens the centred dialog listing exactly what carries over, in four columns — Edit, Grading, Geometry, Metadata. The look is ticked on by default; crop, transform, masks and metadata are off. **⌘C** copies the current photo, raising that dialog the first time in a folder, and **⌘V** stamps it onto the selection. **⌘⇧C** and the tag button bring the dialog back without re-lifting. See [Lift & Stamp](#6-lift--stamp) for every tick.
 
 **Reset.** Use **Reset All** in the footer to clear everything, the Geometry tab's **Reset** for just crop/straighten/flip/transform, or double-click any single slider to reset that control.
 

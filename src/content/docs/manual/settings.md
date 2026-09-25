@@ -46,7 +46,7 @@ These four decide what a RAW file looks like before you touch a slider. Changing
 - **Grid thumbnail size** — drag from 96 px to 384 px (default 192 px). This is the same control as the size slider in the grid toolbar.
 - **Grid image info** — whether each tile's filename + dimensions caption shows only when you hover (*Display on hover*, the default) or stays pinned on every tile (*Always display for all images*).
 - **Grid Loupe (hover magnifier)** — on by default. When on, the Loupe button and the **`** key are available in the grid. Turn it off to remove the feature entirely.
-- **Focus peaking in Loupe** — tints the in-focus edges inside the magnifier so critical focus is objective, not eyeballed. Off by default; you can also toggle it live with its shortcut while the loupe is up.
+- **Focus peaking** — tints the in-focus edges red so critical focus is objective, not eyeballed — in the Loupe, the Lightbox, Compare, Survey and Develop. Off by default; you can also toggle it live with its shortcut.
 - **Rate & advance** — after you rate or flag a *single* photo, focus jumps to the next one so you can cull a whole shoot from the keyboard. Off by default. A multi-select batch stays put so it never runs away from you.
 - **Confirm before deleting** — ask before moving files to the Trash with ⌫. The confirmation's *Don't Ask Again* button turns this off.
 
@@ -100,7 +100,7 @@ Every AI feature runs **on-device — no image ever leaves your Mac.** The app s
 
 ## Shortcuts
 
-Every shortcut in this tab is rebindable. It groups them into **Main views**, **Grid** (Grid Loupe, focus peaking, select all), **Comparison modes** (Compare, Survey, Compare Versions), **Develop tabs** (Geometry, Grading, Repair, Masking), **Develop loupe** (before/after zoom), **Proof**, **Grid bands** (filter ribbon, stack settings), **Display** (Darkroom, cheat-sheet, sidebar, filmstrip) and **Culling** (the rating and flag keys).
+Every shortcut in this tab is rebindable. It groups them into **Main views**, **Grid** (Grid Loupe, focus peaking, show focus point, select all), **Comparison modes** (Compare, Survey, Compare Versions), **Develop tabs** (Geometry, Grading, Repair, Masking), **Develop loupe** (before/after zoom), **Proof**, **Grid bands** (filter ribbon, stack settings), **Display** (Darkroom, cheat-sheet, sidebar, filmstrip) and **Culling** (the rating and flag keys).
 
 To rebind: **click a shortcut chip**, then **press the new combination**. **Esc** cancels and keeps the current key; **Delete** resets that one row to its default. **Reset all to defaults** at the bottom restores every binding at once.
 

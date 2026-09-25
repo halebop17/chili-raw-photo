@@ -78,9 +78,11 @@ Click **Save** to store it (or **Cancel** to discard). A Smart Folder with no ru
 
 Chili RAW watches your added folders in the background. When files change on disk outside the app — a card import, a copy in Finder, a delete — the folder (and its parents) get a small **amber dot** on their sidebar row. Hover it and you'll see *"Changed on disk — right-click → Synchronize Folder."*
 
-The dot is only an advisory flag ("look here"). To reconcile, **right-click the folder → Synchronize Folder.** Chili RAW re-scans that folder tree, indexes new and changed files, drops rows for files that are gone, refreshes the folder tree and counts, and clears the badge. A toast reports the result, e.g. **"Synced Trip: +12 · −3"** (twelve added/updated, three removed).
+Changes made while Chili RAW was closed are caught the next time it starts: new and edited photos are picked up on their own, and a folder whose photos have gone gets the dot. Deleting a photo from inside Chili RAW marks its folder too, until you synchronize it or undo the delete. Until then, a photo whose file is gone shows a **Media Offline** mark in the grid and the filmstrip.
 
-Synchronize is the authoritative step — the badge just tells you where to point it.
+To reconcile, **right-click the folder → Synchronize Folder.** Chili RAW re-scans that folder tree, indexes new and changed files, drops rows for files that are gone, refreshes the folder tree and counts, and clears the dot. A toast reports the result, e.g. **"Synced Trip: +12 · −3"** (twelve added/updated, three removed).
+
+Synchronizing a folder clears the dot on that folder and everything inside it, and nowhere else. A folder that was itself deleted or renamed is no longer in the sidebar, so its dot shows on the nearest folder above it — synchronize that one.
 
 ## The Catalog menu
 

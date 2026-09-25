@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Hide the Develop sections you don't use.</strong> Right-click a section header on Edit or Grading and choose Show/Hide Sections…; a hidden section keeps its edits.",
               "<strong>See where the camera focused.</strong> Show focus point (⇧E) marks it on Canon, Fujifilm, Nikon, Olympus / OM System, Panasonic and Sony photos, in the Lightbox, Compare, Survey, Develop and the grid's magnifier.",
               "<strong>Shape the Color Mixer as a curve.</strong> Add your own points between its eight colours, for a sky between Aqua and Blue or skin between Red and Orange.",
               "<strong>Choose what a preset carries, slider by slider, and sort presets into categories.</strong> A new preset leaves exposure and white balance alone unless you tick them.",
@@ -46,7 +47,7 @@
         "latest": false
       }
     ],
-    "count": 17
+    "count": 18
   },
   {
     "slug": "2026-q3",

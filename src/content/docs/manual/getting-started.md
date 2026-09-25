@@ -31,7 +31,7 @@ Each folder you add appears as a root in the **FOLDERS** list, and every folder 
 - **Expand / collapse** a folder by clicking its caret. Subfolders load the moment you open it.
 - **Open a folder** by clicking its name (or its icon). The name highlights, and the work area fills with that folder's photos in the current view.
 - **Recursive count** — the number on the right of each row is how many images that folder holds, counting everything in its subfolders too. Counts appear on every row once the catalog has finished indexing.
-- **Amber dot** — a small amber dot on a folder row means the folder has **changed on disk** since Chili RAW last read it (files added, removed, or moved). Right-click the row and choose **Synchronize Folder** to refresh it.
+- **Amber dot** — a small amber dot on a folder row means something in it **no longer matches the catalog**: photos added, changed, moved or deleted outside Chili RAW (even while it was closed), or deleted from inside it. Right-click the row and choose **Synchronize Folder** to bring it back in step.
 
 **Right-click any folder** for its menu:
 

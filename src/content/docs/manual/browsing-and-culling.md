@@ -67,7 +67,7 @@ The toolbar above the grid is split by what each button *does*, and that split i
 - **Select** — select all / none / invert, plus **Select only** by rating, flag or media type.
 - **Sort** — the orders above, and the scoring controls.
 - **Filter** — rating (*at least* or *exactly*), colour flags with live counts, media type, place, people (**All of them** / **Any of them**), *More than one edit version*, and *Screenshots & documents*. A line at the bottom counts what's showing, **Save as Smart Folder** turns the current rules into a saved one, and **Clear all filters** drops them. Closing the band **leaves the rules on** — the count in the toolbar tells you they're there, and **⌥F** reopens it.
-- **View** — tile size, and what each tile carries: filename, file-type badge, rating & flag, sequence number, Vision score chip, and a tint on the photos that live directly in the selected folder rather than in a subfolder.
+- **View** — tile size, and what each tile carries: filename, file-type badge, rating & flag, sequence number, Vision score chip, and a tint on the photos that live directly in the selected folder rather than in a subfolder. Under **Panels** it also holds the metadata panel, **Focus peaking** and **Show focus point** ([chapter 3](/manual/loupe-and-viewer/)).
 - **Stacks**, **Search** and **Loupe** open their own bands beside them (**⌥S** shows and hides the stack settings).
 - The **view-mode switch** at the right end picks **Grid**, **Lightbox**, **Compare**, **Survey** or **Versions** — see [chapter 3](/manual/loupe-and-viewer/).
 
@@ -90,9 +90,20 @@ Right-clicking a tile acts on the whole selection when you right-click inside it
 - **Versions ▸** — switch version, **Create New Version**, **Compare Versions**, or delete the active one ([chapter 5](/manual/develop/))
 - **Find Similar Photos** — photos that *look* like this one, nearest first (needs the search index; see [chapter 9](/manual/catalog-and-search/))
 - **Set as Stack Pick** and **Survey Stack (n frames)** on a stacked tile
-- **Merge to HDR…** on a selection of two or more frames, or **Merge Stack to HDR (n frames)…** on a bracket that's already stacked
+- **Merge to HDR** on a selection of two or more frames, or **Merge Stack to HDR (n frames)** on a bracket that's already stacked — and under it **HDR Merge Preview…** *(Pro)*
 
 **Merge to HDR** aligns the selected frames, weights each pixel by how well that frame exposed it, and writes a new **linear DNG** (TIFF where it can't) next to the originals — then opens it in Develop as its own photo, carrying the reference frame's capture date. Moving subjects are held to the reference frame rather than blended, so a person who walked through the bracket comes out sharp instead of transparent. The merged file has all the headroom of the bracket, so it wants developing from scratch: it is a *negative*, not a finished picture.
+
+**HDR Merge Preview…** *(Pro)* shows the merge before anything is written, the way the file will look when it opens in Develop, and lets you decide how it is made:
+
+- **Reference** — the frame the merge is anchored on. Its framing wins, anything that moved comes from it, and blown highlights are filled in only where *it* is blown. The automatic choice, the middle exposure, is marked.
+- **Deghost** — None, Low, Medium or High: how readily a frame is left out where it disagrees with the reference. Medium is what Merge to HDR uses; None blends everything, ghosts included.
+- **Show overlay** — red where a frame was left out because it disagreed with the reference (usually because something moved), blue where blown highlights were filled in from a darker frame.
+- **Auto align** and **Auto crop** — switch alignment off for a tripod bracket, or keep the whole frame instead of trimming the edges the frames don't share.
+
+JPEG brackets merge too. Each JPEG carries the camera's own contrast, and Chili RAW takes it back out of every frame before merging, so the frames line up the way raw ones do. A JPEG exported from an editor with local adjustments — Shadows, Highlights, Clarity — can still disagree with its neighbours in places, and shows red there. Raw keeps more of the scene, so shoot the bracket in raw when you can.
+
+If the photos were all taken at the same exposure, the dialog says so: they are not a bracket, and merging them adds nothing. Some photos are left out, and the dialog names them (Merge to HDR says how many): one that records no exposure — an earlier merge, or an export that lost its camera details — when the others record one; and in a bracket shot RAW+JPEG, the JPEGs, since raw files and JPEGs don't merge together. The preview is a smaller copy, so judge fine shadow noise on the merged file itself. Merge to HDR keeps working exactly as before: nothing chosen in the dialog changes it.
 
 ## The info overlays
 

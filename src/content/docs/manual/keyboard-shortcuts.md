@@ -68,7 +68,8 @@ These rating and flag keys work on the focused photo (or the whole selection) in
 | Key | Action | Rebind |
 |-----|--------|:---:|
 | ` | Summon / dismiss the Grid Loupe | ● |
-| e | Toggle focus peaking (while the loupe is up) | ● |
+| e | Toggle focus peaking — also in the Lightbox, Compare, Survey and Develop | ● |
+| ⇧E | Show / hide where the camera focused — also in the Lightbox, Compare, Survey and Develop | ● |
 
 *The Loupe follows your cursor over the thumbnails — no need to open an image. You can also toggle it with the* **Loupe** *button in the grid toolbar.*
 

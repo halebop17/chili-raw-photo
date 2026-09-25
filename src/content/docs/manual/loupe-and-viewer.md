@@ -22,11 +22,25 @@ The Loupe reads a high-resolution preview, so it stays responsive even on RAW fi
 
 ## Focus peaking
 
-Inside the Loupe you can turn on **focus peaking**, which tints the sharpest (in-focus) edges **red** so critical focus is objective instead of eyeballed.
+**Focus peaking** tints the sharpest (in-focus) edges **red** so critical focus is objective instead of eyeballed. It works wherever you look at a whole photo: the Loupe, the Lightbox, Compare, Survey, Versions and the Develop canvas.
 
-- With the Loupe up, press **e** to toggle peaking on or off. It takes effect immediately on the frame you're hovering.
-- Peaking is **off by default**. You can set the starting state in Settings (below).
-- The **e** key only does anything while the Loupe is active.
+- Press **e** to turn it on or off, or use **Focus peaking** in the grid toolbar's **View** panel. It's one switch for every surface, and it stays as you left it.
+- In Compare and Survey every frame gets its own peaking, and it pans and zooms with the frames — so you can see which shot of a burst is sharp where it matters.
+- On the Develop canvas it reads the photo when you open it and again after a crop, straighten or lens correction; dragging a tone or colour slider doesn't redo it. It's hidden while you crop.
+- On the grid itself **e** only works while the Loupe is up.
+- Peaking is **off by default**.
+
+## Where the camera focused
+
+Chili RAW can mark **where the camera focused**: the autofocus point or area it used, as the camera wrote it into the file. Focus peaking shows what *is* sharp; this shows what the camera was *trying* to make sharp. When the two disagree, the frame missed.
+
+- Turn it on with **Show focus point** in the grid toolbar's **View** panel, or press **⇧E**. It stays on until you turn it off.
+- It shows in the Lightbox, Compare, Survey and Versions, on the Develop canvas, and in the Loupe magnifier when you hover over the spot the camera focused on.
+- It's a thin white box with a dark edge: a small square where the camera records a point, the real rectangle where it records an area. It follows your crop, straighten and lens correction, and when a crop cuts the point out there's simply no box. It's hidden while you crop.
+- It works with photos from **Canon, Fujifilm, Nikon, Olympus / OM System, Panasonic and Sony** cameras. Nothing is drawn on photos with no focus data, such as phone pictures, files another app has stripped, or a manual-focus shot the camera recorded no point for.
+- The first time a photo shows it, the file is read, so the box appears a moment after the picture. After that it's remembered.
+
+The info box (**i**) gets a **Focus** row whenever the file says how the camera focused, whether or not the box is on: the focus mode, the AF area mode and, where the camera records them, the focus distance and its own verdict, for example *AF-C · Tracking · 8.19 m*.
 
 ## The Lightbox (full-screen viewer)
 
@@ -68,7 +82,8 @@ Three multi-pane modes sit beside Grid and Lightbox in the view-mode switch at t
 | Key | Action |
 |-----|--------|
 | **`** | Summon / dismiss the grid Loupe |
-| **e** | Toggle focus peaking (while the Loupe is up) |
+| **e** | Toggle focus peaking |
+| **⇧E** | Show / hide where the camera focused |
 | Double-click / **Return** | Open the selected photo in the full-screen viewer |
 | **← / →** | Previous / next photo |
 | **↑ / ↓** | Zoom in / out (viewer) |
@@ -78,17 +93,18 @@ Three multi-pane modes sit beside Grid and Lightbox in the view-mode switch at t
 | **⌥T** | Fold the filmstrip away / bring it back |
 | **Esc** | Leave the Lightbox, back to the Grid |
 
-The Loupe and focus-peaking keys are rebindable in **Settings → Shortcuts → Grid** ("Grid Loupe" and "Focus peaking").
+The Loupe, focus-peaking and focus-point keys are rebindable in **Settings → Shortcuts → Grid** ("Grid Loupe", "Focus peaking" and "Show focus point").
 
 ## Settings
 
 Under **Settings → General → Browse**:
 
 - **Grid Loupe (hover magnifier)** — turns the whole feature on or off, including the toolbar button and the **`** shortcut. **On by default**; switch it off to remove the Loupe entirely.
-- **Focus peaking in Loupe** — sets the default state of peaking. **Off by default**; you can still flip it live with **e** while the Loupe is up.
+- **Focus peaking** — the same switch as the View panel's. **Off by default**; flip it live with **e**.
 
 ## Tips
 
 - Sweep the Loupe across a rapid-fire burst to find the one frame with tack-sharp focus, then double-click it to confirm in the full viewer.
 - Turn on focus peaking when depth of field is shallow — the red edges make it obvious whether focus landed on the eyes or the ear.
+- Picking between near-identical frames? Put them in Compare or Survey with peaking on, and zoom in: the red shows which one is sharp where it counts.
 - In the viewer, keep the tools collapsed and use **← / →** plus the filmstrip as a quick, keyboard-driven light-table; open the sliders panel only when you're ready to actually edit.
