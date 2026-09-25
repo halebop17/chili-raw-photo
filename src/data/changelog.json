@@ -23,6 +23,7 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>Focus peaking works in the Lightbox, Compare, Survey and Develop,</strong> not only the grid's Loupe: one switch, and E toggles it anywhere.",
               "<strong>Copy Settings lists every slider,</strong> and Crop can copy just the aspect ratio, centred on each photo.",
               "<strong>Decimals follow your Mac's region.</strong> Where your region writes numbers with a comma, readouts show 1,5 EV rather than 1.5 EV."
             ]
@@ -41,7 +42,7 @@
         "latest": false
       }
     ],
-    "count": 12
+    "count": 13
   },
   {
     "slug": "2026-q3",
