@@ -61,6 +61,8 @@ Waveform and Parade are marked **75 / 50 / 25** down the left — percentages, n
 
 **Hover the graph** for a vertical line, the tone under the pointer, and how much of the photo is darker than that point.
 
+**Drag the histogram to move a slider.** On the Edit tab, with RGB Overlay or RGB Split showing, the graph is divided into five zones, left to right: **Blacks, Shadows, Exposure, Whites, Highlights**. Hover and the zone under the pointer lights up with the name and value of its slider; drag left or right and that slider moves with you, in the panel as well. If you have hidden the Tone section, the histogram leaves those sliders alone too. The zones sit where each slider changes the picture most, which is why Highlights, not Whites, holds the right-hand end. One drag is one undo. On a video clip there are three zones, because Shadows and Highlights do not apply to video.
+
 **The two percentages in the graph's top corners** are how much of the photo is pure black (left) and pure white (right) — detail that no longer exists. **Click one** and those pixels are painted on the photo, blue for the crushed shadows and red for the blown highlights, so you can see *where* rather than just how much. Click again to switch it off.
 
 **Point at the photo to place it on the scope.** Move the pointer over the picture and a marker shows where that pixel sits: a tick per channel on the histogram, a horizontal rule at that brightness on the waveform and parade, a ring on the vectorscope. Its R/G/B values are printed in the corner as percentages.

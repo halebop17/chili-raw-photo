@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Drag the histogram to move a tone slider.</strong> Blacks, Shadows, Exposure, Whites and Highlights each have a zone on the graph; hover to see which, then drag.",
               "<strong>Build a brush mask up gradually.</strong> Flow sets how much each stroke adds and Strength how far it can go; <code>[</code> and <code>]</code> resize the brush.",
               "<strong>Paint a mask that stays on one colour.</strong> Turn on Match Color for the brush and a stroke only takes on colours like the one where it starts — the sky, not the branches in front of it.",
               "<strong>Mask one person, not everyone.</strong> A People mask lists who is in the photo, by name when the People tab knows them, and One Mask per Person gives each their own.",
@@ -50,7 +51,7 @@
         "latest": false
       }
     ],
-    "count": 21
+    "count": 22
   },
   {
     "slug": "2026-q3",
