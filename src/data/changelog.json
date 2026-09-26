@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Match a photo's colours to another image.</strong> Photo ▸ Match Colours… sets the sliders from a reference photo or file, and every value it writes stays editable.",
               "<strong>Clarity and Texture for one tonal range.</strong> Shadows, Midtones and Highlights sliders under each add it to that part of the photo and leave the rest alone.",
               "<strong>Export to PNG.</strong> Lossless and 16-bit, with the same frame, watermark and metadata as every other format.",
               "<strong>A RAW opens at the aspect ratio set in the camera.</strong> Shot at 16:9 or 1:1, it opens cropped to that, with the rest of the sensor one drag or one Free away.",
@@ -55,7 +56,7 @@
         "latest": false
       }
     ],
-    "count": 26
+    "count": 27
   },
   {
     "slug": "2026-q3",
