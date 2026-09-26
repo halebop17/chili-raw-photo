@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>A RAW opens at the aspect ratio set in the camera.</strong> Shot at 16:9 or 1:1, it opens cropped to that, with the rest of the sensor one drag or one Free away.",
               "<strong>Drag the histogram to move a tone slider.</strong> Blacks, Shadows, Exposure, Whites and Highlights each have a zone on the graph; hover to see which, then drag.",
               "<strong>Build a brush mask up gradually.</strong> Flow sets how much each stroke adds and Strength how far it can go; <code>[</code> and <code>]</code> resize the brush.",
               "<strong>Paint a mask that stays on one colour.</strong> Turn on Match Color for the brush and a stroke only takes on colours like the one where it starts — the sky, not the branches in front of it.",
@@ -28,6 +29,7 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>Click an object to mask it on a cropped, straightened or lens-corrected photo too.</strong>",
               "<strong>At startup Chili RAW re-reads only the folders that changed since it last ran.</strong>",
               "<strong>Deleting a photo inside Chili RAW marks its folder with the amber dot</strong> until you synchronize the folder or undo the delete.",
               "<strong>Focus peaking works in the Lightbox, Compare, Survey and Develop,</strong> not only the grid's Loupe: one switch, and E toggles it anywhere.",
@@ -51,7 +53,7 @@
         "latest": false
       }
     ],
-    "count": 22
+    "count": 24
   },
   {
     "slug": "2026-q3",

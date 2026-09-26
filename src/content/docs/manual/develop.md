@@ -245,6 +245,7 @@ Opening this tab shows the whole frame with the crop overlay so you can reframe;
 - **Crop / Done** toggles the crop overlay. Drag the corner handles to resize, drag inside to reposition; rule-of-thirds guides help you place the frame.
 - **Reset** clears all geometry (crop, straighten, flips and transform). **Flip H** and **Flip V** mirror the frame.
 - Aspect pills — **Free, 1:1, 3:2, 4:3, 16:9** — plus a **Portrait / Landscape** toggle to flip the ratio's orientation.
+- **As Shot.** A RAW shot with the camera set to 16:9, 1:1 or another ratio still holds the whole sensor, and opens cropped to the ratio you shot at. That crop is only where it starts, not an edit: drag it out to the edges, or pick **Free**, for the whole frame, and **As Shot** (it appears on such photos) puts it back. The photo counts as unedited until you change it. To open every RAW at the full sensor frame instead, turn off **Open RAW files at the aspect ratio set in the camera** in Settings.
 - **Angle** slider: −15…+15°, in 0.1° steps. The **Auto** pill beside it runs Vision horizon detection and straightens the shot automatically (it tells you if it can't find a horizon).
 
 **Transform.** Vertical and Horizontal keystone correction (−100…+100), Rotate (−15…+15°), Aspect stretch (−100…+100), Scale (50…150%, default 100), and X/Y Offset (−100…+100).
