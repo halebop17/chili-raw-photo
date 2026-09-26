@@ -1,0 +1,46 @@
+---
+import Site from "../../layouts/Site.astro";
+---
+<Site type="article"
+      title="What's next for Chili RAW"
+      description="A quick look at what we're working on next: Chili RAW for iPad and iPhone, syncing through the cloud storage you already have, tethered shooting, and optional AI tools.">
+  <div class="wrap" style="padding-top: clamp(30px, 4vw, 48px);">
+    <a href="/articles/" class="eyebrow" style="color: var(--mute);">&#8592; Articles</a>
+  </div>
+
+  <div class="wrap" style="padding-top: clamp(22px, 3vw, 34px);">
+    <div class="eyebrow" style="color: var(--accent);">roadmap</div>
+    <h1 class="h-hero" style="margin-top: 16px; max-width: 22ch;">What&#x27;s next for Chili RAW</h1>
+    <div class="eyebrow" style="margin-top: 22px;">26 September 2026 &#183; 3 min read</div>
+  </div>
+
+  <article class="art">
+  <p class="art-p">It&#x27;s been a busy few months. Chili RAW has changed a lot in a short time, and honestly, it&#x27;s grown faster than we expected. Things keep getting added, and the app is in a much better place than it was not long ago.</p>
+  <p class="art-p">A few people have asked what&#x27;s coming next, so here&#x27;s a quick look at what we&#x27;re working on. None of it is finished yet, so take this as a look at where we&#x27;re headed, not a list of promises with dates on them.</p>
+  <h2 class="h-sub art-h">iPad and iPhone</h2>
+  <p class="art-p">We&#x27;ve wanted this for a while. A lot of us look through photos on an iPad on the sofa or on the phone while waiting somewhere, and it&#x27;s annoying when the edits and ratings are all stuck on the Mac.</p>
+  <p class="art-p">So we&#x27;re building Chili RAW for iPad and iPhone. The idea is that it&#x27;s the same app, not a separate little viewer. You can go through your photos, rate them and edit them, and when you&#x27;re back at your Mac everything is where you left it.</p>
+  <h2 class="h-sub art-h">Syncing without buying storage from us</h2>
+  <p class="art-p">We don&#x27;t want to be one more company selling you cloud storage. Most people already pay for iCloud or Google Drive, so we&#x27;re making Chili RAW sync through whatever you already use.</p>
+  <p class="art-p">That means there&#x27;s no account to create with us. Your photos stay in your own folders in your own storage, and you can open them with anything. If you ever stop using Chili RAW, your photos are just where you put them.</p>
+  <h2 class="h-sub art-h">Tethering</h2>
+  <p class="art-p">This one is for people who shoot in a studio or on location with clients. You connect the camera, take a picture, and it shows up in Chili RAW almost right away.</p>
+  <p class="art-p">We think it&#x27;ll be especially nice on an iPad. You can pass it to someone and go through the shots together without everyone crowding around a laptop. Cameras all do this a bit differently, so it&#x27;ll take some work to get right.</p>
+  <h2 class="h-sub art-h">AI</h2>
+  <p class="art-p">We&#x27;re also working on some more advanced AI tools. Same as now, they&#x27;re optional. If you don&#x27;t want AI, switch it off and you won&#x27;t see it. Nothing gets downloaded unless you ask for it, and your photos stay on your device.</p>
+  <h2 class="h-sub art-h">When?</h2>
+  <p class="art-p">We don&#x27;t know exactly, and we&#x27;d rather not guess and get it wrong. We&#x27;ll post here and in the <a href="/changelog/">changelog</a> as things get closer.</p>
+  <p class="art-p art-cta">If there&#x27;s something you&#x27;d really like to see, or something about how you work that we should know before we build this, <a href="/contact/">get in touch</a>. We do read everything.</p>
+  </article>
+</Site>
+
+<style>
+  /* A centred reading column, as the other articles set it. */
+  .art { width: min(820px, 100% - 2 * var(--gutter)); margin-inline: auto;
+         padding-top: clamp(38px, 5vw, 58px); padding-bottom: clamp(64px, 8vw, 100px);
+         display: flex; flex-direction: column; gap: 22px; }
+  .art-p { font-size: clamp(15.5px, 1.3vw, 17.5px); line-height: 1.68;
+           color: var(--dim); text-wrap: pretty; }
+  .art-h { max-width: 24ch; margin-top: clamp(22px, 3vw, 34px); color: var(--text); }
+  .art-cta { color: var(--text); }
+</style>
