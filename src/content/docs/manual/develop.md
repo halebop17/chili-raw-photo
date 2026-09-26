@@ -405,8 +405,8 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 | Setting | Options |
 |---|---|
 | **Preset** | Save the whole dialog as a named recipe — **Save Current as Preset…**, then Update / Rename / Delete. Proof uses the selected one. **Set as Favourite 1 / 2** puts the selected preset on **⌘E** / **⇧⌘E** — see below. |
-| **Format** | JPEG (jpegli), JPEG XL, HEIC, TIFF · 16-bit, PSD · layered · (video: **Codec** and **Container**) |
-| **Quality** | 1–100 (all formats except TIFF and PSD) |
+| **Format** | JPEG (jpegli), JPEG XL, HEIC, PNG · 16-bit, TIFF · 16-bit, PSD · layered · (video: **Codec** and **Container**) |
+| **Quality** | 1–100 (all formats except PNG, TIFF and PSD) |
 | **Effort** | 1–9 (JPEG XL only) |
 | **Layers** | TIFF only — **Keep Pixels layers** (see below) |
 | **Resize** | Full size, or fit the **long edge / short edge / width / height** to a pixel count. The render is always done full-size and *then* resampled, so radius-based looks (Clarity, dehaze, sharpening) come out identical. |

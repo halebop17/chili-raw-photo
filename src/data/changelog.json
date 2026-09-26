@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Export to PNG.</strong> Lossless and 16-bit, with the same frame, watermark and metadata as every other format.",
               "<strong>A RAW opens at the aspect ratio set in the camera.</strong> Shot at 16:9 or 1:1, it opens cropped to that, with the rest of the sensor one drag or one Free away.",
               "<strong>Drag the histogram to move a tone slider.</strong> Blacks, Shadows, Exposure, Whites and Highlights each have a zone on the graph; hover to see which, then drag.",
               "<strong>Build a brush mask up gradually.</strong> Flow sets how much each stroke adds and Strength how far it can go; <code>[</code> and <code>]</code> resize the brush.",
@@ -53,7 +54,7 @@
         "latest": false
       }
     ],
-    "count": 24
+    "count": 25
   },
   {
     "slug": "2026-q3",
