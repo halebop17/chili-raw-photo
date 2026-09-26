@@ -182,8 +182,13 @@ p { margin: 0; }
   /* A screenshot drawn 400-560px wide leaves the paragraph beside it nothing
      to live in long before the page itself runs out of room. */
   .feat .pg-wide { grid-template-columns: minmax(0, 1fr) !important; }
+  /* Cells divided by a rule down their left edge. Once they wrap, the rule and
+     the padding beside it indent every cell but the first. */
+  .feat .pg-list { column-gap: 30px !important; }
+  .feat .pg-list > * { padding: 26px 0 !important; border-left: 0 !important; }
 }
 @media (max-width: 820px) {
+  .feat .pg-list > * + * { border-top: 1px solid var(--border-soft); }
   .feat .pg-2,
   .feat .pg-3,
   .feat .pg-4 { grid-template-columns: minmax(0, 1fr) !important; }
