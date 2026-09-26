@@ -30,12 +30,13 @@ Open Settings with **⌘,** (or **Chili RAW → Settings…**). The window has s
 
 **RAW decoding**
 
-These four decide what a RAW file looks like before you touch a slider. Changing one re-renders your edited raw thumbnails so the grid answers honestly — an *unedited* raw won't change, because its thumbnail is the preview your camera wrote into the file and no decoder ever runs for it.
+These decide what a RAW file looks like before you touch a slider. Changing one re-renders your edited raw thumbnails so the grid answers honestly — an *unedited* raw won't change, because its thumbnail is the preview your camera wrote into the file and no decoder ever runs for it.
 
 - **Default look** — which tone-mapper a freshly-opened image starts on: **Chili RAW (AgX)** (the filmic default), **Standard** (Lightroom-style: the Adobe render plus your chosen profile), or **Minimal** (no automatic tone at all — see Tone Mapping). You can still switch per photo on the Edit tab.
 - **DNG decoder** — how `.dng` files are decoded. The **Adobe DNG SDK** gives correct colour and orientation for DxO JPEG-XL and other DNGs; **Apple** is the fallback / comparison option.
 - **Proprietary raw decoder** — for ARW / CR2 / CR3 / NEF. **LibRaw** renders through the DCP camera profile you pick below, for colour that follows your camera rather than macOS's default interpretation (falls back to Apple on failure); **Apple** is the default.
 - **Colour profile** — which Adobe DCP profile the LibRaw path renders through, read from your Lightroom / ACR profiles. *Adobe Standard* is the neutral default; the *Camera* looks emulate the maker's JPEG rendering.
+- **Open RAW files at the aspect ratio set in the camera** — on by default. A RAW shot at 16:9 or 1:1 opens cropped to that ratio, with the rest of the sensor a drag away (see **As Shot** under the Geometry tab). Turned off, every RAW opens at the full sensor frame — unedited ones in the grid included, unlike the settings above.
 
 **DNG previews**
 
