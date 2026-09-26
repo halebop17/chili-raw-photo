@@ -112,6 +112,7 @@ Hiding a section only tidies the panel. Its edits stay on the photo, and a hidde
 - **Tone:** Exposure (−5…+5 EV, in quarter-stops), Contrast, Highlights, Shadows, Whites, Blacks (each −100…+100).
 - **Highlight Recovery** (RAW only): a toggle plus an **Amount** slider (0…100, default 50) that reconstructs clipped highlights from the RAW's headroom.
 - **Presence:** Texture, Clarity, Punch, Vibrance, Saturation (each −100…+100). **Texture** works on the finest detail (skin, fabric, foliage) and leaves edges alone; **Clarity** is mid-scale local contrast; **Punch** is the heavier, contrastier version of the same idea — reach for it when Clarity isn't enough.
+- **Texture Ranges and Clarity Ranges:** click the line under Texture or Clarity to open **Shadows / Midtones / Highlights** (each −100…+100). Each adds that slider's effect to one part of the tonal range, on top of the main slider, which can stay at 0. Shadows Clarity at +50 gives a dark forest depth and leaves a bright sky alone; a negative range smooths instead. The ranges blend into each other softly, split where the Color Grading wheels split at their default Blending and Balance. A dot on a closed line means one of its ranges is set.
 
 **Dehaze.** Its own section, because it isn't a contrast slider: **Strength** (−100…+100) estimates how much haze sits in front of each part of the scene and removes (or adds) it, and **Distance** (0…100) sets how far into the scene that estimate reaches. Negative Strength puts atmosphere back.
 
