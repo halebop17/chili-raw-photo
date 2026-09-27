@@ -13,6 +13,8 @@
           {
             "name": "New",
             "items": [
+              "<strong>Switch a Develop module off to see the photo without it.</strong> The switch on each section's header folds it away and takes its adjustments off the photo until you switch it back on; a module you switch off stays off for the next photo too.",
+              "<strong>Auto for Tone and Presence.</strong> Set either from the photo, or both at once with Auto at the top of the Edit tab; press again to go back to what you had.",
               "<strong>Match a photo's colours to another image.</strong> Photo ▸ Match Colours… sets the sliders from a reference photo or file, and every value it writes stays editable.",
               "<strong>Clarity and Texture for one tonal range.</strong> Shadows, Midtones and Highlights sliders under each add it to that part of the photo and leave the rest alone.",
               "<strong>Export to PNG.</strong> Lossless and 16-bit, with the same frame, watermark and metadata as every other format.",
@@ -32,6 +34,7 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>A cleaner look for both sidebars.</strong> Plain section titles, sliders that span the panel with larger up/down arrows, and a fill that shows at a glance what you edited.",
               "<strong>Click an object to mask it on a cropped, straightened or lens-corrected photo too.</strong>",
               "<strong>At startup Chili RAW re-reads only the folders that changed since it last ran.</strong>",
               "<strong>Deleting a photo inside Chili RAW marks its folder with the amber dot</strong> until you synchronize the folder or undo the delete.",
@@ -56,7 +59,7 @@
         "latest": false
       }
     ],
-    "count": 27
+    "count": 30
   },
   {
     "slug": "2026-q3",
