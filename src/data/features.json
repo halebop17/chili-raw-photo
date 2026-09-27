@@ -117,6 +117,24 @@
   "key": "Luts"
  },
  {
+  "slug": "match-colours",
+  "title": "Match Colours",
+  "sub": "Give one photo the colours of another.",
+  "lead": "Pick a reference — a frame you have already edited, or any picture whose look you want — and Chili RAW sets this photo’s sliders to match it. Every value lands in an ordinary slider, so the match is an edit like any other.",
+  "tier": "pro",
+  "chapter": "develop",
+  "key": "MatchColours"
+ },
+ {
+  "slug": "auto",
+  "title": "Auto",
+  "sub": "A starting point from the photo itself.",
+  "lead": "One press sets white balance, tone and colour from what is in the frame. Everything it sets lands in the ordinary sliders, so every value is still yours to change — and a second press takes it back.",
+  "tier": "pro",
+  "chapter": "develop",
+  "key": "Auto"
+ },
+ {
   "slug": "film-labor",
   "title": "Film Labor",
   "sub": "Run your photos through a real film pipeline.",
