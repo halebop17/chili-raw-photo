@@ -121,6 +121,11 @@ p { margin: 0; }
 .card .card-sub { font-size: 18px; line-height: 1.3; font-weight: 500; letter-spacing: -0.008em; color: var(--dim); }
 .card p { font-size: 14px; line-height: 1.6; color: var(--dim); }
 .card .more { font-size: 13px; font-family: var(--mono); margin-top: auto; padding-top: 6px; }
+/* The features index's Pro grid ends on a card that takes whatever its last row
+   has left, so the last feature never sits beside empty cells. At two columns
+   and fewer it is an ordinary card. */
+.pro-rest { grid-column: span var(--span); }
+@media (max-width: 1000px) { .pro-rest { grid-column: auto; } }
 
 .rule { height: 1px; background: var(--border-soft); }
 .band { background: var(--backdrop); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }

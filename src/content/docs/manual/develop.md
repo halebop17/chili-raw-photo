@@ -33,6 +33,8 @@ The zoom readout at the bottom-right is also a menu: **Fit, 100%, 200%, 400%, 80
 
 Every slider row behaves the same way. Drag the slider, type a number in the field, or use the small **up/down stepper** to nudge by a natural step. **Double-click the label or the slider** to reset that one control to its default. Temp, Tint, Vibrance and Saturation have colored tracks so you can see the direction of the change.
 
+Readouts follow your Mac's region: where it writes decimals with a comma, a slider shows **1,5 EV** rather than 1.5 EV.
+
 ## Taking an edit back
 
 **⌘Z** undoes your last adjustment on the photo you are looking at, and **⇧⌘Z** puts it back. The Edit menu names what it is about to do — *Undo Exposure*, *Undo Add Radial Mask*, *Undo Crop* — so you can see what you are taking back before you take it.
@@ -103,7 +105,17 @@ The order is how the panel is laid out and nothing more. It touches no edit, no 
 
 Hiding a section only tidies the panel. Its edits stay on the photo, and a hidden section whose settings aren't at their defaults on the current photo is marked **Has edits** in the list. If you hide every section on a tab, the tab shows a **Show Sections…** button in their place.
 
+## Switching a section off
+
+Every section on Edit and Grading has a **switch in its header**. Turn it off and the section folds away and its adjustments come off the photo, so you can see the picture without that one module rather than without the whole edit. Turn it back on and the photo gets exactly what it had: switching a section off keeps every value, it only stops them being drawn. That is the difference from hiding a section, which leaves the photo as it is.
+
+A section you switch off stays off on the next photo too, as long as that photo has no edits in it; one you have already edited on a photo stays on there until you switch it off on that photo. **Favorites** is the one card without a switch — the LUTs switch covers whatever it picks.
+
 ## Edit tab
+
+**Auto** *(Pro)*. **Auto** at the top of the tab sets white balance, tone and colour from the photo itself, and **Basic**, **Tone** and **Presence** each have an **Auto** of their own for just their part: Temp and Tint; Exposure, Contrast, Highlights, Shadows, Whites and Blacks; Vibrance and Saturation. It reads the photo as shot, before any Film Labor Look, and everything it sets lands in the ordinary sliders, so you can take it from there.
+
+Press **Auto** again to go back. Each slider returns to what it held before — except one you have moved by hand since, which keeps your value. With several photos selected, Auto runs on each of them, every photo measured on its own, and one undo takes it back.
 
 **Basic.** In Lightroom order:
 
@@ -381,6 +393,17 @@ Select a batch in the filmstrip (⌘-click and ⇧-click work there, and your se
 - White balance syncs the **temperature you see**, not the raw offset, so photos that were shot at different Kelvin end up matching. JPEGs in a RAW selection are skipped and reported: they have no as-shot value to work from.
 - One **undo** covers the whole batch (**Photo ▸ Undo…**), and Auto Sync never survives leaving the page.
 - **Photo ▸ Auto Level Selected** straightens a whole selection, measuring each photo on its own. Photos with no clear level reference are left alone rather than guessed at, and counted: *“Leveled 34 of 50 · 16 had no level reference.”*
+
+## Match Colours *(Pro)*
+
+**Photo ▸ Match Colours…** sets the photo's sliders so it takes on the colours of another image — a frame from the same shoot that you've already edited, or any picture whose look you want.
+
+- Pick the reference by clicking a photo in the window's strip, dropping one on the **Reference** well (from the filmstrip or the Finder), or with **Choose File…** for an image outside the catalogue.
+- It moves the controls you would have moved yourself: white balance, **Exposure**, **Contrast**, **Saturation**, the three colour-grading wheels, and the saturation and luminance of each colour-mixer band. Nothing is baked in — after **Apply** every value is an ordinary slider you can pull back.
+- It adds to the edit the photo already has, so matching a photo to itself changes nothing.
+- **Strength** takes part of the match; the preview follows as you drag.
+- A photo from the catalogue is matched as it looks in the grid, its edits and Film Labor Look included. Two very different scenes can take a strong match — lower Strength until it sits right.
+- **Apply** is one undo step.
 
 ## Grading a video clip
 
