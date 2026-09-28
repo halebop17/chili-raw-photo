@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.",
               "<strong>HDR photos show their highlights brighter than white.</strong> On a display that can show HDR, the HDR button in Develop lights up iPhone HDR photos and other HDR HEIC and JPEG files the way Photos does; the filmstrip marks which photos have it.",
               "<strong>RAW photos show HDR too.</strong> On the Standard and Minimal looks, the highlights a RAW file holds above white — a bright sky, reflections — go brighter in the HDR view.",
               "<strong>Export HDR photos as HEIC.</strong> Tick Keep HDR highlights under Format and the bright highlights stay bright in Photos, Preview and on an iPhone; anything that can't show HDR shows the standard picture.",
@@ -49,6 +50,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Smooth skies no longer show faint steps on the Develop canvas,</strong> at fit or at 1:1.",
               "<strong>Some DNG files no longer open looking already edited.</strong> A DNG saved from Lightroom or Camera Raw starts from the same neutral colour and brightness as your other photos, not darker and punchier.",
               "<strong>The photo in Develop shows the same colours as the rest of the app on wide-gamut displays,</strong> where it looked slightly more saturated than in Before / After, the 1:1 view and the exported file.",
               "<strong>The amber dot marks folders changed while Chili RAW was closed,</strong> and synchronizing one folder leaves every other folder's dot in place.",
@@ -64,7 +66,7 @@
         "latest": false
       }
     ],
-    "count": 35
+    "count": 37
   },
   {
     "slug": "2026-q3",
