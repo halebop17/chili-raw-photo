@@ -174,7 +174,7 @@ Your Basic Contrast still applies in all three modes.
 | Colors too punchy / not filmic enough | **Restore** | left |
 | Everything looks fine | *(leave it alone)* | — |
 
-**Detail.** Two groups in one section — capture sharpening on top, noise and detail reconstruction below the divider.
+**Detail.** Capture sharpening on top, noise and detail reconstruction below the divider, and — for a JPEG or other 8-bit photo — Deband at the bottom.
 
 - **Sharpening** (0…150), with **Radius** (0.5…3.0), **Detail** (0…100, default 25) and **Masking** (0…100). Sharpening starts at **40 on a RAW and 0 on a camera JPEG** — a JPEG was sharpened by the camera already. Masking holds the sharpening off flat areas like skies.
 - **NR (Apple)** (0…100) — Apple's raw noise reduction. It only exists where Apple did the demosaic, so it disables itself (and says so) on the LibRaw and Adobe DNG SDK decode paths.
@@ -183,6 +183,12 @@ Your Basic Contrast still applies in all three modes.
 - **AI Detail** (0…100, Pro) — runs the ×2 upscaling model and resamples straight back down, keeping the structure it restores and discarding the resolution it invents. **Judge it at 1:1** — at fit view you are looking at a proxy.
 
 The three AI rows carry a violet dot: they run a model you downloaded yourself, on your own Mac.
+
+- **Deband** (0…100) — smooths the steps an 8-bit JPEG, HEIC or PNG brings with it in a sky or any other smooth gradient. Reach for it when Shadows, Dehaze, Punch or Clarity bring steps out in a sky: with Deband on, those sliders open up a smooth gradient instead. Edges and detail with more contrast than the threshold are left alone. It appears only for 8-bit photos: a RAW, a 16-bit TIFF or PNG and a 10-bit HEIC do not arrive banded. (A photo that is not 8-bit but carries a Deband value copied from another photo shows the rows greyed out.)
+  - **Radius** (8…64 px, default 24) — how far each pixel looks for the band beside it. Raise it for wide bands.
+  - **Threshold** (1…8, default 3) — the largest step, in levels of the 8-bit file, that counts as banding. A bigger step is treated as an edge and kept.
+
+A gradient that is smooth in the photo is shown smooth on the Develop canvas too, at fit and at 1:1, without faint steps.
 
 **Vignette.** Darkens or lightens the corners on purpose, as a finishing touch. It follows your crop: the vignette is centred on the picture as you cropped and straightened it, not on the original frame. (Removing the darkening your *lens* put in the corners is a different job — that is **Lens Corrections** on the Geometry tab.)
 

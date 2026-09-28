@@ -36,7 +36,7 @@ The tick list has four columns. Toggle any row on or off; your choices stay put 
 | Tone Mapping | The mode (AgX / Standard / Minimal) and every AgX shaping and primaries control |
 | Curve | The RGB and per-channel point curves, the four region sliders and their split points |
 | Color Mixer | Hue, Saturation and Luminance for all eight colour bands, and the points added on its curves |
-| Detail | Sharpening (Amount, Radius, Detail, Masking), NR (Apple) and the AI detail controls |
+| Detail | Sharpening (Amount, Radius, Detail, Masking), NR (Apple), the AI detail controls and Deband (Amount, Radius, Threshold) |
 | Vignette | Amount, Midpoint, Roundness, Feather and Highlights |
 | Color Grading | Hue, Saturation and Luminance for Shadows, Midtones and Highlights, plus Blending and Balance |
 | LUT | The chosen LUT and its Intensity |
