@@ -48,6 +48,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Some DNG files no longer open looking already edited.</strong> A DNG saved from Lightroom or Camera Raw starts from the same neutral colour and brightness as your other photos, not darker and punchier.",
               "<strong>The photo in Develop shows the same colours as the rest of the app on wide-gamut displays,</strong> where it looked slightly more saturated than in Before / After, the 1:1 view and the exported file.",
               "<strong>The amber dot marks folders changed while Chili RAW was closed,</strong> and synchronizing one folder leaves every other folder's dot in place.",
               "<strong>A missing photo shows Media Offline in the filmstrip.</strong>",
@@ -62,7 +63,7 @@
         "latest": false
       }
     ],
-    "count": 33
+    "count": 34
   },
   {
     "slug": "2026-q3",
