@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>HDR photos show their highlights brighter than white.</strong> On a display that can show HDR, the HDR button in Develop lights up iPhone HDR photos and other HDR HEIC and JPEG files the way Photos does; the filmstrip marks which photos have it.",
               "<strong>Switch a Develop module off to see the photo without it.</strong> The switch on each section's header folds it away and takes its adjustments off the photo until you switch it back on; a module you switch off stays off for the next photo too.",
               "<strong>Auto for Basic, Tone and Presence.</strong> Set white balance, tone or colour from the photo, or all three at once with Auto at the top of the Edit tab; press again to go back to what you had.",
               "<strong>Match a photo's colours to another image.</strong> Photo ▸ Match Colours… sets the sliders from a reference photo or file, and every value it writes stays editable.",
@@ -46,6 +47,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>The photo in Develop shows the same colours as the rest of the app on wide-gamut displays,</strong> where it looked slightly more saturated than in Before / After, the 1:1 view and the exported file.",
               "<strong>The amber dot marks folders changed while Chili RAW was closed,</strong> and synchronizing one folder leaves every other folder's dot in place.",
               "<strong>A missing photo shows Media Offline in the filmstrip.</strong>",
               "<strong>Lift &amp; Stamp copies Color Mixer, Color Grading and Grain.</strong>",
@@ -59,7 +61,7 @@
         "latest": false
       }
     ],
-    "count": 30
+    "count": 32
   },
   {
     "slug": "2026-q3",
