@@ -445,6 +445,7 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 | **Quality** | 1–100 (all formats except PNG, TIFF and PSD) |
 | **Effort** | 1–9 (JPEG XL only) |
 | **Layers** | TIFF only — **Keep Pixels layers** (see below) |
+| **HDR** | HEIC only — **Keep HDR highlights** (see below) |
 | **Resize** | Full size, or fit the **long edge / short edge / width / height** to a pixel count. The render is always done full-size and *then* resampled, so radius-based looks (Clarity, dehaze, sharpening) come out identical. |
 | **Enlarge** | What happens when the target is bigger than the photo: don't enlarge, resample, or **AI upscale** (Pro). |
 | **Sharpen** | Output sharpening — **None / Low / Standard / High**, applied *after* the resize. |
@@ -517,6 +518,15 @@ Switch **Watermark** on in the export dialog to put a mark on every copy the exp
 The **Preview** shows the whole frame with the mark on it, so you can judge the placement before committing a batch. The mark is drawn last of all — after the resize and after output sharpening — so it comes out crisp at output size rather than resampled with the photo.
 
 Saving all this into a preset carries the watermark with it; a preset that has one says so in the preset menu. Clips are always written unmarked.
+
+## Exporting HDR
+
+Choose **HEIC** and tick **Keep HDR highlights** under Format, and a photo whose highlights go brighter than white in the [HDR view](#hdr-photos) keeps them in the file. On a display that can show HDR, Photos, Preview and an iPhone show those highlights bright; anything that can't show HDR shows the standard picture — exactly what an ordinary HEIC export of the same photo would.
+
+- The highlights follow your crop and the export's resize.
+- A frame keeps its ordinary brightness, and so do a watermark and Pixels layers where they cover the photo; a see-through watermark lets that much of a bright sky show through. A cut-out keeps the highlights of what it shows, and a layer in a blend mode — a gradient wash, say — works on the photo like an edit, so the highlights under it stay bright.
+- Photos with nothing brighter than white, RAW files on the AgX look, photos with a Film Labor Look and double exposures are written as ordinary HEIC. The setting is safe to leave on for a mixed batch; when it finishes, the message says how many files kept their HDR.
+- Proof always shows the standard picture.
 
 ## Exporting with layers
 
