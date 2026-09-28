@@ -384,6 +384,17 @@ A **Film Labor Look belongs to the version that owns it**, like every other edit
   Each key toggles: press it again to go back to your edit.
 - **⌥P** enters **Proof**. The canvas is rendered through an **export recipe** — the output size, the AI upscale and the output sharpening exactly as the file will be written — so you judge a 2048 px web JPEG at actual size instead of guessing. A bar along the top carries the recipe and an **Actual size** button (one output pixel per screen pixel), and the sharpening level can be switched right there. Leave with **⌥P** or **Esc**.
 
+## HDR photos
+
+Many photos carry **HDR**: most recent iPhone photos, and HEIC or JPEG files saved as HDR by other apps. The filmstrip and the Info panel mark them **HDR**. On a display that can show HDR, the **HDR** button in the controls at the top right of the photo shows their highlights — the sun, reflections, a bright sky — brighter than white, the way Photos and Preview show them.
+
+- The button appears only on a display that can show HDR, and stays on or off from photo to photo.
+- The bright highlights follow your edits, your crop and your rotation. Something you heal or remove with Generative Remove stops glowing along with it.
+- Photos without HDR, RAW files, photos with a Film Labor Look and double exposures show as usual. A print is never brighter than its paper, so a Look has no HDR by design.
+- Before / After, Proof, Masking and Heal show the standard picture.
+- The histogram and the clipping warnings count highlights shown brighter than white as clipped.
+- When you turn HDR on, and after you change the display's brightness, the photo takes a moment to catch up.
+
 ## Editing several photos at once (Auto Sync)
 
 Select a batch in the filmstrip (⌘-click and ⇧-click work there, and your selection survives moving between photos with the arrow keys), then turn on the **Auto Sync** switch in the panel footer. Moving one control now moves it on every selected photo, live.
