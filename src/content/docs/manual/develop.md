@@ -389,8 +389,9 @@ A **Film Labor Look belongs to the version that owns it**, like every other edit
 Many photos carry **HDR**: most recent iPhone photos, and HEIC or JPEG files saved as HDR by other apps. The filmstrip and the Info panel mark them **HDR**. On a display that can show HDR, the **HDR** button in the controls at the top right of the photo shows their highlights — the sun, reflections, a bright sky — brighter than white, the way Photos and Preview show them.
 
 - The button appears only on a display that can show HDR, and stays on or off from photo to photo.
+- **RAW files show HDR too**, on the Standard and Minimal looks: highlights the look would otherwise squeeze into white — a bright sky, reflections, lights — go brighter. Standard keeps its gentle top, so its brightest highlights stay softer than Minimal's. RAW files carry no HDR mark, since every RAW can show it.
 - The bright highlights follow your edits, your crop and your rotation. Something you heal or remove with Generative Remove stops glowing along with it.
-- Photos without HDR, RAW files, photos with a Film Labor Look and double exposures show as usual. A print is never brighter than its paper, so a Look has no HDR by design.
+- Photos without HDR, RAW files on the AgX look, photos with a Film Labor Look and double exposures show as usual. A print is never brighter than its paper, so a Look has no HDR by design.
 - Before / After, Proof, Masking and Heal show the standard picture.
 - The histogram and the clipping warnings count highlights shown brighter than white as clipped.
 - When you turn HDR on, and after you change the display's brightness, the photo takes a moment to catch up.
