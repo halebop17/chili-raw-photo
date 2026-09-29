@@ -34,7 +34,7 @@ The tick list has four columns. Toggle any row on or off; your choices stay put 
 | Tone | Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Highlight Recovery and its Amount, the Makeup sliders and the Shadow grip sliders |
 | Presence | Vibrance, Saturation, Texture, Clarity and their Shadows / Midtones / Highlights ranges, Punch, Dehaze and its Distance, and the Black & White toggle |
 | Tone Mapping | The mode (AgX / Standard / Minimal) and every AgX shaping and primaries control |
-| Curve | The RGB and per-channel point curves, the four region sliders and their split points |
+| Curve | The RGB and per-channel point curves, the RGB curve's Equal RGB / Luminance setting, the four region sliders and their split points |
 | Color Mixer | Hue, Saturation and Luminance for all eight colour bands, and the points added on its curves |
 | Detail | Sharpening (Amount, Radius, Detail, Masking), NR (Apple), the AI detail controls and Deband (Amount, Radius, Threshold) |
 | Vignette | Amount, Midpoint, Roundness, Feather and Highlights |
