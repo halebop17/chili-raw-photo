@@ -111,6 +111,7 @@ Two separate things show image details:
 
 - **Per-tile info** — the filename and pixel dimensions appear along the bottom of a tile when you hover it. To pin this on for every tile, set Settings → Browse → "Grid image info" to "Always display for all images" (the default is "Display on hover").
 - **The info panel** — click the **Info** toolbar button or press **I** to toggle a floating metadata panel in the top-right corner that describes the focused (or first selected) image. It's off by default in the grid.
+- **Choosing its fields** — the sliders button at the top of the info panel picks which rows it shows: name, size, dimensions, date, camera, lens, ISO, shutter, aperture, focal length, exposure compensation, focus, location, flags and rating. The choice is remembered, and it applies to the Lightbox, the Grid, Develop and the side-by-side comparison below. **Default Fields** puts back the panel as it came.
 
 ## Batch rename
 
