@@ -75,6 +75,8 @@ Three multi-pane modes sit beside Grid and Lightbox in the view-mode switch at t
 | **Survey** | **N** | Tiles the whole selection (two or more). Click a frame to *remove it from the survey* — cull by elimination until the keepers are what's left. |
 | **Versions** | **V** | The same surface for one photo's own edit versions, side by side ([chapter 5](/manual/develop/)). Also on the right-click menu and in Develop's version menu. |
 
+**Why is this one sharper?** In Compare and Survey, press **I** (or click **Info**) for the frames' metadata side by side under the panes — one column per frame, one row per field, and a row where the frames disagree (a slower shutter, a higher ISO, a different focus distance) picked out in the accent colour. **Time apart** gives each frame's distance from the first, which is how you tell a burst from a retake. With more frames than fit, the columns scroll sideways on their own.
+
 **Esc** leaves any of them. All three keys are rebindable in **Settings ▸ Shortcuts ▸ Comparison modes**.
 
 ## Keyboard shortcuts
