@@ -59,6 +59,8 @@ To edit a text field, click it and type. Your entry is **staged** (not yet writt
 - Type in the **Add keyword…** box and press **Return** to add a chip.
 - Click the **×** on a chip to remove that keyword.
 - Duplicates (ignoring case) are collapsed automatically.
+- **Nested keywords.** Type **Places > Japan > Kyoto** to file a keyword under another; the chip reads *Places › Japan › Kyoto*. While you type, keywords you already use are offered underneath, and a bare **Kyoto** is filed where it already lives when there's only one place it could go. Search and Smart Folders treat a keyword as everything under it too: **Japan** finds the Kyoto photos.
+- Nested keywords travel the way Lightroom's do: the path in Lightroom's keyword-hierarchy field, and every name in it (**Places**, **Japan**, **Kyoto**) in the ordinary keyword list every other app reads. A keyword tree tagged in Lightroom shows here as the same tree, and ours shows in Lightroom. A keyword Lightroom keeps out of exports stays out of that ordinary list when you save here.
 
 ## Editing several photos at once
 
@@ -67,7 +69,7 @@ Select multiple photos and every field pools their values:
 - Where the whole selection shares a value, you see that value.
 - Where they differ, the field shows **`<multiple values>`** in italic.
 
-Type into a field and your entry is staged for **all** selected photos at once — a fast way to stamp the same copyright or add a keyword across a shoot. Leaving a field on `<multiple values>` keeps each photo's own value untouched. Clearing a field (emptying it) stages a "remove this tag" on save.
+Type into a field and your entry is staged for **all** selected photos at once — a fast way to stamp the same copyright or add a keyword across a shoot. A keyword added while the photos' keywords differ joins each photo's own list. Leaving a field on `<multiple values>` keeps each photo's own value untouched. Clearing a field (emptying it) stages a "remove this tag" on save.
 
 ## AI keyword suggestions
 
