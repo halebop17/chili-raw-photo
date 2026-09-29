@@ -121,6 +121,7 @@ Press **Auto** again to go back. Each slider returns to what it held before — 
 
 - **Black & White** toggle at the top.
 - **White balance:** Temp (−2000…+2000 K) and Tint (−100…+100). On RAW these adjust the as-shot value; on non-RAW files a note reminds you they're approximate.
+- **White balance picker:** the dropper beside **White Balance**. Click it, then click something in the photo that should be grey — a grey card, a white wall in shade, a concrete path — or drag a box over it, and Temp and Tint are set to make it grey. A LUT, grading or a Film Labor Look on top doesn't fool it: it reads the photo as shot. It's one undo step, it takes Basic's **Auto** off, and **Esc** cancels it until the new values land.
 - **Tone:** Exposure (−5…+5 EV, in quarter-stops), Contrast, Highlights, Shadows, Whites, Blacks (each −100…+100).
 - **Highlight Recovery** (RAW only): a toggle plus an **Amount** slider (0…100, default 50) that reconstructs clipped highlights from the RAW's headroom.
 - **Presence:** Texture, Clarity, Punch, Vibrance, Saturation (each −100…+100). **Texture** works on the finest detail (skin, fabric, foliage) and leaves edges alone; **Clarity** is mid-scale local contrast; **Punch** is the heavier, contrastier version of the same idea — reach for it when Clarity isn't enough.

@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>A white balance picker.</strong> Click the dropper beside White Balance, then click something in the photo that should be grey, and Temp and Tint are set to make it grey.",
               "<strong>Compare and Survey show the frames' metadata side by side.</strong> Press I for a column per frame, with the settings that differ picked out; choose the fields with the sliders button.",
               "<strong>The RGB curve can leave colour alone.</strong> Switch it to Luminance and a contrasty curve no longer strengthens a colour cast.",
               "<strong>Keywords can nest.</strong> Type Places &gt; Japan &gt; Kyoto to file one under another; searching for Japan finds everything under it, and Lightroom keyword trees come through both ways.",
@@ -74,7 +75,7 @@
         "latest": false
       }
     ],
-    "count": 45
+    "count": 46
   },
   {
     "slug": "2026-q3",
