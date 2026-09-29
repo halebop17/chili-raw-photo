@@ -50,6 +50,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Lens Corrections no longer correct some RAW photos twice.</strong> Fujifilm and Olympus RAW files, among others, came out over-corrected with Lens Corrections on.",
               "<strong>Smooth skies no longer show faint steps on the Develop canvas,</strong> at fit or at 1:1.",
               "<strong>Some DNG files no longer open looking already edited.</strong> A DNG saved from Lightroom or Camera Raw starts from the same neutral colour and brightness as your other photos, not darker and punchier.",
               "<strong>The photo in Develop shows the same colours as the rest of the app on wide-gamut displays,</strong> where it looked slightly more saturated than in Before / After, the 1:1 view and the exported file.",
@@ -66,7 +67,7 @@
         "latest": false
       }
     ],
-    "count": 37
+    "count": 38
   },
   {
     "slug": "2026-q3",
