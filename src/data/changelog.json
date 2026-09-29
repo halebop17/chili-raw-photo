@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Give each camera its own starting look.</strong> Right-click a preset in Develop and choose Use as Camera Preset, and every unedited photo from that camera opens with it.",
               "<strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.",
               "<strong>HDR photos show their highlights brighter than white.</strong> On a display that can show HDR, the HDR button in Develop lights up iPhone HDR photos and other HDR HEIC and JPEG files the way Photos does; the filmstrip marks which photos have it.",
               "<strong>RAW photos show HDR too.</strong> On the Standard and Minimal looks, the highlights a RAW file holds above white — a bright sky, reflections — go brighter in the HDR view.",
@@ -68,7 +69,7 @@
         "latest": false
       }
     ],
-    "count": 39
+    "count": 40
   },
   {
     "slug": "2026-q3",
