@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>The clipping overlay shows which colours blew out.</strong> A highlight gone in red alone is marked red and one gone in all three white, outlined; crushed shadows are striped.",
               "<strong>Give each camera its own starting look.</strong> Right-click a preset in Develop and choose Use as Camera Preset, and every unedited photo from that camera opens with it.",
               "<strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.",
               "<strong>HDR photos show their highlights brighter than white.</strong> On a display that can show HDR, the HDR button in Develop lights up iPhone HDR photos and other HDR HEIC and JPEG files the way Photos does; the filmstrip marks which photos have it.",
@@ -69,7 +70,7 @@
         "latest": false
       }
     ],
-    "count": 40
+    "count": 41
   },
   {
     "slug": "2026-q3",
