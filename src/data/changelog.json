@@ -13,6 +13,7 @@
           {
             "name": "New",
             "items": [
+              "<strong>Keywords can nest.</strong> Type Places &gt; Japan &gt; Kyoto to file one under another; searching for Japan finds everything under it, and Lightroom keyword trees come through both ways.",
               "<strong>The clipping overlay shows which colours blew out.</strong> A highlight gone in red alone is marked red and one gone in all three white, outlined; crushed shadows are striped.",
               "<strong>Give each camera its own starting look.</strong> Right-click a preset in Develop and choose Use as Camera Preset, and every unedited photo from that camera opens with it.",
               "<strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.",
@@ -52,6 +53,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Adding a keyword to photos with different keywords keeps each photo's own.</strong> It used to replace them all with the new one, and did the same while their keywords were loading.",
               "<strong>Fujifilm RAW files at Noise Reduction 0 no longer get extra fine texture.</strong>",
               "<strong>Lens Corrections no longer correct some RAW photos twice.</strong> Fujifilm and Olympus RAW files, among others, came out over-corrected with Lens Corrections on.",
               "<strong>Smooth skies no longer show faint steps on the Develop canvas,</strong> at fit or at 1:1.",
@@ -70,7 +72,7 @@
         "latest": false
       }
     ],
-    "count": 41
+    "count": 43
   },
   {
     "slug": "2026-q3",
