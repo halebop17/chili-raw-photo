@@ -60,6 +60,7 @@ To edit a text field, click it and type. Your entry is **staged** (not yet writt
 - Click the **×** on a chip to remove that keyword.
 - Duplicates (ignoring case) are collapsed automatically.
 - **Nested keywords.** Type **Places > Japan > Kyoto** to file a keyword under another; the chip reads *Places › Japan › Kyoto*. While you type, keywords you already use are offered underneath, and a bare **Kyoto** is filed where it already lives when there's only one place it could go. Search and Smart Folders treat a keyword as everything under it too: **Japan** finds the Kyoto photos.
+- **Pick from the tree.** The tag button beside the box opens your keyword tree as a checklist: tick a keyword to add it to the photos, untick it to take it off. These are staged like any other edit here.
 - Nested keywords travel the way Lightroom's do: the path in Lightroom's keyword-hierarchy field, and every name in it (**Places**, **Japan**, **Kyoto**) in the ordinary keyword list every other app reads. A keyword tree tagged in Lightroom shows here as the same tree, and ours shows in Lightroom. A keyword Lightroom keeps out of exports stays out of that ordinary list when you save here.
 
 ## Editing several photos at once

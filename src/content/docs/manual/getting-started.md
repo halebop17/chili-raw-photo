@@ -64,12 +64,15 @@ Most views act on the folder you have selected, so open a folder first. **People
 
 If you switch off a view you're currently in (via Settings), Chili RAW drops you back to **Grid** so you're never stranded on a hidden screen.
 
-## Smart Folders and Collections
+## Smart Folders, Collections and Keywords
 
-Below your folders the sidebar has two more sections:
+Below your folders the sidebar has three more sections:
 
 - **SMART FOLDERS** — saved searches that collect matching photos from across your library. Click the **+** beside the heading to create one; click a smart folder to view its results. Right-click to **Edit…** or **Delete**. The number on each row is how many photos currently match.
 - **COLLECTIONS** — hand-picked sets of photos ([chapter 14](/manual/collections-and-backups/)). Click **+** to make one from the current selection, or drag tiles onto a Collection row.
+- **KEYWORDS** — every keyword your photos carry, nested the way you filed them (**Places › Japan › Kyoto**), with how many photos carry each one or a keyword inside it. Click a keyword to see those photos. With photos selected, each keyword gets a box: tick it to tag them, untick it to take it off; a dimmed box means they carry a keyword inside it. Drag photos onto a keyword to tag them, and drag a keyword onto another to file it inside. Right-click for **New Keyword Inside…**, **Rename…**, **Move to the Top Level** and **Delete…**; the **+** makes a keyword at the top. The filter box narrows a long list.
+
+Changes made in the Keywords section are written to the photos' files straight away rather than waiting to be saved, and a rename, move or delete that rewrites photos tells you how many first.
 
 **Filtering by rating, flag, colour, people or place happens in the grid's own Filter band**, not in the sidebar — one place decides what is in the grid ([chapter 2](/manual/browsing-and-culling/)).
 
