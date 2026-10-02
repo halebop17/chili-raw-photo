@@ -57,6 +57,10 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Edits made in a Smart Folder or a collection are saved.</strong> Ratings, flags, keywords and locations changed there were lost when you moved on, and Save did nothing.",
+              "<strong>Renaming photos shown from a subfolder keeps them in it.</strong> They used to move into the folder selected in the sidebar, and another app's sidecar for the photo stayed behind.",
+              "<strong>Synchronize Folder keeps the photos of a subfolder it can't open.</strong> They used to be dropped from the catalog, along with their AI keywords.",
+              "<strong>Keywords and titles in Japanese, Thai and other scripts are written whole for other apps too, and a keyword like 1.50 keeps its trailing zero.</strong>",
               "<strong>Exports keep the keywords, title, rating, date and location you gave a photo.</strong> Those kept in its XMP sidecar, as a raw's always are, used to be left out of the exported file.",
               "<strong>A folder's edits survive one photo this version can't read.</strong> A photo last edited in a newer version made the whole folder open unedited, and the next edit there saved over the rest.",
               "<strong>A mouse wheel zooms the Lightbox, Compare and Survey one gentle step at a time.</strong> One notch used to nearly double the zoom, and a trackpad flick kept zooming after it stopped.",
@@ -79,7 +83,7 @@
         "latest": false
       }
     ],
-    "count": 50
+    "count": 54
   },
   {
     "slug": "2026-q3",
