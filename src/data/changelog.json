@@ -56,6 +56,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>A mouse wheel zooms the Lightbox, Compare and Survey one gentle step at a time.</strong> One notch used to nearly double the zoom, and a trackpad flick kept zooming after it stopped.",
               "<strong>Adding a keyword to photos with different keywords keeps each photo's own.</strong> It used to replace them all with the new one, and did the same while their keywords were loading.",
               "<strong>Fujifilm RAW files at Noise Reduction 0 no longer get extra fine texture.</strong>",
               "<strong>Lens Corrections no longer correct some RAW photos twice.</strong> Fujifilm and Olympus RAW files, among others, came out over-corrected with Lens Corrections on.",
@@ -75,7 +76,7 @@
         "latest": false
       }
     ],
-    "count": 46
+    "count": 47
   },
   {
     "slug": "2026-q3",
