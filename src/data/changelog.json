@@ -57,6 +57,8 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Exports keep the keywords, title, rating, date and location you gave a photo.</strong> Those kept in its XMP sidecar, as a raw's always are, used to be left out of the exported file.",
+              "<strong>A folder's edits survive one photo this version can't read.</strong> A photo last edited in a newer version made the whole folder open unedited, and the next edit there saved over the rest.",
               "<strong>A mouse wheel zooms the Lightbox, Compare and Survey one gentle step at a time.</strong> One notch used to nearly double the zoom, and a trackpad flick kept zooming after it stopped.",
               "<strong>Adding a keyword to photos with different keywords keeps each photo's own.</strong> It used to replace them all with the new one, and did the same while their keywords were loading.",
               "<strong>Fujifilm RAW files at Noise Reduction 0 no longer get extra fine texture.</strong>",
@@ -77,7 +79,7 @@
         "latest": false
       }
     ],
-    "count": 48
+    "count": 50
   },
   {
     "slug": "2026-q3",
