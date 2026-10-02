@@ -57,6 +57,8 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Renamed and exported files always get a name you can see.</strong> A name starting with a dot hid them, and a slash in a custom export name sent the export to a folder that wasn't there.",
+              "<strong>Collections and saved places survive one this version can't read.</strong>",
               "<strong>Edits made in a Smart Folder or a collection are saved.</strong> Ratings, flags, keywords and locations changed there were lost when you moved on, and Save did nothing.",
               "<strong>Renaming photos shown from a subfolder keeps them in it.</strong> They used to move into the folder selected in the sidebar, and another app's sidecar for the photo stayed behind.",
               "<strong>Synchronize Folder keeps the photos of a subfolder it can't open.</strong> They used to be dropped from the catalog, along with their AI keywords.",
@@ -83,7 +85,7 @@
         "latest": false
       }
     ],
-    "count": 54
+    "count": 56
   },
   {
     "slug": "2026-q3",
