@@ -70,6 +70,7 @@ The toolbar above the grid is split by what each button *does*, and that split i
 - **Sort** — the orders above, and the scoring controls.
 - **Filter** — rating (*at least* or *exactly*), colour flags with live counts, media type, place, people (**All of them** / **Any of them**), *More than one edit version*, and *Screenshots & documents*. A line at the bottom counts what's showing, **Save as Smart Folder** turns the current rules into a saved one, and **Clear all filters** drops them. Closing the band **leaves the rules on** — the count in the toolbar tells you they're there, and **⌥F** reopens it.
 - **View** — tile size, and what each tile carries: filename, file-type badge, rating & flag, sequence number, Vision score chip, and a tint on the photos that live directly in the selected folder rather than in a subfolder. Under **Panels** it also holds the metadata panel, **Focus peaking** and **Show focus point** ([chapter 3](/manual/loupe-and-viewer/)).
+- **Notes** opens the folder's notes in a panel beside the grid ([chapter 1](/manual/getting-started/), *Folder notes*).
 - **Stacks**, **Search** and **Loupe** open their own bands beside them (**⌥S** shows and hides the stack settings).
 - The **view-mode switch** at the right end picks **Grid**, **Lightbox**, **Compare**, **Survey** or **Versions** — see [chapter 3](/manual/loupe-and-viewer/).
 

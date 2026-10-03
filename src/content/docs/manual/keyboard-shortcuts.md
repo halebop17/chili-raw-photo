@@ -118,3 +118,17 @@ In the Geo Tag view, copy and paste move coordinates instead of text:
 | ⌘V | Paste GPS onto the active/selected photos |
 
 *In the Grid and Develop views the same keys drive Lift & Stamp instead: ⌘C copies the focused photo's look (the Copy Settings dialog appears the first time in a folder; ⌘⇧C brings it back), ⌘V stamps it onto the target photos.*
+
+## Folder notes
+
+While you type in a folder's notes ([chapter 1](/manual/getting-started/)), with text selected:
+
+| Key | Action |
+|-----|--------|
+| ⌘B | Bold |
+| ⌘I | Italic |
+| ⌘K | Link (the web address on the clipboard, or asks for one) |
+| ⌥⌘1 / ⌥⌘2 / ⌥⌘3 | Title, levels 1 to 3 |
+| ⌥⌘L | Bullet list |
+
+*File ▸ Folder Notes has no key until you give it one in Settings → Shortcuts.*
