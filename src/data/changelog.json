@@ -57,6 +57,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Deleting a photo takes its sidecar files and edits with it, and ⌘Z brings them back.</strong> A later photo with the same file name used to inherit them; a RAW+JPEG pair now goes as one.",
               "<strong>Renamed and exported files always get a name you can see.</strong> A name starting with a dot hid them, and a slash in a custom export name sent the export to a folder that wasn't there.",
               "<strong>Collections and saved places survive one this version can't read.</strong>",
               "<strong>Edits made in a Smart Folder or a collection are saved.</strong> Ratings, flags, keywords and locations changed there were lost when you moved on, and Save did nothing.",
@@ -85,7 +86,7 @@
         "latest": false
       }
     ],
-    "count": 56
+    "count": 57
   },
   {
     "slug": "2026-q3",

@@ -44,6 +44,8 @@ A typical pass: arrow through the folder, tap **X** on the throwaways and **P** 
 
 Press **Delete** (⌫ or ⌦) or click the trash button in the toolbar to move the active images to the macOS Trash. The toolbar button shows a count so you can see exactly how many will go. Nothing is erased — everything lands in the Finder Trash, and **⌘Z** (Edit → Undo) restores the most recent batch to its original place in the grid.
 
+A photo goes with everything that belongs to it: the other half of a RAW+JPEG pair shown as one tile, its sidecar files (XMP from Lightroom or darktable, RawTherapee's and DxO's settings, Apple's .AAE edits, a camera's .THM thumbnail), and its edits in Chili RAW — develop settings, versions, Pixels layers and Film Labor looks. So a later photo that happens to get the same file name starts clean instead of inheriting them. A sidecar that a RAW and a JPEG share stays for as long as either of them is still there. **⌘Z** brings all of it back together. If you put a file back from the Finder Trash yourself instead, the files return but the Chili RAW edits do not.
+
 ## Sorting and custom order
 
 **Sort** in the grid toolbar opens the order list. Choose one of:
