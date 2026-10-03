@@ -13,7 +13,29 @@
           {
             "name": "New",
             "items": [
-              "<strong>Every folder can keep notes, written in a Markdown editor built into Chili RAW.</strong> Click Notes above the grid; they are saved as a Markdown file in the folder, so they travel and back up with the photos.",
+              "<strong>Every folder can keep notes, written in a Markdown editor built into Chili RAW.</strong> Click Notes above the grid; they are saved as a Markdown file in the folder, so they travel and back up with the photos."
+            ]
+          }
+        ],
+        "latest": false
+      }
+    ],
+    "count": 1
+  },
+  {
+    "slug": "2026-q4",
+    "label": "2026 Q4",
+    "blurb": "Releases from 2026, quarter 4.",
+    "sections": [
+      {
+        "title": "October 2026",
+        "version": "1.3.0",
+        "year": 2026,
+        "quarter": 4,
+        "groups": [
+          {
+            "name": "New",
+            "items": [
               "<strong>A white balance picker.</strong> Click the dropper beside White Balance, then click something in the photo that should be grey, and Temp and Tint are set to make it grey.",
               "<strong>Compare and Survey show the frames' metadata side by side.</strong> Press I for a column per frame, with the settings that differ picked out; choose the fields with the sliders button.",
               "<strong>The RGB curve can leave colour alone.</strong> Switch it to Luminance and a contrasty curve no longer strengthens a colour cast.",
@@ -97,10 +119,10 @@
             ]
           }
         ],
-        "latest": false
+        "latest": true
       }
     ],
-    "count": 71
+    "count": 70
   },
   {
     "slug": "2026-q3",
@@ -176,7 +198,7 @@
             ]
           }
         ],
-        "latest": true
+        "latest": false
       },
       {
         "title": "September 2026",

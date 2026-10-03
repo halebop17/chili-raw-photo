@@ -3,6 +3,97 @@
     <channel>
         <title>Chili RAW</title>
         <item>
+            <title>1.3.0</title>
+            <pubDate>Sat, 03 Oct 2026 19:54:13 +0700</pubDate>
+            <link>https://www.chiliraw.com/</link>
+            <sparkle:fullReleaseNotesLink>https://www.chiliraw.com/changelog/</sparkle:fullReleaseNotesLink>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h3>New</h3>
+<ul>
+<li><strong>A white balance picker.</strong> Click the dropper beside White Balance, then click something in the photo that should be grey, and Temp and Tint are set to make it grey.</li>
+<li><strong>Compare and Survey show the frames' metadata side by side.</strong> Press I for a column per frame, with the settings that differ picked out; choose the fields with the sliders button.</li>
+<li><strong>The RGB curve can leave colour alone.</strong> Switch it to Luminance and a contrasty curve no longer strengthens a colour cast.</li>
+<li><strong>Keywords can nest.</strong> Type Places &gt; Japan &gt; Kyoto to file one under another; searching for Japan finds everything under it, and Lightroom keyword trees come through both ways.</li>
+<li><strong>Keywords have a tree.</strong> It sits in the Grid sidebar with a count on every keyword: tick one to tag the selected photos, drag photos onto it, right-click to rename, move or delete it.</li>
+<li><strong>The Keywords panel takes typed keywords and suggests nine.</strong> Type keywords onto the selected photos separated by commas, or click one picked from the photos taken around the same time; the list stops at ten rows, and the heading folds the panel away.</li>
+<li><strong>A keyword can be left out on export.</strong> Untick Include on Export in its right-click menu, as in Lightroom, and a grouping keyword like Places stays out of the photos' keyword lists.</li>
+<li><strong>The clipping overlay shows which colours blew out.</strong> A highlight gone in red alone is marked red and one gone in all three white, outlined; crushed shadows are striped.</li>
+<li><strong>Give each camera its own starting look.</strong> Right-click a preset in Develop and choose Use as Camera Preset, and every unedited photo from that camera opens with it.</li>
+<li><strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.</li>
+<li><strong>HDR photos show their highlights brighter than white.</strong> On a display that can show HDR, the HDR button in Develop lights up iPhone HDR photos and other HDR HEIC and JPEG files the way Photos does; the filmstrip marks which photos have it.</li>
+<li><strong>RAW photos show HDR too.</strong> On the Standard and Minimal looks, the highlights a RAW file holds above white — a bright sky, reflections — go brighter in the HDR view.</li>
+<li><strong>Export HDR photos as HEIC.</strong> Tick Keep HDR highlights under Format and the bright highlights stay bright in Photos, Preview and on an iPhone; anything that can't show HDR shows the standard picture.</li>
+<li><strong>Switch a Develop module off to see the photo without it.</strong> The switch on each section's header folds it away and takes its adjustments off the photo until you switch it back on; a module you switch off stays off for the next photo too.</li>
+<li><strong>Auto for Basic, Tone and Presence.</strong> Set white balance, tone or colour from the photo, or all three at once with Auto at the top of the Edit tab; press again to go back to what you had.</li>
+<li><strong>Match a photo's colours to another image.</strong> Photo ▸ Match Colours… sets the sliders from a reference photo or file, and every value it writes stays editable.</li>
+<li><strong>Clarity and Texture for one tonal range.</strong> Shadows, Midtones and Highlights sliders under each add it to that part of the photo and leave the rest alone.</li>
+<li><strong>Export to PNG.</strong> Lossless and 16-bit, with the same frame, watermark and metadata as every other format.</li>
+<li><strong>A RAW opens at the aspect ratio set in the camera.</strong> Shot at 16:9 or 1:1, it opens cropped to that, with the rest of the sensor one drag or one Free away.</li>
+<li><strong>Drag the histogram to move a tone slider.</strong> Blacks, Shadows, Exposure, Whites and Highlights each have a zone on the graph; hover to see which, then drag.</li>
+<li><strong>Build a brush mask up gradually.</strong> Flow sets how much each stroke adds and Strength how far it can go; <code>[</code> and <code>]</code> resize the brush.</li>
+<li><strong>Paint a mask that stays on one colour.</strong> Turn on Match Color for the brush and a stroke only takes on colours like the one where it starts — the sky, not the branches in front of it.</li>
+<li><strong>Mask one person, not everyone.</strong> A People mask lists who is in the photo, by name when the People tab knows them, and One Mask per Person gives each their own.</li>
+<li><strong>Hide the Develop sections you don't use.</strong> Right-click a section header on Edit or Grading and choose Show/Hide Sections…; a hidden section keeps its edits.</li>
+<li><strong>See where the camera focused.</strong> Show focus point (⇧E) marks it on Canon, Fujifilm, Nikon, Olympus / OM System, Panasonic and Sony photos, in the Lightbox, Compare, Survey, Develop and the grid's magnifier.</li>
+<li><strong>Shape the Color Mixer as a curve.</strong> Add your own points between its eight colours, for a sky between Aqua and Blue or skin between Red and Orange.</li>
+<li><strong>Choose what a preset carries, slider by slider, and sort presets into categories.</strong> A new preset leaves exposure and white balance alone unless you tick them.</li>
+<li><strong>Darken or lighten the corners with a vignette.</strong> It follows your crop, and Midpoint, Roundness, Feather and Highlights shape it.</li>
+<li><strong>See an HDR merge before it is written, and choose how it is made.</strong> HDR Merge Preview lets you pick the frame it is anchored on, how strongly moving things are kept out and whether to align and crop, with an overlay showing where it decided.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>A cleaner look for both sidebars.</strong> Plain section titles, sliders that span the panel with larger up/down arrows, and a fill that shows at a glance what you edited.</li>
+<li><strong>Click an object to mask it on a cropped, straightened or lens-corrected photo too.</strong></li>
+<li><strong>At startup Chili RAW re-reads only the folders that changed since it last ran.</strong></li>
+<li><strong>Deleting a photo inside Chili RAW marks its folder with the amber dot</strong> until you synchronize the folder or undo the delete.</li>
+<li><strong>Focus peaking works in the Lightbox, Compare, Survey and Develop,</strong> not only the grid's Loupe: one switch, and E toggles it anywhere.</li>
+<li><strong>Copy Settings lists every slider,</strong> and Crop can copy just the aspect ratio, centred on each photo.</li>
+<li><strong>Decimals follow your Mac's region.</strong> Where your region writes numbers with a comma, readouts show 1,5 EV rather than 1.5 EV.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Dehaze's Distance at the top of its range clears the distance and leaves the foreground alone.</strong> At 100 it used to strengthen the effect everywhere and overblow what was near.</li>
+<li><strong>A RAW+JPEG pair's badge is amber, in the grid and in Develop.</strong> A pair looked just like a single photo.</li>
+<li><strong>The RAW / JPEG badge in Develop no longer covers the buttons beside the photo.</strong> It sits next to them.</li>
+<li><strong>← and → move to the previous or next photo in Develop wherever you last clicked.</strong> They did nothing once a slider or the panel had been clicked.</li>
+<li><strong>Stamped masks fit each photo.</strong> Subject, Sky, Object, People, Depth and Wand masks are found again on every photo they are stamped onto; drawn masks are copied as drawn.</li>
+<li><strong>Naming people writes the names into the photos straight away.</strong> Renaming, merging or removing someone updates them too, and names another app wrote there are kept.</li>
+<li><strong>Deleting a photo takes its sidecar files and edits with it, and ⌘Z brings them back.</strong> A later photo with the same file name used to inherit them; a RAW+JPEG pair now goes as one.</li>
+<li><strong>Clips keep their rating, keywords and location.</strong> Search, Smart Folders, the keyword tree and the map now find them, with the place and time a phone recorded, and clips sort by when they were shot.</li>
+<li><strong>Exported clips carry their keywords, title, caption, rating and location.</strong> With Write GPS coordinates off, the location is taken out.</li>
+<li><strong>A location south of the equator or west of Greenwich stays where you put it.</strong> On raw files and clips it came back as its mirror image, north or east.</li>
+<li><strong>A capture time you change stays changed.</strong> On raw files, clips, and photos saved to a sidecar, it went back to the camera's the next time the folder opened.</li>
+<li><strong>A location you remove from a raw file or a clip stays removed.</strong> The camera's own came back the next time the folder opened, and went out with exports.</li>
+<li><strong>Renamed and exported files always get a name you can see.</strong> A name starting with a dot hid them, and a slash in a custom export name sent the export to a folder that wasn't there.</li>
+<li><strong>Collections and saved places survive one this version can't read.</strong></li>
+<li><strong>Edits made in a Smart Folder or a collection are saved.</strong> Ratings, flags, keywords and locations changed there were lost when you moved on, and Save did nothing.</li>
+<li><strong>Renaming photos shown from a subfolder keeps them in it.</strong> They used to move into the folder selected in the sidebar, and another app's sidecar for the photo stayed behind.</li>
+<li><strong>Synchronize Folder keeps the photos of a subfolder it can't open.</strong> They used to be dropped from the catalog, along with their AI keywords.</li>
+<li><strong>Keywords and titles in Japanese, Thai and other scripts are written whole for other apps too, and a keyword like 1.50 keeps its trailing zero.</strong></li>
+<li><strong>Exports keep the keywords, title, rating, date and location you gave a photo.</strong> Those kept in its XMP sidecar, as a raw's always are, used to be left out of the exported file.</li>
+<li><strong>A folder's edits survive one photo this version can't read.</strong> A photo last edited in a newer version made the whole folder open unedited, and the next edit there saved over the rest.</li>
+<li><strong>A mouse wheel zooms the Lightbox, Compare and Survey one gentle step at a time.</strong> One notch used to nearly double the zoom, and a trackpad flick kept zooming after it stopped.</li>
+<li><strong>Adding a keyword to photos with different keywords keeps each photo's own.</strong> It used to replace them all with the new one, and did the same while their keywords were loading.</li>
+<li><strong>Fujifilm RAW files at Noise Reduction 0 no longer get extra fine texture.</strong></li>
+<li><strong>Lens Corrections no longer correct some RAW photos twice.</strong> Fujifilm and Olympus RAW files, among others, came out over-corrected with Lens Corrections on.</li>
+<li><strong>Smooth skies no longer show faint steps on the Develop canvas,</strong> at fit or at 1:1.</li>
+<li><strong>Some DNG files no longer open looking already edited.</strong> A DNG saved from Lightroom or Camera Raw starts from the same neutral colour and brightness as your other photos, not darker and punchier.</li>
+<li><strong>The photo in Develop shows the same colours as the rest of the app on wide-gamut displays,</strong> where it looked slightly more saturated than in Before / After, the 1:1 view and the exported file.</li>
+<li><strong>The amber dot marks folders changed while Chili RAW was closed,</strong> and synchronizing one folder leaves every other folder's dot in place.</li>
+<li><strong>A missing photo shows Media Offline in the filmstrip.</strong></li>
+<li><strong>Lift &amp; Stamp copies Color Mixer, Color Grading and Grain.</strong></li>
+<li><strong>HDR merges keep the full resolution of the original photos.</strong> Brackets from some cameras used to come out at a reduced size.</li>
+<li><strong>JPEG brackets merge properly.</strong> Every frame now counts, where the merge used to keep mostly one of them, and blown areas fill in without flat grey patches.</li>
+<li><strong>A bracket shot RAW+JPEG merges its raw files.</strong> The JPEGs are left out instead of being mixed in with them.</li>
+<li><strong>Handheld HDR brackets line up.</strong> Frames shot without a tripod used to be shifted further apart instead of together, and much of the picture was left out as if it had moved.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/halebop17/chili-raw-photo/releases/download/v1.3.0/Chili-RAW-1.3.0.dmg" length="46069251" type="application/octet-stream" sparkle:edSignature="WC4ySiZ0ev3nPhlCo2KDdfybXM5X+qSPTiW85ZYfmVUgmMq2HI081FT7FX8sNQpIBYVHZnUmXD5VdjDljMXoAA=="/>
+        </item>
+        <item>
             <title>1.2.0</title>
             <pubDate>Wed, 23 Sep 2026 16:19:20 +0700</pubDate>
             <link>https://www.chiliraw.com/</link>
