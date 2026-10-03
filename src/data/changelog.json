@@ -58,6 +58,11 @@
             "name": "Fixed",
             "items": [
               "<strong>Deleting a photo takes its sidecar files and edits with it, and ⌘Z brings them back.</strong> A later photo with the same file name used to inherit them; a RAW+JPEG pair now goes as one.",
+              "<strong>Clips keep their rating, keywords and location.</strong> Search, Smart Folders, the keyword tree and the map now find them, with the place and time a phone recorded, and clips sort by when they were shot.",
+              "<strong>Exported clips carry their keywords, title, caption, rating and location.</strong> With Write GPS coordinates off, the location is taken out.",
+              "<strong>A location south of the equator or west of Greenwich stays where you put it.</strong> On raw files and clips it came back as its mirror image, north or east.",
+              "<strong>A capture time you change stays changed.</strong> On raw files, clips, and photos saved to a sidecar, it went back to the camera's the next time the folder opened.",
+              "<strong>A location you remove from a raw file or a clip stays removed.</strong> The camera's own came back the next time the folder opened, and went out with exports.",
               "<strong>Renamed and exported files always get a name you can see.</strong> A name starting with a dot hid them, and a slash in a custom export name sent the export to a folder that wasn't there.",
               "<strong>Collections and saved places survive one this version can't read.</strong>",
               "<strong>Edits made in a Smart Folder or a collection are saved.</strong> Ratings, flags, keywords and locations changed there were lost when you moved on, and Save did nothing.",
@@ -86,7 +91,7 @@
         "latest": false
       }
     ],
-    "count": 57
+    "count": 62
   },
   {
     "slug": "2026-q3",
