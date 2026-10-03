@@ -20,7 +20,7 @@ Until it is enabled, People appears greyed-out in the sidebar and in the View me
 
 ## Download the face model (one time)
 
-Recognising and grouping faces needs a downloaded model, so **People is a Pro feature**. The first time you open it you get a gate: *"People recognition needs an AI model."* The model (about 170 MB) isn't bundled with the app, to keep the download small.
+Recognising and grouping faces needs a downloaded model. **People is Free**, and so is the model. The first time you open it you get a gate: *"People recognition needs an AI model."* The model (about 170 MB) isn't bundled with the app, to keep the download small.
 
 - Click **Download Model (~170 MB)**. A progress bar shows the download percentage.
 - It downloads once, stays on your Mac, and nothing is uploaded.
