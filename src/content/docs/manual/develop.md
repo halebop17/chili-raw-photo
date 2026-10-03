@@ -24,7 +24,7 @@ The preview keeps keyboard focus, so these keys work as soon as you're in Develo
 | Scroll wheel / trackpad | Zoom |
 | Drag (when zoomed) | Pan |
 | **Z** | Reset zoom to Fit |
-| **← / →** | Previous / next photo |
+| **← / →** | Previous / next photo — wherever you last clicked, except while typing in a field |
 | **I** | Toggle the floating info box |
 
 The zoom readout at the bottom-right is also a menu: **Fit, 100%, 200%, 400%, 800%**. The info bar there shows the file name, format, dimensions, size and capture date.
@@ -127,7 +127,7 @@ Press **Auto** again to go back. Each slider returns to what it held before — 
 - **Presence:** Texture, Clarity, Punch, Vibrance, Saturation (each −100…+100). **Texture** works on the finest detail (skin, fabric, foliage) and leaves edges alone; **Clarity** is mid-scale local contrast; **Punch** is the heavier, contrastier version of the same idea — reach for it when Clarity isn't enough.
 - **Texture Ranges and Clarity Ranges:** click the line under Texture or Clarity to open **Shadows / Midtones / Highlights** (each −100…+100). Each adds that slider's effect to one part of the tonal range, on top of the main slider, which can stay at 0. Shadows Clarity at +50 gives a dark forest depth and leaves a bright sky alone; a negative range smooths instead. The ranges blend into each other softly, split where the Color Grading wheels split at their default Blending and Balance. A dot on a closed line means one of its ranges is set.
 
-**Dehaze.** Its own section, because it isn't a contrast slider: **Strength** (−100…+100) estimates how much haze sits in front of each part of the scene and removes (or adds) it, and **Distance** (0…100) sets how far into the scene that estimate reaches. Negative Strength puts atmosphere back.
+**Dehaze.** Its own section, because it isn't a contrast slider: **Strength** (−100…+100) estimates how much haze sits in front of each part of the scene and removes (or adds) it, and **Distance** (0…100) sets how far into the scene that estimate reaches. Up to the middle it works across the whole frame; past it, the nearer part of the scene is left more and more alone, until at 100 only the distance — a misty tree line, far hills, the sky — is cleared and the foreground keeps its look. Negative Strength puts atmosphere back, and past the middle of Distance it puts it back into the distance only.
 
 **Curve.** A tone curve with **RGB** plus separate **R / G / B** channels. Click the line to add a point, drag to shape it, drag an interior point off the top or bottom to delete it. Below the graph is a **parametric** curve — four region sliders (**Highlights / Lights / Darks / Shadows**) that bend the curve *smoothly* within their tonal band instead of as a straight lift, so it never kinks. Hovering a region slider shades the stretch of the curve it reaches (widest where it bites, tapering to nothing at the ends). The three small handles under the graph move the boundaries between the four regions. The parametric layer stacks *on top of* the point curve — you can use either or both.
 

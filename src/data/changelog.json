@@ -57,6 +57,10 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Dehaze's Distance at the top of its range clears the distance and leaves the foreground alone.</strong> At 100 it used to strengthen the effect everywhere and overblow what was near.",
+              "<strong>A RAW+JPEG pair's badge is amber, in the grid and in Develop.</strong> A pair looked just like a single photo.",
+              "<strong>The RAW / JPEG badge in Develop no longer covers the buttons beside the photo.</strong> It sits next to them.",
+              "<strong>← and → move to the previous or next photo in Develop wherever you last clicked.</strong> They did nothing once a slider or the panel had been clicked.",
               "<strong>Stamped masks fit each photo.</strong> Subject, Sky, Object, People, Depth and Wand masks are found again on every photo they are stamped onto; drawn masks are copied as drawn.",
               "<strong>Naming people writes the names into the photos straight away.</strong> Renaming, merging or removing someone updates them too, and names another app wrote there are kept.",
               "<strong>Deleting a photo takes its sidecar files and edits with it, and ⌘Z brings them back.</strong> A later photo with the same file name used to inherit them; a RAW+JPEG pair now goes as one.",
@@ -93,7 +97,7 @@
         "latest": false
       }
     ],
-    "count": 64
+    "count": 68
   },
   {
     "slug": "2026-q3",
