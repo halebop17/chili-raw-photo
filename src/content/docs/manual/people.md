@@ -85,6 +85,10 @@ Right-click a person tile for:
 - **Rename · Set cover…** — opens a sheet where you can rename (edit the field and press **Return**), and right-click any face to **Set as cover** or **Remove from person**. It also shows the person's photo count and a **Delete** button.
 - **Delete Person** — removes the name; those faces return to the Unnamed pool, they're never thrown away.
 
+## Names in your photos
+
+Names are written into the photos themselves, as face regions — the form Lightroom and digiKam read — the moment you name a group, rename someone, add a group to a person, merge two people, remove a face or delete a person. They go wherever **Settings ▸ Files ▸ Write target** says, and a line beside the toolbar counts the photos while it runs. Taking a name away takes it out of the photo; names another app wrote are left as they are.
+
 ## Hide and unhide junk
 
 Scans pick up strangers in the background and other faces you don't care about. Nothing is ever deleted — hiding just tucks a group away:
