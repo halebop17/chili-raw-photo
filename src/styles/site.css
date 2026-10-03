@@ -124,8 +124,8 @@ p { margin: 0; }
 /* The features index's Pro grid ends on a card that takes whatever its last row
    has left, so the last feature never sits beside empty cells. At two columns
    and fewer it is an ordinary card. */
-.pro-rest { grid-column: span var(--span); }
-@media (max-width: 1000px) { .pro-rest { grid-column: auto; } }
+.pro-rest, .free-rest { grid-column: span var(--span); }
+@media (max-width: 1000px) { .pro-rest, .free-rest { grid-column: auto; } }
 
 .rule { height: 1px; background: var(--border-soft); }
 .band { background: var(--backdrop); border-top: 1px solid var(--border-soft); border-bottom: 1px solid var(--border-soft); }

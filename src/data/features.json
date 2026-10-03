@@ -189,6 +189,15 @@
   "key": "Geo"
  },
  {
+  "slug": "folder-notes",
+  "title": "Folder Notes",
+  "sub": "A Markdown page for every shoot, kept in its folder.",
+  "lead": "Where you went, the map links, the names you will want again next year. Every folder can keep a page of notes, written in the Markdown editor built into Chili RAW and saved as a Markdown file inside the folder, so the notes travel and back up with the photos they belong to.",
+  "tier": "free",
+  "chapter": "getting-started",
+  "key": "FolderNotes"
+ },
+ {
   "slug": "exif-iptc",
   "title": "EXIF / IPTC",
   "sub": "Read your camera's data, and write your own.",
