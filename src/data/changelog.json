@@ -57,6 +57,7 @@
           {
             "name": "Fixed",
             "items": [
+              "<strong>Naming people writes the names into the photos straight away.</strong> Renaming, merging or removing someone updates them too, and names another app wrote there are kept.",
               "<strong>Deleting a photo takes its sidecar files and edits with it, and ⌘Z brings them back.</strong> A later photo with the same file name used to inherit them; a RAW+JPEG pair now goes as one.",
               "<strong>Clips keep their rating, keywords and location.</strong> Search, Smart Folders, the keyword tree and the map now find them, with the place and time a phone recorded, and clips sort by when they were shot.",
               "<strong>Exported clips carry their keywords, title, caption, rating and location.</strong> With Write GPS coordinates off, the location is taken out.",
@@ -91,7 +92,7 @@
         "latest": false
       }
     ],
-    "count": 62
+    "count": 63
   },
   {
     "slug": "2026-q3",
