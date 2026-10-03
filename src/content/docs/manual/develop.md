@@ -310,16 +310,18 @@ The bottom line of the panel counts what this photo carries — *"3 repairs on t
 
 Masks let you push an adjustment into just part of the frame. The tiles at the top of the panel add one. Their colour says who produces the selection: **teal** for the AI built into macOS, **violet** for a model you downloaded in **Settings ▸ AI**, and plain grey for the ones you drive yourself.
 
+Every mask is Free except **Sky**, **Object** and **Depth**, and the face parts of a **Person** mask, which are Pro.
+
 *Detected — the app finds it for you:*
 
 | Tile | Selects | Marking |
 |---|---|---|
 | **Subject** | The main subject | teal (macOS) |
-| **Person** | Everyone in the frame, or only the people you pick; a downloaded model can split a person into face, hair, skin and clothing parts | teal (macOS) |
+| **Person** | Everyone in the frame, or only the people you pick; a downloaded model can split a person into face, hair, skin and clothing parts *(Pro)* | teal (macOS) |
 | **Background** | Everything that isn't the subject | teal (macOS) |
-| **Sky** | The sky, tuned side by side against Lightroom | violet (model) |
-| **Object** | Click a thing and it is outlined (SAM 2) | violet (model) |
-| **Depth** | A slice of the scene by distance — near, far, or a band in between | violet (model) |
+| **Sky** *(Pro)* | The sky, tuned side by side against Lightroom | violet (model) |
+| **Object** *(Pro)* | Click a thing and it is outlined (SAM 2) | violet (model) |
+| **Depth** *(Pro)* | A slice of the scene by distance — near, far, or a band in between | violet (model) |
 
 *Computed — from the pixels, no model:*
 
