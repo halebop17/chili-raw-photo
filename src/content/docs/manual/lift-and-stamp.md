@@ -48,7 +48,7 @@ The tick list has four columns. Toggle any row on or off; your choices stay put 
 |---|---|
 | Crop | Open it with **›** to choose: **Exact crop** (the default) copies the crop rectangle, Straighten angle, 90° turns and flips — the same part of every photo, for a series shot from a tripod. **Aspect ratio only** copies just the crop's shape and centres it on each photo, so a mix of portrait and landscape frames all get, say, 4:5. |
 | Transform | Vertical & horizontal keystone, fine Rotate, Aspect, Scale, and X/Y offset |
-| Masks | Every local-adjustment mask (radial, linear, brush) on the source, copied as fresh independent masks |
+| Masks | Every mask on the source, as fresh independent masks. Radial, linear and brush masks are copied as drawn; Subject, Sky, Object, People, Depth and Wand masks are found again on each photo — in the background, so the grid catches up a moment later — the way Lightroom does it. Sky, Object and Depth need their AI model downloaded; a mask that finds nothing says so, and **Reselect** on the photo tries again. |
 
 **METADATA** — all three are **off by default**, so a normal stamp never touches ratings, flags, or location unless you ask it to.
 
