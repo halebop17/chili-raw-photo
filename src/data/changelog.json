@@ -18,6 +18,7 @@
               "<strong>The RGB curve can leave colour alone.</strong> Switch it to Luminance and a contrasty curve no longer strengthens a colour cast.",
               "<strong>Keywords can nest.</strong> Type Places &gt; Japan &gt; Kyoto to file one under another; searching for Japan finds everything under it, and Lightroom keyword trees come through both ways.",
               "<strong>Keywords have a tree.</strong> It sits in the Grid sidebar with a count on every keyword: tick one to tag the selected photos, drag photos onto it, right-click to rename, move or delete it.",
+              "<strong>The Keywords panel takes typed keywords and suggests nine.</strong> Type keywords onto the selected photos separated by commas, or click one picked from the photos taken around the same time; the list stops at ten rows, and the heading folds the panel away.",
               "<strong>The clipping overlay shows which colours blew out.</strong> A highlight gone in red alone is marked red and one gone in all three white, outlined; crushed shadows are striped.",
               "<strong>Give each camera its own starting look.</strong> Right-click a preset in Develop and choose Use as Camera Preset, and every unedited photo from that camera opens with it.",
               "<strong>Deband smooths the steps in a JPEG's sky.</strong> It is under Detail for JPEG, HEIC and other 8-bit photos, and leaves edges and detail alone.",
@@ -97,7 +98,7 @@
         "latest": false
       }
     ],
-    "count": 68
+    "count": 69
   },
   {
     "slug": "2026-q3",
