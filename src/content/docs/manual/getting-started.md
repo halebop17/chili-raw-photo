@@ -31,6 +31,7 @@ Each folder you add appears as a root in the **FOLDERS** list, and every folder 
 - **Expand / collapse** a folder by clicking its caret. Subfolders load the moment you open it.
 - **Open a folder** by clicking its name (or its icon). The name highlights, and the work area fills with that folder's photos in the current view.
 - **Recursive count** — the number on the right of each row is how many images that folder holds, counting everything in its subfolders too. Counts appear on every row once the catalog has finished indexing.
+- **Note icon** — a small note icon between a folder's name and its count means the folder has notes (see *Folder notes* below).
 - **Amber dot** — a small amber dot on a folder row means something in it **no longer matches the catalog**: photos added, changed, moved or deleted outside Chili RAW (even while it was closed), or deleted from inside it. Right-click the row and choose **Synchronize Folder** to bring it back in step.
 
 **Right-click any folder** for its menu:
@@ -39,12 +40,53 @@ Each folder you add appears as a root in the **FOLDERS** list, and every folder 
 |---|---|
 | **Synchronize Folder** | Re-reads the folder from disk and updates counts and thumbnails |
 | **Scan for Faces** / **Rescan for Faces** | Detects faces in the folder (only shown when People is enabled) |
+| **Folder Notes** | Opens the folder's notes beside the grid (see below) |
 | **Reveal in Finder** | Opens the folder in the macOS Finder |
 | **Remove from Sidebar** | Drops the folder from the list (your files are untouched) |
 
 You can also drag the thin divider between the sidebar and the work area to make the sidebar wider or narrower; the width is remembered between launches.
 
 **Folding the sidebar away.** The **‹** button in the sidebar's top-right corner folds the whole thing down to a thin rail, giving the work area the full width of the window. The rail's **›** brings it back. **⌥\** does the same from the keyboard, and it works on every page — Grid, Develop, Geo Tag, EXIF/IPTC, Film Labor. Whether you leave it folded or open is how it comes back next launch, and your chosen width is remembered either way.
+
+## Folder notes
+
+Every folder can keep a page of notes: where you went, the map links, the names and details you will want again later. The notes are written in a **Markdown editor** built into Chili RAW and saved as a plain **Markdown** file inside the folder, so they move, copy and back up along with the photos.
+
+**Opening them.** With a folder open, do any of the following:
+
+- Click **Notes** at the right end of the grid toolbar.
+- Right-click the folder in the sidebar and choose **Folder Notes**.
+- Choose **File ▸ Folder Notes**. You can give it a key in **Settings → Shortcuts**.
+
+The notes open in a panel on the right of the grid, so you can read them while you look at the photos. Notes belong to one folder, so they are not offered for search results, Smart Folders or Collections.
+
+**Three views.**
+
+- **Read** is where the notes open: a formatted page with titles, bullet points and bold text. Click a link to open it in your browser.
+- **Edit** shows the same formatting while you type, with no Markdown symbols in the way. Select some text and press a shortcut, or use the toolbar at the top of the panel: **Title**, **Bold**, **Italic**, **Bullet list** and **Link**. Pasting a web address over selected text turns it into a link.
+- **Code**, a switch inside Edit, shows the Markdown itself, for writing it by hand.
+
+Press **Done** to save and go back to Read. The notes are also saved when you close the panel, open another folder or quit.
+
+| Key | Action |
+|-----|--------|
+| ⌘B | Bold |
+| ⌘I | Italic |
+| ⌘K | Link: uses the web address on the clipboard if there is one, otherwise asks for one |
+| ⌥⌘1 / ⌥⌘2 / ⌥⌘3 | Title, levels 1 to 3 |
+| ⌥⌘L | Bullet list |
+
+The editor draws titles, bold, italic, bullet and numbered lists, and links. Anything else in the file, such as a table or a block of code, is shown as plain text and kept exactly as it was written. Typing in the notes never rates, flags or picks a photo, and **⌘A** there selects the text.
+
+**The file.** The notes are saved inside the folder, as the folder's name followed by `_notes.md`. It is an ordinary Markdown file. Quick Look shows it, and any text editor or Markdown app can open and change it; if it was changed elsewhere, Chili RAW reads it again when you open the panel.
+
+- **No file until there is text.** Opening the notes of a folder that has none shows an empty Edit view, and the file appears the first time you save. Delete all the text and save, and the file is removed, along with the sidebar icon.
+- **Reading leaves the file alone.** Opening the notes or switching views changes nothing on disk until you edit something.
+- **A folder that holds other folders can have notes too.** One page for the whole trip, and one for each day inside it.
+- **Renamed the folder in Finder?** The notes keep their old file name, and Chili RAW still opens them as long as the folder holds only one file ending in `_notes.md`. The next save renames the file to match the folder.
+- On a drive that is offline or read-only, **Notes** says why it cannot open them.
+
+**Backups.** Folder notes are backed up with your edits: a Vault backup carries them in their folders, a restore puts them back, and **File ▸ Earlier Copies of This Folder…** can bring back an earlier version ([chapter 14](/manual/collections-and-backups/)).
 
 ## Switching views
 
