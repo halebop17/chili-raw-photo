@@ -70,7 +70,7 @@ These decide what a RAW file looks like before you touch a slider. Changing one 
 
 - **RAW + JPEG pairing** — how a matching RAW and JPEG of the same frame are shown: *Show separately* (default), *Merge · prefer RAW*, or *Merge · prefer JPEG*. This affects newly opened folders — reopen the current folder to apply a change.
 
-When a pair is merged, the frame carries a small **RAW** / **JPEG** badge in its corner — on the grid tile and at the top left of the Develop canvas — saying which of the two you are looking at. Click the badge to switch to the other file; right-click the photo and choose **Show …** if you have turned tile badges off. The choice is per photo, outranks the setting above for that frame only, and is remembered between sessions.
+When a pair is merged, the frame carries a small amber **RAW** / **JPEG** badge in its corner — on the grid tile and at the top left of the Develop canvas, beside the before/after buttons — saying which of the two you are looking at. Amber marks a pair: a single raw's hover tag and a clip's length are white. Click the badge to switch to the other file; right-click the photo and choose **Show …** if you have turned tile badges off. The choice is per photo, outranks the setting above for that frame only, and is remembered between sessions.
 
 Switching changes *which file the frame is*, not how one file is developed. The RAW and the JPEG each keep their own edits, versions, ratings and sidecars, and an export gives you whichever one is currently shown.
 
