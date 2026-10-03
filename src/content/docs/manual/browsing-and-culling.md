@@ -136,6 +136,8 @@ Turn on Settings → Browse → **Rate & advance** (off by default) to cull hand
 
 Video files (MOV, MP4, M4V) appear as a poster frame with a **▶** play badge and the clip's duration in the bottom-right corner, so they're easy to spot among photos. They rate, flag, rename, and delete exactly like photos; double-click (or Return) plays them in the built-in player. To *grade* a clip, open it in Develop with **⌘2** ([chapter 5](/manual/develop/)).
 
+A clip's rating, flags, keywords, title, caption and location are saved in a sidecar file beside it, as a raw photo's are — the clip itself is never rewritten — and they count wherever a photo's do: search, Smart Folders, the keyword tree and the map. The place and time a phone records in a clip are read too, so clips sort among the photos shot beside them; remove a clip's location here and it stays removed, in the app and in what you export. A clip that shares its name with a photo — the two halves of a Live Photo — keeps a sidecar of its own (`IMG_0042.MOV.xmp`), so the two never share a rating, keywords or a place.
+
 ## Keyboard shortcuts
 
 | Key | Action |

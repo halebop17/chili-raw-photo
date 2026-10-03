@@ -428,7 +428,7 @@ Select a batch in the filmstrip (⌘-click and ⇧-click work there, and your se
 
 ## Grading a video clip
 
-A clip opens in Develop like a photo, with the controls that survive frame-to-frame: white balance, exposure and the tone sliders, curve, colour mixer, tone mapping, LUTs, colour grading, and crop. What's absent is absent on purpose — Highlights and Shadows, Texture / Clarity / Punch / Dehaze, sharpening, noise reduction, every AI stage, grain, bokeh and blend layers are whole-frame or per-render passes that boil or crawl in motion. Export writes a graded clip: pick the **Codec** and **Container** in the export dialog, and the grade is applied frame by frame at the clip's own resolution.
+A clip opens in Develop like a photo, with the controls that survive frame-to-frame: white balance, exposure and the tone sliders, curve, colour mixer, tone mapping, LUTs, colour grading, and crop. What's absent is absent on purpose — Highlights and Shadows, Texture / Clarity / Punch / Dehaze, sharpening, noise reduction, every AI stage, grain, bokeh and blend layers are whole-frame or per-render passes that boil or crawl in motion. Export writes a graded clip: pick the **Codec** and **Container** in the export dialog, and the grade is applied frame by frame at the clip's own resolution. The exported clip carries the clip's keywords, title, caption, rating and location where Lightroom, Photos and the Finder look for them; with **Write GPS coordinates** off, every location is taken out.
 
 ## Presets and Lift & Stamp
 
