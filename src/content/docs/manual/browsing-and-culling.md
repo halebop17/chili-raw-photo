@@ -162,6 +162,7 @@ A clip's rating, flags, keywords, title, caption and location are saved in a sid
 | I | Toggle info panel |
 | ⌃⌘F | Darkroom (full-screen) |
 | ⌥\ | Fold the sidebar away / bring it back |
+| ⇧⌘N | Show / hide the folder's notes |
 | ? or ⌘/ | Keyboard cheat-sheet |
 
 **Forgot a key?** Press **?** at any time for a cheat-sheet of every shortcut. It always shows your *current* keys, so it stays right even after you remap something.

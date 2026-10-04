@@ -54,37 +54,42 @@ Every folder can keep a page of notes: where you went, the map links, the names 
 
 **Opening them.** With a folder open, do any of the following:
 
-- Click **Notes** at the right end of the grid toolbar.
+- Click **Notes** (the page icon) at the right end of the grid toolbar.
 - Right-click the folder in the sidebar and choose **Folder Notes**.
-- Choose **File ▸ Folder Notes**. You can give it a key in **Settings → Shortcuts**.
+- Choose **File ▸ Folder Notes**, or press **⇧⌘N** — the same key closes them again, even while you type. You can change it in **Settings → Shortcuts**.
 
-The notes open in a panel on the right of the grid, so you can read them while you look at the photos. Notes belong to one folder, so they are not offered for search results, Smart Folders or Collections.
+The notes open in a panel on the right of the grid, so you can read them while you look at the photos; drag its left edge to make it wider or narrower. Notes belong to one folder, so Smart Folders and Collections have none.
 
 **Three views.**
 
 - **Read** is where the notes open: a formatted page with titles, bullet points and bold text. Click a link to open it in your browser.
-- **Edit** shows the same formatting while you type, with no Markdown symbols in the way. Select some text and press a shortcut, or use the toolbar at the top of the panel: **Title**, **Bold**, **Italic**, **Bullet list** and **Link**. Pasting a web address over selected text turns it into a link.
+- **Edit** shows the same formatting while you type, with no Markdown symbols in the way. Select some text and press a shortcut, or use the toolbar at the top of the panel: **Text** for plain text, titles (**H1**, **H2**, **H3**), **B**old, *I*talic, <u>U</u>nderline, bullet and numbered lists, and **Link**. Pasting a web address over selected text turns it into a link. ⌘-click a link to open it while you edit.
 - **Code**, a switch inside Edit, shows the Markdown itself, for writing it by hand.
 
-Press **Done** to save and go back to Read. The notes are also saved when you close the panel, open another folder or quit.
+Press **Done** to save and go back to Read. The notes are also saved when you close the panel, open another folder, switch to another app or quit.
 
 | Key | Action |
 |-----|--------|
 | ⌘B | Bold |
 | ⌘I | Italic |
-| ⌘K | Link: uses the web address on the clipboard if there is one, otherwise asks for one |
+| ⌘U | Underline |
+| ⌘K | Link: uses the web address on the clipboard if there is one, otherwise asks for one. Clear the address to remove a link. |
 | ⌥⌘1 / ⌥⌘2 / ⌥⌘3 | Title, levels 1 to 3 |
 | ⌥⌘L | Bullet list |
+| ⇧⌥⌘L | Numbered list |
+| Tab / ⇧Tab | Move a list item in or out a level |
+| ⌘\\ | Clear formatting: back to plain text (the **Text** button) |
 
-The editor draws titles, bold, italic, bullet and numbered lists, and links. Anything else in the file, such as a table or a block of code, is shown as plain text and kept exactly as it was written. Typing in the notes never rates, flags or picks a photo, and **⌘A** there selects the text.
+The editor draws titles, bold, italic, underline (saved as `<u>…</u>`, which Markdown apps show as underlined), bullet and numbered lists, and links. Anything else in the file, such as a table or a block of code, is shown as plain text and kept exactly as it was written; a line you change is saved in the editor's own style. Typing in the notes never rates, flags or picks a photo, and **⌘A** there selects the text.
 
 **The file.** The notes are saved inside the folder, as the folder's name followed by `_notes.md`. It is an ordinary Markdown file. Quick Look shows it, and any text editor or Markdown app can open and change it; if it was changed elsewhere, Chili RAW reads it again when you open the panel.
 
 - **No file until there is text.** Opening the notes of a folder that has none shows an empty Edit view, and the file appears the first time you save. Delete all the text and save, and the file is removed, along with the sidebar icon.
 - **Reading leaves the file alone.** Opening the notes or switching views changes nothing on disk until you edit something.
 - **A folder that holds other folders can have notes too.** One page for the whole trip, and one for each day inside it.
-- **Renamed the folder in Finder?** The notes keep their old file name, and Chili RAW still opens them as long as the folder holds only one file ending in `_notes.md`. The next save renames the file to match the folder.
-- On a drive that is offline or read-only, **Notes** says why it cannot open them.
+- **Renamed the folder in Finder?** The notes keep their old file name, and Chili RAW still finds them; the next save renames the file to match the folder. A `_notes.md` file of your own that Chili RAW did not write is left alone.
+- **Couldn't save?** If the notes can't be written — the drive was unplugged, say — they stay in the panel with **Try Again** and **Discard Changes**, and nothing you typed is dropped until you choose.
+- If the folder's drive is not connected, or the folder is read-only, the panel says so and the notes cannot be edited there. Notes on a read-only drive can still be read.
 
 **Backups.** Folder notes are backed up with your edits: a Vault backup carries them in their folders, a restore puts them back, and **File ▸ Earlier Copies of This Folder…** can bring back an earlier version ([chapter 14](/manual/collections-and-backups/)).
 

@@ -28,6 +28,7 @@ The **Rebind** column marks keys you can change in **Settings → Shortcuts**. D
 | ⌘E | Run export favourite 1 | ● |
 | ⇧⌘E | Run export favourite 2 | ● |
 | ⌃⌘F | Darkroom (full-screen, no chrome) | ● |
+| ⇧⌘N | Show / hide the folder's notes | ● |
 | ⌘/ (or ?) | Keyboard cheat-sheet | ● |
 
 ## Culling — Grid and Loupe
@@ -127,8 +128,13 @@ While you type in a folder's notes ([chapter 1](/manual/getting-started/)), with
 |-----|--------|
 | ⌘B | Bold |
 | ⌘I | Italic |
+| ⌘U | Underline |
 | ⌘K | Link (the web address on the clipboard, or asks for one) |
 | ⌥⌘1 / ⌥⌘2 / ⌥⌘3 | Title, levels 1 to 3 |
 | ⌥⌘L | Bullet list |
+| ⇧⌥⌘L | Numbered list |
+| Tab / ⇧Tab | Move a list item in or out a level |
+| ⌘\\ | Clear formatting: back to plain text |
+| ⌘-click | Open a link while editing |
 
-*File ▸ Folder Notes has no key until you give it one in Settings → Shortcuts.*
+**⇧⌘N** shows and hides the folder's notes (File ▸ Folder Notes); change it in Settings → Shortcuts.
