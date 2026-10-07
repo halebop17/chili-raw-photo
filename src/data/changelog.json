@@ -29,14 +29,15 @@
           {
             "name": "Fixed",
             "items": [
-              "<strong>Thumbnails of edited photos no longer sit on a spinner while they render.</strong> The filmstrip and the grid show the photo at once and swap in the edited look when it is ready, and renaming photos keeps their thumbnails."
+              "<strong>Thumbnails of edited photos no longer sit on a spinner while they render.</strong> The filmstrip and the grid show the photo at once and swap in the edited look when it is ready, and renaming photos keeps their thumbnails.",
+              "<strong>Generative Remove rebuilds a long stroke, such as a power line across the sky, cleanly.</strong> It used to leave a smeared band along it."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 7
+    "count": 8
   },
   {
     "slug": "2026-q4",
