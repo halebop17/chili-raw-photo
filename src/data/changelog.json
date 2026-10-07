@@ -16,7 +16,9 @@
               "<strong>Every folder can keep notes, written in a Markdown editor built into Chili RAW.</strong> Click Notes above the grid; they are saved as a Markdown file in the folder, so they travel and back up with the photos.",
               "<strong>Process works out an answer for each selected photo, where Lift and Stamp copy one.</strong> Crop each photo around its own subject or faces, expose for faces, match a set to a reference, add sky and subject masks or remove dust — crops, masks and spots are shown for review first — and save several steps as a chain to run in one click.",
               "<strong>On macOS 26 and later, a Process dialog fills itself in from a sentence</strong> such as “4:5 around the person with a bit of headroom”, worked out on the Mac itself.",
-              "<strong>Reset Edits puts the selected photos back to how they opened, in one go.</strong> Photo ▸ Reset Edits… or the right-click menu asks first; ratings, keywords and other versions stay."
+              "<strong>Reset Edits puts the selected photos back to how they opened, in one go.</strong> Photo ▸ Reset Edits… or the right-click menu asks first; ratings, keywords and other versions stay.",
+              "<strong>Detected dust can be removed with Generative Remove in one click.</strong> Detect Spots offers Remove All beside Accept All.",
+              "<strong>Lift &amp; Stamp can copy Generative Remove regions</strong>, so a removal painted on one frame of a burst lands in the same place on the others."
             ]
           },
           {
@@ -30,14 +32,15 @@
             "name": "Fixed",
             "items": [
               "<strong>Thumbnails of edited photos no longer sit on a spinner while they render.</strong> The filmstrip and the grid show the photo at once and swap in the edited look when it is ready, and renaming photos keeps their thumbnails.",
-              "<strong>Generative Remove rebuilds a long stroke, such as a power line across the sky, cleanly.</strong> It used to leave a smeared band along it."
+              "<strong>Generative Remove rebuilds a long stroke, such as a power line across the sky, cleanly.</strong> It used to leave a smeared band along it.",
+              "<strong>Settings ▸ AI lists the Generative Remove model on a fresh install</strong>, before the app has been online."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 8
+    "count": 11
   },
   {
     "slug": "2026-q4",
