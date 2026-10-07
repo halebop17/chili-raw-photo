@@ -22,7 +22,8 @@
           {
             "name": "Changed",
             "items": [
-              "<strong>Thumbnails of edited DNGs render faster</strong> — up to eight times faster for DNGs that still hold the camera's raw data."
+              "<strong>Thumbnails of edited DNGs render faster</strong> — up to eight times faster for DNGs that still hold the camera's raw data.",
+              "<strong>Generative Remove now paints on straightened, rotated, flipped, transformed and lens-corrected photos.</strong> Before, painting paused until those were undone."
             ]
           },
           {
@@ -35,7 +36,7 @@
         "latest": false
       }
     ],
-    "count": 6
+    "count": 7
   },
   {
     "slug": "2026-q4",
