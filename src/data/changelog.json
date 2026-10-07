@@ -25,7 +25,8 @@
             "name": "Changed",
             "items": [
               "<strong>Thumbnails of edited DNGs render faster</strong> — up to eight times faster for DNGs that still hold the camera's raw data.",
-              "<strong>Generative Remove now paints on straightened, rotated, flipped, transformed and lens-corrected photos.</strong> Before, painting paused until those were undone."
+              "<strong>Generative Remove now paints on straightened, rotated, flipped, transformed and lens-corrected photos.</strong> Before, painting paused until those were undone.",
+              "<strong>Photos exported with Generative Remove regions say so in their metadata</strong>, with the standard “edited with generative AI” label that contests and picture desks look for."
             ]
           },
           {
@@ -40,7 +41,7 @@
         "latest": false
       }
     ],
-    "count": 11
+    "count": 12
   },
   {
     "slug": "2026-q4",
