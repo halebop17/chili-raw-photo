@@ -270,7 +270,7 @@ Opening this tab shows the whole frame with the crop overlay so you can reframe;
 - **As Shot.** A RAW shot with the camera set to 16:9, 1:1 or another ratio still holds the whole sensor, and opens cropped to the ratio you shot at. That crop is only where it starts, not an edit: drag it out to the edges, or pick **Free**, for the whole frame, and **As Shot** (it appears on such photos) puts it back. The photo counts as unedited until you change it. To open every RAW at the full sensor frame instead, turn off **Open RAW files at the aspect ratio set in the camera** in Settings.
 - **Angle** slider: −15…+15°, in 0.1° steps. The **Auto** pill beside it runs Vision horizon detection and straightens the shot automatically (it tells you if it can't find a horizon).
 
-**Transform.** Vertical and Horizontal keystone correction (−100…+100), Rotate (−15…+15°), Aspect stretch (−100…+100), Scale (50…150%, default 100), and X/Y Offset (−100…+100).
+**Transform.** Vertical and Horizontal keystone correction (−100…+100), Rotate (−15…+15°), Aspect stretch (−100…+100), Scale (50…150%, default 100), and X/Y Offset (−100…+100). A strong Vertical or Horizontal correction leaves empty wedges at the corners: **Constrain** crops them away, and **Fill edges** (Pro; needs the Generative Remove model) fills them with more of the picture instead, keeping the whole frame — one or the other. A photo with filled edges shows and exports without HDR highlights.
 
 **Lens Corrections.** Profile-based correction for the lens's own distortion, vignetting and colour fringing. It is **off until you turn it on** — tick **Enable Profile Corrections**.
 

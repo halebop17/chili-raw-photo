@@ -18,7 +18,8 @@
               "<strong>On macOS 26 and later, a Process dialog fills itself in from a sentence</strong> such as “4:5 around the person with a bit of headroom”, worked out on the Mac itself.",
               "<strong>Reset Edits puts the selected photos back to how they opened, in one go.</strong> Photo ▸ Reset Edits… or the right-click menu asks first; ratings, keywords and other versions stay.",
               "<strong>Detected dust can be removed with Generative Remove in one click.</strong> Detect Spots offers Remove All beside Accept All.",
-              "<strong>Lift &amp; Stamp can copy Generative Remove regions</strong>, so a removal painted on one frame of a burst lands in the same place on the others."
+              "<strong>Lift &amp; Stamp can copy Generative Remove regions</strong>, so a removal painted on one frame of a burst lands in the same place on the others.",
+              "<strong>Perspective corrections can keep the whole frame.</strong> Fill edges, beside Constrain under Transform, fills the empty corners a Vertical or Horizontal correction leaves with more of the picture instead of cropping them away."
             ]
           },
           {
@@ -41,7 +42,7 @@
         "latest": false
       }
     ],
-    "count": 12
+    "count": 13
   },
   {
     "slug": "2026-q4",
