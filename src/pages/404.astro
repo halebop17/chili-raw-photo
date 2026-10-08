@@ -1,0 +1,22 @@
+---
+import Site from "../layouts/Site.astro";
+const links = [
+  ["/", "Home"],
+  ["/features/", "Features"],
+  ["/manual/", "Manual"],
+  ["/changelog/", "Changelog"],
+  ["/pro/", "Chili RAW Pro"],
+];
+---
+<Site title="Page not found" description="There is no page at this address on chiliraw.com." noindex>
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px); padding-bottom: 90px;">
+    <div class="eyebrow">404</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Page not found</h1>
+    <p class="lead" style="margin-top: 20px; max-width: 60ch;">
+      There is no page at this address. It may have moved, or the link may be mistyped.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 28px; margin-top: 30px;">
+      {links.map(([href, label]) => <a href={href}>{label} →</a>)}
+    </div>
+  </div>
+</Site>

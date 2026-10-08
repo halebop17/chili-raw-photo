@@ -1,6 +1,6 @@
 ---
 title: "Stacks"
-description: "Bursts collapsed into one tile until you want to look inside."
+description: "Group bursts into stacks: set the threshold, expand and collapse a stack, and choose which frame stands for it in the Grid."
 sidebar:
   order: 4
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Getting started & the workspace"
-description: "Opening a folder, the seven views, and how the window is laid out."
+description: "Start with Chili RAW on your Mac: add a folder, find your way around the folder tree and the seven views, and turn on People, Film Labor and Pixels."
 sidebar:
   order: 1
 ---

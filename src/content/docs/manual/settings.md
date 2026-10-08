@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-description: "Every preference, tab by tab."
+description: "Every preference in Chili RAW, tab by tab: files, backups, AI models, cache, updates and Shortcuts automation, and the keyboard reference."
 sidebar:
   order: 13
 ---

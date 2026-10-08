@@ -1,6 +1,6 @@
 ---
 title: "Geo Tag"
-description: "Put photos on the map and write real GPS data."
+description: "Put photos on a map: click or search for a place, copy and paste GPS between photos, and write real GPS coordinates into your files."
 sidebar:
   order: 7
 ---

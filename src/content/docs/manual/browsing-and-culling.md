@@ -1,6 +1,6 @@
 ---
 title: "Browsing & culling"
-description: "Rate, flag and thin a shoot down in the Grid, without the mouse."
+description: "Cull a shoot in the Grid: rate with stars, flag picks and rejects, sort, batch rename, and score the likely keepers, all from the keyboard."
 sidebar:
   order: 2
 ---

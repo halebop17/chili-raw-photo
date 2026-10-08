@@ -2,19 +2,29 @@
 import Site from "../../layouts/Site.astro";
 import features from "../../data/features.json";
 import bodies from "../../data/feature-pages.json";
+import { sizeImages } from "../../lib/images";
 
 export function getStaticPaths() {
   return features.map((f) => ({ params: { slug: f.slug }, props: { f } }));
 }
 const { f } = Astro.props;
-const body = bodies[f.key];
+const body = bodies[f.key] && await sizeImages(bodies[f.key]);
 const others = features.filter((x) => x.slug !== f.slug);
 const next = [others[(features.indexOf(f) + 1) % others.length],
               others[(features.indexOf(f) + 2) % others.length],
               others[(features.indexOf(f) + 3) % others.length]];
 ---
-<Site title={f.title} description={f.sub || f.lead.slice(0, 155)}>
-  <div class="feat" set:html={body} />
+<Site title={f.seoTitle ?? f.title} name={f.title} aboutApp
+      description={f.description ?? (f.sub || f.lead.slice(0, 155))}>
+  {body ? <div class="feat" set:html={body} /> : (
+    // A feature with no designed page yet still gets its heading and intro.
+    <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+      <div class="eyebrow">features</div>
+      <h1 class="h-hero" style="margin-top: 16px;">{f.title}</h1>
+      <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 30ch;">{f.sub}</div>
+      <p class="lead" style="margin-top: 20px; max-width: 66ch;">{f.lead}</p>
+    </div>
+  )}
 
   <div class="wrap section-lg">
     <div class="grid grid-2">

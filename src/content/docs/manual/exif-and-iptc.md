@@ -1,6 +1,6 @@
 ---
 title: "EXIF & IPTC"
-description: "Read your camera's data; write captions, keywords and copyright."
+description: "Read your camera's EXIF data and write IPTC captions, keywords, creation dates and copyright, for one photo or many at once."
 sidebar:
   order: 8
 ---

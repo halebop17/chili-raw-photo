@@ -1,6 +1,6 @@
 ---
 title: "Film Labor"
-description: "The darkroom: stocks, halation, grain, paper and print."
+description: "The darkroom: pick a film stock, add halation and grain, print onto paper, and choose the light the print is viewed under."
 sidebar:
   order: 12
 ---

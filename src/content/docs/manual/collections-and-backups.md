@@ -1,6 +1,6 @@
 ---
 title: "Collections & backups"
-description: "Hand-picked sets, and Vault backups to another drive."
+description: "Collections hold hand-picked sets of photos from any folder. Vaults back your photos and edits up to another drive."
 sidebar:
   order: 14
 ---

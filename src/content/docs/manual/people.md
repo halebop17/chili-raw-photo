@@ -1,6 +1,6 @@
 ---
 title: "People"
-description: "Finding and naming faces, entirely on your own Mac."
+description: "Find faces in your photos, name them, and see every photo of a person, with face recognition running entirely on your own Mac."
 sidebar:
   order: 10
 ---

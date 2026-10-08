@@ -1,13 +1,14 @@
 ---
 import Site from "../layouts/Site.astro";
 import bodies from "../data/feature-pages.json";
+import { sizeImages } from "../lib/images";
 
 // The homepage is the design's own markup, ported by tools/design-to-site.py.
 // Hand-writing it meant six sections were quietly left out of it.
-const body = bodies.Home;
-const title = "Chili RAW";
+const body = await sizeImages(bodies.Home);
+const title = "Chili RAW — RAW photo editor and culler for the Mac";
 const description = "Chili RAW is a photo developer, culler and asset manager for the Mac. Three RAW decoders, AI masking, film looks and a darkroom — no cloud, no account.";
 ---
-<Site title={title} description={description}>
+<Site title={title} name="Chili RAW" description={description} aboutApp>
   <div class="feat" set:html={body} />
 </Site>
