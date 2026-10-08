@@ -1,0 +1,234 @@
+{
+ "/": {
+  "date": "2026-10-08",
+  "hash": "a51346f13c830b7d"
+ },
+ "/ai/": {
+  "date": "2026-10-08",
+  "hash": "58c486368c9043a0"
+ },
+ "/articles/": {
+  "date": "2026-10-08",
+  "hash": "0082f9d267da0d82"
+ },
+ "/articles/compressed-dng/": {
+  "date": "2026-10-08",
+  "hash": "3735ec7ea27623cf"
+ },
+ "/articles/whats-next/": {
+  "date": "2026-10-08",
+  "hash": "7d73743b42287e97"
+ },
+ "/articles/why-a-new-raw-developer/": {
+  "date": "2026-10-08",
+  "hash": "feb27f6828ecd042"
+ },
+ "/changelog/": {
+  "date": "2026-10-08",
+  "hash": "e5578790f8ea94c5"
+ },
+ "/changelog/2026-q1/": {
+  "date": "2026-10-08",
+  "hash": "0cf77415587b4c82"
+ },
+ "/changelog/2026-q2/": {
+  "date": "2026-10-08",
+  "hash": "c1c94f83b6aab82d"
+ },
+ "/changelog/2026-q3/": {
+  "date": "2026-10-08",
+  "hash": "a8294128fdb5ec58"
+ },
+ "/changelog/2026-q4/": {
+  "date": "2026-10-08",
+  "hash": "64b4f916b095851e"
+ },
+ "/contact/": {
+  "date": "2026-10-08",
+  "hash": "d50cb151639b5ada"
+ },
+ "/features/": {
+  "date": "2026-10-08",
+  "hash": "a17e6be27154f290"
+ },
+ "/features/ai-masking/": {
+  "date": "2026-10-08",
+  "hash": "b1f1e33de2fe7dce"
+ },
+ "/features/auto/": {
+  "date": "2026-10-08",
+  "hash": "9a57002e53b624f6"
+ },
+ "/features/bokeh/": {
+  "date": "2026-10-08",
+  "hash": "b7f63d2931edc60f"
+ },
+ "/features/catalog/": {
+  "date": "2026-10-08",
+  "hash": "be0a015ff2353a6b"
+ },
+ "/features/culling/": {
+  "date": "2026-10-08",
+  "hash": "6b50d9fc53709cbb"
+ },
+ "/features/decoders/": {
+  "date": "2026-10-08",
+  "hash": "09fc5ffb4f4125f3"
+ },
+ "/features/detail/": {
+  "date": "2026-10-08",
+  "hash": "96acf80efb3896d5"
+ },
+ "/features/develop/": {
+  "date": "2026-10-08",
+  "hash": "63967cf4b0217d35"
+ },
+ "/features/exif-iptc/": {
+  "date": "2026-10-08",
+  "hash": "6011c6e8626e3776"
+ },
+ "/features/export/": {
+  "date": "2026-10-08",
+  "hash": "c5199728ebec372e"
+ },
+ "/features/film-labor/": {
+  "date": "2026-10-08",
+  "hash": "75c679078ec97745"
+ },
+ "/features/folder-notes/": {
+  "date": "2026-10-08",
+  "hash": "a7ee0d0f1ccbe265"
+ },
+ "/features/generative-fill/": {
+  "date": "2026-10-08",
+  "hash": "98ce5216d39a4ec1"
+ },
+ "/features/geo-tag/": {
+  "date": "2026-10-08",
+  "hash": "467ac8316aef5d2f"
+ },
+ "/features/lens-corrections/": {
+  "date": "2026-10-08",
+  "hash": "9eb0442d54b80efa"
+ },
+ "/features/loupe/": {
+  "date": "2026-10-08",
+  "hash": "7107eec1c0f06204"
+ },
+ "/features/luts/": {
+  "date": "2026-10-08",
+  "hash": "f1cf2ab9fb3a13e7"
+ },
+ "/features/masking/": {
+  "date": "2026-10-08",
+  "hash": "c7f548f699221088"
+ },
+ "/features/match-colours/": {
+  "date": "2026-10-08",
+  "hash": "aa57a31f40021d0f"
+ },
+ "/features/people/": {
+  "date": "2026-10-08",
+  "hash": "7e6cfda44be60eb1"
+ },
+ "/features/pixels/": {
+  "date": "2026-10-08",
+  "hash": "263e2376ef40d967"
+ },
+ "/features/portrait/": {
+  "date": "2026-10-08",
+  "hash": "902842cc62fac81c"
+ },
+ "/features/repair/": {
+  "date": "2026-10-08",
+  "hash": "6a6e8417a533d3e3"
+ },
+ "/features/search/": {
+  "date": "2026-10-08",
+  "hash": "451fd4437aaf7b9a"
+ },
+ "/features/stacks/": {
+  "date": "2026-10-08",
+  "hash": "0faad55f7d8ba81a"
+ },
+ "/features/versions/": {
+  "date": "2026-10-08",
+  "hash": "e6a5655ae878716a"
+ },
+ "/features/video/": {
+  "date": "2026-10-08",
+  "hash": "7de2d28986215ec9"
+ },
+ "/manual/": {
+  "date": "2026-10-08",
+  "hash": "21c839bec39b3ba5"
+ },
+ "/manual/browsing-and-culling/": {
+  "date": "2026-10-08",
+  "hash": "9f39e2868c5dc9f0"
+ },
+ "/manual/catalog-and-search/": {
+  "date": "2026-10-08",
+  "hash": "f0d9dba13bc197f2"
+ },
+ "/manual/collections-and-backups/": {
+  "date": "2026-10-08",
+  "hash": "67e5f29f3c201bd5"
+ },
+ "/manual/develop/": {
+  "date": "2026-10-08",
+  "hash": "9208cb82b2c6221e"
+ },
+ "/manual/exif-and-iptc/": {
+  "date": "2026-10-08",
+  "hash": "b9c7ef46d85d0e6b"
+ },
+ "/manual/film-labor/": {
+  "date": "2026-10-08",
+  "hash": "23566b8009be71b3"
+ },
+ "/manual/geo-tag/": {
+  "date": "2026-10-08",
+  "hash": "fc81f79b526a1ada"
+ },
+ "/manual/getting-started/": {
+  "date": "2026-10-08",
+  "hash": "40ddebd48834a5d8"
+ },
+ "/manual/keyboard-shortcuts/": {
+  "date": "2026-10-08",
+  "hash": "2dd9bd095c79a396"
+ },
+ "/manual/lift-and-stamp/": {
+  "date": "2026-10-08",
+  "hash": "74f51e8d30f14a92"
+ },
+ "/manual/loupe-and-viewer/": {
+  "date": "2026-10-08",
+  "hash": "37bbd232e54a9414"
+ },
+ "/manual/people/": {
+  "date": "2026-10-08",
+  "hash": "fc9f481cf4b89d7d"
+ },
+ "/manual/pixels/": {
+  "date": "2026-10-08",
+  "hash": "39ae724cabea6f49"
+ },
+ "/manual/settings/": {
+  "date": "2026-10-08",
+  "hash": "0c44b2df22ac966f"
+ },
+ "/manual/stacks/": {
+  "date": "2026-10-08",
+  "hash": "afa6d23abfad7fe1"
+ },
+ "/pro/": {
+  "date": "2026-10-08",
+  "hash": "6ceef9b36be97090"
+ },
+ "/tools/": {
+  "date": "2026-10-08",
+  "hash": "2b794db932e629d9"
+ }
+}

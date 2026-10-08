@@ -2,6 +2,12 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import sitemap from "@astrojs/sitemap";
+import fs from "node:fs";
+
+// When each page's content last changed, recorded when it is published. Never
+// the build date: that would tell search engines every page changed on every
+// deploy, and they stop trusting the dates.
+const lastmod = JSON.parse(fs.readFileSync(new URL("./src/data/lastmod.json", import.meta.url), "utf8"));
 
 // One canonical host: www. The apex redirects to it.
 export default defineConfig({
@@ -28,6 +34,12 @@ export default defineConfig({
       lastUpdated: false,
       credits: false,
     }),
-    sitemap(),
+    sitemap({
+      serialize(item) {
+        const date = lastmod[new URL(item.url).pathname]?.date;
+        if (date) item.lastmod = date;
+        return item;
+      },
+    }),
   ],
 });
