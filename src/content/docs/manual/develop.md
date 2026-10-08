@@ -418,6 +418,28 @@ Select a batch in the filmstrip (⌘-click and ⇧-click work there, and your se
 - One **undo** covers the whole batch (**Photo ▸ Undo…**), and Auto Sync never survives leaving the page.
 - **Photo ▸ Auto Level Selected** straightens a whole selection, measuring each photo on its own. Photos with no clear level reference are left alone rather than guessed at, and counted: *“Leveled 34 of 50 · 16 had no level reference.”*
 
+## Process — an answer for each photo
+
+Lift & Stamp copies one photo's answer onto every photo. **Process** works out an answer for each photo: the faces, the subject, the sky or the dust are found in that photo itself. It acts on the selection, or on the photo in focus when nothing is selected, and leaves videos out.
+
+Open it from the **Process** pill in the Grid's action row, beside **Lift** and **Stamp**, from **Photo ▸ Process**, or from **Process** on the right-click menu. All three list the same steps:
+
+| Section | Steps |
+|---|---|
+| **Tone & Colour** *(Pro)* | **Auto Tone**, **Auto White Balance**, **Auto Presence**, **Expose for Faces** (tone set from the faces in each photo), **Match Colours…** |
+| **Framing** | **Auto Level**, **Crop to Subject…**, **Crop to Faces…**, **Same Subject Size…** (the subject fills the same share of every photo) |
+| **Masks** *(Pro)* | **Recompute Masks per Photo** (the lifted photo's masks, found again in each photo — lift a photo with masks first), **Add Sky Mask…**, **Add Subject Mask…** |
+| **Repair** *(Pro)* | **Remove Dust…** (sensor dust, checked against the rest of the shoot) |
+
+- A step without **…** runs at once. A step with one opens a dialog first: the crop's **Shape** and **Room around it** (or how much the **Subject fills**), the adjustment a mask carries, dust **Sensitivity**, or the photo to match and its **Strength**. The reference defaults to the photo in focus and is left out of the photos matched. **Run on n photos** starts it.
+- It runs in the background, in the **Jobs** panel. A photo where a step finds nothing — no face, no sky — is left as it was, and its row says why.
+- **Crops, masks and dust stop for a review** before anything is written: each photo before and after (for dust, the whole frame with the spots circled), each with a tick. **Apply to n photos** writes the ticked ones; **Cancel** writes nothing. A photo edited after it was measured is left as it is.
+- Each run is one undo (**Photo ▸ Undo…**).
+
+**Chains** *(Pro)*. **New Chain…**, at the bottom of the Process list, saves several steps under a name. A chain holds one exposure step at most (Auto Tone, Expose for Faces or Match Colours) and one crop; Match Colours sets white balance and saturation itself, so it takes the place of Auto White Balance and Auto Presence. A chain runs its steps in the develop pipeline's own order, and stops for a review when one of them needs it. Saved chains sit at the top of the Process list. In the pill's list, right-click a chain to **Edit…**, **Export…** or **Delete** it; **Import Chain…** brings in one someone sent you.
+
+**The sentence box.** On macOS 26 and later, with Apple Intelligence on, the step dialogs and the chain editor open with a sentence box. Type what you want — *“4:5 with a bit of room”*, *“darker and a little cooler”* — and **Fill In** sets the controls from it. Nothing runs until you press **Run** or **Save Chain**, so you can check what it understood first.
+
 ## Match Colours *(Pro)*
 
 **Photo ▸ Match Colours…** sets the photo's sliders so it takes on the colours of another image — a frame from the same shoot that you've already edited, or any picture whose look you want.
@@ -445,7 +467,7 @@ Two ways to reuse a look:
   - **Camera presets.** Right-click a preset and choose **Use as Camera Preset for** your camera (the camera the photo on screen was shot with). From then on, each photo from that camera opens with the preset the first time you develop it, as one step you can undo. Photos you have already edited are never changed, and a photo you reset or undo stays that way. For photos in the Grid, right-click ▸ **Apply Camera Preset**: each photo gets its own camera's preset, and you're asked before any with edits are changed. **Settings → General → Develop** lists your camera presets and removes them.
 - **Copy Settings** (the tag button, top-right). It opens the centred dialog listing exactly what carries over, in four columns — Edit, Grading, Geometry, Metadata. The look is ticked on by default; crop, transform, masks and metadata are off. **⌘C** copies the current photo, raising that dialog the first time in a folder, and **⌘V** stamps it onto the selection. **⌘⇧C** and the tag button bring the dialog back without re-lifting. See [Lift & Stamp](#6-lift--stamp) for every tick.
 
-**Reset.** Use **Reset All** in the footer to clear everything, the Geometry tab's **Reset** for just crop/straighten/flip/transform, or double-click any single slider to reset that control.
+**Reset.** Use **Reset All** in the footer to clear everything, the Geometry tab's **Reset** for just crop/straighten/flip/transform, or double-click any single slider to reset that control. **Photo ▸ Reset Edits…** (also on the right-click menu) puts the selected photos, or the one in focus, back to how they opened; a photo that opened with a camera preset goes back to that preset. Only the active version is reset: ratings, keywords, location, other versions, Film Labor Looks and Pixels layers stay. It asks first, and one undo (⌘Z) takes it back.
 
 ## Export
 
@@ -466,7 +488,7 @@ Click **Export…** (in the footer, on any tab — in the Pixels inspector's foo
 | **Watermark** | Off, or a line of **text** or a **PNG** on every copy — font, size, colour, opacity, one of nine positions and a margin. |
 | **Resolution** | The ppi written into the file's metadata (it doesn't change the pixels). |
 | **Naming** | Original filename, a custom name, or a custom name with a **sequence** (separator, start number, extension case), plus **Include all versions** (see below). A **RESULT** block previews the names before you commit. Originals are never renamed. |
-| **Metadata** | **All metadata** or **None**, with **Write GPS coordinates** and **Remove person info & faces** as separate switches — the two things you might not want to publish. |
+| **Metadata** | **All metadata** or **None**, with **Write GPS coordinates** and **Remove person info & faces** as separate switches — the two things you might not want to publish. A photo with a generative removal or filled edges carries the “edited with generative AI” label either way. |
 | **If the file exists** | Add a number so nothing is overwritten (default), overwrite, or skip. |
 | **Output** | Default is an **Exports/** subfolder inside each photo's folder; **Choose…** to override, **Default** to revert |
 

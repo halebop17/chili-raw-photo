@@ -1,0 +1,122 @@
+---
+import Site from "../layouts/Site.astro";
+import features from "../data/features.json";
+// one glyph per feature, named for its slug — see src/icons/README.md
+const glyphs = import.meta.glob("../icons/*.svg", { query: "?raw", import: "default", eager: true });
+const glyph = (slug) => glyphs[`../icons/${slug}.svg`] ?? "";
+const title = (slug) => features.find((f) => f.slug === slug)?.title ?? slug;
+
+// Every feature page with AI in it, and who does the work: "macos" for what
+// ships with macOS, "model" for a model downloaded in Settings ▸ AI. The same
+// two colours the app marks its AI tools with (teal and violet).
+const tools = [
+  ["generative-fill", ["model"], "Remove, move and extend, redrawn with real detail by FLUX.2 klein."],
+  ["ai-masking", ["macos", "model"], "Subject, Background and People from macOS; Sky, Object and Depth from models."],
+  ["portrait", ["model"], "A face parted into skin, eyes, lips and hair, each its own mask."],
+  ["bokeh", ["model"], "A depth map of the photo drives a real lens blur."],
+  ["detail", ["model"], "AI Denoise and AI Detail, for what the sensor did not record cleanly."],
+  ["search", ["macos", "model"], "Find photos by what is in them, or describe one in your own words."],
+  ["people", ["macos", "model"], "Faces found and grouped, so each person is named once."],
+  ["culling", ["macos"], "A keeper score puts the likely picks first. Your ratings stay yours."],
+  ["export", ["macos", "model"], "Upscale on the way out with a model, at the size the print needs."],
+];
+
+const principles = [
+  ["off by default", "One switch, and it starts off",
+   "The downloaded models sit behind Activate AI features in Settings ▸ AI, which is off when you install the app. Leave it off and no model is ever fetched or run. The tools built into macOS need no download and no switch."],
+  ["on your mac", "No image leaves your Mac",
+   "Every model runs on your Mac's own chip and works offline once it is there. There is no account and no credit to spend, and your photos are never used to train anything."],
+  ["out in the open", "Marked in the app, labelled in the file",
+   "In the app, violet marks the work of a model you downloaded and teal the work of macOS. An export with a generative removal in it says so in its metadata. Any model can be deleted in Settings ▸ AI."],
+];
+---
+<Site title="AI in Chili RAW"
+      description="Every AI tool in Chili RAW is optional, runs on your Mac and starts switched off. Nothing is uploaded, and the app is complete without it.">
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">ai in chili raw</div>
+    <h1 class="h-hero" style="margin-top: 16px;">AI, if you want it</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 30ch;">
+      A complete photo editor without it. A set of tools on your own Mac when you switch it on.
+    </div>
+    <p class="lead" style="margin-top: 20px; max-width: 68ch;">
+      Some photographers want every tool going, and some want none of it near their pictures. Both
+      are right, so the AI in Chili RAW stays out of the way until you ask for it. Culling, developing,
+      the catalog and export are complete without a single model.
+    </p>
+  </div>
+
+  <div class="wrap section">
+    <div class="grid grid-3">
+      {principles.map(([e, h, p], i) => (
+        <div class="card" style={i === 0 ? "border-color: var(--accent);" : undefined}>
+          <div class="eyebrow" style={i === 0 ? "color: var(--accent);" : undefined}>{e}</div>
+          <h3>{h}</h3>
+          <p>{p}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <div class="wrap section-lg">
+    <div class="eyebrow">two kinds of ai</div>
+    <h2 class="h-sec" style="margin-top: 14px;">The colour tells you who does the work</h2>
+    <div class="grid grid-2" style="margin-top: 26px;">
+      <div class="card">
+        <div class="eyebrow ai-kind"><span class="ai-dot macos"></span>built into macOS</div>
+        <h3>Already on your Mac</h3>
+        <p>No download and no switch. The one-click Subject, Background and People masks, keyword
+          suggestions and search by what is in a photo, the keeper score that orders a cull, and on
+          macOS 26 with Apple Intelligence, a Process dialog that fills itself in from a sentence.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow ai-kind"><span class="ai-dot model"></span>models you download</div>
+        <h3>Chosen one at a time</h3>
+        <p>Each listed in Settings ▸ AI with its size, from under a megabyte to 4.2 GB: Sky, Object and
+          Depth masks, portrait parts, AI Denoise and AI Detail, upscaling, search by meaning, face
+          recognition, Generative Remove, and FLUX.2 klein for Best, Move and Continue the photo.
+          Face recognition is free; the others are part of Pro.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section-lg">
+    <div class="eyebrow">every ai tool</div>
+    <div class="grid grid-3" style="margin-top: 22px;">
+      {tools.map(([slug, kinds, line]) => (
+        <a class="card has-mark" href={`/features/${slug}/`} style="color: inherit;">
+          <span class="mark" set:html={glyph(slug)} />
+          <div class="eyebrow ai-kind">
+            {kinds.map((k) => <span class={`ai-dot ${k}`}></span>)}
+            {kinds.length === 2 ? "macOS + model" : kinds[0] === "macos" ? "macOS" : "model"}
+          </div>
+          <h3>{title(slug)}</h3>
+          <p>{line}</p>
+          <span class="more">More info →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="band" style="margin-top: clamp(56px, 8vw, 100px); padding-block: 60px;">
+    <div class="wrap">
+      <h2 class="h-sub">Start without it. Add what you need.</h2>
+      <p class="lead" style="margin-top: 14px; max-width: 66ch;">
+        Choosing and finding are free: the macOS masks, keywords and scores, and face recognition, are
+        all in the free version. The models that change a picture are part of Pro, and every one of
+        them is optional.
+      </p>
+      <div class="btn-row" style="margin-top: 26px;">
+        <a class="btn btn-primary" href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW Free</a>
+        <a class="btn" href="/pro/">What Pro adds</a>
+      </div>
+    </div>
+  </div>
+</Site>
+
+<style>
+  .ai-kind { display: flex; align-items: center; gap: 8px; }
+  .ai-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .ai-dot.macos { background: var(--teal); }
+  .ai-dot.model { background: var(--violet); }
+  .ai-dot + .ai-dot { margin-left: -4px; }
+</style>

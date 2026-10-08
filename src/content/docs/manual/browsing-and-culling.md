@@ -90,6 +90,8 @@ Right-clicking a tile acts on the whole selection when you right-click inside it
 - **Rename…**, **Show in Finder**, **Move to Trash**
 - **Rating ▸**, **Flag ▸** (Pick / Reject / Unflag) and **Color Flag ▸**
 - **Add to Collection ▸** / **Remove from Collection**
+- **Process ▸** — the steps and saved chains of the Process pill ([chapter 5](/manual/develop/))
+- **Reset Edits…** — back to how the photos opened, after asking ([chapter 5](/manual/develop/))
 - **Versions ▸** — switch version, **Create New Version**, **Compare Versions**, or delete the active one ([chapter 5](/manual/develop/))
 - **Find Similar Photos** — photos that *look* like this one, nearest first (needs the search index; see [chapter 9](/manual/catalog-and-search/))
 - **Set as Stack Pick** and **Survey Stack (n frames)** on a stacked tile
