@@ -64,11 +64,11 @@ Same keys as Develop and Film Labor: **↑** and **↓** step the zoom, **Z** re
 
 Click something with **Enlarge** (`E`) and the app selects it and puts it back as a layer pinned exactly over itself — then make it bigger with the **Scale** slider (100–400 %) or the corner handle. The moon over a night skyline, the distant subject that deserved a longer lens: bigger, without touching the pixels around it.
 
-- **Nothing is rebuilt or invented.** The object never leaves the spot it was cut from, so the larger copy covers the original. That is the whole trick — no reconstruction, no AI fill, no model beyond the object selector. One shape can peek through: a ring or arch enlarged about its centre can show a sliver of the original inside its opening — nudge the Scale up a little further and it goes.
+- **Nothing is rebuilt or invented** unless you switch on Move (below). The object never leaves the spot it was cut from, so the larger copy covers the original. That is the whole trick — no reconstruction, no AI fill, no model beyond the object selector. One shape can peek through: a ring or arch enlarged about its centre can show a sliver of the original inside its opening — nudge the Scale up a little further and it goes.
 - **Scope — Part · Medium · Whole.** The model genuinely has three answers (the wheel, the bike, the bike and rider), so you get all three rather than one it picked for you. Switching is instant. ⌥-click takes an area back out; **New object** starts the next one.
 - The layer stores its **outline, not its pixels**, so it stays sharp in an export — the colour is read from the full-resolution photo when the file is written. It also travels as its own editable layer into a layered PSD or TIFF.
 - Works whatever crop, straighten or perspective the photo carries — nothing has to be mapped back to the uncropped frame.
-- Why no shrink, and no dragging it elsewhere? Either would expose the original underneath, and filling that in convincingly needs a class of model the app doesn't ship yet. When it does, moving comes back.
+- **Move** (Pro; needs the *Generative Remove (Best) and Extend* model and 16 GB of memory) rebuilds the spot the object was cut from, so the object can leave it: drag it anywhere, or make it smaller than the original, down to 25 %. The rebuilt spot appears a few seconds after you switch it on. Switch Move off and the object goes back over its spot.
 
 ## Adding other overlays
 
@@ -218,6 +218,7 @@ The first three styles paint **on** the photo — they cover its edges. A **Moun
 
 - **Thickness** — a percentage of the photo's short side.
 - **Colour** — white, black or grey, a colour you pick, or **Sampled from the photo**, which reads the picture's edges so the mount belongs to it. **Shade** then nudges that lighter or darker.
+- **Continue the photo** (Pro; needs the *Generative Remove (Best) and Extend* model and 16 GB of memory) fills the border with more of the scene instead of a colour — more sky above, more ground below. Drawing it takes about a minute; until it is done the border shows the sampled colour, and an export waits for it. **Again** draws it once more. The border is drawn at about 1.6 megapixels, so on a large print it is softer than the photograph it continues.
 - **Shape** — pad onto **1:1**, **4:5**, **9:16** or a ratio you type. **Turn shape to the photo** makes 9:16 become 16:9 for a landscape frame, so the border stays even instead of adding deep bars.
 
 A mount appears in the layer list as **Background**, always at the foot of the stack — it is the page your other layers sit on, so it has no position to move to. Select it to edit, or right-click to delete. Switching its Style back to one of the other three turns it into an ordinary frame layer again.
