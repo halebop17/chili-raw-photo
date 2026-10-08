@@ -20,11 +20,11 @@ Until it is enabled, People appears greyed-out in the sidebar and in the View me
 
 ## Download the face model (one time)
 
-Recognising and grouping faces needs a downloaded model. **People is Free**, and so is the model. The first time you open it you get a gate: *"People recognition needs an AI model."* The model (about 170 MB) isn't bundled with the app, to keep the download small.
+Recognising and grouping faces needs a downloaded model. **People is Free**, and so is the model. The first time you open it you get a gate: *"People recognition needs an AI model."* The model (about 120 MB) isn't bundled with the app, to keep the download small.
 
-- Click **Download Model (~170 MB)**. A progress bar shows the download percentage.
+- Click **Open Settings ▸ AI**, switch on **Activate AI features**, and **Download** *Face recognition (AuraFace)* ([chapter 13](/manual/settings/)).
 - It downloads once, stays on your Mac, and nothing is uploaded.
-- When it finishes you'll see *"Face model ready — you can scan for faces now."*
+- Once it is installed, the gate gives way to the People view.
 
 Until the model is present, scanning does nothing and the People tab stays on this gate.
 

@@ -37,7 +37,7 @@ Every tool lives in one well at the top of the inspector. Hover any square for i
 | **Rectangle** | `R` | Drag to draw a rectangle. |
 | **Line** | `L` | Drag to draw a straight line. |
 | **Ellipse** | `O` | Drag to draw an ellipse. |
-| **Enlarge** | `E` | Click a thing in the photo and make it bigger — the larger copy sits exactly over the original. Pro; needs the AI object model. |
+| **Enlarge** | `E` | Click a thing in the photo and make it bigger — the larger copy sits exactly over the original until you switch on Move. Pro; needs the AI object model. |
 
 **The bottom group acts at once** — it drops a layer in, selects it, and hands you back to Select.
 
@@ -62,7 +62,7 @@ Same keys as Develop and Film Labor: **↑** and **↓** step the zoom, **Z** re
 
 ## Enlarge
 
-Click something with **Enlarge** (`E`) and the app selects it and puts it back as a layer pinned exactly over itself — then make it bigger with the **Scale** slider (100–400 %) or the corner handle. The moon over a night skyline, the distant subject that deserved a longer lens: bigger, without touching the pixels around it.
+Click something with **Enlarge** (`E`) and the app selects it and puts it back as a layer pinned exactly over itself — then make it bigger with the **Scale** slider (100–400 %, from 25 % with Move) or the corner handle. The moon over a night skyline, the distant subject that deserved a longer lens: bigger, without touching the pixels around it.
 
 - **Nothing is rebuilt or invented** unless you switch on Move (below). The object never leaves the spot it was cut from, so the larger copy covers the original. That is the whole trick — no reconstruction, no AI fill, no model beyond the object selector. One shape can peek through: a ring or arch enlarged about its centre can show a sliver of the original inside its opening — nudge the Scale up a little further and it goes.
 - **Scope — Part · Medium · Whole.** The model genuinely has three answers (the wheel, the bike, the bike and rider), so you get all three rather than one it picked for you. Switching is instant. ⌥-click takes an area back out; **New object** starts the next one.
