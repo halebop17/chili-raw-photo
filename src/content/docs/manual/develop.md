@@ -182,10 +182,9 @@ Your Basic Contrast still applies in all three modes.
 - **Sharpening** (0…150), with **Radius** (0.5…3.0), **Detail** (0…100, default 25) and **Masking** (0…100). Sharpening starts at **40 on a RAW and 0 on a camera JPEG** — a JPEG was sharpened by the camera already. Masking holds the sharpening off flat areas like skies.
 - **NR (Apple)** (0…100) — Apple's raw noise reduction. It only exists where Apple did the demosaic, so it disables itself (and says so) on the LibRaw and Adobe DNG SDK decode paths.
 - **AI Denoise** (0…100, Pro) — works on **every** decode path, which is why it exists. It is blended against the un-denoised render, so the slider is a real strength control; around 40 % is roughly DxO's 25–30, and past ~60 it starts smoothing skin and fine texture rather than noise. Appears once the model is downloaded in **Settings ▸ AI**, and costs a second or two per render.
-- **Deblur (rescue)** (0…100, Pro) — motion-blur rescue. It is not the Sharpening slider: use it on a frame that would otherwise be deleted.
 - **AI Detail** (0…100, Pro) — runs the ×2 upscaling model and resamples straight back down, keeping the structure it restores and discarding the resolution it invents. **Judge it at 1:1** — at fit view you are looking at a proxy.
 
-The three AI rows carry a violet dot: they run a model you downloaded yourself, on your own Mac.
+The two AI rows carry a violet dot: they run a model you downloaded yourself, on your own Mac.
 
 - **Deband** (0…100) — smooths the steps an 8-bit JPEG, HEIC or PNG brings with it in a sky or any other smooth gradient. Reach for it when Shadows, Dehaze, Punch or Clarity bring steps out in a sky: with Deband on, those sliders open up a smooth gradient instead. Edges and detail with more contrast than the threshold are left alone. It appears only for 8-bit photos: a RAW, a 16-bit TIFF or PNG and a 10-bit HEIC do not arrive banded. (A photo that is not 8-bit but carries a Deband value copied from another photo shows the rows greyed out.)
   - **Radius** (8…64 px, default 24) — how far each pixel looks for the band beside it. Raise it for wide bands.

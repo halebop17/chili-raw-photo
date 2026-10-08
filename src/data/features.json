@@ -279,8 +279,8 @@
   "title": "Detail",
   "sub": "Sharpen what is there, and rebuild what is not.",
   "seoTitle": "Sharpening and noise reduction for RAW files",
-  "description": "Capture sharpening for every RAW file, plus noise reduction: Apple's RAW noise reduction and three models you download once and run on your Mac.",
-  "lead": "One panel, split by a divider. Above it is capture sharpening \u2014 the pass every raw file needs, already at 40 when the photo opens. Below it are the four that deal with what the sensor did not record cleanly: Apple's raw noise reduction, and three models you download once and run on your own Mac.",
+  "description": "Capture sharpening for every RAW file, Apple's RAW noise reduction, and AI Denoise and AI Detail: two models you download once and run on your Mac.",
+  "lead": "One panel, split by a divider. Above it is capture sharpening \u2014 the pass every raw file needs, already at 40 when the photo opens. Below it are the three that deal with what the sensor did not record cleanly: Apple's raw noise reduction, and two models you download once and run on your own Mac.",
   "tier": "free",
   "chapter": "develop",
   "key": "Detail"
