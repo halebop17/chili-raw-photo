@@ -1,10 +1,12 @@
 ---
 import Site from "../../layouts/Site.astro";
 import bodies from "../../data/feature-pages.json";
-const body = bodies.Article;
+import { sizeImages } from "../../lib/images";
+const body = await sizeImages(bodies.Article);
 ---
 <Site type="article"
-      title="Why we built a new type of RAW developer toolbox for photographers"
-      description="A folder of twelve hundred frames, an afternoon gone before anyone reached the good ones, and a monthly fee for the privilege.">
+      title="Why we built a RAW developer that only runs on a Mac"
+      description="A folder of twelve hundred frames, an afternoon gone before anyone reached the good ones, and a monthly fee for the privilege."
+      image="/og/why-a-new-raw-developer.jpg" imageAlt="A city skyline at dusk open in Develop">
   <div class="feat" set:html={body} />
 </Site>

@@ -15,10 +15,10 @@ const href = (p) => (p.slug ? `/changelog/${p.slug}/` : "/changelog/");
 const count = (s) => s.groups.reduce((n, g) => n + g.items.length, 0);
 const title = page.slug ? `Changelog — ${page.label}` : "Changelog";
 const description = page.slug
-  ? `What changed in Chili RAW during ${page.label}.`
-  : "What is in development for the next release of Chili RAW.";
+  ? `Every change to Chili RAW, the RAW photo editor for the Mac, released in ${page.label}: new features, changes and fixes, version by version.`
+  : "What is in development for the next release of Chili RAW, the RAW photo editor for the Mac: new features, changes and fixes merged so far.";
 ---
-<Site title={title} description={description}>
+<Site title={title} name={page.slug ? page.label : "Changelog"} description={description}>
   <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
     <div class="eyebrow">changelog · {page.label}</div>
     <h1 class="h-hero" style="margin-top: 16px;">Changelog</h1>

@@ -1,6 +1,6 @@
 ---
 title: "Keyboard shortcuts"
-description: "Every key in the app, on one page."
+description: "Every keyboard shortcut in Chili RAW on one page: culling, the Grid, the Loupe, Develop, Geo Tag and more."
 sidebar:
   order: 15
 ---

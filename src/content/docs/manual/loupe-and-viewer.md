@@ -1,6 +1,6 @@
 ---
 title: "The Loupe & the viewer"
-description: "Check focus at 1:1, and the full-screen Lightbox."
+description: "Check focus at 1:1 with the Loupe and focus peaking, see where the camera focused, and compare photos side by side in the full-screen viewer."
 sidebar:
   order: 3
 ---

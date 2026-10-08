@@ -1,6 +1,6 @@
 ---
 title: "Catalog & search"
-description: "Smart Folders, search, and keeping the index in step with disk."
+description: "Search your photo library, build Smart Folders, and keep the catalog in step with the folders on disk."
 sidebar:
   order: 9
 ---

@@ -1,0 +1,32 @@
+---
+// The manual's head: Starlight's own tags, with the title in the site's form,
+// plus the share picture and the structured data the marketing pages carry.
+import { SHARE_IMAGE, pageGraph } from "../lib/seo";
+
+const { head, entry } = Astro.locals.starlightRoute;
+const name = entry.data.title;
+const fullTitle = name.includes("Chili RAW") ? name : `${name} — Chili RAW manual`;
+const description = head.find((h) => h.attrs?.name === "description")?.attrs?.content ?? "";
+const tags = head
+  .filter((h) => h.attrs?.name !== "generator")
+  .map((h) => (h.tag === "title" ? { ...h, content: fullTitle } : h))
+  // Open Graph writes a locale with an underscore: en_GB.
+  .map((h) => (h.attrs?.property === "og:locale" ? { ...h, attrs: { ...h.attrs, content: h.attrs.content.replace("-", "_") } } : h));
+const ogImage = new URL(SHARE_IMAGE.src, Astro.site).href;
+const isChapter = Astro.url.pathname !== "/manual/";
+const ld = pageGraph({
+  path: Astro.url.pathname, name, description, image: SHARE_IMAGE.src,
+  article: isChapter ? { type: "TechArticle", headline: name } : undefined,
+});
+---
+
+{tags.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content={String(SHARE_IMAGE.width)} />
+<meta property="og:image:height" content={String(SHARE_IMAGE.height)} />
+<meta property="og:image:alt" content={SHARE_IMAGE.alt} />
+<meta name="twitter:image" content={ogImage} />
+<meta name="twitter:image:alt" content={SHARE_IMAGE.alt} />
+<script type="application/ld+json" set:html={ld} />

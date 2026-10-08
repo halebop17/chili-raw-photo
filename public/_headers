@@ -1,0 +1,11 @@
+# The site answers on its pages.dev address too. Only www.chiliraw.com should
+# be listed by search engines.
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+# These files never change under the same name: a new version is a new name.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable

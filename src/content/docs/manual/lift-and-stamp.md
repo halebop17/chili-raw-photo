@@ -1,6 +1,6 @@
 ---
 title: "Lift & Stamp"
-description: "Copy a look, and the parts of it, onto other photos."
+description: "Copy an edit from one photo and stamp it onto others, all of it or only the parts you tick, in three steps."
 sidebar:
   order: 6
 ---

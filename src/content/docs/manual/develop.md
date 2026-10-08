@@ -1,6 +1,6 @@
 ---
 title: "Develop"
-description: "Tone, colour, curves, masking and the RAW pipeline."
+description: "Edit RAW photos without touching the originals: tone, colour and curves, grading and LUTs, crop and lens corrections, repair, and masks."
 sidebar:
   order: 5
 ---

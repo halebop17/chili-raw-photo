@@ -1,6 +1,6 @@
 ---
 title: "Pixels"
-description: "Overlays, borders, date stamps and paint on top of a photo."
+description: "Add text, date stamps, shapes, frames, borders and paint on top of a photo, as layers that stay editable until you export."
 sidebar:
   order: 11
 ---
