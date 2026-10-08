@@ -88,6 +88,17 @@
   "key": "Portrait"
  },
  {
+  "slug": "generative-fill",
+  "title": "Generative fill",
+  "sub": "Remove, move and extend, redrawn on your Mac by FLUX.2 klein.",
+  "seoTitle": "Generative fill on the Mac: remove, move, extend",
+  "description": "Remove people and objects, move a subject, or continue a photo past its edges, redrawn by FLUX.2 klein on your own Mac. No upload, no prompt, no credits.",
+  "lead": "Paint over a tourist, a power line or a parked car, and the space fills with what was behind it. Switch the fill to Best and FLUX.2 klein, a four-billion-parameter image model running on your own Mac, redraws it with real detail. The same model moves a subject across the frame, and continues a photograph past its edges.",
+  "tier": "pro",
+  "chapter": "develop",
+  "key": "GenerativeFill"
+ },
+ {
   "slug": "repair",
   "title": "Repair",
   "sub": "Remove dust, blemishes, and whole objects.",
