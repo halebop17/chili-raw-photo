@@ -39,14 +39,15 @@
               "<strong>Thumbnails of edited photos no longer sit on a spinner while they render.</strong> The filmstrip and the grid show the photo at once and swap in the edited look when it is ready, and renaming photos keeps their thumbnails.",
               "<strong>Generative Remove rebuilds a long stroke, such as a power line across the sky, cleanly.</strong> It used to leave a smeared band along it.",
               "<strong>Settings ▸ AI lists the Generative Remove model on a fresh install</strong>, before the app has been online.",
-              "<strong>No faint line along the top edge of a photo</strong> in previews and resized exports, where it also showed along a continued Pixels mount."
+              "<strong>No faint line along the top edge of a photo</strong> in previews and resized exports, where it also showed along a continued Pixels mount.",
+              "<strong>A continued Pixels mount carries on what reaches the photo's edge</strong> — a sign, a post, a person — instead of drawing it a second time in the border."
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 17
+    "count": 18
   },
   {
     "slug": "2026-q4",
