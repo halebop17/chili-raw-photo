@@ -1,7 +1,7 @@
 {
  "/": {
-  "date": "2026-10-08",
-  "hash": "a51346f13c830b7d"
+  "date": "2026-10-22",
+  "hash": "32e3a486079dbe23"
  },
  "/ai/": {
   "date": "2026-10-08",
@@ -20,48 +20,48 @@
   "hash": "7d73743b42287e97"
  },
  "/articles/why-a-new-raw-developer/": {
-  "date": "2026-10-08",
-  "hash": "feb27f6828ecd042"
+  "date": "2026-10-22",
+  "hash": "1b0ff36b0b4b5aa0"
  },
  "/changelog/": {
-  "date": "2026-10-08",
-  "hash": "e5578790f8ea94c5"
+  "date": "2026-10-22",
+  "hash": "b3fb4ee1c3e41d67"
  },
  "/changelog/2026-q1/": {
-  "date": "2026-10-08",
-  "hash": "0cf77415587b4c82"
+  "date": "2026-10-22",
+  "hash": "43f538ecd97b46a2"
  },
  "/changelog/2026-q2/": {
-  "date": "2026-10-08",
-  "hash": "c1c94f83b6aab82d"
+  "date": "2026-10-22",
+  "hash": "f4b5397ac9d7a1f1"
  },
  "/changelog/2026-q3/": {
-  "date": "2026-10-08",
-  "hash": "a8294128fdb5ec58"
+  "date": "2026-10-22",
+  "hash": "d240743ba788e458"
  },
  "/changelog/2026-q4/": {
-  "date": "2026-10-08",
-  "hash": "64b4f916b095851e"
+  "date": "2026-10-22",
+  "hash": "4f3eca04d9429b2b"
  },
  "/contact/": {
   "date": "2026-10-08",
   "hash": "d50cb151639b5ada"
  },
  "/features/": {
-  "date": "2026-10-08",
-  "hash": "a17e6be27154f290"
+  "date": "2026-10-22",
+  "hash": "f0f7d0dc82111a2c"
  },
  "/features/ai-masking/": {
-  "date": "2026-10-08",
-  "hash": "b1f1e33de2fe7dce"
+  "date": "2026-10-22",
+  "hash": "72348a35fc63687f"
  },
  "/features/auto/": {
-  "date": "2026-10-08",
-  "hash": "9a57002e53b624f6"
+  "date": "2026-10-22",
+  "hash": "19c8453b206ff0bf"
  },
  "/features/bokeh/": {
-  "date": "2026-10-08",
-  "hash": "b7f63d2931edc60f"
+  "date": "2026-10-22",
+  "hash": "acc22a6b342021a6"
  },
  "/features/catalog/": {
   "date": "2026-10-08",
@@ -92,16 +92,16 @@
   "hash": "c5199728ebec372e"
  },
  "/features/film-labor/": {
-  "date": "2026-10-08",
-  "hash": "75c679078ec97745"
+  "date": "2026-10-22",
+  "hash": "59d2eb6d4acccaa4"
  },
  "/features/folder-notes/": {
   "date": "2026-10-08",
   "hash": "a7ee0d0f1ccbe265"
  },
  "/features/generative-fill/": {
-  "date": "2026-10-08",
-  "hash": "98ce5216d39a4ec1"
+  "date": "2026-10-22",
+  "hash": "2beac9902c4c96d3"
  },
  "/features/geo-tag/": {
   "date": "2026-10-08",
@@ -124,20 +124,20 @@
   "hash": "c7f548f699221088"
  },
  "/features/match-colours/": {
-  "date": "2026-10-08",
-  "hash": "aa57a31f40021d0f"
+  "date": "2026-10-22",
+  "hash": "3137838ecb4b77f3"
  },
  "/features/people/": {
   "date": "2026-10-08",
   "hash": "7e6cfda44be60eb1"
  },
  "/features/pixels/": {
-  "date": "2026-10-08",
-  "hash": "263e2376ef40d967"
+  "date": "2026-10-22",
+  "hash": "628ff10fbf7af2ce"
  },
  "/features/portrait/": {
-  "date": "2026-10-08",
-  "hash": "902842cc62fac81c"
+  "date": "2026-10-22",
+  "hash": "120faccdd365e432"
  },
  "/features/repair/": {
   "date": "2026-10-08",
@@ -216,16 +216,16 @@
   "hash": "39ae724cabea6f49"
  },
  "/manual/settings/": {
-  "date": "2026-10-08",
-  "hash": "0c44b2df22ac966f"
+  "date": "2026-10-22",
+  "hash": "134b7692ef0e1f6c"
  },
  "/manual/stacks/": {
   "date": "2026-10-08",
   "hash": "afa6d23abfad7fe1"
  },
  "/pro/": {
-  "date": "2026-10-08",
-  "hash": "6ceef9b36be97090"
+  "date": "2026-10-22",
+  "hash": "5204187f7d30fe93"
  },
  "/tools/": {
   "date": "2026-10-08",

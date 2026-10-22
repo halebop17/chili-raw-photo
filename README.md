@@ -128,9 +128,8 @@ and depth-based bokeh.
 
 ## Chili RAW Pro
 
-You can support development and unlock every feature with a **Pro licence — $29**, one
-payment. That is the founding price, with **version 1 + 2 included** — every 1.x and 2.x
-update, at no extra cost.
+You can support development and unlock every feature with a **Pro licence — $39.90
+lifetime**, one payment, every update included.
 
 It is a licence rather than a subscription — nothing expires, and nothing stops working if
 you never pay again. One licence covers **up to five Macs you use yourself**; if you need it

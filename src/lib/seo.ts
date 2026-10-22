@@ -57,7 +57,7 @@ export const app = {
   offers: [
     { "@type": "Offer", name: "Chili RAW", price: "0", priceCurrency: "USD",
       url: abs("/"), availability: "https://schema.org/InStock" },
-    { "@type": "Offer", name: "Chili RAW Pro", price: "29.00", priceCurrency: "USD",
+    { "@type": "Offer", name: "Chili RAW Pro", price: "39.90", priceCurrency: "USD",
       url: abs("/pro/"), availability: "https://schema.org/InStock" },
   ],
 };
