@@ -24,7 +24,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 <a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
-`macOS 15+`  `Apple silicon`  `v1.3.0`  `Free to use`  `No account`
+`macOS 15+`  `Apple silicon`  `v1.4.0`  `Free to use`  `No account`
 
 </div>
 
