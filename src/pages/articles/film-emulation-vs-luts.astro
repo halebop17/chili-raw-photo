@@ -1,0 +1,40 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="film-emulation-vs-luts"
+         description="What makes a film look: the negative, development, halation, grain, the print and the light it is viewed in. Why a LUT can hold some of it and not the rest."
+         hero="/img/filmlabor.webp" heroAlt="Film Labor open on a photograph, with the film stock and print chain beside it">
+  <p>Search for a film look and you will find thousands of LUTs and presets named after film stocks. Some of them are lovely. Very few of them look like the film they are named after, and after a while most people who care about film notice why: the colours are roughly right, and the picture still looks digital.</p>
+  <p>That is not the LUT maker's fault. A film photograph is the result of several physical stages in a row, and some of those stages cannot be written down as a lookup table at all.</p>
+
+  <h2>What a LUT is</h2>
+  <p>A LUT, or lookup table, is a list that says "this input colour becomes that output colour". A .cube file is a grid of those pairs, and the editor interpolates between them. It is fast, portable and works in almost every editor, which is why it is everywhere.</p>
+  <p>Its limit is in the definition. A LUT sees one pixel at a time and knows nothing about the pixels around it, and it was built for one particular input. Feed it a photo exposed differently, or developed on a different tone curve, and it gives a different answer from the one its author intended.</p>
+
+  <h2>What film actually does</h2>
+  <p>A colour photograph on film goes through a sequence, and each stage changes the picture in its own way.</p>
+  <ul>
+    <li><strong>The negative.</strong> Three layers of emulsion, each sensitive to one part of the spectrum, each with its own curve. This is where most of a stock's character comes from: how it holds highlights, how its shadows go, how it separates skin from foliage.</li>
+    <li><strong>Development.</strong> Longer development, a push, makes the negative denser and contrastier and the grain bigger. The same stock developed differently is a different look.</li>
+    <li><strong>Halation.</strong> Bright light passes through the emulsion, reflects off the film base and exposes it again from behind. That is the warm glow around street lights. It depends on where the bright things are in the frame, so it is a spatial effect, and a LUT cannot produce it. We wrote <a href="/articles/halation/">a whole article on halation</a>.</li>
+    <li><strong>Grain.</strong> The image is made of silver crystals or dye clouds, which is texture, not colour. Faster film has bigger crystals. Again spatial, again not something a LUT can do.</li>
+    <li><strong>The print or the scan.</strong> A negative is printed onto paper, which has its own curve and colour, or scanned, where the lab's scanner makes its own choices. Much of what people call "the Portra look" is really the scan.</li>
+    <li><strong>Viewing.</strong> A print is seen under room light. Its blacks are never truly black, because the paper surface reflects the room back at you.</li>
+  </ul>
+  <p>A LUT can capture roughly the colour part of the negative, the print and the scan together, for one input. Halation, grain, push and the surface of the print are outside what it can hold.</p>
+
+  <h2>Order matters</h2>
+  <p>Because the stages are physical, they happen in a fixed order. Halation happens inside the negative, before printing, so the print's curve shapes the glow. Grain is in the negative, so the print's contrast changes how strong the grain looks. Do the same effects as separate overlays in a different order and you get something that looks like effects on top of a photograph.</p>
+  <p>That is the difference between emulating film as a chain and decorating a digital file to resemble it.</p>
+
+  <h2>Film Labor: the chain, for one photograph</h2>
+  <p>Pipelines like this have existed for a long time in film and video colour grading. For still photographs you usually get a LUT and nothing underneath it. <a href="/features/film-labor/">Film Labor</a> is the chain built for a single frame.</p>
+  <p>You choose a stock, from colour negatives, slide films, cine stocks and Tri-X 400 for black and white, each modelled stock by stock. Then the stages run in order: exposure onto the negative, development and push, halation, grain, a print on one of eight papers or a lab-style scan, and the light the print is viewed under. Every stage has a few controls with physical meanings, and every stage can be switched off.</p>
+  <p>Two details we care about. The format you pretend to have shot on, from Super 8 to 4×5, changes only the size of the grain and the halation relative to the frame, which is what format really does. And a ring-around tray renders your frame at a row of steps either side of the current setting, the way a darkroom printer would judge a correction.</p>
+  <p>It is emulation, not replication. A model is not a roll of film. But it behaves like film when you change the exposure, which is where most film LUTs fall apart.</p>
+
+  <h2>When a LUT is still the right tool</h2>
+  <p>LUTs are good at what they are for. If you have a look you like, from a colourist or from your own grading, a LUT is the way to carry it between apps. If you are matching photos to video graded with the same LUT, use the LUT.</p>
+  <p>Chili RAW reads your own .cube files in the free version, with an Intensity slider to dial each one back. One tip: a LUT built to emulate a print already has a curve in it. Put it on top of another filmic curve and the result comes out flat. Set the tone mapping to Minimal first so the LUT gets a clean input.</p>
+  <p class="art-cta">Film Labor is part of <a href="/pro/">Chili RAW Pro</a>. LUTs are free. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and try both on the same frame.</p>
+</Article>

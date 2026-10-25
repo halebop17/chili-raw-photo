@@ -1,19 +1,55 @@
 {
  "/": {
-  "date": "2026-10-22",
-  "hash": "32e3a486079dbe23"
+  "date": "2026-10-25",
+  "hash": "bf9d1370c700021b"
  },
  "/ai/": {
   "date": "2026-10-08",
   "hash": "58c486368c9043a0"
  },
  "/articles/": {
-  "date": "2026-10-08",
-  "hash": "0082f9d267da0d82"
+  "date": "2026-10-25",
+  "hash": "bbfbd7fee9c253b0"
  },
  "/articles/compressed-dng/": {
   "date": "2026-10-08",
   "hash": "3735ec7ea27623cf"
+ },
+ "/articles/cull-photos-faster/": {
+  "date": "2026-10-25",
+  "hash": "c6eae20d52bfd02e"
+ },
+ "/articles/film-emulation-vs-luts/": {
+  "date": "2026-10-25",
+  "hash": "62f1fc2c5b1783ab"
+ },
+ "/articles/geotag-photos-mac/": {
+  "date": "2026-10-25",
+  "hash": "85f463b6b03ece37"
+ },
+ "/articles/halation/": {
+  "date": "2026-10-25",
+  "hash": "393f580a88602304"
+ },
+ "/articles/lightroom-alternatives-mac/": {
+  "date": "2026-10-25",
+  "hash": "a9a7c9ee27ad5d92"
+ },
+ "/articles/portra-400-look/": {
+  "date": "2026-10-25",
+  "hash": "57e4e00714aa4478"
+ },
+ "/articles/raw-vs-jpeg/": {
+  "date": "2026-10-25",
+  "hash": "78555534b00cbc75"
+ },
+ "/articles/recover-blown-highlights/": {
+  "date": "2026-10-25",
+  "hash": "6e75d47bfabfd7f6"
+ },
+ "/articles/remove-sensor-dust/": {
+  "date": "2026-10-25",
+  "hash": "0bdbc934e08c6b92"
  },
  "/articles/whats-next/": {
   "date": "2026-10-08",
@@ -22,6 +58,10 @@
  "/articles/why-a-new-raw-developer/": {
   "date": "2026-10-22",
   "hash": "1b0ff36b0b4b5aa0"
+ },
+ "/articles/xmp-sidecar-files/": {
+  "date": "2026-10-25",
+  "hash": "d5aa6f4594258a3a"
  },
  "/changelog/": {
   "date": "2026-10-25",
@@ -224,8 +264,8 @@
   "hash": "afa6d23abfad7fe1"
  },
  "/pro/": {
-  "date": "2026-10-22",
-  "hash": "5204187f7d30fe93"
+  "date": "2026-10-25",
+  "hash": "804065d48ac78b0b"
  },
  "/tools/": {
   "date": "2026-10-08",

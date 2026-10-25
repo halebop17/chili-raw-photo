@@ -1,0 +1,63 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="halation"
+         description="What halation is, why film shows a red-orange glow around bright lights and a digital sensor does not, and how to add believable halation to digital photos.">
+  <figure class="pair-fig">
+    <div class="pair">
+      <img src="/img/fl-plain.jpg" width="420" height="272" alt="A street at night under a railway bridge, without halation" />
+      <img src="/img/fl-halation.jpg" width="420" height="272" alt="The same street with halation: a warm glow around the lit signs" />
+    </div>
+    <figcaption class="art-cap">The same frame without halation, and with it.</figcaption>
+  </figure>
+
+  <p>Look at a night photograph shot on film and the street lights glow. Not a flare and not a blur, but a soft red-orange halo hugging every bright edge. Shoot the same street on a digital camera and the lights are clean, sharp points. That glow is halation, and it is one of the things people notice without being able to name when they say a photo "looks like film".</p>
+
+  <h2>Where it comes from</h2>
+  <p>Colour film is a stack of thin emulsion layers on a clear plastic base. Light comes in from the front, exposes the layers and carries on through into the base. At the back of the base some of it reflects and travels back up into the emulsion, exposing it a second time from behind, slightly spread out.</p>
+  <p>Ordinary light does this too, but too weakly to matter. Very bright light, a lamp, a neon sign, the sun through leaves, sends back enough to leave a visible ring.</p>
+  <p>It is red-orange because of the order of the layers. The red-sensitive layer sits deepest, nearest the base, so the reflected light reaches it first and exposes it most. The halo comes out warm.</p>
+
+  <h2>Why some films glow more than others</h2>
+  <p>Film makers know about this and fight it. Most stills films have an anti-halation layer that absorbs the light before it can bounce back. Motion picture film used a removable black backing for the same job.</p>
+  <p>That is why the glow became famous through a handful of stocks: cinema film shot with that backing removed shows strong red halos around every light, and people loved it. On a well-protected stills film the effect is much subtler, but still there.</p>
+  <p>Format matters too. The halo spreads a roughly fixed physical distance into the film, so on a small frame, Super 8 or 16mm, it is large compared to the picture, and on medium or large format it almost disappears.</p>
+
+  <h2>Why a sensor does not do it</h2>
+  <p>A digital sensor has no clear base for light to bounce around in. Each photosite records what lands on it, and very little leaks to its neighbours. Very bright lights clip to white and stop. That cleanness is a strength in most photographs, and it is part of why digital night shots can look clinical.</p>
+
+  <h2>How to fake it badly</h2>
+  <p>The usual quick method is to duplicate the photo, blur it, tint it red and blend it over the original. It glows, but the result looks wrong in recognisable ways:</p>
+  <ul>
+    <li>Everything glows, including mid-tones, so the picture just looks soft.</li>
+    <li>The halo has one width. Real halation has a tight bright core and a wide faint skirt.</li>
+    <li>It sits on top of the finished picture, so it is unaffected by contrast and colour that would have shaped it on film.</li>
+  </ul>
+  <p>And a LUT cannot do it at all. A LUT changes each pixel on its own and has no idea a lamp is two pixels away.</p>
+
+  <h2>How to do it properly</h2>
+  <p>Real halation only comes from the brightest light, it spreads in more than one bounce, and it happens inside the negative, before the print. A convincing emulation has to respect all three.</p>
+  <p>In <a href="/features/film-labor/">Film Labor</a>, halation sits in the chain where it happens on film: after the exposure onto the negative and before the print. Four controls:</p>
+  <ul>
+    <li><strong>Amount</strong>: how much light comes back.</li>
+    <li><strong>Size</strong>: how far it spreads, measured against the frame's height, so the preview and the full-size export agree.</li>
+    <li><strong>Bounce</strong>: how many reflections add up. Each is wider and weaker than the last, which gives the tight core and the soft skirt.</li>
+    <li><strong>Decay</strong>: how fast those bounces fade.</li>
+  </ul>
+  <p>Because the print comes after it, a hard paper makes the glow punchier and a soft one keeps it gentle, as it would in the darkroom. And the <strong>Format</strong> setting scales it: choose Super 8 and the halo grows six times larger relative to the frame; choose 4×5 and it shrinks to a quarter.</p>
+
+  <h2>Tips</h2>
+  <ul>
+    <li><strong>Use photos with real light sources.</strong> Night streets, candles, backlit hair, sun through trees. A flatly lit landscape shows almost nothing, and that is correct.</li>
+    <li><strong>Less than you think.</strong> Halation is best when nobody notices it until it is gone. Set it, then switch it off and on again.</li>
+    <li><strong>Match the format to the story.</strong> A big halo says home movie. A faint one says medium format.</li>
+  </ul>
+  <p class="art-cta">Halation is part of Film Labor in <a href="/pro/">Chili RAW Pro</a>. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and try it on a night shot.</p>
+</Article>
+
+<style>
+  .pair-fig { margin: 0 0 10px; }
+  .pair-fig .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pair-fig img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--border-soft); }
+  @media (max-width: 560px) { .pair-fig .pair { grid-template-columns: 1fr; } }
+</style>

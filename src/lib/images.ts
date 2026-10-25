@@ -8,7 +8,7 @@ import sharp from "sharp";
 
 const sizes = new Map<string, { width: number; height: number } | null>();
 
-async function size(src: string) {
+export async function size(src: string) {
   if (!sizes.has(src)) {
     const file = path.join(process.cwd(), "public", decodeURI(src));
     const meta = fs.existsSync(file) ? await sharp(file).metadata() : null;

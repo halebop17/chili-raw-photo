@@ -1,0 +1,43 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="xmp-sidecar-files"
+         description="What an XMP sidecar file is, why it matters where a photo editor keeps your edits and ratings, and how to set up a photo library that does not depend on one app."
+         hero="/img/catalog-full.webp" heroAlt="The catalog view, showing folders on disk in the sidebar">
+  <p>You spend years rating, keywording and editing photos. Then you change editors, or your editor changes its pricing, or the company behind it disappears. What happens to all that work depends on one thing you probably never chose deliberately: where the app keeps it.</p>
+
+  <h2>Two ways to keep edits</h2>
+  <p><strong>In a database.</strong> The app keeps one big catalog file. Your photos stay where they are, but every rating, keyword, crop and slider position lives inside the catalog. This is fast, and it makes search easy. It also means your work exists only in a file that one app knows how to read. Lose the catalog, or the app, and the work goes with it.</p>
+  <p><strong>Beside the photo.</strong> The app writes a small file next to each original, holding its metadata and edits. Copy the folder, and the edits go with it. Open the folder in another app that reads the same file, and the work is there.</p>
+  <p>That small file is a sidecar.</p>
+
+  <h2>What XMP is</h2>
+  <p>XMP, the Extensible Metadata Platform, is an open standard for photo metadata, published by Adobe and now an ISO standard. It is plain text in an XML structure, and it holds things like:</p>
+  <ul>
+    <li>star ratings, colour labels and pick or reject flags</li>
+    <li>title, caption, keywords, creator and copyright</li>
+    <li>GPS location</li>
+    <li>in some apps, develop settings as well</li>
+  </ul>
+  <p>XMP can be written into a JPEG, TIFF or DNG file itself, or into a separate <code>.xmp</code> file with the same name as a RAW file, because most editors avoid writing into proprietary RAW formats.</p>
+
+  <h2>What travels between apps, and what does not</h2>
+  <p>Ratings, keywords, captions and GPS in XMP are widely understood. Write them in one app and most others will read them. This is the part of your work you can almost always keep.</p>
+  <p>Develop settings are different. Every editor has its own sliders and its own rendering, so even when two apps both store edits in XMP, they cannot read each other's. Your edits stay safe in the file, but only the app that wrote them can apply them. The practical answer is to export finished photos as full-size JPEG or TIFF, and keep metadata in XMP.</p>
+
+  <h2>How Chili RAW handles it</h2>
+  <p>Chili RAW never imports and never modifies an original RAW file. Two kinds of information go to two places.</p>
+  <p><strong>Ratings, flags, keywords, captions and GPS</strong> follow the standard. You choose in Settings ▸ Files whether they are written directly into the file, for formats like JPEG and DNG, or into an XMP sidecar next to it, leaving the original untouched bit for bit. When both exist, the sidecar wins. Any XMP that Lightroom or darktable wrote is read when you open the folder, so your existing ratings and keywords appear without an import.</p>
+  <p><strong>Develop edits</strong>, including masks, repairs, versions and film looks, are saved in a small sidecar of Chili RAW's own beside the photo. They are in your folder, not in a database, and they are written as you work, so a crash does not lose them.</p>
+  <p>The catalog Chili RAW keeps is only an index for search and thumbnails. If it is deleted, you rebuild it from your folders and nothing is lost, because nothing lives only in it.</p>
+
+  <h2>Rules for a library that outlives its software</h2>
+  <ol>
+    <li><strong>Organise by folders on disk</strong>, by date or by shoot. Folders work in every app and in Finder.</li>
+    <li><strong>Write metadata to XMP</strong>, not just to a catalog. In Lightroom Classic, turn on automatic writing of changes to XMP.</li>
+    <li><strong>Back up the sidecars with the photos.</strong> If you copy only image files, you leave the edits behind. Chili RAW's Vault backup can include the edit sidecars, or mirror the whole folders with their sidecars to another drive.</li>
+    <li><strong>Export what is finished.</strong> A full-size export of every finished picture is the one copy that every app, and every future app, can open.</li>
+  </ol>
+  <p>None of this is exciting. It is the difference between a library you own and one you rent.</p>
+  <p class="art-cta">Sidecars, XMP and Vault backups are all in the free version. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and point it at the folders you already have.</p>
+</Article>

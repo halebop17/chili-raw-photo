@@ -1,0 +1,52 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="cull-photos-faster"
+         description="A photo culling workflow for big shoots: two passes from the keyboard, bursts collapsed into one tile, and focus checked at 1:1 before you open anything."
+         hero="/img/culling-full.webp" heroAlt="A folder of photos being rated and flagged in the grid">
+  <p>A wedding, a trip, a day at a race track. You come home with a thousand frames or more, and the editing is not the hard part. The hard part is finding the forty that deserve editing, without spending the whole evening getting there.</p>
+  <p>Culling is a skill, and most of it does not depend on the software. But the software decides whether it takes an hour or four. Here is a routine that works, and how to run it in Chili RAW.</p>
+
+  <h2>Rule one: never decide twice</h2>
+  <p>The slowest way to cull is to look at each frame and ask "is this good?". Most frames are neither obviously good nor obviously bad, and you end up deliberating over every one.</p>
+  <p>Split it into passes instead, each asking an easier question:</p>
+  <ol>
+    <li><strong>Reject pass.</strong> Only one question: is this frame technically broken? Out of focus, eyes closed, a stranger's elbow, a test shot. Reject it and move on. Do not rate anything.</li>
+    <li><strong>Pick pass.</strong> With the rejects hidden, which frames would you be sorry to lose? Pick those. Everything else stays neutral.</li>
+    <li><strong>Rank pass.</strong> Only among the picks: stars for the best. This is the only pass where you compare frames carefully, and by now there are few left.</li>
+  </ol>
+  <p>Each pass is fast because each decision is small. A reject pass over a thousand frames takes about as long as holding an arrow key.</p>
+
+  <h2>Use the keyboard, not the mouse</h2>
+  <p>Reaching for the mouse on every frame doubles the time. In Chili RAW the grid is built to stay on the keyboard:</p>
+  <ul>
+    <li><strong>X</strong> rejects, <strong>P</strong> picks, <strong>U</strong> clears the flag.</li>
+    <li><strong>1</strong> to <strong>5</strong> set stars, and <strong>6</strong> clears them.</li>
+    <li>The arrow keys move through the grid.</li>
+  </ul>
+  <p>Turn on <strong>Rate &amp; advance</strong> in Settings ▸ Browse and the selection moves on to the next frame after each rating or flag. You keep your hand on the number keys and the shoot scrolls past. Rejected frames are dimmed and desaturated, so you can see at a glance what you have thrown out.</p>
+
+  <h2>Collapse bursts before you start</h2>
+  <p>Bursts are what make a thousand frames feel like three thousand. Ten near-identical frames of one moment are one decision, not ten.</p>
+  <p>Turn on <a href="/features/stacks/">Stacks</a> and every run of frames shot close together becomes a single tile. The threshold is a slider from one second to an hour, starting at ten seconds, and the grid regroups while you drag it. Scan the shoot as a list of moments. Open a stack only for the moments worth keeping, and choose the best frame inside it.</p>
+
+  <h2>Check focus without opening anything</h2>
+  <p>The commonest reason to open a frame during a cull is to check focus, and opening frames is what eats the evening.</p>
+  <p>The <a href="/features/loupe/">Loupe</a> shows real pixels at 1:1 as you drag it over the thumbnails. Press <strong>`</strong> to bring it up. Press <strong>e</strong> for focus peaking, which tints the sharpest edges red, so "is it sharp?" becomes a glance rather than a squint. <strong>⇧E</strong> shows where the camera was trying to focus. When the red edges and the focus point disagree, the frame missed.</p>
+
+  <h2>Let the machine sort, not decide</h2>
+  <p>Catalog ▸ Score Photos runs Apple's own image analysis over the folder and gives each frame an estimate of composition and technical faults, with a face score where there are faces. Sort by it and the likely keepers come up first.</p>
+  <p>It never writes a rating or a flag. That is deliberate. A score is a good way to decide what to look at first, and a bad way to decide what to keep. The judgement stays yours.</p>
+
+  <h2>Get rid of distractions</h2>
+  <p>Press <strong>⌃⌘F</strong> for the darkroom: the sidebar and title bars go, the window goes near-black, and only the photos are left. It is a small thing that makes a long cull less tiring.</p>
+
+  <h2>Finish the cull properly</h2>
+  <ul>
+    <li>Filter to rejects, check them once quickly, and delete them. They go to the Trash, and <strong>⌘Z</strong> brings them back with their sidecars.</li>
+    <li>Filter to picks and start editing. Edit the best frame first, then copy its settings to the rest of the scene.</li>
+    <li>Write a line or two in the folder's <a href="/features/folder-notes/">notes</a>: where it was, who was there, what to come back to. You will not remember in a year.</li>
+  </ul>
+  <p>None of this needs an import step. Chili RAW reads the folder where it is: copy the card to a folder, open it, and start rejecting.</p>
+  <p class="art-cta">Culling, Stacks, the Loupe and scoring are all in the free version. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and try it on your next shoot.</p>
+</Article>

@@ -1,0 +1,45 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="remove-sensor-dust"
+         description="How to find sensor dust spots you cannot see, why they show at small apertures against the sky, and how to remove dust from one photo or a whole shoot."
+         hero="/img/repair-heal-2.webp" heroAlt="Dust spots being healed in the Repair tab">
+  <p>You get home from a landscape trip, open the best frame, and there it is: a soft grey blob in the middle of a clear blue sky. Then you notice it is in the same place in the next frame, and the next. That is sensor dust, and on a camera with interchangeable lenses it is a matter of when, not if.</p>
+
+  <h2>Why it shows up when it does</h2>
+  <p>Dust does not sit on the sensor itself. It sits on the glass filter a few millimetres in front of it, and what you see in the photo is its shadow.</p>
+  <p>At a wide aperture like f/2.8, light reaches the sensor from a wide cone of angles, and the shadow is so blurred it disappears. At f/11 or f/16 the cone narrows, the shadow sharpens, and the spot appears. That is why dust always seems to show up on landscapes and never on portraits.</p>
+  <p>It also needs a smooth, bright background to be visible. A sky, a white wall, a snowfield. In a busy forest the same spots are there; you just cannot see them.</p>
+
+  <h2>How to see dust you cannot see</h2>
+  <p>Spots that are faint at normal viewing still show in a large print, or once you add contrast to the sky. To find them before that happens:</p>
+  <ul>
+    <li><strong>Exaggerate the contrast.</strong> A high-pass view turns smooth areas flat grey and makes any small dark blemish stand out. In Chili RAW's Repair tab, <strong>Visualize Spots</strong> does this; the <strong>Amount</strong> slider pushes it harder.</li>
+    <li><strong>Check the same spot across frames.</strong> Real dust stays in exactly the same position on every frame of a session. A bird or a speck on the lens does not.</li>
+    <li><strong>Test the sensor.</strong> Photograph a plain sky or a white sheet of paper at f/16, slightly out of focus, and look at it with the contrast pushed up. You have a map of your dust.</li>
+  </ul>
+
+  <h2>Removing it from one photo</h2>
+  <p>The Repair tab has two manual tools.</p>
+  <p><strong>Heal</strong> covers the spot with texture from nearby and blends it in, so the tone and colour around it carry across. For dust on a sky it is almost always the right choice. Set the size a little larger than the spot and click.</p>
+  <p><strong>Clone</strong> copies the source pixels straight across, with no blending. Use it when the area around the spot has structure, an edge or a line, that a heal would smear. Drag the source circle to choose exactly what is copied.</p>
+  <p>Both are stored as edits in the photo's sidecar. The original file is never touched, and each repair can be switched off or removed later.</p>
+
+  <h2>Letting it find the dust for you</h2>
+  <p><strong>Detect Spots</strong> searches the photo for dust and marks every candidate with a dashed ring. It proposes and never heals on its own: click a ring to accept it, ⌥-click to dismiss it, or accept them all at once.</p>
+  <p>The part that makes it reliable is the check described above. Each candidate is compared against the neighbouring frames from the same session, because real dust holds its position and everything that looks like dust, birds, stars, distant aircraft, does not. Sensitivity trades missed spots against false alarms, and the report tells you how many candidates the cross-check threw out.</p>
+  <p>Detected spots are healed by default. On textured areas, where a heal copies a pattern from beside the spot, <a href="/features/generative-fill/">Generative Remove</a> can redraw them instead; that option is part of Pro.</p>
+
+  <h2>Removing it from a whole shoot</h2>
+  <p>Dust is in the same place on every frame, but the photos under it are not the same, so copying one photo's repairs to the next only half works. A spot that sat in empty sky in one frame lands on a tree branch in another.</p>
+  <p>Process ▸ <strong>Remove Dust</strong> runs detection on each photo in a selection on its own, cross-checked against the rest of the shoot, and then stops for a review: every photo with its spots circled and a tick beside it. Only the photos you tick are changed, and the whole run is one undo. Batch dust removal is part of Pro; Detect Spots on one photo at a time is free.</p>
+
+  <h2>Preventing it</h2>
+  <ul>
+    <li>Change lenses with the camera pointing down, quickly, and out of the wind.</li>
+    <li>Keep rear lens caps and the body cap on.</li>
+    <li>Use a blower, not your breath, and never a brush that has touched anything greasy.</li>
+    <li>Leave wet cleaning to a shop if you are unsure. A scratch on the filter costs more than dust ever will.</li>
+  </ul>
+  <p class="art-cta">Heal, Clone, Visualize Spots and Detect Spots are free. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and check your last landscape shoot.</p>
+</Article>

@@ -1,0 +1,37 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="geotag-photos-mac"
+         description="How to geotag photos on a Mac when your camera has no GPS: by clicking a map, by searching for a place, or by copying the location from a phone photo."
+         hero="/img/geo-full-2.webp" heroAlt="Photos placed on a map in the Geo Tag view">
+  <p>Your phone records where every picture was taken. Most dedicated cameras do not, or do it only through a Bluetooth link to an app that drops out half the time. Five years later, you have a folder called "Italy" and no idea which village it was.</p>
+  <p>Geotagging fixes that after the fact. It writes GPS coordinates into each photo's metadata, so the location travels with the file into any app that reads it: maps, search, photo sites, your own archive.</p>
+
+  <h2>What geotagging writes</h2>
+  <p>A geotag is a few standard fields: latitude, longitude, and sometimes altitude and direction. They live in the photo's EXIF or XMP metadata, so they are not tied to any one app. Write them once, correctly, and every app since about 2010 can read them.</p>
+
+  <h2>Three ways to do it</h2>
+  <p><strong>1. Click the map.</strong> The direct way. Select the photos, find the spot on a map, click. Good when you know where you were and the photos were taken in a few places, which covers most trips.</p>
+  <p><strong>2. Search for a place.</strong> Type the name of the village, the beach or the restaurant and let the map find it. Faster than panning around, and accurate enough for most purposes.</p>
+  <p><strong>3. Copy from a photo that already knows.</strong> If you took even one phone picture in each place, that picture has GPS. Copy its location and paste it onto every camera frame from the same spot. This is the most accurate quick method, because the phone was actually there.</p>
+  <p>There is a fourth, matching photos by time against a GPS track log recorded on a phone or a watch. It is the most automatic, and it needs the camera clock to be right and a logger running all day. For most people one of the first three is quicker.</p>
+
+  <h2>Geotagging in Chili RAW</h2>
+  <p>The <a href="/features/geo-tag/">Geo Tag</a> view, <strong>⌘3</strong>, is a table of the folder's photos beside a live map.</p>
+  <ol>
+    <li>Turn on <strong>Untagged only</strong> to hide everything that already has a location.</li>
+    <li>Select photos in the table: click, ⌘-click, or Shift-click a range.</li>
+    <li>Click the map where they were taken, or type a place name or address into the search. An amber pin appears with an <strong>Apply to N photos</strong> button.</li>
+    <li>Click Apply. The coordinates fill in, and they are written to the files a moment later, or straight away with <strong>⌘S</strong>.</li>
+  </ol>
+  <p>To copy from a phone photo, focus it and press <strong>⌘C</strong>, then select the camera frames and press <strong>⌘V</strong>.</p>
+  <p>Changes are staged first, so you can move a pin around until it is right before anything reaches the file. And you choose in Settings ▸ Files whether GPS is written into the photo itself or into an <a href="/articles/xmp-sidecar-files/">XMP sidecar</a> beside it.</p>
+
+  <h2>Finding photos by place afterwards</h2>
+  <p>Coordinates are only useful if you can search them. Catalog ▸ Look Up Places fills in the city, region and country for every geotagged photo from a table built into the app, with no request to any server. After that you can search "Kyoto" and get Kyoto, or filter the grid by country.</p>
+
+  <h2>A word on privacy</h2>
+  <p>A geotag is precise. A photo of your front garden, posted with its GPS intact, shows people where you live. Most social sites strip location on upload, but not every site does, and email and messaging do not.</p>
+  <p>Keep location in your archive, where it is valuable, and remove it from what you publish. Chili RAW can strip GPS from photos in the Geo Tag view, and Export has a <strong>Write GPS coordinates</strong> switch, so you can keep location in your originals and leave it out of the copies you share.</p>
+  <p class="art-cta">Geo Tag is in the free version. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and put last summer on the map.</p>
+</Article>

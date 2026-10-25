@@ -1,0 +1,41 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="raw-vs-jpeg"
+         description="RAW vs JPEG explained: what a RAW file keeps that a JPEG throws away, where the difference shows in white balance, highlights and shadows, and when JPEG is fine."
+         hero="/img/versions-full-2.webp" heroAlt="A RAW photo being edited in Chili RAW">
+  <p>Every camera guide says to shoot RAW. Fewer explain what you actually get for files three or four times the size, or when it honestly does not matter. Here is the difference in practical terms.</p>
+
+  <h2>What each file is</h2>
+  <p>A <strong>JPEG</strong> is a finished picture. The camera has already decided the white balance, the contrast, the colour, the sharpening and the noise reduction, then thrown away everything it decided you would not need, and compressed what is left into eight bits per channel.</p>
+  <p>A <strong>RAW file</strong> is the sensor's readout before any of those decisions. Usually twelve or fourteen bits per channel, linear, with no curve applied and no white balance baked in. It is not a picture yet. Something has to develop it, which is why RAW editors are called developers.</p>
+  <p>Eight bits is 256 levels per channel. Fourteen bits is 16,384. That difference is where most of the advantages below come from.</p>
+
+  <h2>Where RAW wins</h2>
+  <p><strong>White balance.</strong> In a RAW file white balance is a setting, not a fact. Change it from tungsten to daylight and the result is as clean as if the camera had chosen daylight. In a JPEG you are tinting a picture that already has a colour cast, and large corrections go muddy.</p>
+  <p><strong>Highlights.</strong> The camera's JPEG curve clips bright areas to white earlier than the sensor did. A RAW file usually holds detail above that point, often a stop or more. See <a href="/articles/recover-blown-highlights/">how to recover blown highlights</a>.</p>
+  <p><strong>Shadows.</strong> Lift the shadows of a JPEG three stops and you get blotches and banding, because only a handful of levels were ever stored down there. Lift a RAW file's shadows and you get detail, with some noise.</p>
+  <p><strong>Noise reduction and sharpening, on your terms.</strong> The camera's JPEG engine is tuned for a small screen. It often smears fine texture in grass and hair. From RAW you choose how much, and modern AI denoising works far better on RAW data than on a JPEG.</p>
+  <p><strong>Lens corrections and colour.</strong> A RAW developer can apply a proper lens profile and a camera profile of your choosing rather than the camera's picture style.</p>
+  <p><strong>The future.</strong> RAW developers keep improving. A file shot today can be developed better in five years. A JPEG is as good as it will ever be.</p>
+
+  <h2>Where JPEG is fine, or better</h2>
+  <ul>
+    <li><strong>You like the camera's colour and do not edit.</strong> Some cameras make lovely JPEGs. If you print them as they come, RAW adds work for nothing.</li>
+    <li><strong>Speed.</strong> Sports and events shot in long bursts can fill a camera's buffer far faster in RAW.</li>
+    <li><strong>Space.</strong> A RAW file is several times larger. That matters on a long trip with a small laptop.</li>
+    <li><strong>Delivery straight from the camera.</strong> If a client needs files in an hour, a good JPEG is a good JPEG.</li>
+  </ul>
+
+  <h2>RAW plus JPEG</h2>
+  <p>Most cameras can write both. It is a sensible middle ground: the JPEG for a quick look and quick sharing, the RAW for the frames worth working on. The cost is card space and a doubled file count, which is mostly a problem for software that shows every file twice.</p>
+  <p>Chili RAW lets you choose. In Settings ▸ Files ▸ Pairing you can show RAW and JPEG separately, or merge each pair into one tile and prefer either the RAW or the JPEG. Each half keeps its own edits and ratings, and deleting a merged tile takes both halves to the Trash together.</p>
+
+  <h2>What about compressed RAW and DNG?</h2>
+  <p>Many cameras now offer lossless or lossy compressed RAW. Lossless compression gives you everything at a smaller size and is almost always worth turning on. Lossy compressed RAW is still far more flexible than a JPEG, and the loss is hard to see except in extreme edits.</p>
+  <p>DNG is Adobe's open RAW format. Some cameras and phones write it directly, and tools like DxO PureRAW write a processed but still linear DNG. Newer DNGs can be compressed with JPEG XL, which some software still decodes wrongly. We wrote about that in <a href="/articles/compressed-dng/">compressed DNG files</a>.</p>
+
+  <h2>The short answer</h2>
+  <p>If you edit your photos at all, shoot RAW. The extra latitude is not something you notice on every frame. It is something you notice on the frames that matter most, the one with the bright window, the one under orange street light, the one you underexposed because it all happened too fast.</p>
+  <p class="art-cta">Chili RAW opens RAW files from most cameras with a choice of three decoders, free. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download it</a> and see how much is in your files.</p>
+</Article>

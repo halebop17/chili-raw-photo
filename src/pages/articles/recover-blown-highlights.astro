@@ -1,0 +1,51 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="recover-blown-highlights"
+         description="How to recover blown highlights from a RAW file: what a RAW keeps above white, what can come back, and why tone mapping decides how a bright sky looks."
+         hero="/img/hero-tokyo.jpg" heroAlt="Tokyo at dusk with Mount Fuji behind, open in Develop">
+  <p>A sunset, a white wedding dress, a window behind someone's head. On the back of the camera it is a flat white patch with the highlight warning blinking. Sometimes that detail is gone for good. Often it is not, and a RAW file is the reason.</p>
+
+  <h2>What "blown" means</h2>
+  <p>A sensor counts light at each photosite until it is full. Past that point every extra photon is lost, and the pixel just reads "full". That is a clipped highlight in the true sense, and nothing can bring back what it never recorded.</p>
+  <p>But the white patch on your screen is usually not that. The camera's preview is a JPEG, made with a contrasty curve that maps the top of the range to pure white well before the sensor is actually full. The RAW file underneath often holds another stop or more of real detail above what the preview shows as white.</p>
+  <p>So there are really three cases:</p>
+  <ul>
+    <li><strong>White on the preview, intact in the RAW.</strong> The common case. Fully recoverable.</li>
+    <li><strong>Clipped in one or two colour channels.</strong> A bright sky often fills the blue channel first while red and green still hold detail. Partly recoverable, and this is where highlight reconstruction earns its keep.</li>
+    <li><strong>Clipped in all three channels.</strong> Gone. You can make it look gentler, but not bring back detail that was never there.</li>
+  </ul>
+
+  <h2>Step one: bring it down</h2>
+  <p>Start with the simple tools before reaching for the clever ones.</p>
+  <ul>
+    <li><strong>Highlights</strong> pulls down the bright part of the picture without touching the rest. On most frames it is enough.</li>
+    <li><strong>Whites</strong> sets where white sits. Lowering it a little gives the highlights room.</li>
+    <li><strong>Exposure</strong> down, then <strong>Shadows</strong> up, when the whole frame is too bright for the sky. A RAW file has more room in the shadows than people expect.</li>
+  </ul>
+  <p>A local adjustment is often better than a global one: a linear gradient over the sky (or a one-click Sky mask, in Pro) lets you bring the sky down without darkening the foreground.</p>
+
+  <h2>Step two: reconstruct what one channel lost</h2>
+  <p>When one channel has clipped and the others have not, the clipped area goes the wrong colour as well as flat. A blue sky turns cyan or white, a red light turns orange or pink.</p>
+  <p>Highlight reconstruction looks at the channels that still have detail and estimates what the clipped one would have recorded. In Chili RAW this is <strong>Highlight Recovery</strong> in the Basic section, for RAW files: a switch and an Amount, starting at 50. It is a reconstruction, so judge it on the image, and back the amount off if the result starts to look painted.</p>
+
+  <h2>Step three: decide how bright things fade to white</h2>
+  <p>This is the part most guides skip, and it is what decides whether a sky looks natural or digital.</p>
+  <p>Even when nothing is clipped, the brightest part of the scene has to be squeezed into the brightness your screen can show. How an editor squeezes it is called tone mapping. A simple curve compresses everything bright toward white together, which makes saturated bright colours skew as they brighten: a blue sky drifts towards cyan, an orange sunset goes yellow, a red light goes neon.</p>
+  <p>Chili RAW has three tone mapping modes:</p>
+  <ul>
+    <li><strong>AgX</strong>, the default, is a filmic roll-off that calms colours before the curve and restores them after, so hues stay where they are as they brighten. Its <strong>Shoulder</strong> sets how gently the highlights roll off. For skies and sunsets this is usually the one.</li>
+    <li><strong>Standard</strong> is the Lightroom-style render with Adobe's tone curve and your camera profile, for when you want to match what Lightroom would have made.</li>
+    <li><strong>Minimal</strong> adds no curve at all. Highlights clip hard instead of rolling off, so the control is entirely yours. It is the right base for a LUT or a film look that brings its own curve.</li>
+  </ul>
+  <p>If a sky looks fine in shape but wrong in colour, change the tone mapping before you touch another slider.</p>
+
+  <h2>Expose so you need less of this</h2>
+  <ul>
+    <li>Set the highlight warning on your camera and treat it as a warning about the JPEG, not the RAW. A little blinking is usually safe; a large area is not.</li>
+    <li>If your camera offers a highlight-weighted metering mode, use it for bright scenes.</li>
+    <li>For extreme contrast, bracket. Chili RAW's Merge to HDR turns a bracket into a single linear DNG that opens in Develop like any other RAW file.</li>
+  </ul>
+  <p>And if a JPEG is all you have, there is far less to work with. That is one of the main reasons to shoot RAW at all; more on that in <a href="/articles/raw-vs-jpeg/">RAW vs JPEG</a>.</p>
+  <p class="art-cta">Highlight Recovery, AgX and all three tone mapping modes are in the free version. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and open the frame you gave up on.</p>
+</Article>

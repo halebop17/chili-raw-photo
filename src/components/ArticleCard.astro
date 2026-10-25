@@ -1,0 +1,37 @@
+---
+// One article as a card: the picture, the category and date, the title and its
+// blurb. The articles index lays them in a grid; an article ends on a row of three.
+import type { Article } from "../data/articles";
+import { longDate } from "../data/articles";
+import { size } from "../lib/images";
+interface Props { a: Article; level?: "h2" | "h3" }
+const { a, level = "h2" } = Astro.props;
+const H = level;
+const dim = await size(a.image);
+---
+<a href={`/articles/${a.slug}/`} class="ac">
+  <div class="ac-pic">
+    <img src={a.image} alt={a.imageAlt} width={dim?.width} height={dim?.height} loading="lazy" decoding="async" class:list={[a.fit]} />
+  </div>
+  <div class="ac-meta"><span class="ac-kick">{a.kicker}</span><span>{longDate(a.date)}</span></div>
+  <H class="ac-title">{a.title}</H>
+  <p class="ac-blurb">{a.blurb}</p>
+</a>
+
+<style>
+  .ac { display: flex; flex-direction: column; gap: 12px; color: inherit; min-width: 0; }
+  .ac:hover { color: inherit; }
+  .ac-pic { aspect-ratio: 16 / 10; border-radius: 14px; overflow: hidden;
+            background: var(--backdrop); border: 1px solid var(--border-soft); }
+  .ac-pic img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center;
+                transition: transform 0.5s cubic-bezier(.2,.7,.2,1); }
+  .ac-pic img.contain { object-fit: contain; object-position: center; }
+  .ac:hover .ac-pic img { transform: scale(1.03); }
+  .ac-meta { display: flex; gap: 14px; margin-top: 6px; font-family: var(--mono); font-size: 10.5px;
+             letter-spacing: 0.14em; text-transform: uppercase; color: var(--faint); }
+  .ac-kick { color: var(--accent); }
+  .ac-title { font-size: clamp(19px, 1.7vw, 23px); line-height: 1.2; letter-spacing: -0.016em; }
+  .ac:hover .ac-title { color: var(--accent); }
+  .ac-blurb { font-size: 14.5px; line-height: 1.6; color: var(--dim);
+              display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+</style>

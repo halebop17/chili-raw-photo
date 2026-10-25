@@ -1,0 +1,48 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="lightroom-alternatives-mac"
+         description="Leaving Lightroom on the Mac? What to look for in a RAW editor without a subscription, what you keep and lose, and how to move a library safely."
+         hero="/img/hero-home.webp" heroAlt="Chili RAW's grid of photos on a Mac">
+  <p>Most people who look for a Lightroom alternative are not unhappy with the editing. Lightroom's sliders are good, and a decade of tutorials is written for them. What sends people looking is everything around the sliders: the monthly fee that never ends, the catalog that holds their edits hostage, and the feeling that the app is slower on a new Mac than it has any right to be.</p>
+  <p>This is a guide to what to look for when you leave, written by people who make one of the alternatives. We will say where Chili RAW fits, but most of it applies whichever editor you end up in.</p>
+
+  <h2>Decide what you are actually leaving</h2>
+  <p>"Lightroom" is three different things, and it helps to know which one you want to replace.</p>
+  <ul>
+    <li><strong>The library.</strong> Folders, ratings, flags, keywords, collections, search. For many photographers this is the part they use every day.</li>
+    <li><strong>The developer.</strong> White balance, tone, colour, masks, lens corrections, noise reduction. The part people compare in reviews.</li>
+    <li><strong>The cloud.</strong> Sync to a phone, sharing, storage. Useful if you use it, a cost if you do not.</li>
+  </ul>
+  <p>Some alternatives are only a developer and expect you to keep your files organised some other way. Some are only a library. If you cull and organise heavily, a strong developer with a weak library will feel like a step backwards however good its colour is.</p>
+
+  <h2>The questions worth asking any RAW editor</h2>
+  <p><strong>Where do my edits live?</strong> This is the most important question and the one most people skip. If your edits live only inside an app's database, leaving that app later means losing them or exporting everything first. An editor that writes edits to a small file beside each photo, and leaves your original untouched, is one you can walk away from. We wrote a separate article on <a href="/articles/xmp-sidecar-files/">sidecar files</a> because it matters that much.</p>
+  <p><strong>Does it import, or does it read folders?</strong> An import step copies or registers files into a catalog. Reading folders means the app shows what is on your disk, where you put it. Neither is wrong, but if you already have a folder structure you like, an app that reads it as it is saves you a migration.</p>
+  <p><strong>Does it read my camera, and read it properly?</strong> Check your exact camera model, and check compressed formats too. A newer phone or a DNG from a denoising tool can open "fine" and still be decoded wrong. We found that out the hard way with <a href="/articles/compressed-dng/">compressed DNG files</a>.</p>
+  <p><strong>Is it native to the Mac?</strong> Many photo apps are written once for Windows and the Mac. That is a reasonable business decision, and it usually costs something in speed and in how the app feels. A Mac-only app can use Metal, the Neural Engine and the system's own frameworks without a translation layer.</p>
+  <p><strong>What happens to my photos when the AI runs?</strong> Some editors send images to a server for masking or generative tools. If that matters to you, find out before you rely on it.</p>
+  <p><strong>How is it sold?</strong> Subscription, one-off purchase, free and open source, or a free tier with paid extras. Work out what you would pay over five years, not one.</p>
+
+  <h2>The broad options</h2>
+  <p><strong>Apple Photos.</strong> Free and already installed, and it opens RAW files. It is built around one big library and light edits. Fine for family photos; most people who shoot a lot outgrow it quickly.</p>
+  <p><strong>Free and open source: darktable and RawTherapee.</strong> Deep, capable and free, with active communities. They run on Windows, Linux and the Mac, and they show it in how they look and feel. If you enjoy learning a tool from the inside, they are worth an afternoon each.</p>
+  <p><strong>Established commercial editors.</strong> Capture One and DxO PhotoLab are the usual names, each strong in its own area, Capture One for tethering and colour, DxO for optics and noise. Both have changed how they are sold more than once, so check the current terms before you commit.</p>
+  <p><strong>Mac-native editors.</strong> A smaller group of apps built only for the Mac. Chili RAW is one of them.</p>
+
+  <h2>Where Chili RAW fits</h2>
+  <p>Chili RAW is a library and a developer in one window, for Apple silicon Macs. It reads your folders where they are, with no import. Ratings and flags work from the keyboard the way they do in Lightroom, and edits are written to a sidecar beside each photo, so your originals are never changed and your edits are never locked inside the app.</p>
+  <p>The free version is the whole workflow, not a demo: <a href="/features/culling/">culling</a>, <a href="/features/develop/">developing</a> with masks and lens corrections, <a href="/features/search/">search</a>, <a href="/features/people/">face recognition</a>, <a href="/features/geo-tag/">geotagging</a>, <a href="/features/catalog/">backups</a> and <a href="/features/export/">export</a>, with three RAW decoders to choose from. <a href="/pro/">Pro</a> is a one-off purchase, not a subscription, and adds the creative tools: Film Labor, Pixels, the AI masks and AI noise reduction, generative remove and bokeh.</p>
+  <p>Every AI feature runs on your Mac, and nothing is downloaded until you ask for it. There is no account.</p>
+  <p>What it does not do yet: there is no iPad or iPhone app today, and no tethered shooting. Both are on the <a href="/articles/whats-next/">roadmap</a>. If you depend on either, that matters.</p>
+
+  <h2>How to move without losing anything</h2>
+  <ol>
+    <li><strong>Write your metadata out first.</strong> In Lightroom Classic, select everything and save metadata to files. Ratings, keywords and flags then travel with the photos in XMP, and most editors read them.</li>
+    <li><strong>Export your finished work.</strong> Develop settings do not translate between editors. Every app renders differently. Export full-size JPEG or TIFF copies of anything you have finished and care about.</li>
+    <li><strong>Try the new app on one shoot.</strong> Not your whole archive. Cull it, edit it, export it, and see how it feels after an evening rather than ten minutes.</li>
+    <li><strong>Keep the old app installed</strong> until you have not opened it for a few months.</li>
+  </ol>
+  <p>The editing will feel different for a week. The things that make you stay, or leave again, are speed, how the library fits the way you already work, and whether you trust where your edits are kept.</p>
+  <p class="art-cta"><a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Chili RAW is a free download</a> for Macs with Apple silicon. Point it at one folder and see.</p>
+</Article>

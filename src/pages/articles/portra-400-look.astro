@@ -1,0 +1,44 @@
+---
+import Article from "../../layouts/Article.astro";
+---
+<Article slug="portra-400-look"
+         description="What Kodak Portra 400 does to skin, greens and highlights, how to shoot digital for it, and how to get the Portra look from a RAW file in Chili RAW.">
+  <p>Kodak Portra 400 is probably the most imitated film stock of the last fifteen years. Wedding photographers built careers on it, and a search for "Portra preset" returns more results than most cameras do. It is easy to see why. It makes people look good in almost any light, and it forgives a lot.</p>
+  <p>It is also easy to imitate badly. Most Portra presets push everything warm and lift the blacks, and stop there. Here is what the film actually does, and how to get closer to it from a digital RAW file.</p>
+
+  <h2>What Portra 400 does</h2>
+  <p><strong>Skin.</strong> Portra was designed for portraits, and its colour is tuned to keep skin even and natural rather than vivid. Reds and oranges are held back a little, so a sunburnt cheek or a blotchy forehead does not jump out.</p>
+  <p><strong>Low contrast, long latitude.</strong> Its curve is gentle, and it holds detail in the highlights a long way past where a sensor would clip. That is why film shooters routinely overexpose it by a stop or two: the highlights stay soft and the shadows get cleaner.</p>
+  <p><strong>Highlights roll off.</strong> Bright skies and white dresses do not hit a hard white edge. They fade into it, with a slight warmth.</p>
+  <p><strong>Greens are muted.</strong> Foliage goes slightly olive and quiet rather than saturated. A lot of what reads as "Portra" in a landscape is actually the greens.</p>
+  <p><strong>Fine grain for its speed.</strong> At 400 it is clean. Grain is there at 35mm, and almost invisible on medium format.</p>
+  <p><strong>The scan is half the look.</strong> Most Portra you see online was scanned by a lab, and labs scan differently. One lab's Portra is warm and pastel, another's is neutral and punchy. When someone says they want the Portra look, they usually mean a particular lab's scans of it.</p>
+
+  <h2>Shoot for it</h2>
+  <p>You cannot add latitude after the fact, so a little of the look comes from how you expose.</p>
+  <ul>
+    <li><strong>Protect the highlights.</strong> Expose so the brightest part you care about is not clipped in the RAW file. The camera's highlight warning is your friend here. Portra's soft top end is easiest to recreate when the data is there.</li>
+    <li><strong>Prefer soft light.</strong> Open shade, overcast, window light. Portra's reputation was made in that light, and the gentle curve suits it.</li>
+    <li><strong>Leave white balance alone in camera.</strong> Shoot RAW and choose the colour later.</li>
+  </ul>
+
+  <h2>Why presets fight you</h2>
+  <p>A preset or LUT is built from one set of example photos. Yours were exposed differently, in different light, on a different camera, so the preset lands somewhere else. Then you correct it with the ordinary sliders, which pull it away from what it was meant to be. After ten minutes you have a warm photo that looks like neither your original nor Portra.</p>
+  <p>The way around this is to emulate the film as a process rather than a colour shift. Change the exposure and the result changes the way film would, instead of breaking. There is more on this in <a href="/articles/film-emulation-vs-luts/">why a LUT is not a film look</a>.</p>
+
+  <h2>Portra 400 in Film Labor</h2>
+  <p><a href="/features/film-labor/">Film Labor</a> includes Portra 400 in three versions, Standard, Neutral and Bright, alongside Portra 160 and Portra 800. To start:</p>
+  <ol>
+    <li>Open the photo in Develop and switch on Film Labor. Choose <strong>Portra 400</strong> as the stock.</li>
+    <li>Choose <strong>Scan</strong> rather than Print for the look most people mean, or Print for a darkroom print on paper.</li>
+    <li>Use the film's own <strong>Exposure</strong> to set brightness, the way you would rate the film. Push it up a stop and watch the highlights hold.</li>
+    <li>Set <strong>Format</strong> to what you would have shot on. 35mm gives visible grain and a wider glow; 6×7 is clean.</li>
+    <li>The film arrives at 75% <strong>Look</strong>. Push it to 100% for the full rendering, or lower it if you want a hint of Portra rather than the whole thing.</li>
+  </ol>
+  <p>If the frame has bright lights in it, try a little <a href="/articles/halation/">halation</a> and judge it by eye. The ring-around tray under the image shows the frame at several steps either side of where you are, which is the fastest way to decide.</p>
+  <p>For low light, Portra 800 comes with Kodak's own pushed curves at 1600 and 3200 as separate stocks, which is how a lab would actually have developed it.</p>
+
+  <h2>Without Film Labor</h2>
+  <p>You can get partway in the free version. Keep the AgX tone mapping, which already rolls highlights off softly. Pull the greens' saturation down and shift them a touch toward yellow in the colour mixer. Lower the contrast slightly, warm the white balance a few hundred kelvin, and add a little grain. It will not behave like film when you change the exposure, but it is a reasonable starting point.</p>
+  <p class="art-cta">Film Labor is part of <a href="/pro/">Chili RAW Pro</a>. <a href="https://github.com/halebop17/chili-raw-photo/releases/latest">Download Chili RAW</a> and try Portra 400 on your own portraits.</p>
+</Article>
