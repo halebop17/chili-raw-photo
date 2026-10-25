@@ -53,7 +53,18 @@ A darkroom judges a correction by printing its neighbours beside it. The tray be
 
 ## Film (the negative)
 
-**The stock.** Pick from colour negatives, slide films and the cine stocks. Slide film is the finished positive: it is viewed directly, so choosing one removes the print stage entirely.
+**The stock.** Pick from colour negatives, black-and-white, slide films and the cine stocks. Slide film is the finished positive: it is viewed directly, so choosing one removes the print stage entirely.
+
+## Black and white
+
+One film, **Tri-X 400**, in the **B&W** tab. Its chips — **Dev 6, Dev 7, Dev 9, Dev 11** — are development times rather than looks: each is Tri-X's own curve at that time, so a longer development gives a harder, denser negative. It opens on Dev 7.
+
+A black-and-white negative prints on black-and-white material, so with Tri-X chosen the Print stage offers only these two — and going back to a colour film puts a colour paper back:
+
+- **Polymax Fine-Art**, a fibre paper, with chips **Grade −1** to **Grade 4**: the contrast filter you printed through. Lower is softer; it opens on Grade 2.
+- **Kodak 2302**, a black-and-white print film, whose contrast is its development: **Dev 2** to **Dev 9**, opening on Dev 5.
+
+So contrast lives in two places, as it did in the darkroom: how long the film was developed, and the grade the print was made at.
 
 ## Format — the frame it was shot on
 
