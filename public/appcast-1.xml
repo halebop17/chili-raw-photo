@@ -3,6 +3,48 @@
     <channel>
         <title>Chili RAW</title>
         <item>
+            <title>1.4.0</title>
+            <pubDate>Sun, 25 Oct 2026 12:37:13 +0700</pubDate>
+            <link>https://www.chiliraw.com/</link>
+            <sparkle:fullReleaseNotesLink>https://www.chiliraw.com/changelog/</sparkle:fullReleaseNotesLink>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h3>New</h3>
+<ul>
+<li><strong>Film Labor adds three slide films: Fuji Velvia 100, Fuji Astia 100F and Agfa Precisa 100.</strong></li>
+<li><strong>Black-and-white arrives in Film Labor: Tri-X 400, printed on Polymax Fine-Art paper or Kodak 2302 film.</strong> Pick a development time for the film and a contrast grade or development time for the print.</li>
+<li><strong>Every folder can keep notes, written in a Markdown editor built into Chili RAW.</strong> Click Notes above the grid; they are saved as a Markdown file in the folder, so they travel and back up with the photos.</li>
+<li><strong>Process works out an answer for each selected photo, where Lift and Stamp copy one.</strong> Crop each photo around its own subject or faces, expose for faces, match a set to a reference, add sky and subject masks or remove dust — crops, masks and spots are shown for review first — and save several steps as a chain to run in one click.</li>
+<li><strong>On macOS 26 and later, a Process dialog fills itself in from a sentence</strong> such as “4:5 around the person with a bit of headroom”, worked out on the Mac itself.</li>
+<li><strong>Reset Edits puts the selected photos back to how they opened, in one go.</strong> Photo ▸ Reset Edits… or the right-click menu asks first; ratings, keywords and other versions stay.</li>
+<li><strong>Detected dust can be removed with Generative Remove in one click.</strong> Detect Spots offers Remove All beside Accept All.</li>
+<li><strong>Lift &amp; Stamp can copy Generative Remove regions</strong>, so a removal painted on one frame of a burst lands in the same place on the others.</li>
+<li><strong>Perspective corrections can keep the whole frame.</strong> Fill edges, beside Constrain under Transform, fills the empty corners a Vertical or Horizontal correction leaves with more of the picture instead of cropping them away.</li>
+<li><strong>Generative Remove has a Best setting that redraws a removed area with real detail</strong>, using a larger model downloaded in Settings ▸ AI.</li>
+<li><strong>Pixels can move an object or make it smaller.</strong> Switch on Move in Enlarge and the spot it was cut from is rebuilt.</li>
+<li><strong>A Pixels mount can continue the photo</strong> into its border, instead of a colour.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Slide films in Film Labor now carry the full colour of their looks.</strong> Provia, Velvia, Kodachrome and Ektachrome were rendering noticeably paler than they should.</li>
+<li><strong>Thumbnails of edited DNGs render faster</strong> — up to eight times faster for DNGs that still hold the camera's raw data.</li>
+<li><strong>Generative Remove now paints on straightened, rotated, flipped, transformed and lens-corrected photos.</strong> Before, painting paused until those were undone.</li>
+<li><strong>Photos exported with Generative Remove regions say so in their metadata</strong>, with the standard “edited with generative AI” label that contests and picture desks look for.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Thumbnails of edited photos no longer sit on a spinner while they render.</strong> The filmstrip and the grid show the photo at once and swap in the edited look when it is ready, and renaming photos keeps their thumbnails.</li>
+<li><strong>Generative Remove rebuilds a long stroke, such as a power line across the sky, cleanly.</strong> It used to leave a smeared band along it.</li>
+<li><strong>Settings ▸ AI lists the Generative Remove model on a fresh install</strong>, before the app has been online.</li>
+<li><strong>No faint line along the top edge of a photo</strong> in previews and resized exports, where it also showed along a continued Pixels mount.</li>
+<li><strong>A continued Pixels mount carries on what reaches the photo's edge</strong> — a sign, a post, a person — instead of drawing it a second time in the border.</li>
+</ul>
+]]></description>
+            <enclosure url="https://github.com/halebop17/chili-raw-photo/releases/download/v1.4.0/Chili-RAW-1.4.0.dmg" length="52015170" type="application/octet-stream" sparkle:edSignature="l3pLmTJ0Rd7cAUPEdol6ku4CNZibL2HpUO253Nwhdgh/wCDUwJx+i569+FgqCMcvl2u4AuAfm6QYaLcGW9YaBQ=="/>
+        </item>
+        <item>
             <title>1.3.0</title>
             <pubDate>Sat, 03 Oct 2026 19:54:13 +0700</pubDate>
             <link>https://www.chiliraw.com/</link>
@@ -160,16 +202,6 @@
 </ul>
 ]]></description>
             <enclosure url="https://github.com/halebop17/chili-raw-photo/releases/download/v1.2.0/Chili-RAW-1.2.0.dmg" length="44269437" type="application/octet-stream" sparkle:edSignature="w3PJXp5kHo87bi0ib5+HW2Ft022gw1CbPQ2ySsxIHmVfC0zLZ4PmoQ3vNFZUDskfiWM6VJh8Zlcuy3hJHMSuAg=="/>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Mon, 21 Sep 2026 10:54:21 +0700</pubDate>
-            <link>https://www.chiliraw.com/</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/halebop17/chili-raw-photo/releases/download/v1.1.0/Chili-RAW-1.1.0.dmg" length="50352136" type="application/octet-stream" sparkle:edSignature="+IEDU0CuNmPixWQaP/BuFjLEKMjVDu0nc1niSPxbl100n1veVhgtU/VOWWovcxFskn0bbaRPmdaW5uHGHBxwCQ=="/>
         </item>
     </channel>
 </rss>
