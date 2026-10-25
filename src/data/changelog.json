@@ -9,10 +9,28 @@
         "version": "next release",
         "year": null,
         "quarter": null,
+        "groups": [],
+        "latest": false
+      }
+    ],
+    "count": 0
+  },
+  {
+    "slug": "2026-q4",
+    "label": "2026 Q4",
+    "blurb": "Releases from 2026, quarter 4.",
+    "sections": [
+      {
+        "title": "October 2026",
+        "version": "1.4.0",
+        "year": 2026,
+        "quarter": 4,
         "groups": [
           {
             "name": "New",
             "items": [
+              "<strong>Film Labor adds three slide films: Fuji Velvia 100, Fuji Astia 100F and Agfa Precisa 100.</strong>",
+              "<strong>Black-and-white arrives in Film Labor: Tri-X 400, printed on Polymax Fine-Art paper or Kodak 2302 film.</strong> Pick a development time for the film and a contrast grade or development time for the print.",
               "<strong>Every folder can keep notes, written in a Markdown editor built into Chili RAW.</strong> Click Notes above the grid; they are saved as a Markdown file in the folder, so they travel and back up with the photos.",
               "<strong>Process works out an answer for each selected photo, where Lift and Stamp copy one.</strong> Crop each photo around its own subject or faces, expose for faces, match a set to a reference, add sky and subject masks or remove dust — crops, masks and spots are shown for review first — and save several steps as a chain to run in one click.",
               "<strong>On macOS 26 and later, a Process dialog fills itself in from a sentence</strong> such as “4:5 around the person with a bit of headroom”, worked out on the Mac itself.",
@@ -28,6 +46,7 @@
           {
             "name": "Changed",
             "items": [
+              "<strong>Slide films in Film Labor now carry the full colour of their looks.</strong> Provia, Velvia, Kodachrome and Ektachrome were rendering noticeably paler than they should.",
               "<strong>Thumbnails of edited DNGs render faster</strong> — up to eight times faster for DNGs that still hold the camera's raw data.",
               "<strong>Generative Remove now paints on straightened, rotated, flipped, transformed and lens-corrected photos.</strong> Before, painting paused until those were undone.",
               "<strong>Photos exported with Generative Remove regions say so in their metadata</strong>, with the standard “edited with generative AI” label that contests and picture desks look for."
@@ -44,16 +63,8 @@
             ]
           }
         ],
-        "latest": false
-      }
-    ],
-    "count": 18
-  },
-  {
-    "slug": "2026-q4",
-    "label": "2026 Q4",
-    "blurb": "Releases from 2026, quarter 4.",
-    "sections": [
+        "latest": true
+      },
       {
         "title": "October 2026",
         "version": "1.3.0",
@@ -146,10 +157,10 @@
             ]
           }
         ],
-        "latest": true
+        "latest": false
       }
     ],
-    "count": 70
+    "count": 91
   },
   {
     "slug": "2026-q3",
