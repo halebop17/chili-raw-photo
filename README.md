@@ -136,7 +136,7 @@ you never pay again. One licence covers **up to five Macs you use yourself**; if
 on more than that, please buy a second one. Buy it on the website, or inside the app under
 `Settings` ▸ `Licence`.
 
-**[Unlock Chili RAW Pro →](https://monokern.app/b/chiliraw-v1)**
+**[Unlock Chili RAW Pro →](https://monokern.app/chiliraw-v1)**
 
 Even without a licence the app stays useful indefinitely: culling, developing, cataloguing,
 geotagging and export are free, with no account, no watermark and no time limit. A 7-day
