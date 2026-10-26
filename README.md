@@ -15,7 +15,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 
 <img src="public/assets/hero-macbook-home.png" alt="Chili RAW on a MacBook Pro" width="900">
 
-**[⬇︎ Download Chili RAW 1.4](https://github.com/halebop17/chili-raw-photo/releases/latest)**
+**[⬇︎ Download Chili RAW 1.4.1](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 
 <sub>
 <b>macOS 15 Sequoia or later · Apple silicon (M1 or newer)</b><br>
@@ -24,7 +24,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 <a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
-`macOS 15+`  `Apple silicon`  `v1.4.0`  `Free to use`  `No account`
+`macOS 15+`  `Apple silicon`  `v1.4.1`  `Free to use`  `No account`
 
 </div>
 
@@ -81,7 +81,7 @@ and depth-based bokeh.
 - Multiple **versions** per photo, batch editing with Auto Sync, and **Proof** mode.
 
 ### Film Labor *
-- 29 colour negative film profiles across seventeen stocks, four slide films and eight papers, each modelled from published datasheets.
+- 31 colour negative film profiles across nineteen stocks, seven slide films and eight papers, each modelled from published datasheets.
 - The stages a real frame goes through: exposure onto the negative, halation, grain, the print, and the light you view it under.
 - A ring-around that renders your own frame at seven steps either side of where you are.
 
