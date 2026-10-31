@@ -9,11 +9,18 @@
         "version": "next release",
         "year": null,
         "quarter": null,
-        "groups": [],
+        "groups": [
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>Exporting an unedited JPEG, HEIC, PNG or TIFF no longer changes how it looks.</strong>"
+            ]
+          }
+        ],
         "latest": false
       }
     ],
-    "count": 0
+    "count": 1
   },
   {
     "slug": "2026-q4",
