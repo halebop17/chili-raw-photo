@@ -19,14 +19,15 @@
           {
             "name": "Fixed",
             "items": [
-              "<strong>Exporting an unedited JPEG, HEIC, PNG or TIFF no longer changes how it looks.</strong>"
+              "<strong>Exporting an unedited JPEG, HEIC, PNG or TIFF no longer changes how it looks.</strong>",
+              "<strong>JPEG XL exports keep the photo's EXIF: capture date, camera, lens and exposure.</strong>"
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 2
+    "count": 3
   },
   {
     "slug": "2026-q4",
