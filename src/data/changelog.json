@@ -11,6 +11,12 @@
         "quarter": null,
         "groups": [
           {
+            "name": "Changed",
+            "items": [
+              "<strong>Exporting a batch no longer slows down the other apps you are using.</strong>"
+            ]
+          },
+          {
             "name": "Fixed",
             "items": [
               "<strong>Exporting an unedited JPEG, HEIC, PNG or TIFF no longer changes how it looks.</strong>"
@@ -20,7 +26,7 @@
         "latest": false
       }
     ],
-    "count": 1
+    "count": 2
   },
   {
     "slug": "2026-q4",
