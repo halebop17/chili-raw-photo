@@ -11,6 +11,16 @@
         "quarter": null,
         "groups": [
           {
+            "name": "New",
+            "items": [
+              "<strong>Film Labor has its first film of our own: Poblano 200, a portrait colour negative with warm skin, fresh greens and soft, slightly cool highlights.</strong>",
+              "<strong>Ancho 400, a black-and-white film of our own: luminous skin under deep, dramatic skies.</strong>",
+              "<strong>Shishito 100, a clean modern colour negative: neutral greys, gentle highlights, film's tone without the nostalgia.</strong>",
+              "<strong>Ghost 800T, a tungsten film of our own for city nights: cool shadows, warm lights, deep blacks.</strong>",
+              "<strong>Habanero 100, a slide film of our own: a slide's colour, with highlights that forgive like a negative's.</strong>"
+            ]
+          },
+          {
             "name": "Changed",
             "items": [
               "<strong>Exporting a batch no longer slows down the other apps you are using.</strong>"
@@ -27,7 +37,7 @@
         "latest": false
       }
     ],
-    "count": 3
+    "count": 8
   },
   {
     "slug": "2026-q4",
