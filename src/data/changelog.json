@@ -9,11 +9,18 @@
         "version": "next release",
         "year": null,
         "quarter": null,
-        "groups": [],
+        "groups": [
+          {
+            "name": "Fixed",
+            "items": [
+              "<strong>On a JPEG, HEIC, PNG, TIFF or video, the Tone Mapping choice and the AgX panels no longer show as if they did something.</strong> Only raw files are tone-mapped; anything else keeps the tone it was made with."
+            ]
+          }
+        ],
         "latest": false
       }
     ],
-    "count": 0
+    "count": 1
   },
   {
     "slug": "2026-q4",
