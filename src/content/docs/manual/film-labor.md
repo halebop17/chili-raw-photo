@@ -55,11 +55,21 @@ A darkroom judges a correction by printing its neighbours beside it. The tray be
 
 **The stock.** Pick from colour negatives, black-and-white, slide films and the cine stocks. Slide film is the finished positive: it is viewed directly, so choosing one removes the print stage entirely.
 
+## Chili Originals
+
+The first films in each tab, under **CHILI ORIGINALS**, are films of our own rather than reproductions of ones you can buy. The real stocks follow under **CLASSIC STOCKS**.
+
+- **Poblano 200** (Negative): a portrait colour negative. Warm skin, fresh greens, soft and slightly cool highlights.
+- **Shishito 100** (Negative): a clean modern colour negative. Neutral greys, gentle highlights, film's tone without the nostalgia.
+- **Ghost 800T** (Negative): a tungsten film for city nights. Cool shadows, warm lights, deep blacks.
+- **Ancho 400** (B&W): luminous skin under deep, dramatic skies.
+- **Habanero 100** (Slide): a slide's colour, with highlights that hold detail like a negative's.
+
 ## Black and white
 
-One film, **Tri-X 400**, in the **B&W** tab. Its chips — **Dev 6, Dev 7, Dev 9, Dev 11** — are development times rather than looks: each is Tri-X's own curve at that time, so a longer development gives a harder, denser negative. It opens on Dev 7.
+Two films in the **B&W** tab: **Ancho 400**, one of ours (above), and **Tri-X 400**. Tri-X's chips — **Dev 6, Dev 7, Dev 9, Dev 11** — are development times rather than looks: each is Tri-X's own curve at that time, so a longer development gives a harder, denser negative. It opens on Dev 7.
 
-A black-and-white negative prints on black-and-white material, so with Tri-X chosen the Print stage offers only these two — and going back to a colour film puts a colour paper back:
+A black-and-white negative prints on black-and-white material, so with either film chosen the Print stage offers only these two — and going back to a colour film puts a colour paper back:
 
 - **Polymax Fine-Art**, a fibre paper, with chips **Grade −1** to **Grade 4**: the contrast filter you printed through. Lower is softer; it opens on Grade 2.
 - **Kodak 2302**, a black-and-white print film, whose contrast is its development: **Dev 2** to **Dev 9**, opening on Dev 5.

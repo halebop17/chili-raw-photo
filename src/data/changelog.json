@@ -9,6 +9,22 @@
         "version": "next release",
         "year": null,
         "quarter": null,
+        "groups": [],
+        "latest": false
+      }
+    ],
+    "count": 0
+  },
+  {
+    "slug": "2026-q4",
+    "label": "2026 Q4",
+    "blurb": "Releases from 2026, quarter 4.",
+    "sections": [
+      {
+        "title": "November 2026",
+        "version": "1.5.0",
+        "year": 2026,
+        "quarter": 4,
         "groups": [
           {
             "name": "New",
@@ -34,16 +50,8 @@
             ]
           }
         ],
-        "latest": false
-      }
-    ],
-    "count": 8
-  },
-  {
-    "slug": "2026-q4",
-    "label": "2026 Q4",
-    "blurb": "Releases from 2026, quarter 4.",
-    "sections": [
+        "latest": true
+      },
       {
         "title": "October 2026",
         "version": "1.4.1",
@@ -57,7 +65,7 @@
             ]
           }
         ],
-        "latest": true
+        "latest": false
       },
       {
         "title": "October 2026",
@@ -199,7 +207,7 @@
         "latest": false
       }
     ],
-    "count": 92
+    "count": 100
   },
   {
     "slug": "2026-q3",

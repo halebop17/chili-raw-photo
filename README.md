@@ -15,7 +15,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 
 <img src="public/assets/hero-macbook-home.png" alt="Chili RAW on a MacBook Pro" width="900">
 
-**[⬇︎ Download Chili RAW 1.4.1](https://github.com/halebop17/chili-raw-photo/releases/latest)**
+**[⬇︎ Download Chili RAW 1.5](https://github.com/halebop17/chili-raw-photo/releases/latest)**
 
 <sub>
 <b>macOS 15 Sequoia or later · Apple silicon (M1 or newer)</b><br>
@@ -24,7 +24,7 @@ Copy to github/web/README.md and push. Assets live in public/assets/ — public/
 <a href="https://github.com/halebop17/chili-raw-photo/issues">Report a problem</a>
 </sub>
 
-`macOS 15+`  `Apple silicon`  `v1.4.1`  `Free to use`  `No account`
+`macOS 15+`  `Apple silicon`  `v1.5.0`  `Free to use`  `No account`
 
 </div>
 
@@ -81,7 +81,8 @@ and depth-based bokeh.
 - Multiple **versions** per photo, batch editing with Auto Sync, and **Proof** mode.
 
 ### Film Labor *
-- 31 colour negative film profiles across nineteen stocks, seven slide films and eight papers, each modelled from published datasheets.
+- 34 colour negative film profiles across twenty-two stocks, two black-and-white films, eight slide films and ten papers. The real stocks are modelled from published datasheets.
+- Chili Originals: films of our own, built from the same physics — Poblano 200, a portrait colour negative; Shishito 100, a clean modern one; Ghost 800T, a tungsten film for nights; Ancho 400, a black-and-white; and Habanero 100, a slide film with forgiving highlights.
 - The stages a real frame goes through: exposure onto the negative, halation, grain, the print, and the light you view it under.
 - A ring-around that renders your own frame at seven steps either side of where you are.
 
