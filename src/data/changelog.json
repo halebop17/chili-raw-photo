@@ -13,14 +13,15 @@
           {
             "name": "Fixed",
             "items": [
-              "<strong>On a JPEG, HEIC, PNG, TIFF or video, the Tone Mapping choice and the AgX panels no longer show as if they did something.</strong> Only raw files are tone-mapped; anything else keeps the tone it was made with."
+              "<strong>On a JPEG, HEIC, PNG, TIFF or video, the Tone Mapping choice and the AgX panels no longer show as if they did something.</strong> Only raw files are tone-mapped; anything else keeps the tone it was made with.",
+              "<strong>HDR HEIC exports store their brightest highlights in full instead of capping them.</strong>"
             ]
           }
         ],
         "latest": false
       }
     ],
-    "count": 1
+    "count": 2
   },
   {
     "slug": "2026-q4",
