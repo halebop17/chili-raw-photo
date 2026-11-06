@@ -11,8 +11,15 @@
         "quarter": null,
         "groups": [
           {
+            "name": "Changed",
+            "items": [
+              "<strong>In Film Labor, each film list now starts with the classic stocks, with Chili Originals after them.</strong>"
+            ]
+          },
+          {
             "name": "Fixed",
             "items": [
+              "<strong>A black-and-white film now stays black and white when Look is below 100 %.</strong> Colour used to show through; 0 % still gives you your untouched photo back.",
               "<strong>On a JPEG, HEIC, PNG, TIFF or video, the Tone Mapping choice and the AgX panels no longer show as if they did something.</strong> Only raw files are tone-mapped; anything else keeps the tone it was made with.",
               "<strong>HDR HEIC exports store their brightest highlights in full instead of capping them.</strong>"
             ]
@@ -21,7 +28,7 @@
         "latest": false
       }
     ],
-    "count": 2
+    "count": 4
   },
   {
     "slug": "2026-q4",
