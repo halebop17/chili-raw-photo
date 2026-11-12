@@ -9,6 +9,8 @@ Film Labor renders your photograph the way film would have: exposed onto a negat
 
 Film Labor is a **Pro** feature. Turn it on in **Settings → General → Modules**, then open it from the sidebar, from **View → Film Labor**, or with **⌘6**.
 
+A photo carrying a Film Labor look shows a **Film** badge in the corner of the Develop canvas. On a Mac without Film Labor the badge is a menu: **Remove Film Look…** takes the look off the current version, after asking first, since that Mac cannot put it back.
+
 ## The chain
 
 Across the top sits the chain, one card per stage:
@@ -41,7 +43,7 @@ Clicking a card also changes the picture on screen to *what the image looks like
 
 Everything the panel holds — the two stocks and every slider — is one **Look**, saved **per version** of a photo ([chapter 5](/manual/develop/)) — switch version and the film on the canvas switches with it; delete a version and its Look goes too. Name it in the **LOOKS** box at the bottom of the panel and it joins the library; from there you can apply it to a whole grid selection at once.
 
-**LOOK** in the footer is how much of the entire chain is in the photograph. A film you have just chosen arrives at 75 %: push the slider to 100 % for the full rendering, or down to 0 % for your untouched photograph back, exactly as if Film Labor were switched off. It does not start at the top because a stock at full strength is more film than most photographs want, and it is the control to reach for when you want *less* of it. It is a different thing from **Character** in the Print group.
+**LOOK** in the footer is how much of the entire chain is in the photograph. A film you have just chosen arrives at 75 %: push the slider to 100 % for the full rendering, or down to 0 % for your untouched photograph back, exactly as if Film Labor were switched off. A black-and-white film stays black and white at every setting above 0 %. It does not start at the top because a stock at full strength is more film than most photographs want, and it is the control to reach for when you want *less* of it. It is a different thing from **Character** in the Print group.
 
 **A photo carrying a Look is marked.** A good Look is supposed to read as a photograph, which means the picture itself cannot tell you film has been through it. So a small amber filmstrip appears in the top-right corner of the grid tile, beside the versions and GPS marks, and a **Film** pill sits in the bottom-right of the Develop canvas. The mark follows the Look: clear it and the mark goes.
 
@@ -57,7 +59,7 @@ A darkroom judges a correction by printing its neighbours beside it. The tray be
 
 ## Chili Originals
 
-The first films in each tab, under **CHILI ORIGINALS**, are films of our own rather than reproductions of ones you can buy. The real stocks follow under **CLASSIC STOCKS**.
+Each tab lists the real stocks first, under **CLASSIC STOCKS**. The films after them, under **CHILI ORIGINALS**, are films of our own rather than reproductions of ones you can buy.
 
 - **Poblano 200** (Negative): a portrait colour negative. Warm skin, fresh greens, soft and slightly cool highlights.
 - **Shishito 100** (Negative): a clean modern colour negative. Neutral greys, gentle highlights, film's tone without the nostalgia.

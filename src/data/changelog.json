@@ -11,6 +11,12 @@
         "quarter": null,
         "groups": [
           {
+            "name": "New",
+            "items": [
+              "<strong>A Film Labor look can be taken off a photo on a Mac without Film Labor</strong>, from the Film badge on the Develop canvas."
+            ]
+          },
+          {
             "name": "Changed",
             "items": [
               "<strong>In Film Labor, each film list now starts with the classic stocks, with Chili Originals after them.</strong>"
@@ -29,7 +35,7 @@
         "latest": false
       }
     ],
-    "count": 5
+    "count": 6
   },
   {
     "slug": "2026-q4",
