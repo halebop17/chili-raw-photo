@@ -1,55 +1,55 @@
 {
  "/": {
   "date": "2026-11-14",
-  "hash": "a22eea8b32c7ea4c"
+  "hash": "f102dd423a9cb031"
  },
  "/ai/": {
-  "date": "2026-10-08",
-  "hash": "58c486368c9043a0"
+  "date": "2026-11-14",
+  "hash": "bc5cffa3b288d531"
  },
  "/articles/": {
   "date": "2026-10-25",
   "hash": "bbfbd7fee9c253b0"
  },
  "/articles/compressed-dng/": {
-  "date": "2026-10-08",
-  "hash": "3735ec7ea27623cf"
+  "date": "2026-11-14",
+  "hash": "d3d4dcb02df88193"
  },
  "/articles/cull-photos-faster/": {
-  "date": "2026-10-25",
-  "hash": "c6eae20d52bfd02e"
+  "date": "2026-11-14",
+  "hash": "4475aa8abff2c638"
  },
  "/articles/film-emulation-vs-luts/": {
-  "date": "2026-10-25",
-  "hash": "62f1fc2c5b1783ab"
+  "date": "2026-11-14",
+  "hash": "4991fbdc8490b18c"
  },
  "/articles/geotag-photos-mac/": {
-  "date": "2026-10-25",
-  "hash": "85f463b6b03ece37"
+  "date": "2026-11-14",
+  "hash": "cd9c20073de56d32"
  },
  "/articles/halation/": {
-  "date": "2026-10-25",
-  "hash": "393f580a88602304"
+  "date": "2026-11-14",
+  "hash": "16ca34f9b63552ad"
  },
  "/articles/lightroom-alternatives-mac/": {
-  "date": "2026-10-25",
-  "hash": "a9a7c9ee27ad5d92"
+  "date": "2026-11-14",
+  "hash": "7ed5f0a14988e4e0"
  },
  "/articles/portra-400-look/": {
-  "date": "2026-10-25",
-  "hash": "57e4e00714aa4478"
+  "date": "2026-11-14",
+  "hash": "cb6ac4c38e2f0781"
  },
  "/articles/raw-vs-jpeg/": {
-  "date": "2026-10-25",
-  "hash": "78555534b00cbc75"
+  "date": "2026-11-14",
+  "hash": "3f46296fd2305af1"
  },
  "/articles/recover-blown-highlights/": {
-  "date": "2026-10-25",
-  "hash": "6e75d47bfabfd7f6"
+  "date": "2026-11-14",
+  "hash": "6c3a29c88bfe08d5"
  },
  "/articles/remove-sensor-dust/": {
-  "date": "2026-10-25",
-  "hash": "0bdbc934e08c6b92"
+  "date": "2026-11-14",
+  "hash": "69944940e8b27195"
  },
  "/articles/whats-next/": {
   "date": "2026-10-08",
@@ -57,39 +57,43 @@
  },
  "/articles/why-a-new-raw-developer/": {
   "date": "2026-11-14",
-  "hash": "ada0c092cf6773c7"
+  "hash": "cf5d63a8c60bed5c"
  },
  "/articles/xmp-sidecar-files/": {
-  "date": "2026-10-25",
-  "hash": "d5aa6f4594258a3a"
+  "date": "2026-11-14",
+  "hash": "1374a5e4026ed243"
  },
  "/changelog/": {
   "date": "2026-11-14",
-  "hash": "41b3654b2c9ebd47"
+  "hash": "a5ffa158ca2b9562"
  },
  "/changelog/2026-q1/": {
   "date": "2026-11-14",
-  "hash": "5bf6dee949df9b63"
+  "hash": "c8d4dce69ac10478"
  },
  "/changelog/2026-q2/": {
   "date": "2026-11-14",
-  "hash": "37ba707da2a07af5"
+  "hash": "638b2ddaf9783a8b"
  },
  "/changelog/2026-q3/": {
   "date": "2026-11-14",
-  "hash": "70756abea72fce18"
+  "hash": "44321b7de3dd3e3a"
  },
  "/changelog/2026-q4/": {
   "date": "2026-11-14",
-  "hash": "6b0346f356943ca9"
+  "hash": "fc9d9f645fd757af"
  },
  "/contact/": {
   "date": "2026-11-12",
   "hash": "94c5dd9c20b94dda"
  },
+ "/download/": {
+  "date": "2026-11-14",
+  "hash": "72f642a04d81c624"
+ },
  "/features/": {
   "date": "2026-11-14",
-  "hash": "aacc63d878afd129"
+  "hash": "d2c9c1412e37dacf"
  },
  "/features/ai-masking/": {
   "date": "2026-11-14",
@@ -105,31 +109,31 @@
  },
  "/features/catalog/": {
   "date": "2026-11-14",
-  "hash": "35ab8684954b17e8"
+  "hash": "fd4fca37b5a01e82"
  },
  "/features/culling/": {
   "date": "2026-11-14",
-  "hash": "7bcfe32c98909e1f"
+  "hash": "003e1d156d00f265"
  },
  "/features/decoders/": {
   "date": "2026-11-14",
-  "hash": "aed4ed10d8694053"
+  "hash": "ceea542059e0e834"
  },
  "/features/detail/": {
   "date": "2026-11-14",
-  "hash": "f01d432a3adad82c"
+  "hash": "976956a507915845"
  },
  "/features/develop/": {
   "date": "2026-11-14",
-  "hash": "0cf63672973a19ab"
+  "hash": "2ec9434ed2e6f05a"
  },
  "/features/exif-iptc/": {
   "date": "2026-11-14",
-  "hash": "2216b27d84114c50"
+  "hash": "1054cecb986ae436"
  },
  "/features/export/": {
   "date": "2026-11-14",
-  "hash": "6c131ce9ff2f3d76"
+  "hash": "b7cbacb6d6ac79d5"
  },
  "/features/film-labor/": {
   "date": "2026-11-14",
@@ -137,11 +141,11 @@
  },
  "/features/folder-notes/": {
   "date": "2026-11-14",
-  "hash": "08ee44d599bc8e06"
+  "hash": "627e853c525f3bcc"
  },
  "/features/frames/": {
   "date": "2026-11-14",
-  "hash": "60e90310a81428bc"
+  "hash": "acefa9a36dd570de"
  },
  "/features/generative-fill/": {
   "date": "2026-11-14",
@@ -149,23 +153,23 @@
  },
  "/features/geo-tag/": {
   "date": "2026-11-14",
-  "hash": "5d01641ab9d3a55d"
+  "hash": "36694776c886fecd"
  },
  "/features/lens-corrections/": {
   "date": "2026-11-14",
-  "hash": "7e00b9e73d1ca6aa"
+  "hash": "e6e201361739eff1"
  },
  "/features/loupe/": {
   "date": "2026-11-14",
-  "hash": "305a83c9f2070cf1"
+  "hash": "bff8456b0f8d043f"
  },
  "/features/luts/": {
   "date": "2026-11-14",
-  "hash": "bf75d0eeb50c9aef"
+  "hash": "b2d9a0944fa4c883"
  },
  "/features/masking/": {
   "date": "2026-11-14",
-  "hash": "13832e430d2a856b"
+  "hash": "597d1fe689ed35fd"
  },
  "/features/match-colours/": {
   "date": "2026-11-14",
@@ -173,7 +177,7 @@
  },
  "/features/people/": {
   "date": "2026-11-14",
-  "hash": "2602948b3b6aa54e"
+  "hash": "7cd59fd21a9ab00a"
  },
  "/features/pixels/": {
   "date": "2026-11-14",
@@ -185,23 +189,23 @@
  },
  "/features/repair/": {
   "date": "2026-11-14",
-  "hash": "82d9816f8ee9f333"
+  "hash": "1718c7ae0550e80c"
  },
  "/features/search/": {
   "date": "2026-11-14",
-  "hash": "6fad558d9905a860"
+  "hash": "48f398d22fd9dd80"
  },
  "/features/stacks/": {
   "date": "2026-11-14",
-  "hash": "d480cf1479d6e2b8"
+  "hash": "462934c34f9657c7"
  },
  "/features/versions/": {
   "date": "2026-11-14",
-  "hash": "a007df0a18e57556"
+  "hash": "697081ed8d1b7889"
  },
  "/features/video/": {
   "date": "2026-11-14",
-  "hash": "b969a8a36c102e37"
+  "hash": "605e728f8105d3d2"
  },
  "/manual/": {
   "date": "2026-10-08",
@@ -268,8 +272,8 @@
   "hash": "afa6d23abfad7fe1"
  },
  "/pro/": {
-  "date": "2026-11-12",
-  "hash": "fab25a6851df21af"
+  "date": "2026-11-14",
+  "hash": "1e7762e26e3a3607"
  },
  "/tools/": {
   "date": "2026-10-08",

@@ -1,0 +1,80 @@
+---
+import fs from "node:fs";
+import Site from "../layouts/Site.astro";
+
+// The newest release, read from the update feed at build time, so this page
+// and the in-app updater always point at the same file.
+const feed = fs.readFileSync(`${process.cwd()}/public/appcast-1.xml`, "utf8");
+const items = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, item]) => ({
+  version: item.match(/<sparkle:shortVersionString>([^<]+)</)?.[1] ?? "",
+  date: new Date(item.match(/<pubDate>([^<]+)</)?.[1] ?? ""),
+  url: item.match(/<enclosure url="([^"]+)"/)?.[1] ?? "",
+}));
+const newer = (a, b) => {
+  const pa = a.version.split(".").map(Number), pb = b.version.split(".").map(Number);
+  for (let i = 0; i < 3; i++) if ((pa[i] ?? 0) !== (pb[i] ?? 0)) return (pa[i] ?? 0) > (pb[i] ?? 0);
+  return false;
+};
+const latest = items.reduce((best, it) => (newer(it, best) ? it : best));
+const released = latest.date.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+---
+<Site title="Download Chili RAW for Mac" name="Download" pageType="WebPage" aboutApp
+      description="Download Chili RAW for your Mac. Free to use, for macOS 15 or later on Apple silicon.">
+  <div class="wrap" style="padding-top: clamp(40px, 5vw, 64px);">
+    <div class="eyebrow">download</div>
+    <h1 class="h-hero" style="margin-top: 16px;">Download</h1>
+    <div class="h-sub" style="font-weight: 500; color: var(--dim); margin-top: 14px; max-width: 30ch;">
+      Chili RAW for Mac, free to use.
+    </div>
+  </div>
+
+  <div class="wrap section" style="padding-bottom: 70px;">
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="eyebrow">mac</div>
+        <h3>Chili RAW for Mac</h3>
+        <p>
+          Version {latest.version}, released {released}. Needs macOS 15 or later and a Mac with
+          Apple silicon.
+        </p>
+        <p>
+          Open the disk image and drag Chili RAW into Applications. After that it updates itself.
+        </p>
+        <div class="btn-row" style="margin-top: auto; padding-top: 18px;">
+          <a class="btn btn-primary btn-wide" href={latest.url}>Download for Mac</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">not at your mac?</div>
+        <h3>Send yourself the link</h3>
+        <p>
+          Reading this on a phone? Share this page to your Mac, or copy the link and open it there.
+        </p>
+        <div class="btn-row" style="margin-top: auto; padding-top: 18px;">
+          <button class="btn btn-wide" type="button" id="share-link">Share or copy the link</button>
+        </div>
+        <p id="share-done" style="margin-top: 10px; font-size: 13.5px; color: var(--accent);" hidden>
+          Link copied.
+        </p>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top: 26px; font-size: 14px; color: var(--faint); max-width: 66ch;">
+      What changed in each version is in the <a href="/changelog/">changelog</a>. What Pro adds is
+      on the <a href="/pro/">Pro page</a>.
+    </p>
+  </div>
+</Site>
+
+<script>
+  const button = document.getElementById("share-link");
+  const done = document.getElementById("share-done");
+  const url = "https://www.chiliraw.com/download/";
+  button?.addEventListener("click", async () => {
+    if (navigator.share) {
+      try { await navigator.share({ title: "Chili RAW for Mac", url }); return; } catch { return; }
+    }
+    try { await navigator.clipboard.writeText(url); if (done) done.hidden = false; } catch {}
+  });
+</script>
