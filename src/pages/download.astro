@@ -7,7 +7,7 @@ import Site from "../layouts/Site.astro";
 const feed = fs.readFileSync(`${process.cwd()}/public/appcast-1.xml`, "utf8");
 const items = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, item]) => ({
   version: item.match(/<sparkle:shortVersionString>([^<]+)</)?.[1] ?? "",
-  date: new Date(item.match(/<pubDate>([^<]+)</)?.[1] ?? ""),
+  pubDate: item.match(/<pubDate>([^<]+)</)?.[1] ?? "",
   url: item.match(/<enclosure url="([^"]+)"/)?.[1] ?? "",
 }));
 const newer = (a, b) => {
@@ -16,7 +16,12 @@ const newer = (a, b) => {
   return false;
 };
 const latest = items.reduce((best, it) => (newer(it, best) ? it : best));
-const released = latest.date.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+// The day as written in the feed, in the timezone it was released in, not
+// shifted into the build machine's.
+const [, day, mon, year] = latest.pubDate.match(/(\d{1,2}) (\w{3}) (\d{4})/) ?? [];
+const MONTHS = { Jan: "January", Feb: "February", Mar: "March", Apr: "April", May: "May", Jun: "June",
+  Jul: "July", Aug: "August", Sep: "September", Oct: "October", Nov: "November", Dec: "December" };
+const released = `${Number(day)} ${MONTHS[mon]} ${year}`;
 ---
 <Site title="Download Chili RAW for Mac" name="Download" pageType="WebPage" aboutApp
       description="Download Chili RAW for your Mac. Free to use, for macOS 15 or later on Apple silicon.">

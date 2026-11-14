@@ -111,6 +111,12 @@ p { margin: 0; }
 .nav-menu-panel a:last-child { border-bottom: 0; }
 .nav-menu-panel a[aria-current="page"] { color: var(--accent); }
 @media (max-width: 860px) { .nav-menu { display: block; } }
+/* On a phone the bar holds the logo, Download and the menu; a smaller
+   Download keeps the logo from being crowded. */
+@media (max-width: 860px) {
+  .nav-download { height: 38px !important; padding: 0 14px; gap: 7px; font-size: 14px; margin-left: 0 !important; }
+  .nav-menu > summary { width: 38px; height: 38px; margin-left: 8px; }
+}
 
 /* ── buttons ────────────────────────────────────────────────────────── */
 
@@ -364,3 +370,4 @@ a.card:hover .mark { color: var(--mute); }
 .tf-thick output { font-family: var(--mono); font-size: 13px; color: var(--text); min-width: 48px; }
 .tf-row label.eyebrow { height: auto; padding: 0; border: 0; border-radius: 0; color: var(--faint); font-size: 11px; cursor: default; }
 @media (max-width: 640px) { .tf-thick { flex-wrap: nowrap; } .tf-thick label.eyebrow { width: auto; } }
+@media (max-width: 420px) { .nav-download svg { display: none !important; } }
