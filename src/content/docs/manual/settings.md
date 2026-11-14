@@ -5,7 +5,7 @@ sidebar:
   order: 13
 ---
 
-Open Settings with **⌘,** (or **Chili RAW → Settings…**). The window has six tabs: **General**, **Files**, **Backups**, **Shortcuts**, **Cache** and **AI**. Everything is saved the moment you change it.
+Open Settings with **⌘,** (or **Chili RAW → Settings…**). The window has eight tabs: **General**, **Files**, **Backups**, **Shortcuts**, **Performance**, **AI**, **Licence** and **Updates**. Everything is saved the moment you change it.
 
 ## General
 
@@ -107,7 +107,14 @@ To rebind: **click a shortcut chip**, then **press the new combination**. **Esc*
 
 Only the actions listed on this tab are rebindable — the app-wide keys (⌘O, ⌘S, ⌘Z, ⌘F, copy/paste, Delete) and the in-viewer keys (I, Z, arrows) are fixed. The rating and flag keys *are* rebindable, under **Culling**.
 
-## Cache
+## Performance
+
+**Develop**
+
+- **Preview quality** — how large Develop renders the photo while you edit. Smaller is faster: sliders and switching photos respond sooner, most of all on large files. Export is always full size.
+- **Photos ahead** — **Off**, **1**, **2** or **3**: how many of the next photos Develop opens in the background while you look at the current one, so moving on to them is quicker. Each one uses memory while it waits.
+
+**Cache**
 
 Chili RAW keeps a disk cache of thumbnails and previews so folders reopen instantly.
 

@@ -15,6 +15,21 @@ A **Collection** is a hand-picked set of photos — "drag these into a named gro
 
 Collections are saved outside the catalog, so "Rebuild Catalog" never touches them.
 
+## Show on iPhone
+
+A Collection or a Smart Folder can be shown in the **Chili RAW iPhone app**, signed in to the same Apple Account as this Mac.
+
+- **Start** — right-click the Collection or Smart Folder in the sidebar → **Show on iPhone…**. Chili RAW says how many photos will be prepared and roughly how much of your iCloud storage they take, then sends a viewing image and a thumbnail of each photo, rendered with its current edit. The originals stay on this Mac.
+- **Progress** — the sidebar's **On iPhone** list shows each set that is on and how far it has got.
+- **Kept in step** — photos added to or taken out of the set, re-edited or re-rated on the Mac follow on the iPhone. Edits, stars, picks, labels and keywords made on the iPhone come back and are written to the photo's sidecar like any other edit.
+- **Stop** — right-click the set → **Stop Showing on iPhone**. Its photos leave the iPhone and your iCloud; nothing on the Mac changes.
+- One set holds up to 10,000 photos.
+
+**Settings ▸ Files** has two related sections:
+
+- **On iPhone ▸ Photos as** — the file the iPhone shows and edits each photo from: **HEIC** (smaller, opens fastest) or **JPEG XL** (full colour detail). A change applies to photos added or edited from then on.
+- **From iPhone ▸ Folder** — where photos sent with **Send to Mac** in the iPhone app arrive, with their stars, picks and labels.
+
 ## Backup (Vaults)
 
 A **Vault** is a one-click backup of your work to another drive, set up in **Settings ▸ Backups**.
