@@ -65,23 +65,23 @@
  },
  "/changelog/": {
   "date": "2026-11-14",
-  "hash": "ab82c44b6ebcc7dd"
+  "hash": "41b3654b2c9ebd47"
  },
  "/changelog/2026-q1/": {
   "date": "2026-11-14",
-  "hash": "a3d5270fabecb824"
+  "hash": "5bf6dee949df9b63"
  },
  "/changelog/2026-q2/": {
   "date": "2026-11-14",
-  "hash": "f8b3f9514c135e88"
+  "hash": "37ba707da2a07af5"
  },
  "/changelog/2026-q3/": {
   "date": "2026-11-14",
-  "hash": "e20db8065fcdd05e"
+  "hash": "70756abea72fce18"
  },
  "/changelog/2026-q4/": {
   "date": "2026-11-14",
-  "hash": "65712471fef4fff4"
+  "hash": "6b0346f356943ca9"
  },
  "/contact/": {
   "date": "2026-11-12",
@@ -141,7 +141,7 @@
  },
  "/features/frames/": {
   "date": "2026-11-14",
-  "hash": "4b6b25ca3a7a964c"
+  "hash": "60e90310a81428bc"
  },
  "/features/generative-fill/": {
   "date": "2026-11-14",

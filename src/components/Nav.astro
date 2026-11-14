@@ -22,6 +22,29 @@ const here = (p) => (path === p || (p !== "/" && path.startsWith(p)) ? "page" : 
         </svg>
         Download
       </a>
+      <details class="nav-menu">
+        <summary aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M3 5.5 H17 M3 10 H17 M3 14.5 H17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </summary>
+        <div class="nav-menu-panel">
+          <a href="/features/" aria-current={here("/features/")}>Features</a>
+          <a href="/manual/" aria-current={here("/manual/")}>Manual</a>
+          <a href="/changelog/" aria-current={here("/changelog/")}>Changelog</a>
+          <a href="/pro/" aria-current={here("/pro/")}>Pro</a>
+          <a href="/articles/" aria-current={here("/articles/")}>Articles</a>
+          <a href="/contact/" aria-current={here("/contact/")}>Contact</a>
+        </div>
+      </details>
     </div>
   </div>
 </nav>
+
+<script>
+  // A menu left open closes when you tap anywhere else.
+  const menu = document.querySelector<HTMLDetailsElement>(".nav-menu");
+  document.addEventListener("click", (e) => {
+    if (menu?.open && !menu.contains(e.target as Node)) menu.open = false;
+  });
+</script>
