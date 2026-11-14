@@ -59,4 +59,5 @@ const next = [others[(features.indexOf(f) + 1) % others.length],
       {next.map((o) => <a href={`/features/${o.slug}/`} style="font-size: 14px;">{o.title} →</a>)}
     </div>
   </div>
+  {f.slug === "frames" && <script is:inline src="/js/try-frame.js" defer></script>}
 </Site>

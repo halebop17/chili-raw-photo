@@ -286,7 +286,7 @@ a.card:hover .mark { color: var(--mute); }
 .tf-img { display: none !important; max-width: 84%; max-height: 86%; width: auto; height: auto; box-shadow: 0 24px 44px -18px oklch(0 0 0 / 0.85); }
 .tf-controls { display: flex; flex-direction: column; gap: 14px; margin-top: 22px; }
 .tf-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.tf-row .eyebrow { width: 64px; flex-shrink: 0; }
+.tf-row .eyebrow { width: 96px; flex-shrink: 0; }
 .tf-row label { display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 14px; border-radius: 19px;
   border: 1px solid var(--border); color: var(--dim); font-size: 14px; cursor: pointer; user-select: none; }
 .tf-row label:hover { color: var(--text); border-color: var(--mute); }
@@ -304,30 +304,30 @@ a.card:hover .mark { color: var(--mute); }
   .tf-img { max-width: 88%; max-height: 88%; }
   .tf-row .eyebrow { width: 100%; }
 }
-#tp-ramen:checked ~ #tf-white:checked ~ .tf-stage .tf-ramen-white { display: block !important; }
-#tp-ramen:checked ~ #tf-black:checked ~ .tf-stage .tf-ramen-black { display: block !important; }
-#tp-ramen:checked ~ #tf-grey:checked ~ .tf-stage .tf-ramen-grey { display: block !important; }
-#tp-ramen:checked ~ #tf-colour:checked ~ .tf-stage .tf-ramen-colour { display: block !important; }
-#tp-ramen:checked ~ #tf-dithered:checked ~ .tf-stage .tf-ramen-dithered { display: block !important; }
-#tp-ramen:checked ~ #tf-film:checked ~ .tf-stage .tf-ramen-film { display: block !important; }
-#tp-ramen:checked ~ #tf-4x5:checked ~ .tf-stage .tf-ramen-4x5 { display: block !important; }
-#tp-ramen:checked ~ #tf-9x16:checked ~ .tf-stage .tf-ramen-9x16 { display: block !important; }
-#tp-river:checked ~ #tf-white:checked ~ .tf-stage .tf-river-white { display: block !important; }
-#tp-river:checked ~ #tf-black:checked ~ .tf-stage .tf-river-black { display: block !important; }
-#tp-river:checked ~ #tf-grey:checked ~ .tf-stage .tf-river-grey { display: block !important; }
-#tp-river:checked ~ #tf-colour:checked ~ .tf-stage .tf-river-colour { display: block !important; }
-#tp-river:checked ~ #tf-dithered:checked ~ .tf-stage .tf-river-dithered { display: block !important; }
-#tp-river:checked ~ #tf-film:checked ~ .tf-stage .tf-river-film { display: block !important; }
-#tp-river:checked ~ #tf-4x5:checked ~ .tf-stage .tf-river-4x5 { display: block !important; }
-#tp-river:checked ~ #tf-9x16:checked ~ .tf-stage .tf-river-9x16 { display: block !important; }
-#tp-dome:checked ~ #tf-white:checked ~ .tf-stage .tf-dome-white { display: block !important; }
-#tp-dome:checked ~ #tf-black:checked ~ .tf-stage .tf-dome-black { display: block !important; }
-#tp-dome:checked ~ #tf-grey:checked ~ .tf-stage .tf-dome-grey { display: block !important; }
-#tp-dome:checked ~ #tf-colour:checked ~ .tf-stage .tf-dome-colour { display: block !important; }
-#tp-dome:checked ~ #tf-dithered:checked ~ .tf-stage .tf-dome-dithered { display: block !important; }
-#tp-dome:checked ~ #tf-film:checked ~ .tf-stage .tf-dome-film { display: block !important; }
-#tp-dome:checked ~ #tf-4x5:checked ~ .tf-stage .tf-dome-4x5 { display: block !important; }
-#tp-dome:checked ~ #tf-9x16:checked ~ .tf-stage .tf-dome-9x16 { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-white:checked ~ .tf-stage .tf-ramen-white { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-black:checked ~ .tf-stage .tf-ramen-black { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-grey:checked ~ .tf-stage .tf-ramen-grey { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-colour:checked ~ .tf-stage .tf-ramen-colour { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-dithered:checked ~ .tf-stage .tf-ramen-dithered { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-film:checked ~ .tf-stage .tf-ramen-film { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-4x5:checked ~ .tf-stage .tf-ramen-4x5 { display: block !important; }
+.tf:not(.tf-js) > #tp-ramen:checked ~ #tf-9x16:checked ~ .tf-stage .tf-ramen-9x16 { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-white:checked ~ .tf-stage .tf-river-white { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-black:checked ~ .tf-stage .tf-river-black { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-grey:checked ~ .tf-stage .tf-river-grey { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-colour:checked ~ .tf-stage .tf-river-colour { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-dithered:checked ~ .tf-stage .tf-river-dithered { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-film:checked ~ .tf-stage .tf-river-film { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-4x5:checked ~ .tf-stage .tf-river-4x5 { display: block !important; }
+.tf:not(.tf-js) > #tp-river:checked ~ #tf-9x16:checked ~ .tf-stage .tf-river-9x16 { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-white:checked ~ .tf-stage .tf-dome-white { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-black:checked ~ .tf-stage .tf-dome-black { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-grey:checked ~ .tf-stage .tf-dome-grey { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-colour:checked ~ .tf-stage .tf-dome-colour { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-dithered:checked ~ .tf-stage .tf-dome-dithered { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-film:checked ~ .tf-stage .tf-dome-film { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-4x5:checked ~ .tf-stage .tf-dome-4x5 { display: block !important; }
+.tf:not(.tf-js) > #tp-dome:checked ~ #tf-9x16:checked ~ .tf-stage .tf-dome-9x16 { display: block !important; }
 #tp-ramen:checked ~ .tf-controls label[for="tp-ramen"],
 #tp-river:checked ~ .tf-controls label[for="tp-river"],
 #tp-dome:checked ~ .tf-controls label[for="tp-dome"],
@@ -351,3 +351,16 @@ a.card:hover .mark { color: var(--mute); }
 #tf-film:focus-visible ~ .tf-controls label[for="tf-film"],
 #tf-4x5:focus-visible ~ .tf-controls label[for="tf-4x5"],
 #tf-9x16:focus-visible ~ .tf-controls label[for="tf-9x16"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* With the script running it decides what the stage shows: a mount is drawn
+   live from the plain photo at the slider's thickness, and Dithered and Film
+   show the render nearest the slider. */
+.tf-plain { display: none !important; }
+.tf-js .tf-img.tf-on { display: block !important; }
+.tf-live { display: none; position: relative; box-shadow: 0 24px 44px -18px oklch(0 0 0 / 0.85); }
+.tf-live.tf-on { display: block; }
+.tf-live img { position: absolute; display: block; }
+.tf-js .tf-thick { display: flex !important; }
+.tf-thick input[type="range"] { flex: 1; max-width: 360px; accent-color: var(--accent); height: 28px; }
+.tf-thick output { font-family: var(--mono); font-size: 13px; color: var(--text); min-width: 48px; }
+.tf-row label.eyebrow { height: auto; padding: 0; border: 0; border-radius: 0; color: var(--faint); font-size: 11px; cursor: default; }
+@media (max-width: 640px) { .tf-thick { flex-wrap: nowrap; } .tf-thick label.eyebrow { width: auto; } }
