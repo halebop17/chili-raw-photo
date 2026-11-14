@@ -210,6 +210,10 @@ p { margin: 0; }
 @media (max-width: 640px) {
   /* A card drawn with 60px of inner padding keeps 176px of a 360px screen. */
   .feat .pg-pad { padding-inline: 24px !important; }
+  /* A gallery row of two equal-height pairs becomes the pairs one above the
+     other; each pair keeps its photographs the same height. */
+  .feat .pg-pairs { flex-direction: column; gap: 40px !important; }
+  .feat .pg-pairs > div { flex: none !important; width: 100%; gap: 18px !important; }
 }
 @media (max-width: 560px) {
   /* A label beside its value reads at widths that stack two columns of prose,

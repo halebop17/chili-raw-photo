@@ -13,7 +13,7 @@
  {
   "slug": "decoders",
   "title": "RAW decoders",
-  "sub": "Three decoders, three tone mappers, and a different look from each.",
+  "sub": "Three RAW decoders and three tone mappers to choose from.",
   "seoTitle": "Three RAW decoders: Apple, Adobe DNG SDK, LibRaw",
   "description": "Chili RAW can decode a RAW file with Apple's engine, the Adobe DNG SDK or LibRaw. Each file goes to the right one, and you can switch to compare them.",
   "lead": "Every other developer decides how your raw is decoded and never mentions it again. Chili RAW puts the decoder in Settings, routes each file to the right one by default, and re-renders your edited thumbnails when you switch — so comparing them is honest rather than flattering.",
@@ -134,7 +134,7 @@
  {
   "slug": "versions",
   "title": "Versions",
-  "sub": "Several edits of one photograph, and none of them a copy.",
+  "sub": "Several edits of one photo, without copying the file.",
   "seoTitle": "Versions: try several edits of one photo",
   "description": "Keep several edits of one photograph as versions of the same file. Switch between them instantly and compare them side by side with the zoom locked.",
   "lead": "Try the warm grade and the cold one. Keep the crop you are not sure about. A version is a separate set of develop settings on the same file — instant to switch, free on disk, and comparable side by side with the zoom locked together.",
@@ -200,7 +200,7 @@
  {
   "slug": "catalog",
   "title": "Catalog & backups",
-  "sub": "Your edits live beside your photos. The index is disposable.",
+  "sub": "Edits are saved next to your photos, and the index can be rebuilt.",
   "seoTitle": "A photo catalog with sidecars and backups",
   "description": "Edits, masks and versions are saved in sidecars next to your original photos, which are never modified, and a Vault backs everything up to another drive.",
   "lead": "Edits, masks and versions are written to sidecars next to the originals, which are never modified. The catalog on top of that is a fast, searchable index you can throw away and rebuild — and a Vault copies the whole lot to another drive as plain, restorable files.",
@@ -211,7 +211,7 @@
  {
   "slug": "search",
   "title": "Search",
-  "sub": "Search by filename, keyword, place, or person — or by what's actually in the picture.",
+  "sub": "Search by filename, keyword, place, or person — or by what is in the picture.",
   "seoTitle": "Search photos by keyword, place, face or content",
   "description": "Find photos by filename, keyword, place or person, or by what is in the picture. Everything is indexed on your own Mac, with nothing to import.",
   "lead": "By its name, by the keywords you wrote, by the place it was taken, by who is in it — or by what it looks like, when you cannot remember any of that. Everything is indexed on your own machine, and none of it needs the photos to be imported anywhere.",
@@ -275,6 +275,19 @@
   "key": "Export"
  },
  {
+  "slug": "frames",
+  "title": "Frames",
+  "sub": "Borders on export, and frames for single photos in Pixels.",
+  "seoTitle": "Photo borders and frames on the Mac, from white to film",
+  "description": "Add a white or black border to every exported photo, pad it to 1:1, 4:5 or 9:16, or frame one photo in its own colour, a film edge or more of the scene.",
+  "lead": "Add a white, black or grey border to every photo you export, and pad it to 1:1, 4:5 or 9:16. In Pixels you can frame a single photo: a border in a colour taken from the photo, a dithered edge, a film strip, or the photo extended to fill the border.",
+  "tier": "free",
+  "tierTitle": "The export border is free, with no time limit.",
+  "tierText": "White, black or grey on every copy. The shapes and the frames in Pixels are part of Pro.",
+  "chapter": "pixels",
+  "key": "Frames"
+ },
+ {
   "slug": "video",
   "title": "Video",
   "sub": "Play, cull, and grade your clips beside your photos.",
@@ -288,7 +301,7 @@
  {
   "slug": "detail",
   "title": "Detail",
-  "sub": "Sharpen what is there, and rebuild what is not.",
+  "sub": "Sharpening, noise reduction and AI detail.",
   "seoTitle": "Sharpening and noise reduction for RAW files",
   "description": "Capture sharpening for every RAW file, Apple's RAW noise reduction, and AI Denoise and AI Detail: two models you download once and run on your Mac.",
   "lead": "One panel, split by a divider. Above it is capture sharpening \u2014 the pass every raw file needs, already at 40 when the photo opens. Below it are the three that deal with what the sensor did not record cleanly: Apple's raw noise reduction, and two models you download once and run on your own Mac.",

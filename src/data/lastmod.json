@@ -1,7 +1,7 @@
 {
  "/": {
-  "date": "2026-11-12",
-  "hash": "769546ee6ea7445e"
+  "date": "2026-11-14",
+  "hash": "a22eea8b32c7ea4c"
  },
  "/ai/": {
   "date": "2026-10-08",
@@ -56,148 +56,152 @@
   "hash": "7d73743b42287e97"
  },
  "/articles/why-a-new-raw-developer/": {
-  "date": "2026-11-12",
-  "hash": "fdd5f9c3869d2942"
+  "date": "2026-11-14",
+  "hash": "ada0c092cf6773c7"
  },
  "/articles/xmp-sidecar-files/": {
   "date": "2026-10-25",
   "hash": "d5aa6f4594258a3a"
  },
  "/changelog/": {
-  "date": "2026-11-12",
-  "hash": "733968f11d4d4ca4"
+  "date": "2026-11-14",
+  "hash": "ab82c44b6ebcc7dd"
  },
  "/changelog/2026-q1/": {
-  "date": "2026-11-12",
-  "hash": "0559e7ad5c9dd704"
+  "date": "2026-11-14",
+  "hash": "a3d5270fabecb824"
  },
  "/changelog/2026-q2/": {
-  "date": "2026-11-12",
-  "hash": "06fbed4600ec8615"
+  "date": "2026-11-14",
+  "hash": "f8b3f9514c135e88"
  },
  "/changelog/2026-q3/": {
-  "date": "2026-11-12",
-  "hash": "990c6d00a8f10a01"
+  "date": "2026-11-14",
+  "hash": "e20db8065fcdd05e"
  },
  "/changelog/2026-q4/": {
-  "date": "2026-11-12",
-  "hash": "2b8e09f74437db53"
+  "date": "2026-11-14",
+  "hash": "65712471fef4fff4"
  },
  "/contact/": {
   "date": "2026-11-12",
   "hash": "94c5dd9c20b94dda"
  },
  "/features/": {
-  "date": "2026-11-12",
-  "hash": "c4b8f21c08c8b16a"
+  "date": "2026-11-14",
+  "hash": "aacc63d878afd129"
  },
  "/features/ai-masking/": {
-  "date": "2026-11-12",
-  "hash": "6317b2b16446e847"
+  "date": "2026-11-14",
+  "hash": "690f42524754157f"
  },
  "/features/auto/": {
-  "date": "2026-11-12",
-  "hash": "bc5e1ab9c9cb5c11"
+  "date": "2026-11-14",
+  "hash": "57fe8c5e27471872"
  },
  "/features/bokeh/": {
-  "date": "2026-11-12",
-  "hash": "6edf5f50f531027d"
+  "date": "2026-11-14",
+  "hash": "fb29f340f98dc2a4"
  },
  "/features/catalog/": {
-  "date": "2026-10-08",
-  "hash": "be0a015ff2353a6b"
+  "date": "2026-11-14",
+  "hash": "35ab8684954b17e8"
  },
  "/features/culling/": {
-  "date": "2026-10-08",
-  "hash": "6b50d9fc53709cbb"
+  "date": "2026-11-14",
+  "hash": "7bcfe32c98909e1f"
  },
  "/features/decoders/": {
-  "date": "2026-10-08",
-  "hash": "09fc5ffb4f4125f3"
+  "date": "2026-11-14",
+  "hash": "aed4ed10d8694053"
  },
  "/features/detail/": {
-  "date": "2026-10-08",
-  "hash": "96acf80efb3896d5"
+  "date": "2026-11-14",
+  "hash": "f01d432a3adad82c"
  },
  "/features/develop/": {
-  "date": "2026-10-08",
-  "hash": "63967cf4b0217d35"
+  "date": "2026-11-14",
+  "hash": "0cf63672973a19ab"
  },
  "/features/exif-iptc/": {
-  "date": "2026-10-08",
-  "hash": "6011c6e8626e3776"
+  "date": "2026-11-14",
+  "hash": "2216b27d84114c50"
  },
  "/features/export/": {
-  "date": "2026-10-08",
-  "hash": "c5199728ebec372e"
+  "date": "2026-11-14",
+  "hash": "6c131ce9ff2f3d76"
  },
  "/features/film-labor/": {
-  "date": "2026-11-12",
-  "hash": "395cdbd169ab7a82"
+  "date": "2026-11-14",
+  "hash": "f23935b17a86a8e9"
  },
  "/features/folder-notes/": {
-  "date": "2026-10-08",
-  "hash": "a7ee0d0f1ccbe265"
+  "date": "2026-11-14",
+  "hash": "08ee44d599bc8e06"
+ },
+ "/features/frames/": {
+  "date": "2026-11-14",
+  "hash": "cf7143de66a8d101"
  },
  "/features/generative-fill/": {
-  "date": "2026-11-12",
-  "hash": "13a432b62e414f64"
+  "date": "2026-11-14",
+  "hash": "5fd2cfca081a3eef"
  },
  "/features/geo-tag/": {
-  "date": "2026-10-08",
-  "hash": "467ac8316aef5d2f"
+  "date": "2026-11-14",
+  "hash": "5d01641ab9d3a55d"
  },
  "/features/lens-corrections/": {
-  "date": "2026-10-08",
-  "hash": "9eb0442d54b80efa"
+  "date": "2026-11-14",
+  "hash": "7e00b9e73d1ca6aa"
  },
  "/features/loupe/": {
-  "date": "2026-10-08",
-  "hash": "7107eec1c0f06204"
+  "date": "2026-11-14",
+  "hash": "305a83c9f2070cf1"
  },
  "/features/luts/": {
-  "date": "2026-10-08",
-  "hash": "f1cf2ab9fb3a13e7"
+  "date": "2026-11-14",
+  "hash": "bf75d0eeb50c9aef"
  },
  "/features/masking/": {
-  "date": "2026-10-08",
-  "hash": "c7f548f699221088"
+  "date": "2026-11-14",
+  "hash": "13832e430d2a856b"
  },
  "/features/match-colours/": {
-  "date": "2026-11-12",
-  "hash": "cb1b313f8edd219b"
+  "date": "2026-11-14",
+  "hash": "3c73a980f2780452"
  },
  "/features/people/": {
-  "date": "2026-10-08",
-  "hash": "7e6cfda44be60eb1"
+  "date": "2026-11-14",
+  "hash": "2602948b3b6aa54e"
  },
  "/features/pixels/": {
-  "date": "2026-11-12",
-  "hash": "8beeb2ddf0a0bc9f"
+  "date": "2026-11-14",
+  "hash": "cb438322d1360d02"
  },
  "/features/portrait/": {
-  "date": "2026-11-12",
-  "hash": "24c98d69f12f5afe"
+  "date": "2026-11-14",
+  "hash": "a270636dc81b3c40"
  },
  "/features/repair/": {
-  "date": "2026-10-08",
-  "hash": "6a6e8417a533d3e3"
+  "date": "2026-11-14",
+  "hash": "82d9816f8ee9f333"
  },
  "/features/search/": {
-  "date": "2026-10-08",
-  "hash": "451fd4437aaf7b9a"
+  "date": "2026-11-14",
+  "hash": "6fad558d9905a860"
  },
  "/features/stacks/": {
-  "date": "2026-10-08",
-  "hash": "0faad55f7d8ba81a"
+  "date": "2026-11-14",
+  "hash": "d480cf1479d6e2b8"
  },
  "/features/versions/": {
-  "date": "2026-10-08",
-  "hash": "e6a5655ae878716a"
+  "date": "2026-11-14",
+  "hash": "a007df0a18e57556"
  },
  "/features/video/": {
-  "date": "2026-10-08",
-  "hash": "7de2d28986215ec9"
+  "date": "2026-11-14",
+  "hash": "b969a8a36c102e37"
  },
  "/manual/": {
   "date": "2026-10-08",

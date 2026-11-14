@@ -30,18 +30,18 @@ const next = [others[(features.indexOf(f) + 1) % others.length],
     <div class="grid grid-2">
       <div class="card">
         <div class="eyebrow">in the manual</div>
-        <h3>Every control, written down</h3>
-        <p>The manual covers this in full — what each control does, and what it does not.</p>
+        <h3>Read the manual chapter</h3>
+        <p>The manual explains every control on this page in detail.</p>
         <a class="more" href={`/manual/${f.chapter}/`}>Read the chapter →</a>
       </div>
       <div class="card">
         <div class="eyebrow" style={f.tier === "pro" ? "color: var(--violet);" : undefined}>
           {f.tier === "pro" ? "part of pro" : "in the free version"}
         </div>
-        <h3>{f.tier === "pro" ? `${f.title} is part of Chili RAW Pro.` : `${f.title} is free, with no time limit.`}</h3>
-        <p>{f.tier === "pro"
+        <h3>{f.tierTitle ?? (f.tier === "pro" ? `${f.title} is part of Chili RAW Pro.` : `${f.title} is free, with no time limit.`)}</h3>
+        <p>{f.tierText ?? (f.tier === "pro"
           ? "$19.90 lifetime · no subscription · 7-day trial."
-          : "No account, no watermark, and no time limit."}</p>
+          : "No account, no watermark, and no time limit.")}</p>
         <div class="btn-row" style="margin-top: 12px;">
           <a class="btn btn-primary" style="height: 44px;"
              href={f.tier === "pro" ? "/pro/" : "https://github.com/halebop17/chili-raw-photo/releases/latest"}>

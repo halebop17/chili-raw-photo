@@ -13,12 +13,14 @@
           {
             "name": "New",
             "items": [
-              "<strong>A Film Labor look can be taken off a photo on a Mac without Film Labor</strong>, from the Film badge on the Develop canvas."
+              "<strong>A Film Labor look can be taken off a photo on a Mac without Film Labor</strong>, from the Film badge on the Develop canvas.",
+              "<strong>Settings has a Performance tab.</strong> Preview quality moved there from the Catalog menu, and Photos ahead sets how many of the next photos Develop keeps ready."
             ]
           },
           {
             "name": "Changed",
             "items": [
+              "<strong>In Develop, the photo now follows a slider while you drag it</strong>, instead of catching up after you let go.",
               "<strong>In Film Labor, each film list now starts with the classic stocks, with Chili Originals after them.</strong>"
             ]
           },
@@ -36,7 +38,7 @@
         "latest": false
       }
     ],
-    "count": 7
+    "count": 9
   },
   {
     "slug": "2026-q4",
