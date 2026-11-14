@@ -282,8 +282,9 @@
   "description": "Add a white or black border to every exported photo, pad it to 1:1, 4:5 or 9:16, or frame one photo in its own colour, a film edge or more of the scene.",
   "lead": "Add a white, black or grey border to every photo you export, and pad it to 1:1, 4:5 or 9:16. In Pixels you can frame a single photo: a border in a colour taken from the photo, a dithered edge, a film strip, or the photo extended to fill the border.",
   "tier": "free",
-  "tierTitle": "The export border is free, with no time limit.",
-  "tierText": "White, black or grey on every copy. The shapes and the frames in Pixels are part of Pro.",
+  "tierTitle": "Download Chili RAW free.",
+  "tierText": "",
+  "tierButton": "Download",
   "chapter": "pixels",
   "key": "Frames"
  },
